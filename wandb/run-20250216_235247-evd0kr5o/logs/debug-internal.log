@@ -1,0 +1,21 @@
+{"time":"2025-02-16T23:52:47.393648972+11:00","level":"INFO","msg":"stream: starting","core version":"0.19.6","symlink path":"/home/yxma/hzx/hzx/LeLLM/wandb/run-20250216_235247-evd0kr5o/logs/debug-core.log"}
+{"time":"2025-02-16T23:52:47.700028789+11:00","level":"INFO","msg":"created new stream","id":"evd0kr5o"}
+{"time":"2025-02-16T23:52:47.700069018+11:00","level":"INFO","msg":"stream: started","id":"evd0kr5o"}
+{"time":"2025-02-16T23:52:47.700099469+11:00","level":"INFO","msg":"writer: Do: started","stream_id":"evd0kr5o"}
+{"time":"2025-02-16T23:52:47.700113158+11:00","level":"INFO","msg":"sender: started","stream_id":"evd0kr5o"}
+{"time":"2025-02-16T23:52:47.70020032+11:00","level":"INFO","msg":"handler: started","stream_id":"evd0kr5o"}
+{"time":"2025-02-16T23:52:51.02414372+11:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-02-18T00:38:21.025329802+11:00","level":"ERROR","msg":"writer: startStore: error storing record: store: can't write proto: write /home/yxma/hzx/hzx/LeLLM/wandb/run-20250216_235247-evd0kr5o/run-evd0kr5o.wandb: disk quota exceeded"}
+{"time":"2025-02-18T00:38:21.026266518+11:00","level":"ERROR","msg":"writer: startStore: error storing record: store: can't get next record: write /home/yxma/hzx/hzx/LeLLM/wandb/run-20250216_235247-evd0kr5o/run-evd0kr5o.wandb: disk quota exceeded"}
+{"time":"2025-02-18T00:38:21.044901101+11:00","level":"ERROR","msg":"writer: startStore: error storing record: store: can't get next record: write /home/yxma/hzx/hzx/LeLLM/wandb/run-20250216_235247-evd0kr5o/run-evd0kr5o.wandb: disk quota exceeded"}
+{"time":"2025-02-18T00:38:21.323644614+11:00","level":"ERROR","msg":"writer: startStore: error storing record: store: can't get next record: write /home/yxma/hzx/hzx/LeLLM/wandb/run-20250216_235247-evd0kr5o/run-evd0kr5o.wandb: disk quota exceeded"}
+{"time":"2025-02-18T00:38:31.024968158+11:00","level":"ERROR","msg":"writer: startStore: error storing record: store: can't get next record: write /home/yxma/hzx/hzx/LeLLM/wandb/run-20250216_235247-evd0kr5o/run-evd0kr5o.wandb: disk quota exceeded"}
+{"time":"2025-02-18T00:38:31.025028222+11:00","level":"ERROR","msg":"writer: startStore: error storing record: store: can't get next record: write /home/yxma/hzx/hzx/LeLLM/wandb/run-20250216_235247-evd0kr5o/run-evd0kr5o.wandb: disk quota exceeded"}
+{"time":"2025-02-18T00:38:31.026310794+11:00","level":"ERROR","msg":"writer: startStore: error storing record: store: can't get next record: write /home/yxma/hzx/hzx/LeLLM/wandb/run-20250216_235247-evd0kr5o/run-evd0kr5o.wandb: disk quota exceeded"}
+{"time":"2025-02-18T00:38:31.045252122+11:00","level":"ERROR","msg":"writer: startStore: error storing record: store: can't get next record: write /home/yxma/hzx/hzx/LeLLM/wandb/run-20250216_235247-evd0kr5o/run-evd0kr5o.wandb: disk quota exceeded"}
+{"time":"2025-02-18T00:38:31.055134712+11:00","level":"ERROR","msg":"writer: startStore: error storing record: store: can't get next record: write /home/yxma/hzx/hzx/LeLLM/wandb/run-20250216_235247-evd0kr5o/run-evd0kr5o.wandb: disk quota exceeded"}
+{"time":"2025-02-18T00:38:32.814632142+11:00","level":"ERROR","msg":"writer: startStore: error storing record: store: can't get next record: write /home/yxma/hzx/hzx/LeLLM/wandb/run-20250216_235247-evd0kr5o/run-evd0kr5o.wandb: disk quota exceeded"}
+{"time":"2025-02-18T00:38:41.025409973+11:00","level":"ERROR","msg":"writer: startStore: error storing record: store: can't get next record: write /home/yxma/hzx/hzx/LeLLM/wandb/run-20250216_235247-evd0kr5o/run-evd0kr5o.wandb: disk quota exceeded"}
+{"time":"2025-02-18T00:38:41.025467802+11:00","level":"ERROR","msg":"writer: startStore: error storing record: store: can't get next record: write /home/yxma/hzx/hzx/LeLLM/wandb/run-20250216_235247-evd0kr5o/run-evd0kr5o.wandb: disk quota exceeded"}
+{"time":"2025-02-18T00:38:41.026326854+11:00","level":"ERROR","msg":"writer: startStore: error storing record: store: can't get next record: write /home/yxma/hzx/hzx/LeLLM/wandb/run-20250216_235247-evd0kr5o/run-evd0kr5o.wandb: disk quota exceeded"}
+{"time":"2025-02-18T00:3

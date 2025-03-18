@@ -1,0 +1,11 @@
+{"time":"2025-02-13T20:57:07.30729019+11:00","level":"INFO","msg":"stream: starting","core version":"0.19.6","symlink path":"/home/yxma/hzx/hzx/LeLLM/wandb/run-20250213_205707-poz31bkd/logs/debug-core.log"}
+{"time":"2025-02-13T20:57:07.412270503+11:00","level":"INFO","msg":"created new stream","id":"poz31bkd"}
+{"time":"2025-02-13T20:57:07.412314643+11:00","level":"INFO","msg":"stream: started","id":"poz31bkd"}
+{"time":"2025-02-13T20:57:07.412347888+11:00","level":"INFO","msg":"writer: Do: started","stream_id":"poz31bkd"}
+{"time":"2025-02-13T20:57:07.41240432+11:00","level":"INFO","msg":"sender: started","stream_id":"poz31bkd"}
+{"time":"2025-02-13T20:57:07.412433933+11:00","level":"INFO","msg":"handler: started","stream_id":"poz31bkd"}
+{"time":"2025-02-13T20:57:10.676361209+11:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-02-13T20:57:43.218231626+11:00","level":"INFO","msg":"stream: closing","id":"poz31bkd"}
+{"time":"2025-02-13T20:57:43.218285264+11:00","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-02-13T20:57:43.218923058+11:00","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-02-13T20:57:44.016990512+11:00","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}

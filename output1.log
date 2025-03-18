@@ -1,0 +1,506 @@
+nohup: ignoring input
+Loading data...
+Removing duplicates...
+Processing test data:   0%|          | 0/500 [00:00<?, ?entry/s]✅ No duplicate for test entry 0
+Processing test data:   0%|          | 1/500 [02:32<21:10:29, 152.76s/entry]✅ No duplicate for test entry 1
+Processing test data:   0%|          | 2/500 [05:06<21:10:45, 153.10s/entry]✅ No duplicate for test entry 2
+Processing test data:   1%|          | 3/500 [07:38<21:05:18, 152.75s/entry]✅ No duplicate for test entry 3
+Processing test data:   1%|          | 4/500 [10:10<21:01:33, 152.61s/entry]✅ No duplicate for test entry 4
+Processing test data:   1%|          | 5/500 [12:43<21:00:08, 152.74s/entry]✅ No duplicate for test entry 5
+Processing test data:   1%|          | 6/500 [15:16<20:57:32, 152.74s/entry]✅ No duplicate for test entry 6
+Processing test data:   1%|▏         | 7/500 [17:49<20:54:56, 152.73s/entry]✅ No duplicate for test entry 7
+Processing test data:   2%|▏         | 8/500 [20:21<20:51:47, 152.66s/entry]✅ No duplicate for test entry 8
+Processing test data:   2%|▏         | 9/500 [22:53<20:47:17, 152.42s/entry]✅ No duplicate for test entry 9
+Processing test data:   2%|▏         | 10/500 [25:26<20:45:54, 152.56s/entry]✅ No duplicate for test entry 10
+Processing test data:   2%|▏         | 11/500 [27:59<20:43:53, 152.63s/entry]✅ No duplicate for test entry 11
+Processing test data:   2%|▏         | 12/500 [30:32<20:42:09, 152.72s/entry]✅ No duplicate for test entry 12
+Processing test data:   3%|▎         | 13/500 [33:04<20:39:31, 152.71s/entry]✅ No duplicate for test entry 13
+Processing test data:   3%|▎         | 14/500 [35:37<20:36:11, 152.62s/entry]✅ No duplicate for test entry 14
+Processing test data:   3%|▎         | 15/500 [38:10<20:34:20, 152.70s/entry]✅ No duplicate for test entry 15
+Processing test data:   3%|▎         | 16/500 [40:42<20:31:31, 152.67s/entry]✅ No duplicate for test entry 16
+Processing test data:   3%|▎         | 17/500 [43:15<20:29:12, 152.70s/entry]✅ No duplicate for test entry 17
+Processing test data:   4%|▎         | 18/500 [45:47<20:24:55, 152.48s/entry]✅ No duplicate for test entry 18
+Processing test data:   4%|▍         | 19/500 [48:19<20:21:18, 152.35s/entry]✅ No duplicate for test entry 19
+Processing test data:   4%|▍         | 20/500 [50:51<20:18:22, 152.30s/entry]✅ No duplicate for test entry 20
+Processing test data:   4%|▍         | 21/500 [53:23<20:15:31, 152.26s/entry]✅ No duplicate for test entry 21
+Processing test data:   4%|▍         | 22/500 [55:56<20:12:34, 152.21s/entry]✅ No duplicate for test entry 22
+Processing test data:   5%|▍         | 23/500 [58:27<20:08:50, 152.06s/entry]✅ No duplicate for test entry 23
+Processing test data:   5%|▍         | 24/500 [1:00:59<20:05:22, 151.94s/entry]✅ No duplicate for test entry 24
+Processing test data:   5%|▌         | 25/500 [1:03:32<20:04:57, 152.21s/entry]✅ No duplicate for test entry 25
+Processing test data:   5%|▌         | 26/500 [1:06:04<20:02:28, 152.21s/entry]✅ No duplicate for test entry 26
+Processing test data:   5%|▌         | 27/500 [1:08:36<19:58:49, 152.07s/entry]✅ No duplicate for test entry 27
+Processing test data:   6%|▌         | 28/500 [1:11:08<19:57:01, 152.16s/entry]✅ No duplicate for test entry 28
+Processing test data:   6%|▌         | 29/500 [1:13:41<19:55:26, 152.29s/entry]✅ No duplicate for test entry 29
+Processing test data:   6%|▌         | 30/500 [1:16:13<19:53:49, 152.40s/entry]✅ No duplicate for test entry 30
+Processing test data:   6%|▌         | 31/500 [1:18:46<19:51:11, 152.39s/entry]✅ No duplicate for test entry 31
+Processing test data:   6%|▋         | 32/500 [1:21:18<19:48:15, 152.34s/entry]✅ No duplicate for test entry 32
+Processing test data:   7%|▋         | 33/500 [1:23:50<19:44:56, 152.24s/entry]✅ No duplicate for test entry 33
+Processing test data:   7%|▋         | 34/500 [1:26:22<19:42:10, 152.21s/entry]✅ No duplicate for test entry 34
+Processing test data:   7%|▋         | 35/500 [1:28:54<19:39:17, 152.17s/entry]✅ No duplicate for test entry 35
+Processing test data:   7%|▋         | 36/500 [1:31:26<19:35:34, 152.01s/entry]✅ No duplicate for test entry 36
+Processing test data:   7%|▋         | 37/500 [1:33:58<19:34:06, 152.15s/entry]✅ No duplicate for test entry 37
+Processing test data:   8%|▊         | 38/500 [1:36:29<19:27:54, 151.68s/entry]✅ No duplicate for test entry 38
+Processing test data:   8%|▊         | 39/500 [1:38:56<19:16:07, 150.47s/entry]✅ No duplicate for test entry 39
+Processing test data:   8%|▊         | 40/500 [1:41:24<19:07:12, 149.64s/entry]✅ No duplicate for test entry 40
+Processing test data:   8%|▊         | 41/500 [1:43:52<18:59:56, 149.01s/entry]✅ No duplicate for test entry 41
+Processing test data:   8%|▊         | 42/500 [1:46:19<18:54:11, 148.58s/entry]✅ No duplicate for test entry 42
+Processing test data:   9%|▊         | 43/500 [1:48:47<18:48:51, 148.21s/entry]✅ No duplicate for test entry 43
+Processing test data:   9%|▉         | 44/500 [1:51:14<18:44:31, 147.96s/entry]✅ No duplicate for test entry 44
+Processing test data:   9%|▉         | 45/500 [1:53:41<18:40:54, 147.81s/entry]✅ No duplicate for test entry 45
+Processing test data:   9%|▉         | 46/500 [1:56:09<18:37:56, 147.75s/entry]✅ No duplicate for test entry 46
+Processing test data:   9%|▉         | 47/500 [1:58:37<18:35:32, 147.75s/entry]✅ No duplicate for test entry 47
+Processing test data:  10%|▉         | 48/500 [2:01:07<18:39:24, 148.59s/entry]✅ No duplicate for test entry 48
+Processing test data:  10%|▉         | 49/500 [2:03:38<18:41:41, 149.23s/entry]✅ No duplicate for test entry 49
+Processing test data:  10%|█         | 50/500 [2:06:06<18:35:10, 148.69s/entry]✅ No duplicate for test entry 50
+Processing test data:  10%|█         | 51/500 [2:08:32<18:28:31, 148.13s/entry]✅ No duplicate for test entry 51
+Processing test data:  10%|█         | 52/500 [2:10:59<18:23:26, 147.78s/entry]✅ No duplicate for test entry 52
+Processing test data:  11%|█         | 53/500 [2:13:29<18:24:37, 148.27s/entry]✅ No duplicate for test entry 53
+Processing test data:  11%|█         | 54/500 [2:15:57<18:21:07, 148.13s/entry]✅ No duplicate for test entry 54
+Processing test data:  11%|█         | 55/500 [2:18:25<18:18:52, 148.16s/entry]✅ No duplicate for test entry 55
+Processing test data:  11%|█         | 56/500 [2:20:54<18:18:28, 148.44s/entry]✅ No duplicate for test entry 56
+Processing test data:  11%|█▏        | 57/500 [2:23:22<18:16:18, 148.48s/entry]✅ No duplicate for test entry 57
+Processing test data:  12%|█▏        | 58/500 [2:25:50<18:11:13, 148.13s/entry]✅ No duplicate for test entry 58
+Processing test data:  12%|█▏        | 59/500 [2:28:17<18:07:10, 147.91s/entry]✅ No duplicate for test entry 59
+Processing test data:  12%|█▏        | 60/500 [2:30:46<18:07:02, 148.23s/entry]✅ No duplicate for test entry 60
+Processing test data:  12%|█▏        | 61/500 [2:33:14<18:03:32, 148.09s/entry]✅ No duplicate for test entry 61
+Processing test data:  12%|█▏        | 62/500 [2:35:42<18:00:04, 147.95s/entry]✅ No duplicate for test entry 62
+Processing test data:  13%|█▎        | 63/500 [2:38:09<17:55:57, 147.73s/entry]✅ No duplicate for test entry 63
+Processing test data:  13%|█▎        | 64/500 [2:40:36<17:52:50, 147.64s/entry]✅ No duplicate for test entry 64
+Processing test data:  13%|█▎        | 65/500 [2:43:03<17:48:54, 147.44s/entry]✅ No duplicate for test entry 65
+Processing test data:  13%|█▎        | 66/500 [2:45:30<17:45:04, 147.24s/entry]✅ No duplicate for test entry 66
+Processing test data:  13%|█▎        | 67/500 [2:47:57<17:42:17, 147.20s/entry]✅ No duplicate for test entry 67
+Processing test data:  14%|█▎        | 68/500 [2:50:25<17:41:21, 147.41s/entry]✅ No duplicate for test entry 68
+Processing test data:  14%|█▍        | 69/500 [2:52:54<17:42:05, 147.85s/entry]✅ No duplicate for test entry 69
+Processing test data:  14%|█▍        | 70/500 [2:55:22<17:41:19, 148.09s/entry]✅ No duplicate for test entry 70
+Processing test data:  14%|█▍        | 71/500 [2:57:51<17:40:42, 148.35s/entry]✅ No duplicate for test entry 71
+Processing test data:  14%|█▍        | 72/500 [3:00:21<17:40:33, 148.68s/entry]✅ No duplicate for test entry 72
+Processing test data:  15%|█▍        | 73/500 [3:02:48<17:35:08, 148.26s/entry]✅ No duplicate for test entry 73
+Processing test data:  15%|█▍        | 74/500 [3:05:16<17:32:35, 148.25s/entry]✅ No duplicate for test entry 74
+Processing test data:  15%|█▌        | 75/500 [3:07:45<17:31:40, 148.47s/entry]✅ No duplicate for test entry 75
+Processing test data:  15%|█▌        | 76/500 [3:10:14<17:30:01, 148.59s/entry]✅ No duplicate for test entry 76
+Processing test data:  15%|█▌        | 77/500 [3:12:44<17:29:16, 148.83s/entry]✅ No duplicate for test entry 77
+Processing test data:  16%|█▌        | 78/500 [3:15:13<17:27:59, 149.00s/entry]✅ No duplicate for test entry 78
+Processing test data:  16%|█▌        | 79/500 [3:17:42<17:25:46, 149.04s/entry]✅ No duplicate for test entry 79
+Processing test data:  16%|█▌        | 80/500 [3:20:12<17:24:08, 149.16s/entry]✅ No duplicate for test entry 80
+Processing test data:  16%|█▌        | 81/500 [3:22:40<17:20:24, 148.99s/entry]✅ No duplicate for test entry 81
+Processing test data:  16%|█▋        | 82/500 [3:25:09<17:16:48, 148.82s/entry]✅ No duplicate for test entry 82
+Processing test data:  17%|█▋        | 83/500 [3:27:38<17:14:33, 148.86s/entry]✅ No duplicate for test entry 83
+Processing test data:  17%|█▋        | 84/500 [3:30:07<17:12:24, 148.91s/entry]✅ No duplicate for test entry 84
+Processing test data:  17%|█▋        | 85/500 [3:32:36<17:10:16, 148.96s/entry]✅ No duplicate for test entry 85
+Processing test data:  17%|█▋        | 86/500 [3:35:05<17:07:54, 148.97s/entry]✅ No duplicate for test entry 86
+Processing test data:  17%|█▋        | 87/500 [3:37:34<17:05:15, 148.95s/entry]✅ No duplicate for test entry 87
+Processing test data:  18%|█▊        | 88/500 [3:40:03<17:03:07, 149.00s/entry]✅ No duplicate for test entry 88
+Processing test data:  18%|█▊        | 89/500 [3:42:32<17:01:10, 149.08s/entry]✅ No duplicate for test entry 89
+Processing test data:  18%|█▊        | 90/500 [3:45:03<17:02:37, 149.65s/entry]✅ No duplicate for test entry 90
+Processing test data:  18%|█▊        | 91/500 [3:47:33<17:01:32, 149.86s/entry]✅ No duplicate for test entry 91
+Processing test data:  18%|█▊        | 92/500 [3:50:05<17:01:54, 150.28s/entry]✅ No duplicate for test entry 92
+Processing test data:  19%|█▊        | 93/500 [3:52:35<17:00:29, 150.44s/entry]✅ No duplicate for test entry 93
+Processing test data:  19%|█▉        | 94/500 [3:55:06<16:57:52, 150.42s/entry]✅ No duplicate for test entry 94
+Processing test data:  19%|█▉        | 95/500 [3:57:36<16:55:53, 150.50s/entry]✅ No duplicate for test entry 95
+Processing test data:  19%|█▉        | 96/500 [4:00:06<16:52:22, 150.35s/entry]✅ No duplicate for test entry 96
+Processing test data:  19%|█▉        | 97/500 [4:02:37<16:49:59, 150.37s/entry]✅ No duplicate for test entry 97
+Processing test data:  20%|█▉        | 98/500 [4:05:08<16:48:21, 150.50s/entry]✅ No duplicate for test entry 98
+Processing test data:  20%|█▉        | 99/500 [4:07:38<16:45:04, 150.39s/entry]✅ No duplicate for test entry 99
+Processing test data:  20%|██        | 100/500 [4:10:08<16:41:42, 150.26s/entry]✅ No duplicate for test entry 100
+Processing test data:  20%|██        | 101/500 [4:12:38<16:39:11, 150.25s/entry]✅ No duplicate for test entry 101
+Processing test data:  20%|██        | 102/500 [4:15:08<16:36:07, 150.17s/entry]✅ No duplicate for test entry 102
+Processing test data:  21%|██        | 103/500 [4:17:38<16:33:14, 150.11s/entry]✅ No duplicate for test entry 103
+Processing test data:  21%|██        | 104/500 [4:20:08<16:31:04, 150.16s/entry]✅ No duplicate for test entry 104
+Processing test data:  21%|██        | 105/500 [4:22:39<16:29:02, 150.23s/entry]✅ No duplicate for test entry 105
+Processing test data:  21%|██        | 106/500 [4:25:09<16:26:51, 150.28s/entry]✅ No duplicate for test entry 106
+Processing test data:  21%|██▏       | 107/500 [4:27:39<16:24:16, 150.27s/entry]✅ No duplicate for test entry 107
+Processing test data:  22%|██▏       | 108/500 [4:30:10<16:21:45, 150.27s/entry]✅ No duplicate for test entry 108
+Processing test data:  22%|██▏       | 109/500 [4:32:40<16:19:25, 150.29s/entry]✅ No duplicate for test entry 109
+Processing test data:  22%|██▏       | 110/500 [4:35:10<16:17:11, 150.34s/entry]✅ No duplicate for test entry 110
+Processing test data:  22%|██▏       | 111/500 [4:37:41<16:15:21, 150.44s/entry]✅ No duplicate for test entry 111
+Processing test data:  22%|██▏       | 112/500 [4:40:11<16:11:47, 150.28s/entry]✅ No duplicate for test entry 112
+Processing test data:  23%|██▎       | 113/500 [4:42:40<16:06:57, 149.92s/entry]✅ No duplicate for test entry 113
+Processing test data:  23%|██▎       | 114/500 [4:45:09<16:03:15, 149.73s/entry]✅ No duplicate for test entry 114
+Processing test data:  23%|██▎       | 115/500 [4:47:39<16:01:42, 149.88s/entry]✅ No duplicate for test entry 115
+Processing test data:  23%|██▎       | 116/500 [4:50:09<15:58:11, 149.72s/entry]✅ No duplicate for test entry 116
+Processing test data:  23%|██▎       | 117/500 [4:52:38<15:55:33, 149.70s/entry]✅ No duplicate for test entry 117
+Processing test data:  24%|██▎       | 118/500 [4:55:08<15:53:04, 149.70s/entry]✅ No duplicate for test entry 118
+Processing test data:  24%|██▍       | 119/500 [4:57:38<15:50:41, 149.72s/entry]✅ No duplicate for test entry 119
+Processing test data:  24%|██▍       | 120/500 [5:00:07<15:47:18, 149.57s/entry]✅ No duplicate for test entry 120
+Processing test data:  24%|██▍       | 121/500 [5:02:36<15:43:11, 149.32s/entry]✅ No duplicate for test entry 121
+Processing test data:  24%|██▍       | 122/500 [5:05:05<15:40:08, 149.23s/entry]✅ No duplicate for test entry 122
+Processing test data:  25%|██▍       | 123/500 [5:07:34<15:37:18, 149.17s/entry]✅ No duplicate for test entry 123
+Processing test data:  25%|██▍       | 124/500 [5:10:03<15:34:38, 149.14s/entry]✅ No duplicate for test entry 124
+Processing test data:  25%|██▌       | 125/500 [5:12:32<15:31:50, 149.10s/entry]✅ No duplicate for test entry 125
+Processing test data:  25%|██▌       | 126/500 [5:15:01<15:29:51, 149.18s/entry]✅ No duplicate for test entry 126
+Processing test data:  25%|██▌       | 127/500 [5:17:31<15:27:42, 149.23s/entry]✅ No duplicate for test entry 127
+Processing test data:  26%|██▌       | 128/500 [5:19:59<15:23:16, 148.91s/entry]✅ No duplicate for test entry 128
+Processing test data:  26%|██▌       | 129/500 [5:22:28<15:20:27, 148.86s/entry]✅ No duplicate for test entry 129
+Processing test data:  26%|██▌       | 130/500 [5:24:57<15:18:13, 148.90s/entry]✅ No duplicate for test entry 130
+Processing test data:  26%|██▌       | 131/500 [5:27:27<15:18:12, 149.30s/entry]✅ No duplicate for test entry 131
+Processing test data:  26%|██▋       | 132/500 [5:29:57<15:16:20, 149.40s/entry]✅ No duplicate for test entry 132
+Processing test data:  27%|██▋       | 133/500 [5:32:26<15:13:44, 149.39s/entry]✅ No duplicate for test entry 133
+Processing test data:  27%|██▋       | 134/500 [5:34:55<15:10:34, 149.27s/entry]✅ No duplicate for test entry 134
+Processing test data:  27%|██▋       | 135/500 [5:37:25<15:09:08, 149.45s/entry]✅ No duplicate for test entry 135
+Processing test data:  27%|██▋       | 136/500 [5:39:53<15:05:21, 149.24s/entry]✅ No duplicate for test entry 136
+Processing test data:  27%|██▋       | 137/500 [5:42:22<15:01:55, 149.08s/entry]✅ No duplicate for test entry 137
+Processing test data:  28%|██▊       | 138/500 [5:44:51<14:59:41, 149.12s/entry]✅ No duplicate for test entry 138
+Processing test data:  28%|██▊       | 139/500 [5:47:20<14:56:58, 149.08s/entry]✅ No duplicate for test entry 139
+Processing test data:  28%|██▊       | 140/500 [5:49:49<14:54:14, 149.04s/entry]✅ No duplicate for test entry 140
+Processing test data:  28%|██▊       | 141/500 [5:52:18<14:51:41, 149.03s/entry]✅ No duplicate for test entry 141
+Processing test data:  28%|██▊       | 142/500 [5:54:47<14:48:56, 148.99s/entry]✅ No duplicate for test entry 142
+Processing test data:  29%|██▊       | 143/500 [5:57:16<14:46:25, 148.98s/entry]✅ No duplicate for test entry 143
+Processing test data:  29%|██▉       | 144/500 [5:59:45<14:43:07, 148.84s/entry]✅ No duplicate for test entry 144
+Processing test data:  29%|██▉       | 145/500 [6:02:13<14:39:43, 148.69s/entry]✅ No duplicate for test entry 145
+Processing test data:  29%|██▉       | 146/500 [6:04:42<14:38:19, 148.87s/entry]✅ No duplicate for test entry 146
+Processing test data:  29%|██▉       | 147/500 [6:07:11<14:36:10, 148.92s/entry]✅ No duplicate for test entry 147
+Processing test data:  30%|██▉       | 148/500 [6:09:40<14:33:47, 148.94s/entry]✅ No duplicate for test entry 148
+Processing test data:  30%|██▉       | 149/500 [6:12:09<14:30:38, 148.83s/entry]✅ No duplicate for test entry 149
+Processing test data:  30%|███       | 150/500 [6:14:38<14:28:40, 148.92s/entry]✅ No duplicate for test entry 150
+Processing test data:  30%|███       | 151/500 [6:17:07<14:26:30, 148.97s/entry]✅ No duplicate for test entry 151
+Processing test data:  30%|███       | 152/500 [6:19:36<14:23:21, 148.86s/entry]✅ No duplicate for test entry 152
+Processing test data:  31%|███       | 153/500 [6:22:04<14:20:17, 148.75s/entry]✅ No duplicate for test entry 153
+Processing test data:  31%|███       | 154/500 [6:24:33<14:17:15, 148.66s/entry]✅ No duplicate for test entry 154
+Processing test data:  31%|███       | 155/500 [6:27:02<14:15:05, 148.71s/entry]✅ No duplicate for test entry 155
+Processing test data:  31%|███       | 156/500 [6:29:31<14:13:15, 148.82s/entry]✅ No duplicate for test entry 156
+Processing test data:  31%|███▏      | 157/500 [6:31:59<14:10:22, 148.75s/entry]✅ No duplicate for test entry 157
+Processing test data:  32%|███▏      | 158/500 [6:34:28<14:07:30, 148.68s/entry]✅ No duplicate for test entry 158
+Processing test data:  32%|███▏      | 159/500 [6:36:56<14:04:52, 148.66s/entry]✅ No duplicate for test entry 159
+Processing test data:  32%|███▏      | 160/500 [6:39:25<14:02:37, 148.70s/entry]✅ No duplicate for test entry 160
+Processing test data:  32%|███▏      | 161/500 [6:41:54<14:00:29, 148.76s/entry]✅ No duplicate for test entry 161
+Processing test data:  32%|███▏      | 162/500 [6:44:23<13:58:19, 148.82s/entry]✅ No duplicate for test entry 162
+Processing test data:  33%|███▎      | 163/500 [6:46:52<13:56:22, 148.91s/entry]✅ No duplicate for test entry 163
+Processing test data:  33%|███▎      | 164/500 [6:49:21<13:53:22, 148.82s/entry]✅ No duplicate for test entry 164
+Processing test data:  33%|███▎      | 165/500 [6:51:49<13:49:51, 148.63s/entry]✅ No duplicate for test entry 165
+Processing test data:  33%|███▎      | 166/500 [6:54:18<13:47:20, 148.62s/entry]✅ No duplicate for test entry 166
+Processing test data:  33%|███▎      | 167/500 [6:56:46<13:45:13, 148.69s/entry]✅ No duplicate for test entry 167
+Processing test data:  34%|███▎      | 168/500 [6:59:15<13:43:24, 148.81s/entry]✅ No duplicate for test entry 168
+Processing test data:  34%|███▍      | 169/500 [7:01:44<13:40:33, 148.74s/entry]✅ No duplicate for test entry 169
+Processing test data:  34%|███▍      | 170/500 [7:04:13<13:37:58, 148.72s/entry]✅ No duplicate for test entry 170
+Processing test data:  34%|███▍      | 171/500 [7:06:42<13:35:47, 148.78s/entry]✅ No duplicate for test entry 171
+Processing test data:  34%|███▍      | 172/500 [7:09:11<13:33:46, 148.86s/entry]✅ No duplicate for test entry 172
+Processing test data:  35%|███▍      | 173/500 [7:11:40<13:32:35, 149.10s/entry]✅ No duplicate for test entry 173
+Processing test data:  35%|███▍      | 174/500 [7:14:09<13:29:20, 148.96s/entry]✅ No duplicate for test entry 174
+Processing test data:  35%|███▌      | 175/500 [7:16:37<13:25:58, 148.79s/entry]✅ No duplicate for test entry 175
+Processing test data:  35%|███▌      | 176/500 [7:19:06<13:23:18, 148.76s/entry]✅ No duplicate for test entry 176
+Processing test data:  35%|███▌      | 177/500 [7:21:35<13:20:32, 148.71s/entry]✅ No duplicate for test entry 177
+Processing test data:  36%|███▌      | 178/500 [7:24:03<13:17:13, 148.55s/entry]✅ No duplicate for test entry 178
+Processing test data:  36%|███▌      | 179/500 [7:26:31<13:14:44, 148.55s/entry]✅ No duplicate for test entry 179
+Processing test data:  36%|███▌      | 180/500 [7:29:00<13:13:06, 148.71s/entry]✅ No duplicate for test entry 180
+Processing test data:  36%|███▌      | 181/500 [7:31:29<13:10:38, 148.71s/entry]✅ No duplicate for test entry 181
+Processing test data:  36%|███▋      | 182/500 [7:33:58<13:08:47, 148.83s/entry]✅ No duplicate for test entry 182
+Processing test data:  37%|███▋      | 183/500 [7:36:27<13:06:09, 148.80s/entry]✅ No duplicate for test entry 183
+Processing test data:  37%|███▋      | 184/500 [7:38:56<13:03:57, 148.85s/entry]✅ No duplicate for test entry 184
+Processing test data:  37%|███▋      | 185/500 [7:41:25<13:01:22, 148.83s/entry]✅ No duplicate for test entry 185
+Processing test data:  37%|███▋      | 186/500 [7:43:53<12:58:11, 148.70s/entry]✅ No duplicate for test entry 186
+Processing test data:  37%|███▋      | 187/500 [7:46:22<12:56:00, 148.75s/entry]✅ No duplicate for test entry 187
+Processing test data:  38%|███▊      | 188/500 [7:48:51<12:53:22, 148.73s/entry]✅ No duplicate for test entry 188
+Processing test data:  38%|███▊      | 189/500 [7:51:20<12:51:20, 148.81s/entry]✅ No duplicate for test entry 189
+Processing test data:  38%|███▊      | 190/500 [7:53:48<12:48:18, 148.71s/entry]✅ No duplicate for test entry 190
+Processing test data:  38%|███▊      | 191/500 [7:56:17<12:46:01, 148.74s/entry]✅ No duplicate for test entry 191
+Processing test data:  38%|███▊      | 192/500 [7:58:46<12:43:53, 148.81s/entry]✅ No duplicate for test entry 192
+Processing test data:  39%|███▊      | 193/500 [8:01:15<12:41:36, 148.85s/entry]✅ No duplicate for test entry 193
+Processing test data:  39%|███▉      | 194/500 [8:03:43<12:38:11, 148.66s/entry]✅ No duplicate for test entry 194
+Processing test data:  39%|███▉      | 195/500 [8:06:12<12:35:51, 148.69s/entry]✅ No duplicate for test entry 195
+Processing test data:  39%|███▉      | 196/500 [8:08:41<12:33:17, 148.68s/entry]✅ No duplicate for test entry 196
+Processing test data:  39%|███▉      | 197/500 [8:11:09<12:31:08, 148.74s/entry]✅ No duplicate for test entry 197
+Processing test data:  40%|███▉      | 198/500 [8:13:39<12:29:28, 148.90s/entry]✅ No duplicate for test entry 198
+Processing test data:  40%|███▉      | 199/500 [8:16:08<12:27:08, 148.93s/entry]✅ No duplicate for test entry 199
+Processing test data:  40%|████      | 200/500 [8:18:37<12:24:29, 148.90s/entry]✅ No duplicate for test entry 200
+Processing test data:  40%|████      | 201/500 [8:21:06<12:22:36, 149.02s/entry]✅ No duplicate for test entry 201
+Processing test data:  40%|████      | 202/500 [8:23:35<12:20:12, 149.03s/entry]✅ No duplicate for test entry 202
+Processing test data:  41%|████      | 203/500 [8:26:03<12:16:29, 148.79s/entry]✅ No duplicate for test entry 203
+Processing test data:  41%|████      | 204/500 [8:28:32<12:13:58, 148.78s/entry]✅ No duplicate for test entry 204
+Processing test data:  41%|████      | 205/500 [8:31:00<12:11:08, 148.71s/entry]✅ No duplicate for test entry 205
+Processing test data:  41%|████      | 206/500 [8:33:29<12:09:11, 148.82s/entry]✅ No duplicate for test entry 206
+Processing test data:  41%|████▏     | 207/500 [8:35:58<12:06:19, 148.74s/entry]✅ No duplicate for test entry 207
+Processing test data:  42%|████▏     | 208/500 [8:38:27<12:03:50, 148.73s/entry]✅ No duplicate for test entry 208
+Processing test data:  42%|████▏     | 209/500 [8:40:55<12:01:21, 148.73s/entry]✅ No duplicate for test entry 209
+Processing test data:  42%|████▏     | 210/500 [8:43:24<11:58:22, 148.63s/entry]✅ No duplicate for test entry 210
+Processing test data:  42%|████▏     | 211/500 [8:45:53<11:56:25, 148.74s/entry]✅ No duplicate for test entry 211
+Processing test data:  42%|████▏     | 212/500 [8:48:22<11:54:17, 148.81s/entry]✅ No duplicate for test entry 212
+Processing test data:  43%|████▎     | 213/500 [8:50:50<11:51:17, 148.70s/entry]✅ No duplicate for test entry 213
+Processing test data:  43%|████▎     | 214/500 [8:53:19<11:49:32, 148.86s/entry]✅ No duplicate for test entry 214
+Processing test data:  43%|████▎     | 215/500 [8:55:49<11:47:23, 148.93s/entry]✅ No duplicate for test entry 215
+Processing test data:  43%|████▎     | 216/500 [8:58:17<11:44:06, 148.76s/entry]✅ No duplicate for test entry 216
+Processing test data:  43%|████▎     | 217/500 [9:00:46<11:41:22, 148.70s/entry]✅ No duplicate for test entry 217
+Processing test data:  44%|████▎     | 218/500 [9:03:14<11:39:07, 148.75s/entry]✅ No duplicate for test entry 218
+Processing test data:  44%|████▍     | 219/500 [9:05:44<11:37:17, 148.89s/entry]✅ No duplicate for test entry 219
+Processing test data:  44%|████▍     | 220/500 [9:08:13<11:34:54, 148.91s/entry]✅ No duplicate for test entry 220
+Processing test data:  44%|████▍     | 221/500 [9:10:41<11:32:02, 148.83s/entry]✅ No duplicate for test entry 221
+Processing test data:  44%|████▍     | 222/500 [9:13:10<11:29:33, 148.83s/entry]✅ No duplicate for test entry 222
+Processing test data:  45%|████▍     | 223/500 [9:15:39<11:27:18, 148.88s/entry]✅ No duplicate for test entry 223
+Processing test data:  45%|████▍     | 224/500 [9:18:08<11:24:34, 148.82s/entry]✅ No duplicate for test entry 224
+Processing test data:  45%|████▌     | 225/500 [9:20:36<11:21:58, 148.80s/entry]✅ No duplicate for test entry 225
+Processing test data:  45%|████▌     | 226/500 [9:23:05<11:19:25, 148.78s/entry]✅ No duplicate for test entry 226
+Processing test data:  45%|████▌     | 227/500 [9:25:34<11:16:47, 148.74s/entry]✅ No duplicate for test entry 227
+Processing test data:  46%|████▌     | 228/500 [9:28:03<11:14:21, 148.76s/entry]✅ No duplicate for test entry 228
+Processing test data:  46%|████▌     | 229/500 [9:30:31<11:11:36, 148.70s/entry]✅ No duplicate for test entry 229
+Processing test data:  46%|████▌     | 230/500 [9:32:59<11:08:36, 148.58s/entry]✅ No duplicate for test entry 230
+Processing test data:  46%|████▌     | 231/500 [9:35:28<11:06:12, 148.60s/entry]✅ No duplicate for test entry 231
+Processing test data:  46%|████▋     | 232/500 [9:37:57<11:04:07, 148.68s/entry]✅ No duplicate for test entry 232
+Processing test data:  47%|████▋     | 233/500 [9:40:26<11:01:55, 148.75s/entry]✅ No duplicate for test entry 233
+Processing test data:  47%|████▋     | 234/500 [9:42:54<10:59:06, 148.67s/entry]✅ No duplicate for test entry 234
+Processing test data:  47%|████▋     | 235/500 [9:45:23<10:56:44, 148.69s/entry]✅ No duplicate for test entry 235
+Processing test data:  47%|████▋     | 236/500 [9:47:52<10:54:20, 148.71s/entry]✅ No duplicate for test entry 236
+Processing test data:  47%|████▋     | 237/500 [9:50:21<10:52:29, 148.86s/entry]✅ No duplicate for test entry 237
+Processing test data:  48%|████▊     | 238/500 [9:52:50<10:49:28, 148.73s/entry]✅ No duplicate for test entry 238
+Processing test data:  48%|████▊     | 239/500 [9:55:18<10:46:26, 148.61s/entry]✅ No duplicate for test entry 239
+Processing test data:  48%|████▊     | 240/500 [9:57:47<10:44:15, 148.67s/entry]✅ No duplicate for test entry 240
+Processing test data:  48%|████▊     | 241/500 [10:00:15<10:41:52, 148.70s/entry]✅ No duplicate for test entry 241
+Processing test data:  48%|████▊     | 242/500 [10:02:45<10:40:12, 148.89s/entry]✅ No duplicate for test entry 242
+Processing test data:  49%|████▊     | 243/500 [10:05:14<10:38:35, 149.09s/entry]✅ No duplicate for test entry 243
+Processing test data:  49%|████▉     | 244/500 [10:07:43<10:35:56, 149.05s/entry]✅ No duplicate for test entry 244
+Processing test data:  49%|████▉     | 245/500 [10:10:12<10:33:03, 148.95s/entry]✅ No duplicate for test entry 245
+Processing test data:  49%|████▉     | 246/500 [10:12:41<10:30:40, 148.98s/entry]✅ No duplicate for test entry 246
+Processing test data:  49%|████▉     | 247/500 [10:15:10<10:28:25, 149.03s/entry]✅ No duplicate for test entry 247
+Processing test data:  50%|████▉     | 248/500 [10:17:39<10:25:18, 148.88s/entry]✅ No duplicate for test entry 248
+Processing test data:  50%|████▉     | 249/500 [10:20:07<10:22:36, 148.83s/entry]✅ No duplicate for test entry 249
+Processing test data:  50%|█████     | 250/500 [10:22:36<10:19:56, 148.78s/entry]✅ No duplicate for test entry 250
+Processing test data:  50%|█████     | 251/500 [10:25:05<10:17:26, 148.78s/entry]✅ No duplicate for test entry 251
+Processing test data:  50%|█████     | 252/500 [10:27:34<10:14:56, 148.77s/entry]✅ No duplicate for test entry 252
+Processing test data:  51%|█████     | 253/500 [10:30:02<10:12:14, 148.72s/entry]✅ No duplicate for test entry 253
+Processing test data:  51%|█████     | 254/500 [10:32:31<10:09:37, 148.69s/entry]✅ No duplicate for test entry 254
+Processing test data:  51%|█████     | 255/500 [10:35:00<10:07:14, 148.71s/entry]✅ No duplicate for test entry 255
+Processing test data:  51%|█████     | 256/500 [10:37:29<10:04:58, 148.76s/entry]✅ No duplicate for test entry 256
+Processing test data:  51%|█████▏    | 257/500 [10:39:57<10:02:25, 148.75s/entry]✅ No duplicate for test entry 257
+Processing test data:  52%|█████▏    | 258/500 [10:42:26<9:59:56, 148.75s/entry] ✅ No duplicate for test entry 258
+Processing test data:  52%|█████▏    | 259/500 [10:44:55<9:57:28, 148.75s/entry]✅ No duplicate for test entry 259
+Processing test data:  52%|█████▏    | 260/500 [10:47:24<9:55:15, 148.81s/entry]✅ No duplicate for test entry 260
+Processing test data:  52%|█████▏    | 261/500 [10:49:53<9:52:52, 148.84s/entry]✅ No duplicate for test entry 261
+Processing test data:  52%|█████▏    | 262/500 [10:52:21<9:49:51, 148.70s/entry]✅ No duplicate for test entry 262
+Processing test data:  53%|█████▎    | 263/500 [10:54:50<9:47:22, 148.70s/entry]✅ No duplicate for test entry 263
+Processing test data:  53%|█████▎    | 264/500 [10:57:19<9:45:08, 148.76s/entry]✅ No duplicate for test entry 264
+Processing test data:  53%|█████▎    | 265/500 [10:59:48<9:43:00, 148.85s/entry]✅ No duplicate for test entry 265
+Processing test data:  53%|█████▎    | 266/500 [11:02:16<9:39:57, 148.71s/entry]✅ No duplicate for test entry 266
+Processing test data:  53%|█████▎    | 267/500 [11:04:45<9:37:40, 148.76s/entry]✅ No duplicate for test entry 267
+Processing test data:  54%|█████▎    | 268/500 [11:07:14<9:35:35, 148.86s/entry]✅ No duplicate for test entry 268
+Processing test data:  54%|█████▍    | 269/500 [11:09:43<9:33:16, 148.90s/entry]✅ No duplicate for test entry 269
+Processing test data:  54%|█████▍    | 270/500 [11:12:12<9:30:27, 148.82s/entry]✅ No duplicate for test entry 270
+Processing test data:  54%|█████▍    | 271/500 [11:14:40<9:27:46, 148.76s/entry]✅ No duplicate for test entry 271
+Processing test data:  54%|█████▍    | 272/500 [11:17:09<9:25:18, 148.77s/entry]✅ No duplicate for test entry 272
+Processing test data:  55%|█████▍    | 273/500 [11:19:38<9:23:07, 148.84s/entry]✅ No duplicate for test entry 273
+Processing test data:  55%|█████▍    | 274/500 [11:22:07<9:20:30, 148.81s/entry]✅ No duplicate for test entry 274
+Processing test data:  55%|█████▌    | 275/500 [11:24:36<9:18:06, 148.83s/entry]✅ No duplicate for test entry 275
+Processing test data:  55%|█████▌    | 276/500 [11:27:04<9:15:05, 148.69s/entry]✅ No duplicate for test entry 276
+Processing test data:  55%|█████▌    | 277/500 [11:29:33<9:13:02, 148.80s/entry]✅ No duplicate for test entry 277
+Processing test data:  56%|█████▌    | 278/500 [11:32:02<9:10:12, 148.70s/entry]✅ No duplicate for test entry 278
+Processing test data:  56%|█████▌    | 279/500 [11:34:30<9:07:49, 148.73s/entry]✅ No duplicate for test entry 279
+Processing test data:  56%|█████▌    | 280/500 [11:37:00<9:06:29, 149.04s/entry]✅ No duplicate for test entry 280
+Processing test data:  56%|█████▌    | 281/500 [11:39:29<9:04:04, 149.06s/entry]✅ No duplicate for test entry 281
+Processing test data:  56%|█████▋    | 282/500 [11:41:58<9:01:24, 149.01s/entry]✅ No duplicate for test entry 282
+Processing test data:  57%|█████▋    | 283/500 [11:44:27<8:58:33, 148.91s/entry]✅ No duplicate for test entry 283
+Processing test data:  57%|█████▋    | 284/500 [11:46:55<8:55:35, 148.78s/entry]✅ No duplicate for test entry 284
+Processing test data:  57%|█████▋    | 285/500 [11:49:24<8:52:54, 148.72s/entry]✅ No duplicate for test entry 285
+Processing test data:  57%|█████▋    | 286/500 [11:51:53<8:50:32, 148.75s/entry]✅ No duplicate for test entry 286
+Processing test data:  57%|█████▋    | 287/500 [11:54:21<8:47:57, 148.72s/entry]✅ No duplicate for test entry 287
+Processing test data:  58%|█████▊    | 288/500 [11:56:50<8:45:57, 148.86s/entry]✅ No duplicate for test entry 288
+Processing test data:  58%|█████▊    | 289/500 [11:59:19<8:43:25, 148.84s/entry]✅ No duplicate for test entry 289
+Processing test data:  58%|█████▊    | 290/500 [12:01:48<8:40:42, 148.78s/entry]✅ No duplicate for test entry 290
+Processing test data:  58%|█████▊    | 291/500 [12:04:16<8:37:40, 148.62s/entry]✅ No duplicate for test entry 291
+Processing test data:  58%|█████▊    | 292/500 [12:06:45<8:35:43, 148.77s/entry]✅ No duplicate for test entry 292
+Processing test data:  59%|█████▊    | 293/500 [12:09:15<8:33:49, 148.93s/entry]✅ No duplicate for test entry 293
+Processing test data:  59%|█████▉    | 294/500 [12:11:44<8:31:42, 149.04s/entry]✅ No duplicate for test entry 294
+Processing test data:  59%|█████▉    | 295/500 [12:14:13<8:29:07, 149.01s/entry]✅ No duplicate for test entry 295
+Processing test data:  59%|█████▉    | 296/500 [12:16:42<8:26:19, 148.92s/entry]✅ No duplicate for test entry 296
+Processing test data:  59%|█████▉    | 297/500 [12:19:11<8:24:07, 149.00s/entry]✅ No duplicate for test entry 297
+Processing test data:  60%|█████▉    | 298/500 [12:21:40<8:21:28, 148.95s/entry]✅ No duplicate for test entry 298
+Processing test data:  60%|█████▉    | 299/500 [12:24:08<8:18:01, 148.66s/entry]✅ No duplicate for test entry 299
+Processing test data:  60%|██████    | 300/500 [12:26:36<8:15:25, 148.63s/entry]✅ No duplicate for test entry 300
+Processing test data:  60%|██████    | 301/500 [12:29:04<8:12:42, 148.56s/entry]✅ No duplicate for test entry 301
+Processing test data:  60%|██████    | 302/500 [12:31:33<8:10:07, 148.52s/entry]✅ No duplicate for test entry 302
+Processing test data:  61%|██████    | 303/500 [12:34:02<8:07:57, 148.62s/entry]✅ No duplicate for test entry 303
+Processing test data:  61%|██████    | 304/500 [12:36:31<8:06:10, 148.83s/entry]✅ No duplicate for test entry 304
+Processing test data:  61%|██████    | 305/500 [12:39:00<8:03:57, 148.91s/entry]✅ No duplicate for test entry 305
+Processing test data:  61%|██████    | 306/500 [12:41:30<8:01:55, 149.05s/entry]✅ No duplicate for test entry 306
+Processing test data:  61%|██████▏   | 307/500 [12:43:59<8:00:03, 149.24s/entry]✅ No duplicate for test entry 307
+Processing test data:  62%|██████▏   | 308/500 [12:46:28<7:57:24, 149.19s/entry]✅ No duplicate for test entry 308
+Processing test data:  62%|██████▏   | 309/500 [12:48:57<7:54:23, 149.03s/entry]✅ No duplicate for test entry 309
+Processing test data:  62%|██████▏   | 310/500 [12:51:25<7:51:13, 148.81s/entry]✅ No duplicate for test entry 310
+Processing test data:  62%|██████▏   | 311/500 [12:53:54<7:48:36, 148.76s/entry]✅ No duplicate for test entry 311
+Processing test data:  62%|██████▏   | 312/500 [12:56:22<7:45:53, 148.69s/entry]✅ No duplicate for test entry 312
+Processing test data:  63%|██████▎   | 313/500 [12:58:51<7:43:19, 148.66s/entry]✅ No duplicate for test entry 313
+Processing test data:  63%|██████▎   | 314/500 [13:01:20<7:41:06, 148.74s/entry]✅ No duplicate for test entry 314
+Processing test data:  63%|██████▎   | 315/500 [13:03:49<7:38:58, 148.86s/entry]✅ No duplicate for test entry 315
+Processing test data:  63%|██████▎   | 316/500 [13:06:18<7:36:27, 148.84s/entry]✅ No duplicate for test entry 316
+Processing test data:  63%|██████▎   | 317/500 [13:08:47<7:34:18, 148.96s/entry]✅ No duplicate for test entry 317
+Processing test data:  64%|██████▎   | 318/500 [13:11:16<7:32:05, 149.04s/entry]✅ No duplicate for test entry 318
+Processing test data:  64%|██████▍   | 319/500 [13:13:46<7:29:42, 149.07s/entry]✅ No duplicate for test entry 319
+Processing test data:  64%|██████▍   | 320/500 [13:16:14<7:26:53, 148.96s/entry]✅ No duplicate for test entry 320
+Processing test data:  64%|██████▍   | 321/500 [13:18:43<7:23:57, 148.81s/entry]✅ No duplicate for test entry 321
+Processing test data:  64%|██████▍   | 322/500 [13:21:11<7:21:01, 148.66s/entry]✅ No duplicate for test entry 322
+Processing test data:  65%|██████▍   | 323/500 [13:23:39<7:17:51, 148.43s/entry]✅ No duplicate for test entry 323
+Processing test data:  65%|██████▍   | 324/500 [13:26:07<7:15:02, 148.31s/entry]✅ No duplicate for test entry 324
+Processing test data:  65%|██████▌   | 325/500 [13:28:35<7:12:49, 148.40s/entry]✅ No duplicate for test entry 325
+Processing test data:  65%|██████▌   | 326/500 [13:31:04<7:10:28, 148.44s/entry]✅ No duplicate for test entry 326
+Processing test data:  65%|██████▌   | 327/500 [13:33:32<7:07:45, 148.36s/entry]✅ No duplicate for test entry 327
+Processing test data:  66%|██████▌   | 328/500 [13:36:01<7:05:25, 148.40s/entry]✅ No duplicate for test entry 328
+Processing test data:  66%|██████▌   | 329/500 [13:38:30<7:03:41, 148.66s/entry]✅ No duplicate for test entry 329
+Processing test data:  66%|██████▌   | 330/500 [13:40:59<7:01:28, 148.75s/entry]✅ No duplicate for test entry 330
+Processing test data:  66%|██████▌   | 331/500 [13:43:28<6:59:09, 148.81s/entry]✅ No duplicate for test entry 331
+Processing test data:  66%|██████▋   | 332/500 [13:45:57<6:56:45, 148.84s/entry]✅ No duplicate for test entry 332
+Processing test data:  67%|██████▋   | 333/500 [13:48:25<6:53:51, 148.69s/entry]✅ No duplicate for test entry 333
+Processing test data:  67%|██████▋   | 334/500 [13:50:54<6:51:14, 148.64s/entry]✅ No duplicate for test entry 334
+Processing test data:  67%|██████▋   | 335/500 [13:53:23<6:49:02, 148.74s/entry]✅ No duplicate for test entry 335
+Processing test data:  67%|██████▋   | 336/500 [13:55:52<6:47:01, 148.91s/entry]✅ No duplicate for test entry 336
+Processing test data:  67%|██████▋   | 337/500 [13:58:22<6:45:45, 149.36s/entry]✅ No duplicate for test entry 337
+Processing test data:  68%|██████▊   | 338/500 [14:00:51<6:42:42, 149.15s/entry]✅ No duplicate for test entry 338
+Processing test data:  68%|██████▊   | 339/500 [14:03:20<6:39:43, 148.97s/entry]✅ No duplicate for test entry 339
+Processing test data:  68%|██████▊   | 340/500 [14:05:48<6:36:55, 148.85s/entry]✅ No duplicate for test entry 340
+Processing test data:  68%|██████▊   | 341/500 [14:08:17<6:34:28, 148.86s/entry]✅ No duplicate for test entry 341
+Processing test data:  68%|██████▊   | 342/500 [14:10:46<6:31:43, 148.75s/entry]✅ No duplicate for test entry 342
+Processing test data:  69%|██████▊   | 343/500 [14:13:14<6:28:49, 148.60s/entry]✅ No duplicate for test entry 343
+Processing test data:  69%|██████▉   | 344/500 [14:15:42<6:26:09, 148.52s/entry]✅ No duplicate for test entry 344
+Processing test data:  69%|██████▉   | 345/500 [14:18:11<6:24:02, 148.66s/entry]✅ No duplicate for test entry 345
+Processing test data:  69%|██████▉   | 346/500 [14:20:40<6:21:53, 148.79s/entry]✅ No duplicate for test entry 346
+Processing test data:  69%|██████▉   | 347/500 [14:23:09<6:19:31, 148.83s/entry]✅ No duplicate for test entry 347
+Processing test data:  70%|██████▉   | 348/500 [14:25:38<6:17:08, 148.87s/entry]✅ No duplicate for test entry 348
+Processing test data:  70%|██████▉   | 349/500 [14:28:07<6:14:39, 148.87s/entry]✅ No duplicate for test entry 349
+Processing test data:  70%|███████   | 350/500 [14:30:36<6:12:34, 149.03s/entry]✅ No duplicate for test entry 350
+Processing test data:  70%|███████   | 351/500 [14:33:05<6:09:58, 148.98s/entry]✅ No duplicate for test entry 351
+Processing test data:  70%|███████   | 352/500 [14:35:35<6:07:48, 149.11s/entry]✅ No duplicate for test entry 352
+Processing test data:  71%|███████   | 353/500 [14:38:04<6:05:22, 149.13s/entry]✅ No duplicate for test entry 353
+Processing test data:  71%|███████   | 354/500 [14:40:33<6:02:35, 149.01s/entry]✅ No duplicate for test entry 354
+Processing test data:  71%|███████   | 355/500 [14:43:01<5:59:39, 148.83s/entry]✅ No duplicate for test entry 355
+Processing test data:  71%|███████   | 356/500 [14:45:30<5:57:00, 148.76s/entry]✅ No duplicate for test entry 356
+Processing test data:  71%|███████▏  | 357/500 [14:47:58<5:54:17, 148.66s/entry]✅ No duplicate for test entry 357
+Processing test data:  72%|███████▏  | 358/500 [14:50:27<5:51:48, 148.65s/entry]✅ No duplicate for test entry 358
+Processing test data:  72%|███████▏  | 359/500 [14:52:55<5:49:25, 148.69s/entry]✅ No duplicate for test entry 359
+Processing test data:  72%|███████▏  | 360/500 [14:55:24<5:46:57, 148.69s/entry]✅ No duplicate for test entry 360
+Processing test data:  72%|███████▏  | 361/500 [14:57:53<5:44:51, 148.86s/entry]✅ No duplicate for test entry 361
+Processing test data:  72%|███████▏  | 362/500 [15:00:22<5:42:17, 148.82s/entry]✅ No duplicate for test entry 362
+Processing test data:  73%|███████▎  | 363/500 [15:02:51<5:39:43, 148.78s/entry]✅ No duplicate for test entry 363
+Processing test data:  73%|███████▎  | 364/500 [15:05:19<5:37:02, 148.69s/entry]✅ No duplicate for test entry 364
+Processing test data:  73%|███████▎  | 365/500 [15:07:49<5:34:58, 148.88s/entry]✅ No duplicate for test entry 365
+Processing test data:  73%|███████▎  | 366/500 [15:10:18<5:32:53, 149.06s/entry]✅ No duplicate for test entry 366
+Processing test data:  73%|███████▎  | 367/500 [15:12:47<5:30:13, 148.97s/entry]✅ No duplicate for test entry 367
+Processing test data:  74%|███████▎  | 368/500 [15:15:16<5:27:36, 148.92s/entry]✅ No duplicate for test entry 368
+Processing test data:  74%|███████▍  | 369/500 [15:17:45<5:25:19, 149.01s/entry]✅ No duplicate for test entry 369
+Processing test data:  74%|███████▍  | 370/500 [15:20:14<5:22:53, 149.03s/entry]✅ No duplicate for test entry 370
+Processing test data:  74%|███████▍  | 371/500 [15:22:42<5:20:04, 148.87s/entry]✅ No duplicate for test entry 371
+Processing test data:  74%|███████▍  | 372/500 [15:25:11<5:17:28, 148.82s/entry]✅ No duplicate for test entry 372
+Processing test data:  75%|███████▍  | 373/500 [15:27:40<5:15:12, 148.92s/entry]✅ No duplicate for test entry 373
+Processing test data:  75%|███████▍  | 374/500 [15:30:09<5:12:41, 148.90s/entry]✅ No duplicate for test entry 374
+Processing test data:  75%|███████▌  | 375/500 [15:32:38<5:10:04, 148.84s/entry]✅ No duplicate for test entry 375
+Processing test data:  75%|███████▌  | 376/500 [15:35:07<5:07:47, 148.93s/entry]✅ No duplicate for test entry 376
+Processing test data:  75%|███████▌  | 377/500 [15:37:36<5:05:16, 148.91s/entry]✅ No duplicate for test entry 377
+Processing test data:  76%|███████▌  | 378/500 [15:40:04<5:02:17, 148.67s/entry]✅ No duplicate for test entry 378
+Processing test data:  76%|███████▌  | 379/500 [15:42:33<4:59:54, 148.71s/entry]✅ No duplicate for test entry 379
+Processing test data:  76%|███████▌  | 380/500 [15:45:01<4:57:12, 148.60s/entry]✅ No duplicate for test entry 380
+Processing test data:  76%|███████▌  | 381/500 [15:47:30<4:54:50, 148.66s/entry]✅ No duplicate for test entry 381
+Processing test data:  76%|███████▋  | 382/500 [15:49:59<4:52:49, 148.89s/entry]✅ No duplicate for test entry 382
+Processing test data:  77%|███████▋  | 383/500 [15:52:29<4:50:52, 149.17s/entry]✅ No duplicate for test entry 383
+Processing test data:  77%|███████▋  | 384/500 [15:54:58<4:48:25, 149.19s/entry]✅ No duplicate for test entry 384
+Processing test data:  77%|███████▋  | 385/500 [15:57:27<4:45:46, 149.10s/entry]✅ No duplicate for test entry 385
+Processing test data:  77%|███████▋  | 386/500 [15:59:56<4:43:18, 149.11s/entry]✅ No duplicate for test entry 386
+Processing test data:  77%|███████▋  | 387/500 [16:02:25<4:40:36, 149.00s/entry]✅ No duplicate for test entry 387
+Processing test data:  78%|███████▊  | 388/500 [16:04:54<4:37:53, 148.87s/entry]✅ No duplicate for test entry 388
+Processing test data:  78%|███████▊  | 389/500 [16:07:23<4:35:29, 148.91s/entry]✅ No duplicate for test entry 389
+Processing test data:  78%|███████▊  | 390/500 [16:09:51<4:32:47, 148.79s/entry]✅ No duplicate for test entry 390
+Processing test data:  78%|███████▊  | 391/500 [16:12:19<4:29:59, 148.62s/entry]✅ No duplicate for test entry 391
+Processing test data:  78%|███████▊  | 392/500 [16:14:48<4:27:23, 148.55s/entry]✅ No duplicate for test entry 392
+Processing test data:  79%|███████▊  | 393/500 [16:17:17<4:25:03, 148.63s/entry]✅ No duplicate for test entry 393
+Processing test data:  79%|███████▉  | 394/500 [16:19:46<4:22:55, 148.83s/entry]✅ No duplicate for test entry 394
+Processing test data:  79%|███████▉  | 395/500 [16:22:15<4:20:31, 148.87s/entry]✅ No duplicate for test entry 395
+Processing test data:  79%|███████▉  | 396/500 [16:24:46<4:19:05, 149.47s/entry]✅ No duplicate for test entry 396
+Processing test data:  79%|███████▉  | 397/500 [16:27:15<4:16:38, 149.50s/entry]✅ No duplicate for test entry 397
+Processing test data:  80%|███████▉  | 398/500 [16:29:44<4:13:53, 149.35s/entry]✅ No duplicate for test entry 398
+Processing test data:  80%|███████▉  | 399/500 [16:32:13<4:11:07, 149.18s/entry]✅ No duplicate for test entry 399
+Processing test data:  80%|████████  | 400/500 [16:34:42<4:08:20, 149.00s/entry]✅ No duplicate for test entry 400
+Processing test data:  80%|████████  | 401/500 [16:37:10<4:05:36, 148.85s/entry]✅ No duplicate for test entry 401
+Processing test data:  80%|████████  | 402/500 [16:39:39<4:03:19, 148.97s/entry]✅ No duplicate for test entry 402
+Processing test data:  81%|████████  | 403/500 [16:42:09<4:00:53, 149.01s/entry]✅ No duplicate for test entry 403
+Processing test data:  81%|████████  | 404/500 [16:44:37<3:58:10, 148.86s/entry]✅ No duplicate for test entry 404
+Processing test data:  81%|████████  | 405/500 [16:47:06<3:55:41, 148.85s/entry]✅ No duplicate for test entry 405
+Processing test data:  81%|████████  | 406/500 [16:49:35<3:53:09, 148.83s/entry]✅ No duplicate for test entry 406
+Processing test data:  81%|████████▏ | 407/500 [16:52:03<3:50:33, 148.75s/entry]✅ No duplicate for test entry 407
+Processing test data:  82%|████████▏ | 408/500 [16:54:32<3:48:06, 148.77s/entry]✅ No duplicate for test entry 408
+Processing test data:  82%|████████▏ | 409/500 [16:57:01<3:45:47, 148.87s/entry]✅ No duplicate for test entry 409
+Processing test data:  82%|████████▏ | 410/500 [16:59:30<3:43:21, 148.91s/entry]✅ No duplicate for test entry 410
+Processing test data:  82%|████████▏ | 411/500 [17:01:59<3:40:40, 148.77s/entry]✅ No duplicate for test entry 411
+Processing test data:  82%|████████▏ | 412/500 [17:04:28<3:38:22, 148.90s/entry]✅ No duplicate for test entry 412
+Processing test data:  83%|████████▎ | 413/500 [17:06:57<3:35:58, 148.94s/entry]✅ No duplicate for test entry 413
+Processing test data:  83%|████████▎ | 414/500 [17:09:25<3:33:12, 148.74s/entry]✅ No duplicate for test entry 414
+Processing test data:  83%|████████▎ | 415/500 [17:11:54<3:30:44, 148.76s/entry]✅ No duplicate for test entry 415
+Processing test data:  83%|████████▎ | 416/500 [17:14:23<3:28:28, 148.91s/entry]✅ No duplicate for test entry 416
+Processing test data:  83%|████████▎ | 417/500 [17:16:52<3:26:07, 149.00s/entry]✅ No duplicate for test entry 417
+Processing test data:  84%|████████▎ | 418/500 [17:19:22<3:23:46, 149.10s/entry]✅ No duplicate for test entry 418
+Processing test data:  84%|████████▍ | 419/500 [17:21:50<3:21:06, 148.97s/entry]✅ No duplicate for test entry 419
+Processing test data:  84%|████████▍ | 420/500 [17:24:19<3:18:33, 148.91s/entry]✅ No duplicate for test entry 420
+Processing test data:  84%|████████▍ | 421/500 [17:26:48<3:16:05, 148.94s/entry]✅ No duplicate for test entry 421
+Processing test data:  84%|████████▍ | 422/500 [17:29:17<3:13:42, 149.00s/entry]✅ No duplicate for test entry 422
+Processing test data:  85%|████████▍ | 423/500 [17:31:46<3:11:05, 148.90s/entry]✅ No duplicate for test entry 423
+Processing test data:  85%|████████▍ | 424/500 [17:34:14<3:08:26, 148.78s/entry]✅ No duplicate for test entry 424
+Processing test data:  85%|████████▌ | 425/500 [17:36:44<3:06:06, 148.88s/entry]✅ No duplicate for test entry 425
+Processing test data:  85%|████████▌ | 426/500 [17:39:12<3:03:37, 148.88s/entry]✅ No duplicate for test entry 426
+Processing test data:  85%|████████▌ | 427/500 [17:41:41<3:00:57, 148.74s/entry]✅ No duplicate for test entry 427
+Processing test data:  86%|████████▌ | 428/500 [17:44:10<2:58:31, 148.77s/entry]✅ No duplicate for test entry 428
+Processing test data:  86%|████████▌ | 429/500 [17:46:39<2:56:13, 148.92s/entry]✅ No duplicate for test entry 429
+Processing test data:  86%|████████▌ | 430/500 [17:49:08<2:53:43, 148.91s/entry]✅ No duplicate for test entry 430
+Processing test data:  86%|████████▌ | 431/500 [17:51:36<2:50:59, 148.68s/entry]✅ No duplicate for test entry 431
+Processing test data:  86%|████████▋ | 432/500 [17:54:05<2:48:36, 148.78s/entry]✅ No duplicate for test entry 432
+Processing test data:  87%|████████▋ | 433/500 [17:56:34<2:46:14, 148.88s/entry]✅ No duplicate for test entry 433
+Processing test data:  87%|████████▋ | 434/500 [17:59:03<2:43:44, 148.86s/entry]✅ No duplicate for test entry 434
+Processing test data:  87%|████████▋ | 435/500 [18:01:32<2:41:12, 148.81s/entry]✅ No duplicate for test entry 435
+Processing test data:  87%|████████▋ | 436/500 [18:04:01<2:38:46, 148.85s/entry]✅ No duplicate for test entry 436
+Processing test data:  87%|████████▋ | 437/500 [18:06:31<2:36:39, 149.20s/entry]✅ No duplicate for test entry 437
+Processing test data:  88%|████████▊ | 438/500 [18:09:01<2:34:41, 149.70s/entry]✅ No duplicate for test entry 438
+Processing test data:  88%|████████▊ | 439/500 [18:11:32<2:32:22, 149.88s/entry]✅ No duplicate for test entry 439
+Processing test data:  88%|████████▊ | 440/500 [18:14:02<2:30:05, 150.10s/entry]✅ No duplicate for test entry 440
+Processing test data:  88%|████████▊ | 441/500 [18:16:33<2:27:41, 150.19s/entry]✅ No duplicate for test entry 441
+Processing test data:  88%|████████▊ | 442/500 [18:19:03<2:25:11, 150.20s/entry]✅ No duplicate for test entry 442
+Processing test data:  89%|████████▊ | 443/500 [18:21:33<2:22:42, 150.21s/entry]✅ No duplicate for test entry 443
+Processing test data:  89%|████████▉ | 444/500 [18:24:04<2:20:20, 150.37s/entry]✅ No duplicate for test entry 444
+Processing test data:  89%|████████▉ | 445/500 [18:26:36<2:18:13, 150.79s/entry]✅ No duplicate for test entry 445
+Processing test data:  89%|████████▉ | 446/500 [18:29:06<2:15:34, 150.64s/entry]✅ No duplicate for test entry 446
+Processing test data:  89%|████████▉ | 447/500 [18:31:37<2:13:11, 150.79s/entry]✅ No duplicate for test entry 447
+Processing test data:  90%|████████▉ | 448/500 [18:34:08<2:10:42, 150.81s/entry]✅ No duplicate for test entry 448
+Processing test data:  90%|████████▉ | 449/500 [18:36:38<2:07:54, 150.48s/entry]✅ No duplicate for test entry 449
+Processing test data:  90%|█████████ | 450/500 [18:39:07<2:04:59, 149.98s/entry]✅ No duplicate for test entry 450
+Processing test data:  90%|█████████ | 451/500 [18:41:35<2:02:05, 149.50s/entry]✅ No duplicate for test entry 451
+Processing test data:  90%|█████████ | 452/500 [18:44:04<1:59:26, 149.31s/entry]✅ No duplicate for test entry 452
+Processing test data:  91%|█████████ | 453/500 [18:46:33<1:56:53, 149.22s/entry]✅ No duplicate for test entry 453
+Processing test data:  91%|█████████ | 454/500 [18:49:02<1:54:25, 149.25s/entry]✅ No duplicate for test entry 454
+Processing test data:  91%|█████████ | 455/500 [18:51:31<1:51:45, 149.01s/entry]✅ No duplicate for test entry 455
+Processing test data:  91%|█████████ | 456/500 [18:54:00<1:49:17, 149.03s/entry]✅ No duplicate for test entry 456
+Processing test data:  91%|█████████▏| 457/500 [18:56:29<1:46:50, 149.07s/entry]✅ No duplicate for test entry 457
+Processing test data:  92%|█████████▏| 458/500 [18:58:58<1:44:18, 149.01s/entry]✅ No duplicate for test entry 458
+Processing test data:  92%|█████████▏| 459/500 [19:01:27<1:41:48, 149.00s/entry]✅ No duplicate for test entry 459
+Processing test data:  92%|█████████▏| 460/500 [19:03:55<1:39:15, 148.88s/entry]✅ No duplicate for test entry 460
+Processing test data:  92%|█████████▏| 461/500 [19:06:24<1:36:42, 148.77s/entry]✅ No duplicate for test entry 461
+Processing test data:  92%|█████████▏| 462/500 [19:08:52<1:34:11, 148.72s/entry]✅ No duplicate for test entry 462
+Processing test data:  93%|█████████▎| 463/500 [19:11:21<1:31:41, 148.70s/entry]✅ No duplicate for test entry 463
+Processing test data:  93%|█████████▎| 464/500 [19:13:50<1:29:18, 148.85s/entry]✅ No duplicate for test entry 464
+Processing test data:  93%|█████████▎| 465/500 [19:16:19<1:26:48, 148.82s/entry]✅ No duplicate for test entry 465
+Processing test data:  93%|█████████▎| 466/500 [19:18:48<1:24:19, 148.81s/entry]✅ No duplicate for test entry 466
+Processing test data:  93%|█████████▎| 467/500 [19:21:17<1:21:52, 148.85s/entry]✅ No duplicate for test entry 467
+Processing test data:  94%|█████████▎| 468/500 [19:23:46<1:19:25, 148.92s/entry]✅ No duplicate for test entry 468
+Processing test data:  94%|█████████▍| 469/500 [19:26:14<1:16:52, 148.78s/entry]✅ No duplicate for test entry 469
+Processing test data:  94%|█████████▍| 470/500 [19:28:43<1:14:25, 148.87s/entry]✅ No duplicate for test entry 470
+Processing test data:  94%|█████████▍| 471/500 [19:31:12<1:11:58, 148.91s/entry]✅ No duplicate for test entry 471
+Processing test data:  94%|█████████▍| 472/500 [19:33:41<1:09:28, 148.87s/entry]✅ No duplicate for test entry 472
+Processing test data:  95%|█████████▍| 473/500 [19:36:10<1:06:59, 148.86s/entry]✅ No duplicate for test entry 473
+Processing test data:  95%|█████████▍| 474/500 [19:38:39<1:04:34, 149.02s/entry]✅ No duplicate for test entry 474
+Processing test data:  95%|█████████▌| 475/500 [19:41:09<1:02:07, 149.09s/entry]✅ No duplicate for test entry 475
+Processing test data:  95%|█████████▌| 476/500 [19:43:37<59:35, 148.98s/entry]  ✅ No duplicate for test entry 476
+Processing test data:  95%|█████████▌| 477/500 [19:46:06<57:07, 149.01s/entry]✅ No duplicate for test entry 477
+Processing test data:  96%|█████████▌| 478/500 [19:48:36<54:39, 149.08s/entry]✅ No duplicate for test entry 478
+Processing test data:  96%|█████████▌| 479/500 [19:51:04<52:08, 148.98s/entry]✅ No duplicate for test entry 479
+Processing test data:  96%|█████████▌| 480/500 [19:53:33<49:37, 148.90s/entry]✅ No duplicate for test entry 480
+Processing test data:  96%|█████████▌| 481/500 [19:56:02<47:09, 148.93s/entry]✅ No duplicate for test entry 481
+Processing test data:  96%|█████████▋| 482/500 [19:58:31<44:40, 148.93s/entry]✅ No duplicate for test entry 482
+Processing test data:  97%|█████████▋| 483/500 [20:01:00<42:09, 148.79s/entry]✅ No duplicate for test entry 483
+Processing test data:  97%|█████████▋| 484/500 [20:03:28<39:41, 148.82s/entry]✅ No duplicate for test entry 484
+Processing test data:  97%|█████████▋| 485/500 [20:05:58<37:13, 148.91s/entry]✅ No duplicate for test entry 485
+Processing test data:  97%|█████████▋| 486/500 [20:08:27<34:45, 148.97s/entry]✅ No duplicate for test entry 486
+Processing test data:  97%|█████████▋| 487/500 [20:10:56<32:16, 148.94s/entry]✅ No duplicate for test entry 487
+Processing test data:  98%|█████████▊| 488/500 [20:13:25<29:47, 148.97s/entry]✅ No duplicate for test entry 488
+Processing test data:  98%|█████████▊| 489/500 [20:15:54<27:19, 149.02s/entry]✅ No duplicate for test entry 489
+Processing test data:  98%|█████████▊| 490/500 [20:18:23<24:50, 149.04s/entry]✅ No duplicate for test entry 490
+Processing test data:  98%|█████████▊| 491/500 [20:20:52<22:21, 149.01s/entry]✅ No duplicate for test entry 491
+Processing test data:  98%|█████████▊| 492/500 [20:23:20<19:51, 148.93s/entry]✅ No duplicate for test entry 492
+Processing test data:  99%|█████████▊| 493/500 [20:25:49<17:21, 148.81s/entry]✅ No duplicate for test entry 493
+Processing test data:  99%|█████████▉| 494/500 [20:28:18<14:53, 148.96s/entry]✅ No duplicate for test entry 494
+Processing test data:  99%|█████████▉| 495/500 [20:30:48<12:25, 149.04s/entry]✅ No duplicate for test entry 495
+Processing test data:  99%|█████████▉| 496/500 [20:33:16<09:56, 149.01s/entry]✅ No duplicate for test entry 496
+Processing test data:  99%|█████████▉| 497/500 [20:35:45<07:26, 148.97s/entry]✅ No duplicate for test entry 497
+Processing test data: 100%|█████████▉| 498/500 [20:38:14<04:57, 148.82s/entry]✅ No duplicate for test entry 498
+Processing test data: 100%|█████████▉| 499/500 [20:40:42<02:28, 148.73s/entry]✅ No duplicate for test entry 499
+Processing test data: 100%|██████████| 500/500 [20:43:11<00:00, 148.57s/entry]Processing test data: 100%|██████████| 500/500 [20:43:11<00:00, 149.18s/entry]
+Saving filtered data...
+✅ 去重后的数据已保存到: /home/yxma/hzx/hzx/LeLLM/LawBench/data/zero_shot/3-1_filtered.json

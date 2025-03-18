@@ -1,0 +1,21 @@
+{"time":"2025-02-15T23:23:04.021411389+11:00","level":"INFO","msg":"stream: starting","core version":"0.19.6","symlink path":"/home/yxma/hzx/hzx/LeLLM/wandb/run-20250215_232303-nxchpdf7/logs/debug-core.log"}
+{"time":"2025-02-15T23:23:04.326601695+11:00","level":"INFO","msg":"created new stream","id":"nxchpdf7"}
+{"time":"2025-02-15T23:23:04.326643041+11:00","level":"INFO","msg":"stream: started","id":"nxchpdf7"}
+{"time":"2025-02-15T23:23:04.326707854+11:00","level":"INFO","msg":"writer: Do: started","stream_id":"nxchpdf7"}
+{"time":"2025-02-15T23:23:04.326750876+11:00","level":"INFO","msg":"sender: started","stream_id":"nxchpdf7"}
+{"time":"2025-02-15T23:23:04.326829099+11:00","level":"INFO","msg":"handler: started","stream_id":"nxchpdf7"}
+{"time":"2025-02-15T23:23:07.638087914+11:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-02-17T03:39:18.348112626+11:00","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/files/xuan_LeLLM/LegalLLM-Test-m13/nxchpdf7/file_stream\": EOF"}
+{"time":"2025-02-18T00:37:57.659565239+11:00","level":"ERROR","msg":"writer: startStore: error storing record: store: can't write proto: write /home/yxma/hzx/hzx/LeLLM/wandb/run-20250215_232303-nxchpdf7/run-nxchpdf7.wandb: disk quota exceeded"}
+{"time":"2025-02-18T00:37:57.6608791+11:00","level":"ERROR","msg":"writer: startStore: error storing record: store: can't get next record: write /home/yxma/hzx/hzx/LeLLM/wandb/run-20250215_232303-nxchpdf7/run-nxchpdf7.wandb: disk quota exceeded"}
+{"time":"2025-02-18T00:38:07.63957754+11:00","level":"ERROR","msg":"writer: startStore: error storing record: store: can't get next record: write /home/yxma/hzx/hzx/LeLLM/wandb/run-20250215_232303-nxchpdf7/run-nxchpdf7.wandb: disk quota exceeded"}
+{"time":"2025-02-18T00:38:07.639654366+11:00","level":"ERROR","msg":"writer: startStore: error storing record: store: can't get next record: write /home/yxma/hzx/hzx/LeLLM/wandb/run-20250215_232303-nxchpdf7/run-nxchpdf7.wandb: disk quota exceeded"}
+{"time":"2025-02-18T00:38:07.640626003+11:00","level":"ERROR","msg":"writer: startStore: error storing record: store: can't get next record: write /home/yxma/hzx/hzx/LeLLM/wandb/run-20250215_232303-nxchpdf7/run-nxchpdf7.wandb: disk quota exceeded"}
+{"time":"2025-02-18T00:38:07.660821407+11:00","level":"ERROR","msg":"writer: startStore: error storing record: store: can't get next record: write /home/yxma/hzx/hzx/LeLLM/wandb/run-20250215_232303-nxchpdf7/run-nxchpdf7.wandb: disk quota exceeded"}
+{"time":"2025-02-18T00:38:07.723060631+11:00","level":"ERROR","msg":"writer: startStore: error storing record: store: can't get next record: write /home/yxma/hzx/hzx/LeLLM/wandb/run-20250215_232303-nxchpdf7/run-nxchpdf7.wandb: disk quota exceeded"}
+{"time":"2025-02-18T00:38:08.110780266+11:00","level":"ERROR","msg":"writer: startStore: error storing record: store: can't get next record: write /home/yxma/hzx/hzx/LeLLM/wandb/run-20250215_232303-nxchpdf7/run-nxchpdf7.wandb: disk quota exceeded"}
+{"time":"2025-02-18T00:38:17.639175109+11:00","level":"ERROR","msg":"writer: startStore: error storing record: store: can't get next record: write /home/yxma/hzx/hzx/LeLLM/wandb/run-20250215_232303-nxchpdf7/run-nxchpdf7.wandb: disk quota exceeded"}
+{"time":"2025-02-18T00:38:17.639272608+11:00","level":"ERROR","msg":"writer: startStore: error storing record: store: can't get next record: write /home/yxma/hzx/hzx/LeLLM/wandb/run-20250215_232303-nxchpdf7/run-nxchpdf7.wandb: disk quota exceeded"}
+{"time":"2025-02-18T00:38:17.640110428+11:00","level":"ERROR","msg":"writer: startStore: error storing record: store: can't get next record: write /home/yxma/hzx/hzx/LeLLM/wandb/run-20250215_232303-nxchpdf7/run-nxchpdf7.wandb: disk quota exceeded"}
+{"time":"2025-02-18T00:38:17.658163091+11:00","level":"ERROR","msg":"writer: startStore: error storing record: store: can't get next record: write /home/yxma/hzx/hzx/LeLLM/wandb/run-20250215_232303-nxchpdf7/run-nxchpdf7.wandb: disk quota exceeded"}
+{"time":"2025-02-18T00:38:17.660917924+11:00","level":"ERROR","msg":"writer: startS

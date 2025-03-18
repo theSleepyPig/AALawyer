@@ -1,0 +1,92 @@
+Process ID: 1902784
+Downloading Model to directory: /home/yxma/.cache/modelscope/hub/wisdomOcean/wisdomInterrogatory
+2025-02-13 20:54:30,139 - modelscope - INFO - Use user-specified model revision: v1.0.0
+2025-02-13 20:54:30,708 - modelscope - INFO - Got 18 files, start to download ...
+Downloading [all_results.json]: 100%|████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 401/401 [00:05<00:00, 70.3B/s]
+Downloading [configuration_baichuan.py]: 100%|████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 2.29k/2.29k [00:06<00:00, 382B/s]
+Downloading [modeling_baichuan.py]: 100%|███████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 27.9k/27.9k [00:06<00:00, 4.60kB/s]
+Downloading [generation_config.json]: 100%|██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 132/132 [00:09<00:00, 14.1B/s]
+Downloading [configuration.json]: 100%|████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 76.0/76.0 [00:11<00:00, 6.34B/s]
+Downloading [special_tokens_map.json]: 100%|██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 411/411 [00:03<00:00, 127B/s]
+Processing 18 items:  28%|██████████████████████████████████████▉                                                                                                     | 5.00/18.0 [00:14<00:36, 2.80s/it]
+Traceback (most recent call last):100%|████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 76.0/76.0 [00:11<00:00, 6.34B/s]
+  File "/home/yxma/anaconda3/envs/llm/lib/python3.9/site-packages/modelscope/utils/thread_utils.py", line 64, in wrapper                                                     | 0.00/9.35k [00:00<?, ?B/s]
+    for future in as_completed(futures):
+  File "/home/yxma/anaconda3/envs/llm/lib/python3.9/concurrent/futures/_base.py", line 245, in as_completed
+    waiter.event.wait(wait_timeout)]: 100%|██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 132/132 [00:09<00:00, 14.1B/s]
+  File "/home/yxma/anaconda3/envs/llm/lib/python3.9/threading.py", line 581, in wait                                                                                           | 0.00/411 [00:00<?, ?B/s]
+    signaled = self._cond.wait(timeout)100%|██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 411/411 [00:03<00:00, 127B/s]
+  File "/home/yxma/anaconda3/envs/llm/lib/python3.9/threading.py", line 312, in wait                                                                                         | 0.00/1.08M [00:00<?, ?B/s]
+    waiter.acquire()
+KeyboardInterrupt
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/yxma/hzx/hzx/LeLLM/LLaMA-Factory/a/evawisdom.py", line 37, in <module>
+    model_dir = snapshot_download(model_id, revision)
+  File "/home/yxma/anaconda3/envs/llm/lib/python3.9/site-packages/modelscope/hub/snapshot_download.py", line 109, in snapshot_download
+    return _snapshot_download(
+  File "/home/yxma/anaconda3/envs/llm/lib/python3.9/site-packages/modelscope/hub/snapshot_download.py", line 278, in _snapshot_download
+    _download_file_lists(
+  File "/home/yxma/anaconda3/envs/llm/lib/python3.9/site-packages/modelscope/hub/snapshot_download.py", line 519, in _download_file_lists
+    _download_single_file(filtered_repo_files)
+  File "/home/yxma/anaconda3/envs/llm/lib/python3.9/site-packages/modelscope/utils/thread_utils.py", line 66, in wrapper
+    results.append(future.result())
+  File "/home/yxma/anaconda3/envs/llm/lib/python3.9/concurrent/futures/_base.py", line 637, in __exit__
+    self.shutdown(wait=True)
+  File "/home/yxma/anaconda3/envs/llm/lib/python3.9/concurrent/futures/thread.py", line 235, in shutdown
+    t.join()
+  File "/home/yxma/anaconda3/envs/llm/lib/python3.9/threading.py", line 1060, in join
+    self._wait_for_tstate_lock()
+  File "/home/yxma/anaconda3/envs/llm/lib/python3.9/threading.py", line 1080, in _wait_for_tstate_lock
+    if lock.acquire(block, timeout):
+KeyboardInterrupt
+Traceback (most recent call last):
+  File "/home/yxma/anaconda3/envs/llm/lib/python3.9/site-packages/modelscope/utils/thread_utils.py", line 64, in wrapper
+    for future in as_completed(futures):
+  File "/home/yxma/anaconda3/envs/llm/lib/python3.9/concurrent/futures/_base.py", line 245, in as_completed
+    waiter.event.wait(wait_timeout)
+  File "/home/yxma/anaconda3/envs/llm/lib/python3.9/threading.py", line 581, in wait
+    signaled = self._cond.wait(timeout)
+  File "/home/yxma/anaconda3/envs/llm/lib/python3.9/threading.py", line 312, in wait
+    waiter.acquire()
+KeyboardInterrupt
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/yxma/hzx/hzx/LeLLM/LLaMA-Factory/a/evawisdom.py", line 37, in <module>
+    model_dir = snapshot_download(model_id, revision)
+  File "/home/yxma/anaconda3/envs/llm/lib/python3.9/site-packages/modelscope/hub/snapshot_download.py", line 109, in snapshot_download
+    return _snapshot_download(
+  File "/home/yxma/anaconda3/envs/llm/lib/python3.9/site-packages/modelscope/hub/snapshot_download.py", line 278, in _snapshot_download
+    _download_file_lists(
+  File "/home/yxma/anaconda3/envs/llm/lib/python3.9/site-packages/modelscope/hub/snapshot_download.py", line 519, in _download_file_lists
+    _download_single_file(filtered_repo_files)
+  File "/home/yxma/anaconda3/envs/llm/lib/python3.9/site-packages/modelscope/utils/thread_utils.py", line 66, in wrapper
+    results.append(future.result())
+  File "/home/yxma/anaconda3/envs/llm/lib/python3.9/concurrent/futures/_base.py", line 637, in __exit__
+    self.shutdown(wait=True)
+  File "/home/yxma/anaconda3/envs/llm/lib/python3.9/concurrent/futures/thread.py", line 235, in shutdown
+    t.join()
+  File "/home/yxma/anaconda3/envs/llm/lib/python3.9/threading.py", line 1060, in join
+    self._wait_for_tstate_lock()
+  File "/home/yxma/anaconda3/envs/llm/lib/python3.9/threading.py", line 1080, in _wait_for_tstate_lock
+    if lock.acquire(block, timeout):
+KeyboardInterrupt
+Downloading [README.md]: 100%|████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 2.54k/2.54k [00:14<00:00, 182B/s]
+Downloading [tokenizer.model]: 100%|█████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 1.08M/1.08M [00:09<00:00, 126kB/s]
+Downloading [tokenization_baichuan.py]: 100%|█████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 9.35k/9.35k [00:09<00:00, 959B/s]
+Downloading [train_results.json]: 100%|██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 196/196 [00:02<00:00, 86.2B/s]
+                                                                                                                                                                                                         Exception ignored in: <module 'threading' from '/home/yxma/anaconda3/envs/llm/lib/python3.9/threading.py'>
+Traceback (most recent call last):.py]: 100%|█████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 9.35k/9.35k [00:09<00:00, 959B/s]
+  File "/home/yxma/anaconda3/envs/llm/lib/python3.9/threading.py", line 1447, in _shutdown                                                                                   | 0.00/19.5k [00:00<?, ?B/s]
+    atexit_call()n_results.json]:   0%|                                                                                                                                        | 0.00/196 [00:00<?, ?B/s]
+  File "/home/yxma/anaconda3/envs/llm/lib/python3.9/concurrent/futures/thread.py", line 31, in _python_exit██████████████████████████████████████████████████████████████| 196/196 [00:02<00:00, 86.2B/s]
+    t.join()[training_args.bin]:   0%|                                                                                                                                       | 0.00/4.62k [00:00<?, ?B/s]
+  File "/home/yxma/anaconda3/envs/llm/lib/python3.9/threading.py", line 1060, in join
+    self._wait_for_tstate_lock()
+  File "/home/yxma/anaconda3/envs/llm/lib/python3.9/threading.py", line 1080, in _wait_for_tstate_lock
+    if lock.acquire(block, timeout):
+KeyboardInterrupt:

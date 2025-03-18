@@ -1,0 +1,14 @@
+Process ID: 3002552
+Model Path: /mnt/ssd_2/yxma/LeLLM/train_mergem13/
+Loading checkpoint shards: 100%|██████████| 9/9 [00:07<00:00,  1.16it/s]
+Processing 3-1 (zero_shot): 100%|██████████| 500/500 [5:38:00<00:00, 40.56s/case]  
+Processing 3-3 (zero_shot): 100%|██████████| 500/500 [5:27:11<00:00, 39.26s/case]  
+Processing 3-8 (zero_shot): 100%|██████████| 500/500 [5:35:20<00:00, 40.24s/case]  
+Processing 3-7 (zero_shot): 100%|██████████| 500/500 [5:38:04<00:00, 40.57s/case]  
+Processing 2-5 (zero_shot): 100%|██████████| 500/500 [5:31:24<00:00, 39.77s/case]  
+Processing 2-6 (zero_shot): 100%|██████████| 500/500 [4:35:29<00:00, 33.06s/case]  
+Processing 2-7 (zero_shot): 100%|██████████| 500/500 [2:05:03<00:00, 15.01s/case]  
+Processing 2-2 (zero_shot): 100%|██████████| 500/500 [5:42:07<00:00, 41.05s/case]  
+Processing 2-3 (zero_shot): 100%|██████████| 500/500 [1:54:32<00:00, 13.75s/case]  
+Processing 2-4 (zero_shot): 100%|██████████| 500/500 [4:05:13<00:00, 29.43s/case]  
+Processing 2-9 (zero_shot):  72%|███████▏  | 359/500 [3:19:40<55:02, 23.42s/case]  

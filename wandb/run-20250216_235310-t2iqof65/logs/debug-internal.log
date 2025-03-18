@@ -1,0 +1,15 @@
+{"time":"2025-02-16T23:53:11.145521706+11:00","level":"INFO","msg":"stream: starting","core version":"0.19.6","symlink path":"/home/yxma/hzx/hzx/LeLLM/wandb/run-20250216_235310-t2iqof65/logs/debug-core.log"}
+{"time":"2025-02-16T23:53:11.249757808+11:00","level":"INFO","msg":"created new stream","id":"t2iqof65"}
+{"time":"2025-02-16T23:53:11.249797199+11:00","level":"INFO","msg":"stream: started","id":"t2iqof65"}
+{"time":"2025-02-16T23:53:11.249859218+11:00","level":"INFO","msg":"sender: started","stream_id":"t2iqof65"}
+{"time":"2025-02-16T23:53:11.249900565+11:00","level":"INFO","msg":"handler: started","stream_id":"t2iqof65"}
+{"time":"2025-02-16T23:53:11.249844133+11:00","level":"INFO","msg":"writer: Do: started","stream_id":"t2iqof65"}
+{"time":"2025-02-16T23:53:14.582219092+11:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-02-17T01:54:06.93385099+11:00","level":"INFO","msg":"stream: closing","id":"t2iqof65"}
+{"time":"2025-02-17T01:54:06.933885911+11:00","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-02-17T01:54:06.934475375+11:00","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-02-17T01:54:07.714352239+11:00","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-02-17T01:54:07.962908848+11:00","level":"INFO","msg":"handler: closed","stream_id":"t2iqof65"}
+{"time":"2025-02-17T01:54:07.963015287+11:00","level":"INFO","msg":"writer: Close: closed","stream_id":"t2iqof65"}
+{"time":"2025-02-17T01:54:07.963035681+11:00","level":"INFO","msg":"sender: closed","stream_id":"t2iqof65"}
+{"time":"2025-02-17T01:54:07.963149942+11:00","level":"INFO","msg":"stream: closed","id":"t2iqof65"}

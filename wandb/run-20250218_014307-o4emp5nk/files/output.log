@@ -1,0 +1,4 @@
+Process ID: 348444
+Model Path: /mnt/ssd_2/yxma/LeLLM/train_mergem13/
+Loading checkpoint shards: 100%|██████████| 9/9 [00:13<00:00,  1.55s/it]
+Processing 2-9 (zero_shot): 100%|██████████| 500/500 [4:38:40<00:00, 33.44s/case]  

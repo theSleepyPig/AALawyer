@@ -1,0 +1,10 @@
+Process ID: 3741300
+Model Path: /mnt/ssd_2/yxma/LeLLM/train_mergem201/
+Loading checkpoint shards: 100%|██████████| 9/9 [00:16<00:00,  1.80s/it]
+Processing 3-1 (zero_shot): 100%|██████████| 500/500 [2:40:03<00:00, 19.21s/case]  
+Processing 3-3 (zero_shot): 100%|██████████| 500/500 [03:57<00:00,  2.11case/s] 
+Processing 3-8 (zero_shot): 100%|██████████| 500/500 [5:33:15<00:00, 39.99s/case]  
+Processing 3-7 (zero_shot): 100%|██████████| 500/500 [1:44:52<00:00, 12.58s/case]  
+Processing 2-5 (zero_shot): 100%|██████████| 500/500 [5:35:14<00:00, 40.23s/case]  
+Processing 2-6 (zero_shot): 100%|██████████| 500/500 [5:40:05<00:00, 40.81s/case]  
+Processing 2-7 (zero_shot):  66%|██████▌   | 329/500 [3:45:44<1:57:13, 41.13s/case]
