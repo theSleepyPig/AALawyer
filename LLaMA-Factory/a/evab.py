@@ -1,9 +1,9 @@
 # nohup python /home/yxma/hzx/hzx/LeLLM/LLaMA-Factory/a/evab.py \
-#     --experiment_id m13 \
-#     --device 0 \
+#     --experiment_id m22 \
+#     --device 1 \
 #     --mode zero_shot \
 #     --max_new_tokens 2048 \
-#     > evabash_zero_shot_m13.log 2>&1 &
+#     > evabash_zero_shot_m22.log 2>&1 &
 
 # nohup python /home/yxma/hzx/hzx/LeLLM/LLaMA-Factory/a/evab.py \
 #     --experiment_id m13 \
@@ -124,3 +124,4 @@ def test_model_from_json(json_file_path, output_folder, test_num):
 for task_num in task_list:
     json_file_path = os.path.join(json_base_path, f"{task_num}.json")
     test_model_from_json(json_file_path, output_base_folder, task_num)
+
