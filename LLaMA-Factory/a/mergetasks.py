@@ -3,11 +3,11 @@ import random
 
 # 输入文件路径
 input_files = [
-    "/mnt/ssd_2/yxma/LeLLM/data/data/data_train_sft/articles.json",
+    # "/mnt/ssd_2/yxma/LeLLM/data/data/data_train_sft/articles.json",
     "/mnt/ssd_2/yxma/LeLLM/data/data/data_train_sft/accusations.json",
-    # "/home/yxma/hzx/hzx/LeLLM/ckpt/data/data_train_sft/fines.json",
+    "/mnt/ssd_2/yxma/LeLLM/data/data/data_train_sft/fines.json",
     "/mnt/ssd_2/yxma/LeLLM/data/data/data_train_sft/criminals.json",
-    # "/home/yxma/hzx/hzx/LeLLM/ckpt/data/data_train_sft/sentences.json",
+    "/mnt/ssd_2/yxma/LeLLM/data/data/data_train_sft/sentences.json",
     # "/home/yxma/hzx/hzx/LeLLM/ckpt/data/DISC/DISC-Law-SFT-Pair_train.json",
     # "/home/yxma/hzx/hzx/LeLLM/ckpt/data/DISC/DISC-Law-SFT-Pair-QA-released_train.json",
     # "/home/yxma/hzx/hzx/LeLLM/ckpt/data/DISC/DISC-Law-SFT-Triplet-QA-released_train.json",
@@ -19,7 +19,7 @@ input_files = [
 ]
 
 # 输出文件路径
-output_file = "/mnt/ssd_2/yxma/LeLLM/data/data/data_train_sft/sftdata_m22.json"
+output_file = "/mnt/ssd_2/yxma/LeLLM/data/data/data_train_sft/sftdata_exclude_articles.json"
 
 # 存储所有数据
 merged_data = []

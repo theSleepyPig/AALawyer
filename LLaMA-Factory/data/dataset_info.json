@@ -5,6 +5,9 @@
   "nine_sft_tasks": {
     "file_name": "/mnt/ssd_2/yxma/LeLLM/data/data/data_train_sft/ninetasksdata.json"
   },
+  "ex_article_8sft_tasks": {
+    "file_name": "/mnt/ssd_2/yxma/LeLLM/data/data/data_train_sft/sftdata_exclude_articles.json"
+  },
   "pretrain": {
     "file_name": "/mnt/ssd_2/yxma/LeLLM/data/data/merge.json",
     "columns": {

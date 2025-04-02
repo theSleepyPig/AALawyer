@@ -6,80 +6,39 @@ from flask import Flask, request, render_template, jsonify
 from transformers import AutoModelForCausalLM, AutoTokenizer, MarianMTModel, MarianTokenizer
 import transformers
 
-import faiss
-import numpy as np
-from FlagEmbedding import FlagModel
-import os
-
-import multiprocessing as mp
-mp.set_start_method("spawn", force=True)
-
 # python app.py --model_path /mnt/ssd_2/yxma/LeLLM/train_mergem20
 
 # 解析参数
 parser = argparse.ArgumentParser(description="Interactive Chat with LLM")
 parser.add_argument("--model_path", type=str, required=True, help="Path to the local model")
-parser.add_argument("--device", type=str, default="cuda:0", help="CUDA devices to use (comma-separated)")
+parser.add_argument("--device", type=str, default="cuda:3", help="CUDA devices to use (comma-separated)")
 parser.add_argument("--max_new_tokens", type=int, default=2048, help="Maximum new tokens to generate")
 args = parser.parse_args()
 
-# os.environ["TOKENIZERS_PARALLELISM"] = "false"
-
 # 选择设备
-os.environ["CUDA_VISIBLE_DEVICES"] = "0"
 device = torch.device(args.device if torch.cuda.is_available() else "cpu")
 
-def initialize():
-    global model, tokenizer
-    global zh_to_en_model, zh_to_en_tokenizer
-    global law_data
-    global bge_model, faiss_index, index_ids, index_texts
+transformers.logging.set_verbosity_error()
 
-    transformers.logging.set_verbosity_error()
-    os.environ["TOKENIZERS_PARALLELISM"] = "false"
+print("Loading model on GPUs...")
+model = AutoModelForCausalLM.from_pretrained(
+    args.model_path, 
+    torch_dtype=torch.float16, 
+    device_map=device  
+)
+tokenizer = AutoTokenizer.from_pretrained(args.model_path)
 
-    print("Loading model on GPUs...")
-    model = AutoModelForCausalLM.from_pretrained(
-        args.model_path,
-        torch_dtype=torch.float16,
-        device_map=device
-    )
-    tokenizer = AutoTokenizer.from_pretrained(args.model_path)
-    
-    print("✅ 模型结构如下：")
-    print(model)
-    
+# 加载翻译模型
+print("Loading translation models...")
+zh_to_en_model = MarianMTModel.from_pretrained("/mnt/ssd_2/yxma/LeLLM/opus-mt-zh-en").to(device)
+zh_to_en_tokenizer = MarianTokenizer.from_pretrained("/mnt/ssd_2/yxma/LeLLM/opus-mt-zh-en")
 
-    print("Loading translation models...")
-    zh_to_en_model = MarianMTModel.from_pretrained("/mnt/ssd_2/yxma/LeLLM/opus-mt-zh-en").to(device)
-    zh_to_en_tokenizer = MarianTokenizer.from_pretrained("/mnt/ssd_2/yxma/LeLLM/opus-mt-zh-en")
+# 读取法条数据库
+law_file = "/mnt/ssd_2/yxma/LeLLM/data/data/RAGDatabase1.json"
+with open(law_file, "r", encoding="utf-8") as file:
+    law_data = json.load(file)
 
-    law_file = "/mnt/ssd_2/yxma/LeLLM/data/data/RAGDatabase1.json"
-    with open(law_file, "r", encoding="utf-8") as file:
-        law_data = json.load(file)
-    print("Law articles loaded successfully!")
-
-    print("Loading FAISS index and bge model...")
-    bge_model_path = "/mnt/ssd_2/yxma/LeLLM/bge-large-zh"
-    index_path = "/mnt/ssd_2/yxma/LeLLM/data/RAG2/legalCase_faiss.index"
-    id_path = "/mnt/ssd_2/yxma/LeLLM/data/RAG2/legalCase_ids.json"
-    text_path = "/mnt/ssd_2/yxma/LeLLM/data/data/merge.json"
-
-    bge_model = FlagModel(
-        bge_model_path,
-        query_instruction_for_retrieval="为这个句子生成表示：",
-        device="cuda:0",
-        use_multi_process=False
-    )
-
-    faiss_index = faiss.read_index(index_path)
-    with open(id_path, "r", encoding="utf-8") as f:
-        index_ids = json.load(f)
-    with open(text_path, "r", encoding="utf-8") as f:
-        index_records = json.load(f)
-    index_texts = [r["text"].strip() for r in index_records]
-
-    print("RAG-2 loaded successfully!")
+print("Law articles loaded successfully!")
 
 # 创建 Flask 应用
 app = Flask(__name__)
@@ -109,15 +68,10 @@ def generate_response(prompt):
     ]
     text = tokenizer.apply_chat_template(messages, tokenize=False, add_generation_prompt=True)
     model_inputs = tokenizer([text], return_tensors="pt").to(device)
-    
-    print(f"🔢 输入 token 数量: {model_inputs['input_ids'].shape[1]}")
-    print(f"✅ 模型最大输入 token 长度: {tokenizer.model_max_length}")
-    print(tokenizer.truncation_side) 
 
     generated_ids = model.generate(
         **model_inputs, 
-        max_new_tokens=args.max_new_tokens,
-        do_sample=False
+        max_new_tokens=args.max_new_tokens
     )
     
     generated_ids = [output_ids[len(input_ids):] for input_ids, output_ids in zip(model_inputs.input_ids, generated_ids)]
@@ -131,15 +85,6 @@ def generate_response(prompt):
     # clean_response = response_text.replace(prompt, "").strip()
     
     # return clean_response
-    
-def retrieve_similar_cases(query, top_k=3):
-    query_embedding = bge_model.encode([query])[0].astype("float32")
-    D, I = faiss_index.search(np.array([query_embedding]), top_k)
-    results = []
-    for idx in I[0]:
-        matched_text = index_texts[int(index_ids[idx])]
-        results.append(matched_text)
-    return results
 
 @app.route("/", methods=["GET", "POST"])
 def index():
@@ -175,27 +120,10 @@ def index():
         # 4. 翻译 LLM 生成的分析
         translated_articles = translate(law_articles, zh_to_en_model, zh_to_en_tokenizer)
         translated_analysis = translate(response_analysis, zh_to_en_model, zh_to_en_tokenizer)
-        
-        # 5. 相似案例检索
-        similar_cases = retrieve_similar_cases(user_input, top_k=1)
-        
-        # 6. 生成分析（加入相似案例参考）
-        prompt_analysis_with_case = (
-            f"案件内容: {user_input}\n"
-            f"涉及法条内容:\n{law_articles}\n"
-            "请根据案件内容、涉及的法条，以及如下提供的相似案例，综合分析案件。说明谁犯罪了，为什么认为他犯罪，涉及哪条法律，犯了什么罪。长度和格式参考相似案例。\n"
-            # f"相似判决案例参考:\n{similar_cases}\n"
-            f"【相似案例】:\n" + "\n\n".join(similar_cases) + "\n\n"
-            
-        )
-        
-        response_analysis_with_case = generate_response(prompt_analysis_with_case)
 
+        return render_template("index.html", case=user_input, prediction=response_law_numbers, laws=law_articles, analysis=response_analysis, translated_analysis=translated_analysis, translated_articles = translated_articles)
 
-        return render_template("index.html", case=user_input, prediction=response_law_numbers, laws=law_articles, analysis=response_analysis, translated_analysis=translated_analysis, translated_articles = translated_articles, similar_cases = similar_cases, response_analysis_with_case = response_analysis_with_case)
-
-    return render_template("index.html", case="", prediction="", laws="", analysis="", translated_analysis="", translated_articles = "", similar_cases = "", response_analysis_with_case = "")
+    return render_template("index.html", case="", prediction="", laws="", analysis="", translated_analysis="", translated_articles = "")
 
 if __name__ == "__main__":
-    initialize()
     app.run(host="0.0.0.0", port=7860, debug=False)

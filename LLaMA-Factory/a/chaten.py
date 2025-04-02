@@ -4,6 +4,7 @@ from transformers import AutoModelForCausalLM, AutoTokenizer, MarianMTModel, Mar
 import transformers
 
 # python LLaMA-Factory/a/chaten.py --model_path /mnt/ssd_2/yxma/LeLLM/train_mergem20
+# python a/chaten.py --model_path /mnt/ssd_2/yxma/LeLLM/train_mergem20
 
 parser = argparse.ArgumentParser(description="Interactive Chat with LLM")
 parser.add_argument("--model_path", type=str, required=True, help="Path to the local model")
@@ -87,7 +88,13 @@ while True:
     print()
     
     # 2. 使用 LLM 模型生成中文回复
-    response_zh = generate_response(user_input)
+    prompt_analysis = (
+            "根据下列案件内容分析案件，说明谁犯罪了，为什么认为他犯罪，涉及到哪条法律，犯了什么罪。结合案件内容和法条内容详细对比分析，分析在100字左右。\n"
+            f"案件内容: {user_input}\n"
+            
+        )
+
+    response_zh = generate_response(prompt_analysis)
     print(f"AA-LawLLM : {response_zh}")
     # print()
     

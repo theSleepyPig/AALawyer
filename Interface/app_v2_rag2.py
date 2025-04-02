@@ -45,10 +45,6 @@ def initialize():
         device_map=device
     )
     tokenizer = AutoTokenizer.from_pretrained(args.model_path)
-    
-    print("✅ 模型结构如下：")
-    print(model)
-    
 
     print("Loading translation models...")
     zh_to_en_model = MarianMTModel.from_pretrained("/mnt/ssd_2/yxma/LeLLM/opus-mt-zh-en").to(device)
@@ -109,10 +105,6 @@ def generate_response(prompt):
     ]
     text = tokenizer.apply_chat_template(messages, tokenize=False, add_generation_prompt=True)
     model_inputs = tokenizer([text], return_tensors="pt").to(device)
-    
-    print(f"🔢 输入 token 数量: {model_inputs['input_ids'].shape[1]}")
-    print(f"✅ 模型最大输入 token 长度: {tokenizer.model_max_length}")
-    print(tokenizer.truncation_side) 
 
     generated_ids = model.generate(
         **model_inputs, 
@@ -132,7 +124,7 @@ def generate_response(prompt):
     
     # return clean_response
     
-def retrieve_similar_cases(query, top_k=3):
+def retrieve_similar_cases(query, top_k=2):
     query_embedding = bge_model.encode([query])[0].astype("float32")
     D, I = faiss_index.search(np.array([query_embedding]), top_k)
     results = []
@@ -177,16 +169,15 @@ def index():
         translated_analysis = translate(response_analysis, zh_to_en_model, zh_to_en_tokenizer)
         
         # 5. 相似案例检索
-        similar_cases = retrieve_similar_cases(user_input, top_k=1)
+        similar_cases = retrieve_similar_cases(user_input)
         
         # 6. 生成分析（加入相似案例参考）
         prompt_analysis_with_case = (
             f"案件内容: {user_input}\n"
             f"涉及法条内容:\n{law_articles}\n"
-            "请根据案件内容、涉及的法条，以及如下提供的相似案例，综合分析案件。说明谁犯罪了，为什么认为他犯罪，涉及哪条法律，犯了什么罪。长度和格式参考相似案例。\n"
             # f"相似判决案例参考:\n{similar_cases}\n"
             f"【相似案例】:\n" + "\n\n".join(similar_cases) + "\n\n"
-            
+            "请根据案件内容、涉及的法条，以及提供的相似判决案例，综合分析案件。说明谁犯罪了，为什么认为他犯罪，涉及哪条法律，犯了什么罪。长度和格式参考判决案例。\n"
         )
         
         response_analysis_with_case = generate_response(prompt_analysis_with_case)

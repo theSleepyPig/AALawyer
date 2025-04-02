@@ -103,6 +103,29 @@
             <p>{{ analysis }}</p>
             <p>{{ translated_analysis }}</p>
         </div>
+<!--
+        <div class="result-box">
+            <h3>📚 Similar Cases:</h3>
+            <p>{{ similar_cases }}</p>
+        </div>
+-->
+        <div class="result-box">
+            <h3>📚 Case Analysis (With Similar Cases):</h3>
+            <p>{{ response_analysis_with_case }}</p>
+        </div>
+
+        <div class="result-box">
+            <details>
+                <summary style="cursor: pointer; font-weight: bold; font-size: 16px;">📂 View Similar Cases</summary>
+                <pre style="white-space: pre-wrap; margin-top: 10px;">
+                    {% for case in similar_cases %}
+                    {{ case }}
+                    
+                    {% endfor %}
+                </pre>
+            </details>
+        </div>
+
 
         {% endif %}
     </div>
