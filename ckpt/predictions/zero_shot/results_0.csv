@@ -41,6 +41,17 @@ task,model_name,score,abstention_rate
 3-3,output_results_m12,0.2889999999999999,0.306
 2-3,output_results_m12,0.36439523809523805,0.026
 3-1,output_results_m12,0.14188412698412697,0.076
+2-9,output_results_m23,0.7940666666666676,0.004
+2-5,output_results_m23,0.4204187054775035,0.0
+2-4,output_results_m23,0.398,0.0
+3-8,output_results_m23,0.15328832185882915,0.0
+3-7,output_results_m23,0.332,0.0
+2-6,output_results_m23,0.12749871967134296,0.0
+2-2,output_results_m23,0.178,0.304
+2-7,output_results_m23,0.4215989737022053,0.0
+3-3,output_results_m23,0.5761714285714288,0.198
+2-3,output_results_m23,0.4957047619047616,0.032
+3-1,output_results_m23,0.14900530303030302,0.028
 2-9,output_results_m22,0.826333333333334,0.004
 2-5,output_results_m22,0.4354843695989184,0.0
 2-4,output_results_m22,0.398,0.0
@@ -223,7 +234,7 @@ task,model_name,score,abstention_rate
 2-4,output_results_m12_think,0.078,0.004
 3-8,output_results_m12_think,0.14212255636362575,0.0
 3-7,output_results_m12_think,0.862,0.0
-2-6,output_results_m12_think,0.6038691253905496,0.0
+2-6,output_results_m12_think,0.6038691253905497,0.0
 2-2,output_results_m12_think,0.084,0.034
 1-1,output_results_m12_think,0.07495864129200315,0.0
 2-10,output_results_m12_think,0.08122485091512911,0.0

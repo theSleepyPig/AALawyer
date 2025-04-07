@@ -3,12 +3,12 @@
 ### model
 model_name_or_path: /mnt/ssd_2/yxma/LeLLM/train_mergem12
 # model_name_or_path: /mnt/ssd_2/yxma/LeLLM/DeepSeek-R1-Distill-Qwen-7B
-adapter_name_or_path: /mnt/ssd_2/yxma/LeLLM/ckpt/train_m22
+adapter_name_or_path: /mnt/ssd_2/yxma/LeLLM/ckpt/train_m23
 template: qwen
 finetuning_type: lora
 
 ### export
-export_dir: /mnt/ssd_2/yxma/LeLLM/train_mergem22
+export_dir: /mnt/ssd_2/yxma/LeLLM/train_mergem23
 export_size: 2
 export_device: cpu
 export_legacy_format: false

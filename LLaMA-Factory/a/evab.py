@@ -1,12 +1,12 @@
 # nohup python /home/yxma/hzx/hzx/LeLLM/LLaMA-Factory/a/evab.py \
-#     --experiment_id m22 \
+#     --experiment_id m23 \
 #     --device 1 \
 #     --mode zero_shot \
 #     --max_new_tokens 2048 \
-#     > evabash_zero_shot_m22.log 2>&1 &
+#     > evabash_zero_shot_m23.log 2>&1 &
 
 # nohup python /home/yxma/hzx/hzx/LeLLM/LLaMA-Factory/a/evab.py \
-#     --experiment_id m13 \
+#     --experiment_id  \
 #     --device 1 \
 #     --mode zero_shot \
 #     --max_new_tokens 4096 \

@@ -84,25 +84,6 @@ def initialize():
 # 创建 Flask 应用
 app = Flask(__name__)
 
-def smart_translate(text):
-    prompt = (
-        "请将以下中文内容翻译为专业英文，保留法律术语和句式准确性。\n\n"
-        f"中文原文：{text}\n\n"
-        "英文翻译："
-    )
-    return generate_response(prompt)
-
-def smart_translate2(text):
-    segments = text.split("\n\n") if "\n\n" in text else [text]
-    translated_parts = []
-    for seg in segments:
-        if not seg.strip():
-            continue
-        prompt = f"请将以下中文内容翻译为专业英文，保留法律术语和句式准确性。\n\n中文原文：{seg}\n\n英文翻译："
-        result = generate_response(prompt)
-        translated_parts.append(result.strip())
-    return "\n\n".join(translated_parts)
-
 def extract_law_numbers(text):
     """ 从 LLM 生成的文本中提取多个法条编号 """
     return re.findall(r"刑法第(\d+)条", text)
@@ -190,30 +171,10 @@ def index():
         )
 
         response_analysis = generate_response(prompt_analysis)
-        
-        # non-rag
-        prompt_analysis_no_rag = (
-            # "根据下列案件内容和相关法条分析案件，说明谁犯罪了，为什么认为他犯罪，涉及到哪条法律，犯了什么罪。分析在100字左右。分析时不需要提及法条内容，只提及相应编号。\n"
-            
-            f"案件内容: {user_input}\n"
-            "根据以上案件内容，说明谁犯罪了，为什么认为他犯罪，涉及到哪条法律，犯了什么罪。结合案件内容和法条内容详细对比分析，把法条内容相和案件相关的整合进分析中。分析在100字左右。\n"
-            
-        )
-
-        response_analysis_no_rag = generate_response(prompt_analysis_no_rag)
-
-        # 控制台打印对比
-        print("📢 ✅ 无RAG（无法条、无案例）分析版本输出：")
-        print(response_analysis_no_rag)
-        print(smart_translate(response_analysis_no_rag))
 
         # 4. 翻译 LLM 生成的分析
-        # translated_articles = translate(law_articles, zh_to_en_model, zh_to_en_tokenizer)
-        # translated_analysis = translate(response_analysis, zh_to_en_model, zh_to_en_tokenizer)
-        translated_articles = smart_translate(law_articles)
-        translated_analysis = smart_translate(response_analysis)
-        
-        
+        translated_articles = translate(law_articles, zh_to_en_model, zh_to_en_tokenizer)
+        translated_analysis = translate(response_analysis, zh_to_en_model, zh_to_en_tokenizer)
         
         # 5. 相似案例检索
         similar_cases = retrieve_similar_cases(user_input, top_k=1)
@@ -229,15 +190,11 @@ def index():
         )
         
         response_analysis_with_case = generate_response(prompt_analysis_with_case)
-        
-        translated_analysis_with_case = smart_translate(response_analysis_with_case)
-        translated_similar_cases = [smart_translate2(c) for c in similar_cases]
 
 
+        return render_template("index.html", case=user_input, prediction=response_law_numbers, laws=law_articles, analysis=response_analysis, translated_analysis=translated_analysis, translated_articles = translated_articles, similar_cases = similar_cases, response_analysis_with_case = response_analysis_with_case)
 
-        return render_template("index.html", case=user_input, prediction=response_law_numbers, laws=law_articles, analysis=response_analysis, translated_analysis=translated_analysis, translated_articles = translated_articles, similar_cases = similar_cases, response_analysis_with_case = response_analysis_with_case,translated_analysis_with_case=translated_analysis_with_case,translated_similar_cases=translated_similar_cases)
-
-    return render_template("index.html", case="", prediction="", laws="", analysis="", translated_analysis="", translated_articles = "", similar_cases = "", response_analysis_with_case = "",translated_analysis_with_case="",translated_similar_cases="")
+    return render_template("index.html", case="", prediction="", laws="", analysis="", translated_analysis="", translated_articles = "", similar_cases = "", response_analysis_with_case = "")
 
 if __name__ == "__main__":
     initialize()

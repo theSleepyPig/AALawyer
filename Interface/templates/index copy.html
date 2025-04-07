@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="zh">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>法条检索系统</title>
+    <style>
+        html, body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f9;
+            height: 100%;
+            overflow-y: auto;
+        }
+
+        /* 容器 */
+        .container {
+            width: 60%;
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        h2 {
+            color: #333;
+            text-align: center;
+        }
+
+        /* 文本框 */
+        textarea {
+            width: 98%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            resize: vertical;
+        }
+
+        /* 按钮 */
+        button {
+            background-color: #007bff;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+            border-radius: 5px;
+            display: block;
+            width: 100%;
+            font-size: 16px;
+        }
+
+        button:hover {
+            background-color: #0056b3;
+        }
+
+        /* 结果框 */
+        .result-box {
+            background: #eef;
+            padding: 15px;
+            border-radius: 5px;
+            margin-top: 15px;
+            border-left: 5px solid #007bff;
+        }
+
+        h3 {
+            color: #007bff;
+        }
+
+        pre {
+            background: #f8f9fa;
+            padding: 10px;
+            border-radius: 5px;
+            white-space: pre-wrap;
+            word-wrap: break-word;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+        <h2>Legal Case Analysis</h2>
+        <form method="post">
+            <textarea name="case_description" rows="6" placeholder="Please type the description of the case">{{ case }}</textarea><br>
+            <button type="submit">Submit</button>
+        </form>
+
+        {% if prediction %}
+        <div class="result-box">
+            <h3>Related Articles:</h3>
+            <pre>{{ laws }}</pre>
+            <pre>{{ translated_articles }}</pre>
+        </div>
+
+        <div class="result-box">
+            <h3>Case Analysis:</h3>
+            <p>{{ analysis }}</p>
+            <p>{{ translated_analysis }}</p>
+        </div>
+<!--
+        <div class="result-box">
+            <h3>📚 Similar Cases:</h3>
+            <p>{{ similar_cases }}</p>
+        </div>
+-->
+        <div class="result-box">
+            <h3>📚 Case Analysis (With Similar Cases):</h3>
+            <p>{{ response_analysis_with_case }}</p>
+        </div>
+
+        <div class="result-box">
+            <details>
+                <summary style="cursor: pointer; font-weight: bold; font-size: 16px;">📂 View Similar Cases</summary>
+                <pre style="white-space: pre-wrap; margin-top: 10px;">
+                    {% for case in similar_cases %}
+                    {{ case }}
+                    
+                    {% endfor %}
+                </pre>
+            </details>
+        </div>
+
+
+        {% endif %}
+    </div>
+
+</body>
+
+</html>

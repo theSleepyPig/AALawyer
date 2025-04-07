@@ -1,93 +1,105 @@
 <!DOCTYPE html>
 <html lang="zh">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>法条检索系统</title>
     <style>
-        /* 设置全局样式 */
         body {
-            font-family: Arial, sans-serif;
-            background-color: #f4f4f9;
             margin: 0;
-            padding: 0;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            flex-direction: column;
-            height: 100vh;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f4f4f9;
         }
 
-        /* 容器 */
         .container {
-            width: 60%;
-            background: white;
-            padding: 20px;
-            border-radius: 10px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            max-width: 900px;
+            margin: 40px auto;
+            padding: 20px 30px;
+            background-color: #ffffff;
+            border-radius: 12px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
         }
 
         h2 {
-            color: #333;
             text-align: center;
+            color: #333;
+            margin-bottom: 20px;
         }
 
-        /* 文本框 */
         textarea {
-            width: 98%;
-            padding: 10px;
+            width: 100%;
+            padding: 12px;
+            font-size: 16px;
+            border-radius: 8px;
             border: 1px solid #ccc;
-            border-radius: 5px;
             resize: vertical;
+            min-height: 120px;
+            box-sizing: border-box;
         }
 
-        /* 按钮 */
         button {
+            width: 100%;
+            padding: 12px;
             background-color: #007bff;
             color: white;
+            font-size: 18px;
             border: none;
-            padding: 10px 20px;
+            border-radius: 8px;
+            margin-top: 15px;
             cursor: pointer;
-            border-radius: 5px;
-            display: block;
-            width: 100%;
-            font-size: 16px;
         }
 
         button:hover {
             background-color: #0056b3;
         }
 
-        /* 结果框 */
         .result-box {
-            background: #eef;
-            padding: 15px;
-            border-radius: 5px;
-            margin-top: 15px;
+            background-color: #eef2ff;
             border-left: 5px solid #007bff;
+            padding: 16px;
+            border-radius: 8px;
+            margin-top: 25px;
         }
 
         h3 {
+            margin-top: 0;
             color: #007bff;
         }
 
         pre {
             background: #f8f9fa;
-            padding: 10px;
-            border-radius: 5px;
+            padding: 12px;
+            border-radius: 6px;
             white-space: pre-wrap;
             word-wrap: break-word;
+            font-size: 15px;
+        }
+
+        details summary {
+            cursor: pointer;
+            font-weight: bold;
+            margin-top: 10px;
+            font-size: 16px;
+        }
+
+        @media (max-width: 600px) {
+            .container {
+                margin: 20px;
+                padding: 15px;
+            }
+
+            button {
+                font-size: 16px;
+            }
         }
     </style>
 </head>
 
 <body>
-
     <div class="container">
         <h2>Legal Case Analysis</h2>
         <form method="post">
-            <textarea name="case_description" rows="6" placeholder="Please type the description of the case">{{ case }}</textarea><br>
+            <textarea name="case_description" placeholder="Please enter a case description">{{ case }}</textarea>
             <button type="submit">Submit</button>
         </form>
 
@@ -97,39 +109,41 @@
             <pre>{{ laws }}</pre>
             <pre>{{ translated_articles }}</pre>
         </div>
-
+<!--
         <div class="result-box">
             <h3>Case Analysis:</h3>
             <p>{{ analysis }}</p>
             <p>{{ translated_analysis }}</p>
         </div>
-<!--
-        <div class="result-box">
-            <h3>📚 Similar Cases:</h3>
-            <p>{{ similar_cases }}</p>
-        </div>
 -->
+
         <div class="result-box">
             <h3>📚 Case Analysis (With Similar Cases):</h3>
             <p>{{ response_analysis_with_case }}</p>
-        </div>
-
-        <div class="result-box">
+        
             <details>
-                <summary style="cursor: pointer; font-weight: bold; font-size: 16px;">📂 View Similar Cases</summary>
-                <pre style="white-space: pre-wrap; margin-top: 10px;">
-                    {% for case in similar_cases %}
-                    {{ case }}
-                    
-                    {% endfor %}
-                </pre>
+                <summary>📄 English Translation of Case Analysis</summary>
+                <pre>{{ translated_analysis_with_case }}</pre>
             </details>
         </div>
-
-
+        
+        <div class="result-box">
+            <h3>📂 View Similar Cases</h3>
+        
+            {% for i in range(similar_cases|length) %}
+            <details style="margin-bottom: 10px;">
+                <summary>📝 原文案例 {{ i + 1 }}</summary>
+                <pre>{{ similar_cases[i] }}</pre>
+                <details style="margin-top: 5px;">
+                    <summary>🌐 English Translation</summary>
+                    <pre>{{ translated_similar_cases[i] }}</pre>
+                </details>
+            </details>
+            {% endfor %}
+            
+        </div>
+        
         {% endif %}
     </div>
-
 </body>
-
 </html>
