@@ -71,7 +71,7 @@ def get_score(prompt):
             ],
             temperature=0
         )
-        print(response)
+        # print(response)
 
         return response.choices[0].message.content
     except Exception as e:
@@ -117,8 +117,8 @@ def evaluate_to_csv(input_json_path, output_csv_path):
             law_numbers = sorted(set(item.get("articles", [])))
             prompt = format_prompt(case_text, content, law_numbers)
 
-            print(law_numbers)
-            print(prompt)
+            # print(law_numbers)
+            # print(prompt)
 
             score_text = get_score(prompt)
             scores = extract_scores(score_text)
@@ -184,5 +184,6 @@ def evaluate_to_csv(input_json_path, output_csv_path):
 
     print(f"✅ 评估完成，结果保存至：{output_csv_path}")
 
-# ✅ 示例调用
-evaluate_to_csv("results/generated_10.json", "results/eval_scores_10_modes.csv")
+# ✅ main
+# evaluate_to_csv("results/generated_10.json", "results/eval_scores_10_modes.csv")
+evaluate_to_csv("results/generated_200_m0.json", "results/eval_scores_200_m0.csv")

@@ -1,858 +1,1207 @@
 nohup: ignoring input
-Loading checkpoint shards:   0%|          | 0/9 [00:00<?, ?it/s]Loading checkpoint shards:  11%|█         | 1/9 [00:01<00:12,  1.52s/it]Loading checkpoint shards:  22%|██▏       | 2/9 [00:02<00:06,  1.08it/s]Loading checkpoint shards:  33%|███▎      | 3/9 [00:02<00:04,  1.37it/s]Loading checkpoint shards:  44%|████▍     | 4/9 [00:03<00:03,  1.32it/s]Loading checkpoint shards:  56%|█████▌    | 5/9 [00:03<00:02,  1.51it/s]Loading checkpoint shards:  67%|██████▋   | 6/9 [00:04<00:02,  1.44it/s]Loading checkpoint shards:  78%|███████▊  | 7/9 [00:05<00:01,  1.60it/s]Loading checkpoint shards:  89%|████████▉ | 8/9 [00:05<00:00,  1.89it/s]Loading checkpoint shards: 100%|██████████| 9/9 [00:05<00:00,  1.94it/s]Loading checkpoint shards: 100%|██████████| 9/9 [00:05<00:00,  1.53it/s]
+Loading checkpoint shards:   0%|          | 0/9 [00:00<?, ?it/s]Loading checkpoint shards:  11%|█         | 1/9 [00:01<00:12,  1.58s/it]Loading checkpoint shards:  22%|██▏       | 2/9 [00:02<00:06,  1.05it/s]Loading checkpoint shards:  33%|███▎      | 3/9 [00:02<00:05,  1.16it/s]Loading checkpoint shards:  44%|████▍     | 4/9 [00:03<00:03,  1.38it/s]Loading checkpoint shards:  56%|█████▌    | 5/9 [00:03<00:02,  1.54it/s]Loading checkpoint shards:  67%|██████▋   | 6/9 [00:04<00:01,  1.54it/s]Loading checkpoint shards:  78%|███████▊  | 7/9 [00:05<00:01,  1.67it/s]Loading checkpoint shards:  89%|████████▉ | 8/9 [00:05<00:00,  1.67it/s]Loading checkpoint shards: 100%|██████████| 9/9 [00:05<00:00,  1.99it/s]Loading checkpoint shards: 100%|██████████| 9/9 [00:05<00:00,  1.52it/s]
 Generating answers::   0%|          | 0/200 [00:00<?, ?it/s]/home/yxma/anaconda3/envs/llm/lib/python3.9/site-packages/transformers/generation/configuration_utils.py:601: UserWarning: `do_sample` is set to `False`. However, `temperature` is set to `0.6` -- this flag is only used in sample-based generation modes. You should set `do_sample=True` or unset `temperature`.
   warnings.warn(
 /home/yxma/anaconda3/envs/llm/lib/python3.9/site-packages/transformers/generation/configuration_utils.py:606: UserWarning: `do_sample` is set to `False`. However, `top_p` is set to `0.95` -- this flag is only used in sample-based generation modes. You should set `do_sample=True` or unset `top_p`.
   warnings.warn(
-Generating answers::   0%|          | 1/200 [00:07<24:40,  7.44s/it]Generating answers::   1%|          | 2/200 [00:11<17:31,  5.31s/it]Generating answers::   2%|▏         | 3/200 [00:17<18:55,  5.76s/it]Generating answers::   2%|▏         | 4/200 [00:22<18:08,  5.56s/it]Generating answers::   2%|▎         | 5/200 [00:28<18:25,  5.67s/it]Generating answers::   3%|▎         | 6/200 [00:31<15:09,  4.69s/it]Generating answers::   4%|▎         | 7/200 [00:38<17:16,  5.37s/it]Generating answers::   4%|▍         | 8/200 [00:42<16:14,  5.08s/it]Generating answers::   4%|▍         | 9/200 [00:51<19:54,  6.25s/it]Generating answers::   5%|▌         | 10/200 [01:06<28:03,  8.86s/it]Generating answers::   6%|▌         | 11/200 [01:11<24:29,  7.78s/it]Generating answers::   6%|▌         | 12/200 [01:22<27:01,  8.63s/it]Generating answers::   6%|▋         | 13/200 [01:26<23:19,  7.48s/it]Generating answers::   7%|▋         | 14/200 [01:33<22:40,  7.31s/it]Generating answers::   8%|▊         | 15/200 [01:39<20:32,  6.66s/it]Generating answers::   8%|▊         | 16/200 [01:45<19:59,  6.52s/it]Generating answers::   8%|▊         | 17/200 [01:50<18:58,  6.22s/it]Generating answers::   9%|▉         | 18/200 [01:57<19:13,  6.34s/it]Generating answers::  10%|▉         | 19/200 [02:04<20:08,  6.68s/it]Generating answers::  10%|█         | 20/200 [02:13<21:39,  7.22s/it]Generating answers::  10%|█         | 21/200 [02:17<18:29,  6.20s/it]Generating answers::  11%|█         | 22/200 [02:24<19:27,  6.56s/it]Generating answers::  12%|█▏        | 23/200 [02:30<18:42,  6.34s/it]Generating answers::  12%|█▏        | 24/200 [02:38<20:10,  6.88s/it]Generating answers::  12%|█▎        | 25/200 [02:45<20:06,  6.89s/it]Generating answers::  13%|█▎        | 26/200 [02:48<16:56,  5.84s/it]Generating answers::  14%|█▎        | 27/200 [02:56<18:47,  6.52s/it]Generating answers::  14%|█▍        | 28/200 [03:06<21:17,  7.43s/it]Generating answers::  14%|█▍        | 29/200 [03:10<17:51,  6.27s/it]Generating answers::  15%|█▌        | 30/200 [03:16<18:12,  6.43s/it]Generating answers::  16%|█▌        | 31/200 [03:21<16:20,  5.80s/it]Generating answers::  16%|█▌        | 32/200 [04:24<1:04:29, 23.03s/it]Generating answers::  16%|█▋        | 33/200 [04:33<52:09, 18.74s/it]  Generating answers::  17%|█▋        | 34/200 [05:19<1:14:53, 27.07s/it]Generating answers::  18%|█▊        | 35/200 [05:25<57:01, 20.74s/it]  Generating answers::  18%|█▊        | 36/200 [05:32<45:07, 16.51s/it]Generating answers::  18%|█▊        | 37/200 [05:38<36:53, 13.58s/it]Generating answers::  19%|█▉        | 38/200 [05:42<28:33, 10.58s/it]Generating answers::  20%|█▉        | 39/200 [05:50<26:08,  9.74s/it]Generating answers::  20%|██        | 40/200 [06:36<55:23, 20.77s/it]Generating answers::  20%|██        | 41/200 [06:50<49:11, 18.56s/it]Generating answers::  21%|██        | 42/200 [06:53<36:54, 14.02s/it]Generating answers::  22%|██▏       | 43/200 [07:02<32:14, 12.32s/it]Generating answers::  22%|██▏       | 44/200 [07:10<28:40, 11.03s/it]Generating answers::  22%|██▎       | 45/200 [07:14<23:30,  9.10s/it]Generating answers::  23%|██▎       | 46/200 [07:20<20:29,  7.98s/it]Generating answers::  24%|██▎       | 47/200 [08:05<48:40, 19.09s/it]🔢 输入 token 数量: 501
+Generating answers::   0%|          | 1/200 [00:10<34:53, 10.52s/it]Generating answers::   1%|          | 2/200 [00:14<21:21,  6.47s/it]Generating answers::   2%|▏         | 3/200 [00:21<22:04,  6.72s/it]Generating answers::   2%|▏         | 4/200 [00:26<19:57,  6.11s/it]Generating answers::   2%|▎         | 5/200 [00:33<21:18,  6.56s/it]Generating answers::   3%|▎         | 6/200 [00:39<20:31,  6.35s/it]Generating answers::   4%|▎         | 7/200 [00:48<23:13,  7.22s/it]Generating answers::   4%|▍         | 8/200 [00:52<19:56,  6.23s/it]Generating answers::   4%|▍         | 9/200 [00:56<16:56,  5.32s/it]Generating answers::   5%|▌         | 10/200 [01:09<24:53,  7.86s/it]Generating answers::   6%|▌         | 11/200 [01:14<21:31,  6.83s/it]Generating answers::   6%|▌         | 12/200 [01:21<22:03,  7.04s/it]Generating answers::   6%|▋         | 13/200 [01:26<19:28,  6.25s/it]Generating answers::   7%|▋         | 14/200 [01:32<19:18,  6.23s/it]Generating answers::   8%|▊         | 15/200 [01:37<17:56,  5.82s/it]Generating answers::   8%|▊         | 16/200 [01:42<17:08,  5.59s/it]Generating answers::   8%|▊         | 17/200 [01:48<17:47,  5.83s/it]Generating answers::   9%|▉         | 18/200 [01:54<17:31,  5.77s/it]Generating answers::  10%|▉         | 19/200 [02:01<18:59,  6.29s/it]Generating answers::  10%|█         | 20/200 [02:10<20:50,  6.95s/it]Generating answers::  10%|█         | 21/200 [02:17<20:57,  7.03s/it]Generating answers::  11%|█         | 22/200 [02:21<18:22,  6.19s/it]Generating answers::  12%|█▏        | 23/200 [02:28<18:46,  6.36s/it]Generating answers::  12%|█▏        | 24/200 [02:35<19:14,  6.56s/it]Generating answers::  12%|█▎        | 25/200 [02:41<18:28,  6.34s/it]Generating answers::  13%|█▎        | 26/200 [02:44<15:59,  5.51s/it]Generating answers::  14%|█▎        | 27/200 [02:52<17:41,  6.14s/it]Generating answers::  14%|█▍        | 28/200 [03:00<18:49,  6.57s/it]Generating answers::  14%|█▍        | 29/200 [03:06<18:29,  6.49s/it]Generating answers::  15%|█▌        | 30/200 [03:16<21:12,  7.49s/it]Generating answers::  16%|█▌        | 31/200 [03:20<18:09,  6.45s/it]Generating answers::  16%|█▌        | 32/200 [04:23<1:06:08, 23.62s/it]Generating answers::  16%|█▋        | 33/200 [04:32<53:05, 19.07s/it]  Generating answers::  17%|█▋        | 34/200 [04:42<45:26, 16.43s/it]Generating answers::  18%|█▊        | 35/200 [04:48<36:34, 13.30s/it]Generating answers::  18%|█▊        | 36/200 [04:55<31:30, 11.53s/it]Generating answers::  18%|█▊        | 37/200 [05:04<28:44, 10.58s/it]Generating answers::  19%|█▉        | 38/200 [05:09<24:30,  9.08s/it]Generating answers::  20%|█▉        | 39/200 [05:17<23:21,  8.71s/it]Generating answers::  20%|██        | 40/200 [05:26<23:28,  8.80s/it]Generating answers::  20%|██        | 41/200 [05:32<20:47,  7.84s/it]Generating answers::  21%|██        | 42/200 [05:35<17:05,  6.49s/it]Generating answers::  22%|██▏       | 43/200 [05:44<18:31,  7.08s/it]Generating answers::  22%|██▏       | 44/200 [05:50<17:32,  6.75s/it]Generating answers::  22%|██▎       | 45/200 [05:54<15:19,  5.93s/it]Generating answers::  23%|██▎       | 46/200 [05:59<14:47,  5.76s/it]Generating answers::  24%|██▎       | 47/200 [06:06<15:38,  6.13s/it]🔢 输入 token 数量: 501
 法条:[法条]刑法第163条、刑法第163条<eoa>
 ['163', '163']
 🔢 输入 token 数量: 502
-🔢 输入 token 数量: 839
-🔢 输入 token 数量: 1657
+🔢 输入 token 数量: 841
+🔢 输入 token 数量: 1659
 🔢 输入 token 数量: 202
 法条:[法条]刑法第266条<eoa>
 ['266']
 🔢 输入 token 数量: 203
-🔢 输入 token 数量: 303
-🔢 输入 token 数量: 1309
+🔢 输入 token 数量: 305
+🔢 输入 token 数量: 1311
 🔢 输入 token 数量: 182
 法条:[法条]刑法第347条、刑法第357条、刑法第347条<eoa>
 ['347', '357', '347']
 🔢 输入 token 数量: 183
-🔢 输入 token 数量: 975
-🔢 输入 token 数量: 1867
+🔢 输入 token 数量: 981
+🔢 输入 token 数量: 1873
 🔢 输入 token 数量: 252
 法条:[法条]刑法第354条<eoa>
 ['354']
 🔢 输入 token 数量: 253
-🔢 输入 token 数量: 301
-🔢 输入 token 数量: 948
+🔢 输入 token 数量: 303
+🔢 输入 token 数量: 950
 🔢 输入 token 数量: 226
 法条:[法条]刑法第234条<eoa>
 ['234']
 🔢 输入 token 数量: 227
-🔢 输入 token 数量: 375
-🔢 输入 token 数量: 1940
+🔢 输入 token 数量: 461
+🔢 输入 token 数量: 2026
 🔢 输入 token 数量: 443
 法条:[法条]刑法第134条<eoa>
 ['134']
 🔢 输入 token 数量: 444
-🔢 输入 token 数量: 507
-🔢 输入 token 数量: 1246
+🔢 输入 token 数量: 564
+🔢 输入 token 数量: 1303
 🔢 输入 token 数量: 291
 法条:[法条]刑法第175条<eoa>
 ['175']
 🔢 输入 token 数量: 292
-🔢 输入 token 数量: 427
-🔢 输入 token 数量: 1949
+🔢 输入 token 数量: 542
+🔢 输入 token 数量: 2064
 🔢 输入 token 数量: 359
 法条:[法条]刑法第303条<eoa>
 ['303']
 🔢 输入 token 数量: 360
-🔢 输入 token 数量: 413
-🔢 输入 token 数量: 1156
+🔢 输入 token 数量: 455
+🔢 输入 token 数量: 1198
 🔢 输入 token 数量: 441
 法条:[法条]刑法第224条<eoa>
 ['224']
 🔢 输入 token 数量: 442
-🔢 输入 token 数量: 564
-🔢 输入 token 数量: 1309
+🔢 输入 token 数量: 766
+🔢 输入 token 数量: 1511
 🔢 输入 token 数量: 352
 法条:[法条]刑法第240条<eoa>
 ['240']
 🔢 输入 token 数量: 353
-🔢 输入 token 数量: 589
-🔢 输入 token 数量: 1379
+🔢 输入 token 数量: 591
+🔢 输入 token 数量: 1381
 🔢 输入 token 数量: 305
 法条:[法条]刑法第210条<eoa>
 ['210']
 🔢 输入 token 数量: 306
-🔢 输入 token 数量: 363
-🔢 输入 token 数量: 1168
+🔢 输入 token 数量: 410
+🔢 输入 token 数量: 1215
 🔢 输入 token 数量: 428
 法条:[法条]刑法第303条、刑法第214条<eoa>
 ['303', '214']
 🔢 输入 token 数量: 429
-🔢 输入 token 数量: 539
-🔢 输入 token 数量: 1597
+🔢 输入 token 数量: 583
+🔢 输入 token 数量: 1641
 🔢 输入 token 数量: 311
 法条:[法条]刑法第125条<eoa>
 ['125']
 🔢 输入 token 数量: 312
-🔢 输入 token 数量: 406
-🔢 输入 token 数量: 1034
+🔢 输入 token 数量: 478
+🔢 输入 token 数量: 1106
 🔢 输入 token 数量: 501
 法条:[法条]刑法第344条<eoa>
 ['344']
 🔢 输入 token 数量: 502
-🔢 输入 token 数量: 606
-🔢 输入 token 数量: 1374
+🔢 输入 token 数量: 696
+🔢 输入 token 数量: 1464
 🔢 输入 token 数量: 368
 法条:[法条]刑法第292条<eoa>
 ['292']
 🔢 输入 token 数量: 369
-🔢 输入 token 数量: 525
-🔢 输入 token 数量: 1299
+🔢 输入 token 数量: 527
+🔢 输入 token 数量: 1301
 🔢 输入 token 数量: 234
 法条:[法条]刑法第390条、刑法第389条<eoa>
 ['390', '389']
 🔢 输入 token 数量: 235
-🔢 输入 token 数量: 483
-🔢 输入 token 数量: 1074
+🔢 输入 token 数量: 633
+🔢 输入 token 数量: 1224
 🔢 输入 token 数量: 205
 法条:[法条]刑法第347条、刑法第354条<eoa>
 ['347', '354']
 🔢 输入 token 数量: 206
-🔢 输入 token 数量: 596
-🔢 输入 token 数量: 983
+🔢 输入 token 数量: 600
+🔢 输入 token 数量: 987
 🔢 输入 token 数量: 637
 法条:[法条]刑法第224条<eoa>
 ['224']
 🔢 输入 token 数量: 638
-🔢 输入 token 数量: 760
-🔢 输入 token 数量: 1468
+🔢 输入 token 数量: 962
+🔢 输入 token 数量: 1670
 🔢 输入 token 数量: 378
 法条:[法条]刑法第175条<eoa>
 ['175']
 🔢 输入 token 数量: 379
-🔢 输入 token 数量: 514
-🔢 输入 token 数量: 1257
+🔢 输入 token 数量: 629
+🔢 输入 token 数量: 1372
 🔢 输入 token 数量: 225
 法条:[法条]刑法第264条、刑法第269条<eoa>
 ['264', '269']
 🔢 输入 token 数量: 226
-🔢 输入 token 数量: 391
-🔢 输入 token 数量: 1350
+🔢 输入 token 数量: 396
+🔢 输入 token 数量: 1355
 🔢 输入 token 数量: 202
 法条:[法条]刑法第307条<eoa>
 ['307']
 🔢 输入 token 数量: 203
-🔢 输入 token 数量: 370
-🔢 输入 token 数量: 1632
+🔢 输入 token 数量: 481
+🔢 输入 token 数量: 1743
 🔢 输入 token 数量: 601
 法条:[法条]刑法第264条、刑法第269条<eoa>
 ['264', '269']
 🔢 输入 token 数量: 602
-🔢 输入 token 数量: 767
-🔢 输入 token 数量: 1362
+🔢 输入 token 数量: 772
+🔢 输入 token 数量: 1367
 🔢 输入 token 数量: 261
 法条:[法条]刑法第280条<eoa>
 ['280']
 🔢 输入 token 数量: 262
-🔢 输入 token 数量: 367
-🔢 输入 token 数量: 1058
+🔢 输入 token 数量: 658
+🔢 输入 token 数量: 1349
 🔢 输入 token 数量: 513
 法条:[法条]刑法第385条、刑法第383条、刑法第397条、刑法第386条<eoa>
 ['385', '383', '397', '386']
 🔢 输入 token 数量: 514
-🔢 输入 token 数量: 1016
-🔢 输入 token 数量: 2328
+🔢 输入 token 数量: 1089
+🔢 输入 token 数量: 2401
 🔢 输入 token 数量: 963
 法条:[法条]刑法第313条<eoa>
 ['313']
 🔢 输入 token 数量: 964
-🔢 输入 token 数量: 1060
-🔢 输入 token 数量: 2385
+🔢 输入 token 数量: 1062
+🔢 输入 token 数量: 2387
 🔢 输入 token 数量: 295
 法条:[法条]刑法第303条<eoa>
 ['303']
 🔢 输入 token 数量: 296
-🔢 输入 token 数量: 349
-🔢 输入 token 数量: 1098
+🔢 输入 token 数量: 391
+🔢 输入 token 数量: 1140
 🔢 输入 token 数量: 219
 法条:[法条]刑法第140条<eoa>
 ['140']
 🔢 输入 token 数量: 220
-🔢 输入 token 数量: 397
-🔢 输入 token 数量: 1069
+🔢 输入 token 数量: 398
+🔢 输入 token 数量: 1070
 🔢 输入 token 数量: 285
 法条:[法条]刑法第272条<eoa>
 ['272']
 🔢 输入 token 数量: 286
-🔢 输入 token 数量: 448
-🔢 输入 token 数量: 1123
+🔢 输入 token 数量: 450
+🔢 输入 token 数量: 1125
 🔢 输入 token 数量: 171
 法条:[法条]刑法第177条<eoa>
 ['177']
 🔢 输入 token 数量: 172
-🔢 输入 token 数量: 243
-🔢 输入 token 数量: 918
+🔢 输入 token 数量: 584
+🔢 输入 token 数量: 1259
 🔢 输入 token 数量: 712
 法条:[法条]刑法第271条<eoa>
 ['271']
 🔢 输入 token 数量: 713
-🔢 输入 token 数量: 841
-🔢 输入 token 数量: 1655
+🔢 输入 token 数量: 843
+🔢 输入 token 数量: 1657
 🔢 输入 token 数量: 357
 法条:[法条]刑法第344条<eoa>
 ['344']
 🔢 输入 token 数量: 358
-🔢 输入 token 数量: 462
-🔢 输入 token 数量: 1087
+🔢 输入 token 数量: 552
+🔢 输入 token 数量: 1177
 🔢 输入 token 数量: 571
 法条:[法条]刑法第272条、刑法第175条<eoa>
 ['272', '175']
 🔢 输入 token 数量: 572
-🔢 输入 token 数量: 858
-🔢 输入 token 数量: 9099
+🔢 输入 token 数量: 975
+🔢 输入 token 数量: 9216
 🔢 输入 token 数量: 193
 法条:[法条]刑法第345条<eoa>
 ['345']
 🔢 输入 token 数量: 194
-🔢 输入 token 数量: 294
-🔢 输入 token 数量: 1767
+🔢 输入 token 数量: 423
+🔢 输入 token 数量: 1896
 🔢 输入 token 数量: 513
 法条:[法条]刑法第213条<eoa>
 ['213']
 🔢 输入 token 数量: 514
-🔢 输入 token 数量: 586
-🔢 输入 token 数量: 2459
+🔢 输入 token 数量: 588
+🔢 输入 token 数量: 2461
 🔢 输入 token 数量: 287
 法条:[法条]刑法第347条、刑法第347条、刑法第357条<eoa>
 ['347', '347', '357']
 🔢 输入 token 数量: 288
-🔢 输入 token 数量: 1080
-🔢 输入 token 数量: 1795
+🔢 输入 token 数量: 1086
+🔢 输入 token 数量: 1801
 🔢 输入 token 数量: 195
 法条:[法条]刑法第186条<eoa>
 ['186']
 🔢 输入 token 数量: 196
-🔢 输入 token 数量: 351
-🔢 输入 token 数量: 1551
+🔢 输入 token 数量: 352
+🔢 输入 token 数量: 1552
 🔢 输入 token 数量: 273
 法条:[法条]刑法第267条<eoa>
 ['267']
 🔢 输入 token 数量: 274
-🔢 输入 token 数量: 393
-🔢 输入 token 数量: 1985
+🔢 输入 token 数量: 395
+🔢 输入 token 数量: 1987
 🔢 输入 token 数量: 224
 法条:[法条]刑法第264条、刑法第196条<eoa>
 ['264', '196']
 🔢 输入 token 数量: 225
-🔢 输入 token 数量: 534
-🔢 输入 token 数量: 1453
+🔢 输入 token 数量: 537
+🔢 输入 token 数量: 1456
 🔢 输入 token 数量: 278
 法条:[法条]刑法第234条<eoa>
 ['234']
 🔢 输入 token 数量: 279
-🔢 输入 token 数量: 427
-🔢 输入 token 数量: 1202
+🔢 输入 token 数量: 513
+🔢 输入 token 数量: 1288
 🔢 输入 token 数量: 442
 法条:[法条]刑法第290条<eoa>
 ['290']
 🔢 输入 token 数量: 443
-🔢 输入 token 数量: 490
-🔢 输入 token 数量: 1957
+🔢 输入 token 数量: 681
+🔢 输入 token 数量: 2148
 🔢 输入 token 数量: 741
 法条:[法条]刑法第271条<eoa>
 ['271']
 🔢 输入 token 数量: 742
-🔢 输入 token 数量: 870
-🔢 输入 token 数量: 1732
+🔢 输入 token 数量: 872
+🔢 输入 token 数量: 1734
 🔢 输入 token 数量: 242
 法条:[法条]刑法第336条<eoa>
 ['336']
 🔢 输入 token 数量: 243
-🔢 输入 token 数量: 351
-🔢 输入 token 数量: 1034
+🔢 输入 token 数量: 427
+🔢 输入 token 数量: 1110
 🔢 输入 token 数量: 244
 法条:[法条]刑法第359条<eoa>
 ['359']
 🔢 输入 token 数量: 245
-🔢 输入 token 数量: 292
-🔢 输入 token 数量: 1614
+🔢 输入 token 数量: 353
+🔢 输入 token 数量: 1675
 🔢 输入 token 数量: 308
 法条:[法条]刑法第341条<eoa>
 ['341']
 🔢 输入 token 数量: 309
-🔢 输入 token 数量: 377
-🔢 输入 token 数量: 1062
+🔢 输入 token 数量: 577
+🔢 输入 token 数量: 1262
 🔢 输入 token 数量: 221
 法条:[法条]刑法第341条<eoa>
 ['341']
 🔢 输入 token 数量: 222
-🔢 输入 token 数量: 290
-🔢 输入 token 数量: 986
+🔢 输入 token 数量: 490
+🔢 输入 token 数量: 1186
 🔢 输入 token 数量: 342
 法条:[法条]刑法第205条<eoa>
 ['205']
 🔢 输入 token 数量: 343
-🔢 输入 token 数量: 442
-🔢 输入 token 数量: 1211
+🔢 输入 token 数量: 707
+🔢 输入 token 数量: 1476
 🔢 输入 token 数量: 223
 法条:[法条]刑法第312条<eoa>
 ['312']
 🔢 输入 token 数量: 224
-🔢 输入 token 数量: 341
-🔢 输入 token 数量: 1405
+🔢 输入 token 数量: 343
+🔢 输入 token 数量: 1407
 🔢 输入 token 数量: 227
-Generating answers::  24%|██▍       | 48/200 [08:11<39:01, 15.40s/it]Generating answers::  24%|██▍       | 49/200 [08:15<29:59, 11.92s/it]Generating answers::  25%|██▌       | 50/200 [08:21<25:23, 10.16s/it]Generating answers::  26%|██▌       | 51/200 [08:27<22:10,  8.93s/it]Generating answers::  26%|██▌       | 52/200 [08:31<18:33,  7.52s/it]Generating answers::  26%|██▋       | 53/200 [08:39<18:39,  7.61s/it]Generating answers::  27%|██▋       | 54/200 [08:48<19:00,  7.81s/it]Generating answers::  28%|██▊       | 55/200 [08:53<17:27,  7.22s/it]Generating answers::  28%|██▊       | 56/200 [08:59<16:27,  6.86s/it]Generating answers::  28%|██▊       | 57/200 [09:06<15:54,  6.67s/it]Generating answers::  29%|██▉       | 58/200 [09:11<14:36,  6.17s/it]Generating answers::  30%|██▉       | 59/200 [09:17<14:17,  6.08s/it]Generating answers::  30%|███       | 60/200 [09:32<20:40,  8.86s/it]Generating answers::  30%|███       | 61/200 [09:38<18:55,  8.17s/it]Generating answers::  31%|███       | 62/200 [09:43<16:15,  7.07s/it]Generating answers::  32%|███▏      | 63/200 [09:48<14:38,  6.41s/it]Generating answers::  32%|███▏      | 64/200 [09:53<13:30,  5.96s/it]Generating answers::  32%|███▎      | 65/200 [10:00<14:23,  6.39s/it]Generating answers::  33%|███▎      | 66/200 [10:47<41:09, 18.43s/it]Generating answers::  34%|███▎      | 67/200 [10:54<33:11, 14.97s/it]Generating answers::  34%|███▍      | 68/200 [11:04<29:47, 13.54s/it]Generating answers::  34%|███▍      | 69/200 [11:13<26:28, 12.12s/it]Generating answers::  35%|███▌      | 70/200 [11:20<22:55, 10.58s/it]Generating answers::  36%|███▌      | 71/200 [11:25<19:34,  9.11s/it]Generating answers::  36%|███▌      | 72/200 [11:37<20:51,  9.78s/it]Generating answers::  36%|███▋      | 73/200 [11:45<20:09,  9.52s/it]Generating answers::  37%|███▋      | 74/200 [11:52<17:55,  8.54s/it]Generating answers::  38%|███▊      | 75/200 [11:56<14:53,  7.15s/it]Generating answers::  38%|███▊      | 76/200 [12:00<12:54,  6.25s/it]Generating answers::  38%|███▊      | 77/200 [12:08<14:01,  6.84s/it]Generating answers::  39%|███▉      | 78/200 [12:55<38:17, 18.83s/it]Generating answers::  40%|███▉      | 79/200 [13:11<36:19, 18.01s/it]Generating answers::  40%|████      | 80/200 [13:21<31:34, 15.78s/it]Generating answers::  40%|████      | 81/200 [14:10<50:41, 25.56s/it]Generating answers::  41%|████      | 82/200 [14:19<40:45, 20.73s/it]Generating answers::  42%|████▏     | 83/200 [15:05<55:00, 28.21s/it]Generating answers::  42%|████▏     | 84/200 [15:13<42:48, 22.14s/it]Generating answers::  42%|████▎     | 85/200 [15:20<33:35, 17.53s/it]Generating answers::  43%|████▎     | 86/200 [15:25<26:29, 13.94s/it]Generating answers::  44%|████▎     | 87/200 [15:30<20:59, 11.15s/it]Generating answers::  44%|████▍     | 88/200 [15:35<17:18,  9.27s/it]Generating answers::  44%|████▍     | 89/200 [16:24<39:19, 21.26s/it]Generating answers::  45%|████▌     | 90/200 [17:11<53:00, 28.91s/it]Generating answers::  46%|████▌     | 91/200 [17:14<38:25, 21.15s/it]Generating answers::  46%|████▌     | 92/200 [17:20<29:48, 16.56s/it]Generating answers::  46%|████▋     | 93/200 [17:29<25:35, 14.35s/it]Generating answers::  47%|████▋     | 94/200 [17:45<26:30, 15.00s/it]法条:[法条]刑法第336条<eoa>
+Generating answers::  24%|██▍       | 48/200 [06:12<15:44,  6.21s/it]Generating answers::  24%|██▍       | 49/200 [06:18<15:00,  5.96s/it]Generating answers::  25%|██▌       | 50/200 [06:24<14:57,  5.98s/it]Generating answers::  26%|██▌       | 51/200 [06:31<15:52,  6.39s/it]Generating answers::  26%|██▌       | 52/200 [06:35<14:09,  5.74s/it]Generating answers::  26%|██▋       | 53/200 [06:43<15:36,  6.37s/it]Generating answers::  27%|██▋       | 54/200 [06:53<18:00,  7.40s/it]Generating answers::  28%|██▊       | 55/200 [07:12<26:03, 10.78s/it]Generating answers::  28%|██▊       | 56/200 [07:17<21:34,  8.99s/it]Generating answers::  28%|██▊       | 57/200 [07:23<19:32,  8.20s/it]Generating answers::  29%|██▉       | 58/200 [07:31<19:14,  8.13s/it]Generating answers::  30%|██▉       | 59/200 [07:44<22:46,  9.69s/it]Generating answers::  30%|███       | 60/200 [08:01<27:20, 11.72s/it]Generating answers::  30%|███       | 61/200 [08:06<22:26,  9.69s/it]Generating answers::  31%|███       | 62/200 [08:10<18:45,  8.16s/it]Generating answers::  32%|███▏      | 63/200 [08:15<16:20,  7.16s/it]Generating answers::  32%|███▏      | 64/200 [08:22<15:53,  7.01s/it]Generating answers::  32%|███▎      | 65/200 [08:32<18:20,  8.15s/it]Generating answers::  33%|███▎      | 66/200 [08:39<17:12,  7.71s/it]Generating answers::  34%|███▎      | 67/200 [08:46<16:38,  7.51s/it]Generating answers::  34%|███▍      | 68/200 [08:55<17:37,  8.01s/it]Generating answers::  34%|███▍      | 69/200 [09:03<17:07,  7.85s/it]Generating answers::  35%|███▌      | 70/200 [09:13<18:33,  8.56s/it]Generating answers::  36%|███▌      | 71/200 [09:19<16:38,  7.74s/it]Generating answers::  36%|███▌      | 72/200 [09:29<18:03,  8.46s/it]Generating answers::  36%|███▋      | 73/200 [09:39<18:35,  8.78s/it]Generating answers::  37%|███▋      | 74/200 [09:45<16:52,  8.04s/it]Generating answers::  38%|███▊      | 75/200 [10:30<39:47, 19.10s/it]Generating answers::  38%|███▊      | 76/200 [10:33<29:40, 14.36s/it]Generating answers::  38%|███▊      | 77/200 [10:38<23:22, 11.41s/it]Generating answers::  39%|███▉      | 78/200 [10:49<23:28, 11.55s/it]Generating answers::  40%|███▉      | 79/200 [11:03<24:38, 12.22s/it]Generating answers::  40%|████      | 80/200 [11:11<21:27, 10.73s/it]Generating answers::  40%|████      | 81/200 [11:18<19:12,  9.69s/it]Generating answers::  41%|████      | 82/200 [11:27<18:40,  9.49s/it]Generating answers::  42%|████▏     | 83/200 [12:13<39:42, 20.36s/it]Generating answers::  42%|████▏     | 84/200 [12:27<36:03, 18.65s/it]Generating answers::  42%|████▎     | 85/200 [12:34<29:11, 15.23s/it]Generating answers::  43%|████▎     | 86/200 [12:40<23:34, 12.41s/it]Generating answers::  44%|████▎     | 87/200 [12:45<19:04, 10.13s/it]Generating answers::  44%|████▍     | 88/200 [12:50<16:00,  8.57s/it]Generating answers::  44%|████▍     | 89/200 [13:40<39:06, 21.14s/it]Generating answers::  45%|████▌     | 90/200 [13:45<29:28, 16.08s/it]Generating answers::  46%|████▌     | 91/200 [13:47<21:52, 12.04s/it]Generating answers::  46%|████▌     | 92/200 [13:54<18:52, 10.49s/it]Generating answers::  46%|████▋     | 93/200 [14:11<22:02, 12.36s/it]Generating answers::  47%|████▋     | 94/200 [14:46<33:40, 19.06s/it]法条:[法条]刑法第336条<eoa>
 ['336']
 🔢 输入 token 数量: 228
-🔢 输入 token 数量: 336
-🔢 输入 token 数量: 1547
+🔢 输入 token 数量: 412
+🔢 输入 token 数量: 1623
 🔢 输入 token 数量: 226
 法条:[法条]刑法第313条<eoa>
 ['313']
 🔢 输入 token 数量: 227
-🔢 输入 token 数量: 323
-🔢 输入 token 数量: 1065
+🔢 输入 token 数量: 325
+🔢 输入 token 数量: 1067
 🔢 输入 token 数量: 296
 法条:[法条]刑法第264条<eoa>
 ['264']
 🔢 输入 token 数量: 297
-🔢 输入 token 数量: 405
-🔢 输入 token 数量: 1146
+🔢 输入 token 数量: 407
+🔢 输入 token 数量: 1148
 🔢 输入 token 数量: 444
 法条:[法条]刑法第177条<eoa>
 ['177']
 🔢 输入 token 数量: 445
-🔢 输入 token 数量: 516
-🔢 输入 token 数量: 1626
+🔢 输入 token 数量: 857
+🔢 输入 token 数量: 1967
 🔢 输入 token 数量: 507
 法条:[法条]刑法第266条<eoa>
 ['266']
 🔢 输入 token 数量: 508
-🔢 输入 token 数量: 608
-🔢 输入 token 数量: 1337
+🔢 输入 token 数量: 610
+🔢 输入 token 数量: 1339
 🔢 输入 token 数量: 252
 法条:[法条]刑法第275条<eoa>
 ['275']
 🔢 输入 token 数量: 253
-🔢 输入 token 数量: 322
-🔢 输入 token 数量: 1095
+🔢 输入 token 数量: 324
+🔢 输入 token 数量: 1097
 🔢 输入 token 数量: 268
 法条:[法条]刑法第275条<eoa>
 ['275']
 🔢 输入 token 数量: 269
-🔢 输入 token 数量: 338
-🔢 输入 token 数量: 1022
+🔢 输入 token 数量: 340
+🔢 输入 token 数量: 1024
 🔢 输入 token 数量: 775
 法条:[法条]刑法第266条<eoa>
 ['266']
 🔢 输入 token 数量: 776
-🔢 输入 token 数量: 876
-🔢 输入 token 数量: 4564
+🔢 输入 token 数量: 878
+🔢 输入 token 数量: 4566
 🔢 输入 token 数量: 143
 法条:[法条]刑法第234条<eoa>
 ['234']
 🔢 输入 token 数量: 144
-🔢 输入 token 数量: 292
-🔢 输入 token 数量: 1350
+🔢 输入 token 数量: 378
+🔢 输入 token 数量: 1436
 🔢 输入 token 数量: 284
 法条:[法条]刑法第115条<eoa>
 ['115']
 🔢 输入 token 数量: 285
-🔢 输入 token 数量: 342
-🔢 输入 token 数量: 1283
+🔢 输入 token 数量: 852
+🔢 输入 token 数量: 1793
 🔢 输入 token 数量: 291
 法条:[法条]刑法第359条<eoa>
 ['359']
 🔢 输入 token 数量: 292
-🔢 输入 token 数量: 339
-🔢 输入 token 数量: 1396
+🔢 输入 token 数量: 400
+🔢 输入 token 数量: 1457
 🔢 输入 token 数量: 167
 法条:[法条]刑法第313条<eoa>
 ['313']
 🔢 输入 token 数量: 168
-🔢 输入 token 数量: 264
-🔢 输入 token 数量: 2967
+🔢 输入 token 数量: 266
+🔢 输入 token 数量: 2969
 🔢 输入 token 数量: 506
 法条:[法条]刑法第234条<eoa>
 ['234']
 🔢 输入 token 数量: 507
-🔢 输入 token 数量: 655
-🔢 输入 token 数量: 2924
+🔢 输入 token 数量: 741
+🔢 输入 token 数量: 3010
 🔢 输入 token 数量: 394
 法条:[法条]刑法第345条<eoa>
 ['345']
 🔢 输入 token 数量: 395
-🔢 输入 token 数量: 495
-🔢 输入 token 数量: 1200
+🔢 输入 token 数量: 624
+🔢 输入 token 数量: 1329
 🔢 输入 token 数量: 509
 法条:[法条]刑法第266条<eoa>
 ['266']
 🔢 输入 token 数量: 510
-🔢 输入 token 数量: 610
-🔢 输入 token 数量: 1461
+🔢 输入 token 数量: 612
+🔢 输入 token 数量: 1463
 🔢 输入 token 数量: 295
 法条:[法条]刑法第233条<eoa>
 ['233']
 🔢 输入 token 数量: 296
-🔢 输入 token 数量: 352
-🔢 输入 token 数量: 1217
+🔢 输入 token 数量: 354
+🔢 输入 token 数量: 1219
 🔢 输入 token 数量: 289
 法条:[法条]刑法第150条<eoa>
 ['150']
 🔢 输入 token 数量: 290
-🔢 输入 token 数量: 359
-🔢 输入 token 数量: 1371
+🔢 输入 token 数量: 360
+🔢 输入 token 数量: 1372
 🔢 输入 token 数量: 247
 法条:[法条]刑法第292条、刑法第234条<eoa>
 ['292', '234']
 🔢 输入 token 数量: 248
-🔢 输入 token 数量: 541
-🔢 输入 token 数量: 1305
+🔢 输入 token 数量: 629
+🔢 输入 token 数量: 1393
 🔢 输入 token 数量: 575
 法条:[法条]刑法第264条、刑法第269条<eoa>
 ['264', '269']
 🔢 输入 token 数量: 576
-🔢 输入 token 数量: 741
-🔢 输入 token 数量: 2130
+🔢 输入 token 数量: 746
+🔢 输入 token 数量: 2135
 🔢 输入 token 数量: 425
 法条:[法条]刑法第225条<eoa>
 ['225']
 🔢 输入 token 数量: 426
-🔢 输入 token 数量: 598
-🔢 输入 token 数量: 1354
+🔢 输入 token 数量: 600
+🔢 输入 token 数量: 1356
 🔢 输入 token 数量: 713
 法条:[法条]刑法第272条<eoa>
 ['272']
 🔢 输入 token 数量: 714
-🔢 输入 token 数量: 876
-🔢 输入 token 数量: 2418
+🔢 输入 token 数量: 878
+🔢 输入 token 数量: 2420
 🔢 输入 token 数量: 354
 法条:[法条]刑法第144条<eoa>
 ['144']
 🔢 输入 token 数量: 355
-🔢 输入 token 数量: 466
-🔢 输入 token 数量: 1237
+🔢 输入 token 数量: 467
+🔢 输入 token 数量: 1238
 🔢 输入 token 数量: 222
 法条:[法条]刑法第303条<eoa>
 ['303']
 🔢 输入 token 数量: 223
-🔢 输入 token 数量: 276
-🔢 输入 token 数量: 1023
+🔢 输入 token 数量: 318
+🔢 输入 token 数量: 1065
 🔢 输入 token 数量: 319
 法条:[法条]刑法第264条、刑法第239条<eoa>
 ['264', '239']
 🔢 输入 token 数量: 320
-🔢 输入 token 数量: 539
-🔢 输入 token 数量: 1874
+🔢 输入 token 数量: 544
+🔢 输入 token 数量: 1879
 🔢 输入 token 数量: 457
 法条:[法条]刑法第232条<eoa>
 ['232']
 🔢 输入 token 数量: 458
-🔢 输入 token 数量: 509
-🔢 输入 token 数量: 4044
+🔢 输入 token 数量: 511
+🔢 输入 token 数量: 4046
 🔢 输入 token 数量: 214
 法条:[法条]刑法第338条<eoa>
 ['338']
 🔢 输入 token 数量: 215
-🔢 输入 token 数量: 300
-🔢 输入 token 数量: 1522
+🔢 输入 token 数量: 302
+🔢 输入 token 数量: 1524
 🔢 输入 token 数量: 266
 法条:[法条]刑法第336条<eoa>
 ['336']
 🔢 输入 token 数量: 267
-🔢 输入 token 数量: 375
-🔢 输入 token 数量: 1079
+🔢 输入 token 数量: 451
+🔢 输入 token 数量: 1155
 🔢 输入 token 数量: 263
 法条:[法条]刑法第133条<eoa>
 ['133']
 🔢 输入 token 数量: 264
-🔢 输入 token 数量: 415
-🔢 输入 token 数量: 1182
+🔢 输入 token 数量: 496
+🔢 输入 token 数量: 1263
 🔢 输入 token 数量: 153
 法条:[法条]刑法第133条<eoa>
 ['133']
 🔢 输入 token 数量: 154
-🔢 输入 token 数量: 305
-🔢 输入 token 数量: 1064
+🔢 输入 token 数量: 386
+🔢 输入 token 数量: 1145
 🔢 输入 token 数量: 471
 法条:[法条]刑法第345条<eoa>
 ['345']
 🔢 输入 token 数量: 472
-🔢 输入 token 数量: 572
-🔢 输入 token 数量: 1140
+🔢 输入 token 数量: 701
+🔢 输入 token 数量: 1269
 🔢 输入 token 数量: 1719
 法条:[法条]刑法第185条、刑法第186条、刑法第384条<eoa>
 ['185', '186', '384']
 🔢 输入 token 数量: 1720
-🔢 输入 token 数量: 2068
-🔢 输入 token 数量: 2963
+🔢 输入 token 数量: 2335
+🔢 输入 token 数量: 3230
 🔢 输入 token 数量: 429
 法条:[法条]刑法第390条、刑法第389条<eoa>
 ['390', '389']
 🔢 输入 token 数量: 430
-🔢 输入 token 数量: 678
-🔢 输入 token 数量: 2292
+🔢 输入 token 数量: 828
+🔢 输入 token 数量: 2442
 🔢 输入 token 数量: 387
 法条:[法条]刑法第356条、刑法第347条、刑法第347条<eoa>
 ['356', '347', '347']
 🔢 输入 token 数量: 388
-🔢 输入 token 数量: 1127
-🔢 输入 token 数量: 1814
+🔢 输入 token 数量: 1133
+🔢 输入 token 数量: 1820
 🔢 输入 token 数量: 301
 法条:[法条]刑法第347条、刑法第357条、刑法第347条<eoa>
 ['347', '357', '347']
 🔢 输入 token 数量: 302
-🔢 输入 token 数量: 1094
-🔢 输入 token 数量: 2554
+🔢 输入 token 数量: 1100
+🔢 输入 token 数量: 2560
 🔢 输入 token 数量: 649
 法条:[法条]刑法第266条<eoa>
 ['266']
 🔢 输入 token 数量: 650
-🔢 输入 token 数量: 750
-🔢 输入 token 数量: 1641
+🔢 输入 token 数量: 752
+🔢 输入 token 数量: 1643
 🔢 输入 token 数量: 93
 法条:[法条]刑法第264条<eoa>
 ['264']
 🔢 输入 token 数量: 94
-🔢 输入 token 数量: 202
-🔢 输入 token 数量: 470
+🔢 输入 token 数量: 204
+🔢 输入 token 数量: 472
 🔢 输入 token 数量: 177
 法条:[法条]刑法第264条<eoa>
 ['264']
 🔢 输入 token 数量: 178
-🔢 输入 token 数量: 286
-🔢 输入 token 数量: 2303
+🔢 输入 token 数量: 288
+🔢 输入 token 数量: 2305
 🔢 输入 token 数量: 349
 法条:[法条]刑法第267条、刑法第263条<eoa>
 ['267', '263']
 🔢 输入 token 数量: 350
-🔢 输入 token 数量: 602
-🔢 输入 token 数量: 2557
+🔢 输入 token 数量: 606
+🔢 输入 token 数量: 2561
 🔢 输入 token 数量: 391
 法条:[法条]刑法第313条<eoa>
 ['313']
 🔢 输入 token 数量: 392
-🔢 输入 token 数量: 488
-🔢 输入 token 数量: 1534
+🔢 输入 token 数量: 490
+🔢 输入 token 数量: 1536
 🔢 输入 token 数量: 216
 法条:[法条]刑法第266条<eoa>
 ['266']
 🔢 输入 token 数量: 217
-🔢 输入 token 数量: 317
-🔢 输入 token 数量: 989
+🔢 输入 token 数量: 319
+🔢 输入 token 数量: 991
 🔢 输入 token 数量: 297
 法条:[法条]刑法第342条<eoa>
 ['342']
 🔢 输入 token 数量: 298
-🔢 输入 token 数量: 374
-🔢 输入 token 数量: 1076
+🔢 输入 token 数量: 376
+🔢 输入 token 数量: 1078
 🔢 输入 token 数量: 1063
 法条:[法条]刑法第290条<eoa>
 ['290']
 🔢 输入 token 数量: 1064
-🔢 输入 token 数量: 1111
-🔢 输入 token 数量: 4326
+🔢 输入 token 数量: 1302
+🔢 输入 token 数量: 4517
 🔢 输入 token 数量: 828
 法条:[法条]刑法第224条<eoa>
 ['224']
 🔢 输入 token 数量: 829
-🔢 输入 token 数量: 951
-🔢 输入 token 数量: 1643
+🔢 输入 token 数量: 1153
+🔢 输入 token 数量: 1845
 🔢 输入 token 数量: 219
 法条:[法条]刑法第280条<eoa>
 ['280']
 🔢 输入 token 数量: 220
-🔢 输入 token 数量: 325
-🔢 输入 token 数量: 878
+🔢 输入 token 数量: 616
+🔢 输入 token 数量: 1169
 🔢 输入 token 数量: 353
 法条:[法条]刑法第128条<eoa>
 ['128']
 🔢 输入 token 数量: 354
-🔢 输入 token 数量: 441
-🔢 输入 token 数量: 1494
+🔢 输入 token 数量: 542
+🔢 输入 token 数量: 1595
 🔢 输入 token 数量: 376
 法条:[法条]刑法第345条<eoa>
 ['345']
 🔢 输入 token 数量: 377
-🔢 输入 token 数量: 477
-🔢 输入 token 数量: 2136
+🔢 输入 token 数量: 606
+🔢 输入 token 数量: 2265
 🔢 输入 token 数量: 508
 法条:[法条]刑法第277条、刑法第277条<eoa>
 ['277', '277']
 🔢 输入 token 数量: 509
-🔢 输入 token 数量: 802
-🔢 输入 token 数量: 2215
+🔢 输入 token 数量: 806
+🔢 输入 token 数量: 2219
 🔢 输入 token 数量: 239
 法条:[法条]刑法第214条<eoa>
 ['214']
 🔢 输入 token 数量: 240
-🔢 输入 token 数量: 308
-🔢 输入 token 数量: 1950Generating answers::  48%|████▊     | 95/200 [17:55<23:29, 13.42s/it]Generating answers::  48%|████▊     | 96/200 [18:00<18:46, 10.84s/it]Generating answers::  48%|████▊     | 97/200 [18:13<18:06, 10.55s/it]Generating answers::  49%|████▉     | 98/200 [18:20<16:06,  9.47s/it]Generating answers::  50%|████▉     | 99/200 [18:26<14:14,  8.46s/it]Generating answers::  50%|█████     | 100/200 [18:29<11:39,  7.00s/it]Generating answers::  50%|█████     | 101/200 [18:35<10:49,  6.56s/it]Generating answers::  51%|█████     | 102/200 [19:07<23:28, 14.37s/it]Generating answers::  52%|█████▏    | 103/200 [19:13<18:59, 11.75s/it]Generating answers::  52%|█████▏    | 104/200 [19:26<19:28, 12.17s/it]Generating answers::  52%|█████▎    | 105/200 [19:34<17:23, 10.98s/it]Generating answers::  53%|█████▎    | 106/200 [19:39<14:13,  9.08s/it]Generating answers::  54%|█████▎    | 107/200 [19:46<13:00,  8.39s/it]Generating answers::  54%|█████▍    | 108/200 [19:54<12:37,  8.23s/it]Generating answers::  55%|█████▍    | 109/200 [19:57<10:06,  6.66s/it]Generating answers::  55%|█████▌    | 110/200 [20:03<09:40,  6.45s/it]Generating answers::  56%|█████▌    | 111/200 [20:12<10:43,  7.24s/it]Generating answers::  56%|█████▌    | 112/200 [20:16<09:33,  6.51s/it]Generating answers::  56%|█████▋    | 113/200 [20:22<09:11,  6.34s/it]Generating answers::  57%|█████▋    | 114/200 [20:28<08:44,  6.10s/it]Generating answers::  57%|█████▊    | 115/200 [20:36<09:19,  6.58s/it]Generating answers::  58%|█████▊    | 116/200 [20:46<10:55,  7.81s/it]Generating answers::  58%|█████▊    | 117/200 [20:50<08:57,  6.47s/it]Generating answers::  59%|█████▉    | 118/200 [20:57<09:12,  6.74s/it]Generating answers::  60%|█████▉    | 119/200 [21:07<10:13,  7.57s/it]Generating answers::  60%|██████    | 120/200 [21:16<10:47,  8.10s/it]Generating answers::  60%|██████    | 121/200 [21:21<09:20,  7.10s/it]Generating answers::  61%|██████    | 122/200 [21:26<08:31,  6.55s/it]Generating answers::  62%|██████▏   | 123/200 [21:33<08:34,  6.69s/it]Generating answers::  62%|██████▏   | 124/200 [21:39<08:21,  6.60s/it]Generating answers::  62%|██████▎   | 125/200 [21:49<09:19,  7.45s/it]Generating answers::  63%|██████▎   | 126/200 [22:00<10:34,  8.57s/it]Generating answers::  64%|██████▎   | 127/200 [22:06<09:36,  7.90s/it]Generating answers::  64%|██████▍   | 128/200 [22:14<09:14,  7.70s/it]Generating answers::  64%|██████▍   | 129/200 [22:21<08:55,  7.54s/it]Generating answers::  65%|██████▌   | 130/200 [22:30<09:18,  7.97s/it]Generating answers::  66%|██████▌   | 131/200 [22:34<07:59,  6.95s/it]Generating answers::  66%|██████▌   | 132/200 [22:44<08:47,  7.75s/it]Generating answers::  66%|██████▋   | 133/200 [23:16<16:50, 15.08s/it]Generating answers::  67%|██████▋   | 134/200 [23:23<13:49, 12.58s/it]Generating answers::  68%|██████▊   | 135/200 [23:31<12:16, 11.33s/it]Generating answers::  68%|██████▊   | 136/200 [23:56<16:32, 15.51s/it]Generating answers::  68%|██████▊   | 137/200 [24:03<13:26, 12.80s/it]Generating answers::  69%|██████▉   | 138/200 [24:15<13:05, 12.67s/it]Generating answers::  70%|██████▉   | 139/200 [24:20<10:24, 10.24s/it]Generating answers::  70%|███████   | 140/200 [24:32<10:51, 10.86s/it]Generating answers::  70%|███████   | 141/200 [24:41<09:57, 10.13s/it]
+🔢 输入 token 数量: 310
+Generating answers::  48%|████▊     | 95/200 [14:54<27:37, 15.79s/it]Generating answers::  48%|████▊     | 96/200 [14:59<21:43, 12.53s/it]Generating answers::  48%|████▊     | 97/200 [15:08<19:45, 11.51s/it]Generating answers::  49%|████▉     | 98/200 [15:15<17:21, 10.21s/it]Generating answers::  50%|████▉     | 99/200 [15:20<14:33,  8.65s/it]Generating answers::  50%|█████     | 100/200 [15:25<12:28,  7.49s/it]Generating answers::  50%|█████     | 101/200 [15:31<11:30,  6.97s/it]Generating answers::  51%|█████     | 102/200 [15:36<10:49,  6.62s/it]Generating answers::  52%|█████▏    | 103/200 [15:43<10:38,  6.59s/it]Generating answers::  52%|█████▏    | 104/200 [15:52<11:34,  7.24s/it]Generating answers::  52%|█████▎    | 105/200 [15:59<11:24,  7.21s/it]Generating answers::  53%|█████▎    | 106/200 [16:07<11:43,  7.49s/it]Generating answers::  54%|█████▎    | 107/200 [16:14<11:35,  7.48s/it]Generating answers::  54%|█████▍    | 108/200 [16:23<11:54,  7.77s/it]Generating answers::  55%|█████▍    | 109/200 [16:26<09:52,  6.51s/it]Generating answers::  55%|█████▌    | 110/200 [16:35<10:42,  7.14s/it]Generating answers::  56%|█████▌    | 111/200 [17:03<19:43, 13.29s/it]Generating answers::  56%|█████▌    | 112/200 [17:06<15:14, 10.39s/it]Generating answers::  56%|█████▋    | 113/200 [17:13<13:14,  9.13s/it]Generating answers::  57%|█████▋    | 114/200 [17:18<11:27,  7.99s/it]Generating answers::  57%|█████▊    | 115/200 [17:25<11:05,  7.83s/it]Generating answers::  58%|█████▊    | 116/200 [17:36<12:05,  8.64s/it]Generating answers::  58%|█████▊    | 117/200 [17:46<12:41,  9.17s/it]Generating answers::  59%|█████▉    | 118/200 [17:52<11:14,  8.23s/it]Generating answers::  60%|█████▉    | 119/200 [18:07<13:50, 10.25s/it]Generating answers::  60%|██████    | 120/200 [18:17<13:39, 10.25s/it]Generating answers::  60%|██████    | 121/200 [18:21<10:52,  8.27s/it]Generating answers::  61%|██████    | 122/200 [18:29<10:42,  8.24s/it]Generating answers::  62%|██████▏   | 123/200 [18:36<10:09,  7.91s/it]Generating answers::  62%|██████▏   | 124/200 [19:23<24:36, 19.43s/it]Generating answers::  62%|██████▎   | 125/200 [19:31<19:55, 15.94s/it]Generating answers::  63%|██████▎   | 126/200 [19:38<16:40, 13.52s/it]Generating answers::  64%|██████▎   | 127/200 [19:46<14:11, 11.66s/it]Generating answers::  64%|██████▍   | 128/200 [19:51<11:37,  9.69s/it]Generating answers::  64%|██████▍   | 129/200 [19:58<10:39,  9.01s/it]Generating answers::  65%|██████▌   | 130/200 [20:06<10:08,  8.69s/it]Generating answers::  66%|██████▌   | 131/200 [20:10<08:23,  7.29s/it]Generating answers::  66%|██████▌   | 132/200 [20:22<09:39,  8.52s/it]Generating answers::  66%|██████▋   | 133/200 [20:31<09:40,  8.67s/it]Generating answers::  67%|██████▋   | 134/200 [20:38<09:11,  8.35s/it]Generating answers::  68%|██████▊   | 135/200 [20:45<08:30,  7.85s/it]Generating answers::  68%|██████▊   | 136/200 [20:57<09:47,  9.18s/it]Generating answers::  68%|██████▊   | 137/200 [21:04<08:45,  8.34s/it]Generating answers::  69%|██████▉   | 138/200 [21:15<09:29,  9.18s/it]Generating answers::  70%|██████▉   | 139/200 [21:20<08:02,  7.91s/it]Generating answers::  70%|███████   | 140/200 [21:33<09:27,  9.46s/it]Generating answers::  70%|███████   | 141/200 [21:39<08:27,  8.60s/it]🔢 输入 token 数量: 1952
 🔢 输入 token 数量: 374
 法条:[法条]刑法第264条、刑法第269条<eoa>
 ['264', '269']
 🔢 输入 token 数量: 375
-🔢 输入 token 数量: 540
-🔢 输入 token 数量: 1281
+🔢 输入 token 数量: 545
+🔢 输入 token 数量: 1286
 🔢 输入 token 数量: 675
 法条:[法条]刑法第293条、刑法第293条<eoa>
 ['293', '293']
 🔢 输入 token 数量: 676
-🔢 输入 token 数量: 945
-🔢 输入 token 数量: 2060
+🔢 输入 token 数量: 949
+🔢 输入 token 数量: 2064
 🔢 输入 token 数量: 288
 法条:[法条]刑法第280条<eoa>
 ['280']
 🔢 输入 token 数量: 289
-🔢 输入 token 数量: 394
-🔢 输入 token 数量: 1337
+🔢 输入 token 数量: 685
+🔢 输入 token 数量: 1628
 🔢 输入 token 数量: 455
 法条:[法条]刑法第235条<eoa>
 ['235']
 🔢 输入 token 数量: 456
-🔢 输入 token 数量: 507
-🔢 输入 token 数量: 1164
+🔢 输入 token 数量: 509
+🔢 输入 token 数量: 1166
 🔢 输入 token 数量: 164
 法条:[法条]刑法第224条<eoa>
 ['224']
 🔢 输入 token 数量: 165
-🔢 输入 token 数量: 287
-🔢 输入 token 数量: 929
+🔢 输入 token 数量: 489
+🔢 输入 token 数量: 1131
 🔢 输入 token 数量: 177
 法条:[法条]刑法第133条<eoa>
 ['133']
 🔢 输入 token 数量: 178
-🔢 输入 token 数量: 329
-🔢 输入 token 数量: 1570
+🔢 输入 token 数量: 410
+🔢 输入 token 数量: 1651
 🔢 输入 token 数量: 1152
 法条:[法条]刑法第240条<eoa>
 ['240']
 🔢 输入 token 数量: 1153
-🔢 输入 token 数量: 1389
-🔢 输入 token 数量: 2663
+🔢 输入 token 数量: 1391
+🔢 输入 token 数量: 2665
 🔢 输入 token 数量: 305
 法条:[法条]刑法第133条<eoa>
 ['133']
 🔢 输入 token 数量: 306
-🔢 输入 token 数量: 457
-🔢 输入 token 数量: 1066
+🔢 输入 token 数量: 538
+🔢 输入 token 数量: 1147
 🔢 输入 token 数量: 428
 法条:[法条]刑法第385条、刑法第383条、刑法第397条、刑法第386条<eoa>
 ['385', '383', '397', '386']
 🔢 输入 token 数量: 429
-🔢 输入 token 数量: 931
-🔢 输入 token 数量: 1880
+🔢 输入 token 数量: 1004
+🔢 输入 token 数量: 1953
 🔢 输入 token 数量: 214
 法条:[法条]刑法第341条<eoa>
 ['341']
 🔢 输入 token 数量: 215
-🔢 输入 token 数量: 283
-🔢 输入 token 数量: 1337
+🔢 输入 token 数量: 483
+🔢 输入 token 数量: 1537
 🔢 输入 token 数量: 226
 法条:[法条]刑法第128条<eoa>
 ['128']
 🔢 输入 token 数量: 227
-🔢 输入 token 数量: 314
-🔢 输入 token 数量: 1169
+🔢 输入 token 数量: 415
+🔢 输入 token 数量: 1270
 🔢 输入 token 数量: 161
 法条:[法条]刑法第359条<eoa>
 ['359']
 🔢 输入 token 数量: 162
-🔢 输入 token 数量: 209
-🔢 输入 token 数量: 2006
+🔢 输入 token 数量: 270
+🔢 输入 token 数量: 2067
 🔢 输入 token 数量: 184
 法条:[法条]刑法第238条<eoa>
 ['238']
 🔢 输入 token 数量: 185
-🔢 输入 token 数量: 340
-🔢 输入 token 数量: 1500
+🔢 输入 token 数量: 342
+🔢 输入 token 数量: 1502
 🔢 输入 token 数量: 166
 法条:[法条]刑法第312条<eoa>
 ['312']
 🔢 输入 token 数量: 167
-🔢 输入 token 数量: 284
-🔢 输入 token 数量: 912
+🔢 输入 token 数量: 286
+🔢 输入 token 数量: 914
 🔢 输入 token 数量: 296
 法条:[法条]刑法第144条<eoa>
 ['144']
 🔢 输入 token 数量: 297
-🔢 输入 token 数量: 408
-🔢 输入 token 数量: 1149
+🔢 输入 token 数量: 409
+🔢 输入 token 数量: 1150
 🔢 输入 token 数量: 400
 法条:[法条]刑法第292条<eoa>
 ['292']
 🔢 输入 token 数量: 401
-🔢 输入 token 数量: 557
-🔢 输入 token 数量: 2045
+🔢 输入 token 数量: 559
+🔢 输入 token 数量: 2047
 🔢 输入 token 数量: 205
 法条:[法条]刑法第175条<eoa>
 ['175']
 🔢 输入 token 数量: 206
-🔢 输入 token 数量: 341
-🔢 输入 token 数量: 806
+🔢 输入 token 数量: 456
+🔢 输入 token 数量: 921
 🔢 输入 token 数量: 180
 法条:[法条]刑法第266条<eoa>
 ['266']
 🔢 输入 token 数量: 181
-🔢 输入 token 数量: 281
-🔢 输入 token 数量: 921
+🔢 输入 token 数量: 283
+🔢 输入 token 数量: 923
 🔢 输入 token 数量: 492
 法条:[法条]刑法第266条<eoa>
 ['266']
 🔢 输入 token 数量: 493
-🔢 输入 token 数量: 593
-🔢 输入 token 数量: 1840
+🔢 输入 token 数量: 595
+🔢 输入 token 数量: 1842
 🔢 输入 token 数量: 251
 法条:[法条]刑法第303条<eoa>
 ['303']
 🔢 输入 token 数量: 252
-🔢 输入 token 数量: 305
-🔢 输入 token 数量: 1146
+🔢 输入 token 数量: 347
+🔢 输入 token 数量: 1188
 🔢 输入 token 数量: 201
 法条:[法条]刑法第266条<eoa>
 ['266']
 🔢 输入 token 数量: 202
-🔢 输入 token 数量: 302
-🔢 输入 token 数量: 1558
+🔢 输入 token 数量: 304
+🔢 输入 token 数量: 1560
 🔢 输入 token 数量: 434
 法条:[法条]刑法第115条<eoa>
 ['115']
 🔢 输入 token 数量: 435
-🔢 输入 token 数量: 492
-🔢 输入 token 数量: 1031
+🔢 输入 token 数量: 1002
+🔢 输入 token 数量: 1541
 🔢 输入 token 数量: 276
 法条:[法条]刑法第345条<eoa>
 ['345']
 🔢 输入 token 数量: 277
-🔢 输入 token 数量: 377
-🔢 输入 token 数量: 849
+🔢 输入 token 数量: 506
+🔢 输入 token 数量: 978
 🔢 输入 token 数量: 676
 法条:[法条]刑法第280条<eoa>
 ['280']
 🔢 输入 token 数量: 677
-🔢 输入 token 数量: 782
-🔢 输入 token 数量: 3870
+🔢 输入 token 数量: 1073
+🔢 输入 token 数量: 4161
 🔢 输入 token 数量: 344
 法条:[法条]刑法第385条、刑法第383条、刑法第386条<eoa>
 ['385', '383', '386']
 🔢 输入 token 数量: 345
-🔢 输入 token 数量: 741
-🔢 输入 token 数量: 3458
+🔢 输入 token 数量: 747
+🔢 输入 token 数量: 3464
 🔢 输入 token 数量: 277
 法条:[法条]刑法第234条<eoa>
 ['234']
 🔢 输入 token 数量: 278
-🔢 输入 token 数量: 426
-🔢 输入 token 数量: 999
+🔢 输入 token 数量: 512
+🔢 输入 token 数量: 1085
 🔢 输入 token 数量: 223
 法条:[法条]刑法第128条<eoa>
 ['128']
 🔢 输入 token 数量: 224
-🔢 输入 token 数量: 311
-🔢 输入 token 数量: 958
+🔢 输入 token 数量: 412
+🔢 输入 token 数量: 1059
 🔢 输入 token 数量: 166
 法条:[法条]刑法第234条<eoa>
 ['234']
 🔢 输入 token 数量: 167
-🔢 输入 token 数量: 315
-🔢 输入 token 数量: 1921
+🔢 输入 token 数量: 401
+🔢 输入 token 数量: 2007
 🔢 输入 token 数量: 321
 法条:[法条]刑法第151条<eoa>
 ['151']
 🔢 输入 token 数量: 322
-🔢 输入 token 数量: 426
-🔢 输入 token 数量: 2815
+🔢 输入 token 数量: 873
+🔢 输入 token 数量: 3262
 🔢 输入 token 数量: 326
 法条:[法条]刑法第234条<eoa>
 ['234']
 🔢 输入 token 数量: 327
-🔢 输入 token 数量: 475
-🔢 输入 token 数量: 1771
+🔢 输入 token 数量: 561
+🔢 输入 token 数量: 1857
 🔢 输入 token 数量: 230
 法条:[法条]刑法第264条、刑法第196条<eoa>
 ['264', '196']
 🔢 输入 token 数量: 231
-🔢 输入 token 数量: 540
-🔢 输入 token 数量: 3249
+🔢 输入 token 数量: 543
+🔢 输入 token 数量: 3252
 🔢 输入 token 数量: 338
 法条:[法条]刑法第293条<eoa>
 ['293']
 🔢 输入 token 数量: 339
-🔢 输入 token 数量: 479
-🔢 输入 token 数量: 1220
+🔢 输入 token 数量: 481
+🔢 输入 token 数量: 1222
 🔢 输入 token 数量: 251
 法条:[法条]刑法第133条<eoa>
 ['133']
 🔢 输入 token 数量: 252
-🔢 输入 token 数量: 403
-🔢 输入 token 数量: 1292
+🔢 输入 token 数量: 484
+🔢 输入 token 数量: 1373
 🔢 输入 token 数量: 249
 法条:[法条]刑法第205条<eoa>
 ['205']
 🔢 输入 token 数量: 250
-🔢 输入 token 数量: 349
-🔢 输入 token 数量: 1093
+🔢 输入 token 数量: 614
+🔢 输入 token 数量: 1358
 🔢 输入 token 数量: 340
 法条:[法条]刑法第266条<eoa>
 ['266']
 🔢 输入 token 数量: 341
-🔢 输入 token 数量: 441
-🔢 输入 token 数量: 4343
+🔢 输入 token 数量: 443
+🔢 输入 token 数量: 4345
 🔢 输入 token 数量: 318
 法条:[法条]刑法第341条<eoa>
 ['341']
 🔢 输入 token 数量: 319
-🔢 输入 token 数量: 387
-🔢 输入 token 数量: 1174
+🔢 输入 token 数量: 587
+🔢 输入 token 数量: 1374
 🔢 输入 token 数量: 365
 法条:[法条]刑法第347条、刑法第347条、刑法第357条<eoa>
 ['347', '347', '357']
 🔢 输入 token 数量: 366
-🔢 输入 token 数量: 1158
-🔢 输入 token 数量: 1919
+🔢 输入 token 数量: 1164
+🔢 输入 token 数量: 1925
 🔢 输入 token 数量: 335
 法条:[法条]刑法第353条、刑法第353条<eoa>
 ['353', '353']
 🔢 输入 token 数量: 336
-🔢 输入 token 数量: 453
-🔢 输入 token 数量: 2238
+🔢 输入 token 数量: 581
+🔢 输入 token 数量: 2366
 🔢 输入 token 数量: 286
 法条:[法条]刑法第264条、刑法第269条<eoa>
 ['264', '269']
 🔢 输入 token 数量: 287
-🔢 输入 token 数量: 452
-🔢 输入 token 数量: 1448
+🔢 输入 token 数量: 457
+🔢 输入 token 数量: 1453
 🔢 输入 token 数量: 368
 法条:[法条]刑法第264条<eoa>
 ['264']
 🔢 输入 token 数量: 369
-🔢 输入 token 数量: 477
-🔢 输入 token 数量: 1572
+🔢 输入 token 数量: 479
+🔢 输入 token 数量: 1574
 🔢 输入 token 数量: 571
 法条:[法条]刑法第347条、刑法第347条、刑法第357条<eoa>
 ['347', '347', '357']
 🔢 输入 token 数量: 572
-🔢 输入 token 数量: 1364
-🔢 输入 token 数量: 2032
+🔢 输入 token 数量: 1370
+🔢 输入 token 数量: 2038
 🔢 输入 token 数量: 507
 法条:[法条]刑法第393条、刑法第389条、刑法第390条<eoa>
 ['393', '389', '390']
 🔢 输入 token 数量: 508
-🔢 输入 token 数量: 851
-🔢 输入 token 数量: 5157
+🔢 输入 token 数量: 1003
+🔢 输入 token 数量: 5309
 🔢 输入 token 数量: 404
 法条:[法条]刑法第363条<eoa>
 ['363']
 🔢 输入 token 数量: 405
-🔢 输入 token 数量: 485
-🔢 输入 token 数量: 1337
+🔢 输入 token 数量: 578
+🔢 输入 token 数量: 1430
 🔢 输入 token 数量: 448
 法条:[法条]刑法第234条<eoa>
 ['234']
 🔢 输入 token 数量: 449
-🔢 输入 token 数量: 597
-🔢 输入 token 数量: 1410
+🔢 输入 token 数量: 683
+🔢 输入 token 数量: 1496
 🔢 输入 token 数量: 218
 法条:[法条]刑法第272条<eoa>
 ['272']
 🔢 输入 token 数量: 219
-🔢 输入 token 数量: 381
-🔢 输入 token 数量: 1400
+🔢 输入 token 数量: 383
+🔢 输入 token 数量: 1402
 🔢 输入 token 数量: 448
 法条:[法条]刑法第267条、刑法第263条<eoa>
 ['267', '263']
 🔢 输入 token 数量: 449
-🔢 输入 token 数量: 701
-🔢 输入 token 数量: 1992
+🔢 输入 token 数量: 705
+🔢 输入 token 数量: 1996
 🔢 输入 token 数量: 332
 法条:[法条]刑法第347条、刑法第357条<eoa>
 ['347', '357']
 🔢 输入 token 数量: 333
-🔢 输入 token 数量: 783
-Generating answers::  71%|███████   | 142/200 [24:51<09:50, 10.19s/it]Generating answers::  72%|███████▏  | 143/200 [24:55<07:57,  8.38s/it]Generating answers::  72%|███████▏  | 144/200 [25:03<07:39,  8.20s/it]Generating answers::  72%|███████▎  | 145/200 [25:14<08:19,  9.08s/it]Generating answers::  73%|███████▎  | 146/200 [25:18<06:52,  7.64s/it]Generating answers::  74%|███████▎  | 147/200 [25:23<05:50,  6.62s/it]Generating answers::  74%|███████▍  | 148/200 [25:30<06:02,  6.97s/it]
+Generating answers::  71%|███████   | 142/200 [21:50<08:49,  9.13s/it]Generating answers::  72%|███████▏  | 143/200 [21:55<07:27,  7.85s/it]Generating answers::  72%|███████▏  | 144/200 [22:03<07:32,  8.08s/it]Generating answers::  72%|███████▎  | 145/200 [22:15<08:20,  9.10s/it]Generating answers::  73%|███████▎  | 146/200 [22:20<07:16,  8.08s/it]Generating answers::  74%|███████▎  | 147/200 [22:24<06:03,  6.86s/it]Generating answers::  74%|███████▍  | 148/200 [22:31<05:59,  6.92s/it]Generating answers::  74%|███████▍  | 149/200 [22:42<06:42,  7.90s/it]Generating answers::  75%|███████▌  | 150/200 [22:46<05:46,  6.94s/it]Generating answers::  76%|███████▌  | 151/200 [22:56<06:23,  7.82s/it]Generating answers::  76%|███████▌  | 152/200 [23:02<05:53,  7.36s/it]Generating answers::  76%|███████▋  | 153/200 [23:08<05:23,  6.89s/it]Generating answers::  77%|███████▋  | 154/200 [23:13<04:52,  6.36s/it]Generating answers::  78%|███████▊  | 155/200 [23:17<04:04,  5.43s/it]Generating answers::  78%|███████▊  | 156/200 [23:21<03:48,  5.20s/it]Generating answers::  78%|███████▊  | 157/200 [23:29<04:10,  5.83s/it]Generating answers::  79%|███████▉  | 158/200 [23:33<03:41,  5.28s/it]Generating answers::  80%|███████▉  | 159/200 [23:39<03:55,  5.74s/it]Generating answers::  80%|████████  | 160/200 [23:47<04:08,  6.21s/it]Generating answers::  80%|████████  | 161/200 [23:55<04:25,  6.82s/it]Generating answers::  81%|████████  | 162/200 [24:03<04:30,  7.11s/it]Generating answers::  82%|████████▏ | 163/200 [24:07<03:53,  6.31s/it]Generating answers::  82%|████████▏ | 164/200 [24:11<03:21,  5.60s/it]Generating answers::  82%|████████▎ | 165/200 [24:19<03:38,  6.24s/it]Generating answers::  83%|████████▎ | 166/200 [24:25<03:27,  6.09s/it]Generating answers::  84%|████████▎ | 167/200 [24:31<03:26,  6.25s/it]Generating answers::  84%|████████▍ | 168/200 [24:39<03:30,  6.58s/it]Generating answers::  84%|████████▍ | 169/200 [24:47<03:38,  7.06s/it]Generating answers::  85%|████████▌ | 170/200 [24:50<03:01,  6.04s/it]Generating answers::  86%|████████▌ | 171/200 [24:58<03:12,  6.64s/it]Generating answers::  86%|████████▌ | 172/200 [25:07<03:17,  7.06s/it]Generating answers::  86%|████████▋ | 173/200 [25:11<02:51,  6.35s/it]Generating answers::  87%|████████▋ | 174/200 [25:18<02:49,  6.51s/it]Generating answers::  88%|████████▊ | 175/200 [25:24<02:41,  6.46s/it]Generating answers::  88%|████████▊ | 176/200 [25:31<02:34,  6.44s/it]Generating answers::  88%|████████▊ | 177/200 [25:38<02:35,  6.75s/it]Generating answers::  89%|████████▉ | 178/200 [25:45<02:30,  6.85s/it]Generating answers::  90%|████████▉ | 179/200 [25:53<02:28,  7.07s/it]Generating answers::  90%|█████████ | 180/200 [26:01<02:26,  7.35s/it]Generating answers::  90%|█████████ | 181/200 [26:04<01:57,  6.20s/it]Generating answers::  91%|█████████ | 182/200 [26:25<03:08, 10.45s/it]Generating answers::  92%|█████████▏| 183/200 [26:31<02:37,  9.26s/it]Generating answers::  92%|█████████▏| 184/200 [26:37<02:10,  8.17s/it]Generating answers::  92%|█████████▎| 185/200 [27:10<03:52, 15.51s/it]Generating answers::  93%|█████████▎| 186/200 [27:17<03:02, 13.04s/it]Generating answers::  94%|█████████▎| 187/200 [27:25<02:32, 11.71s/it]Generating answers::  94%|█████████▍| 188/200 [27:33<02:05, 10.42s/it]Generating answers::  94%|█████████▍| 189/200 [27:40<01:43,  9.43s/it]🔢 输入 token 数量: 787
+🔢 输入 token 数量: 1542
+🔢 输入 token 数量: 192
+法条:[法条]刑法第293条<eoa>
+['293']
+🔢 输入 token 数量: 193
+🔢 输入 token 数量: 335
+🔢 输入 token 数量: 1458
+🔢 输入 token 数量: 292
+法条:[法条]刑法第343条<eoa>
+['343']
+🔢 输入 token 数量: 293
+🔢 输入 token 数量: 449
+🔢 输入 token 数量: 1782
+🔢 输入 token 数量: 248
+法条:[法条]刑法第347条、刑法第347条、刑法第357条<eoa>
+['347', '347', '357']
+🔢 输入 token 数量: 249
+🔢 输入 token 数量: 1047
+🔢 输入 token 数量: 1680
+🔢 输入 token 数量: 238
+法条:[法条]刑法第235条<eoa>
+['235']
+🔢 输入 token 数量: 239
+🔢 输入 token 数量: 292
+🔢 输入 token 数量: 981
+🔢 输入 token 数量: 298
+法条:[法条]刑法第384条<eoa>
+['384']
+🔢 输入 token 数量: 299
+🔢 输入 token 数量: 443
+🔢 输入 token 数量: 1147
+🔢 输入 token 数量: 211
+法条:[法条]刑法第235条<eoa>
+['235']
+🔢 输入 token 数量: 212
+🔢 输入 token 数量: 265
+🔢 输入 token 数量: 965
+🔢 输入 token 数量: 344
+法条:[法条]刑法第140条<eoa>
+['140']
+🔢 输入 token 数量: 345
+🔢 输入 token 数量: 523
+🔢 输入 token 数量: 1373
+🔢 输入 token 数量: 234
+法条:[法条]刑法第344条<eoa>
+['344']
+🔢 输入 token 数量: 235
+🔢 输入 token 数量: 429
+🔢 输入 token 数量: 1713
+🔢 输入 token 数量: 2667
+法条:[法条]刑法第385条、刑法第383条、刑法第383条、刑法第386条<eoa>
+['385', '383', '383', '386']
+🔢 输入 token 数量: 2668
+🔢 输入 token 数量: 3344
+🔢 输入 token 数量: 6321
+🔢 输入 token 数量: 269
+法条:[法条]刑法第205条<eoa>
+['205']
+🔢 输入 token 数量: 270
+🔢 输入 token 数量: 634
+🔢 输入 token 数量: 1262
+🔢 输入 token 数量: 473
+法条:[法条]刑法第292条<eoa>
+['292']
+🔢 输入 token 数量: 474
+🔢 输入 token 数量: 632
+🔢 输入 token 数量: 1268
+🔢 输入 token 数量: 155
+法条:[法条]刑法第128条<eoa>
+['128']
+🔢 输入 token 数量: 156
+🔢 输入 token 数量: 344
+🔢 输入 token 数量: 1261
+🔢 输入 token 数量: 189
+法条:[法条]刑法第133条<eoa>
+['133']
+🔢 输入 token 数量: 190
+🔢 输入 token 数量: 422
+🔢 输入 token 数量: 1014
+🔢 输入 token 数量: 252
+法条:[法条]刑法第234条<eoa>
+['234']
+🔢 输入 token 数量: 253
+🔢 输入 token 数量: 487
+🔢 输入 token 数量: 1134
+🔢 输入 token 数量: 446
+法条:[法条]刑法第276条<eoa>
+['276']
+🔢 输入 token 数量: 447
+🔢 输入 token 数量: 663
+🔢 输入 token 数量: 1451
+🔢 输入 token 数量: 281
+法条:[法条]刑法第133条<eoa>
+['133']
+🔢 输入 token 数量: 282
+🔢 输入 token 数量: 514
+🔢 输入 token 数量: 1326
+🔢 输入 token 数量: 251
+法条:[法条]刑法第238条<eoa>
+['238']
+🔢 输入 token 数量: 252
+🔢 输入 token 数量: 409
+🔢 输入 token 数量: 1172
+🔢 输入 token 数量: 430
+法条:[法条]刑法第385条、刑法第383条、刑法第386条<eoa>
+['385', '383', '386']
+🔢 输入 token 数量: 431
+🔢 输入 token 数量: 833
+🔢 输入 token 数量: 1644
+🔢 输入 token 数量: 1113
+法条:[法条]刑法第397条<eoa>
+['397']
+🔢 输入 token 数量: 1114
+🔢 输入 token 数量: 1298
+🔢 输入 token 数量: 2354
+🔢 输入 token 数量: 349
+法条:[法条]刑法第234条<eoa>
+['234']
+🔢 输入 token 数量: 350
+🔢 输入 token 数量: 584
+🔢 输入 token 数量: 1229
+🔢 输入 token 数量: 283
+法条:[法条]刑法第264条、刑法第269条<eoa>
+['264', '269']
+🔢 输入 token 数量: 284
+🔢 输入 token 数量: 454
+🔢 输入 token 数量: 1034
+🔢 输入 token 数量: 340
+法条:[法条]刑法第312条<eoa>
+['312']
+🔢 输入 token 数量: 341
+🔢 输入 token 数量: 460
+🔢 输入 token 数量: 1196
+🔢 输入 token 数量: 314
+法条:[法条]刑法第312条、刑法第264条<eoa>
+['312', '264']
+🔢 输入 token 数量: 315
+🔢 输入 token 数量: 533
+🔢 输入 token 数量: 1269
+🔢 输入 token 数量: 412
+法条:[法条]刑法第280条、刑法第263条<eoa>
+['280', '263']
+🔢 输入 token 数量: 413
+🔢 输入 token 数量: 944
+🔢 输入 token 数量: 2061
+🔢 输入 token 数量: 382
+法条:[法条]刑法第345条<eoa>
+['345']
+🔢 输入 token 数量: 383
+🔢 输入 token 数量: 612
+🔢 输入 token 数量: 1292
+🔢 输入 token 数量: 773
+法条:[法条]刑法第205条<eoa>
+['205']
+🔢 输入 token 数量: 774
+🔢 输入 token 数量: 1138
+🔢 输入 token 数量: 2257
+🔢 输入 token 数量: 293
+法条:[法条]刑法第234条<eoa>
+['234']
+🔢 输入 token 数量: 294
+🔢 输入 token 数量: 528
+🔢 输入 token 数量: 2389
+🔢 输入 token 数量: 239
+法条:[法条]刑法第264条<eoa>
+['264']
+🔢 输入 token 数量: 240
+🔢 输入 token 数量: 350
+🔢 输入 token 数量: 1230
+🔢 输入 token 数量: 396
+法条:[法条]刑法第393条<eoa>
+['393']
+🔢 输入 token 数量: 397
+🔢 输入 token 数量: 505
+🔢 输入 token 数量: 2980
+🔢 输入 token 数量: 326
+法条:[法条]刑法第133条<eoa>
+['133']
+🔢 输入 token 数量: 327
+🔢 输入 token 数量: 559
+🔢 输入 token 数量: 1362
+🔢 输入 token 数量: 821
+法条:[法条]刑法第279条<eoa>
+['279']
+🔢 输入 token 数量: 822
+🔢 输入 token 数量: 903
+🔢 输入 token 数量: 1871
+🔢 输入 token 数量: 436
+法条:[法条]刑法第341条<eoa>
+['341']
+🔢 输入 token 数量: 437
+🔢 输入 token 数量: 705
+🔢 输入 token 数量: 1814
+🔢 输入 token 数量: 397
+法条:[法条]刑法第125条<eoa>
+['125']
+🔢 输入 token 数量: 398
+🔢 输入 token 数量: 564
+🔢 输入 token 数量: 1308
+🔢 输入 token 数量: 127
+法条:[法条]刑法第356条、刑法第347条<eoa>
+['356', '347']
+🔢 输入 token 数量: 128
+🔢 输入 token 数量: 529
+🔢 输入 token 数量: 1250
+🔢 输入 token 数量: 302
+法条:[法条]刑法第340条<eoa>
+['340']
+🔢 输入 token 数量: 303
+🔢 输入 token 数量: 373
+🔢 输入 token 数量: 1547
+🔢 输入 token 数量: 274
+法条:[法条]刑法第341条<eoa>
+['341']
+🔢 输入 token 数量: 275
+🔢 输入 token 数量: 543
+🔢 输入 token 数量: 1186
+🔢 输入 token 数量: 745
+法条:[法条]刑法第385条、刑法第383条、刑法第386条<eoa>
+['385', '383', '386']
+🔢 输入 token 数量: 746
+🔢 输入 token 数量: 1148
+🔢 输入 token 数量: 2028
+🔢 输入 token 数量: 354
+法条:[法条]刑法第275条<eoa>
+['275']
+🔢 输入 token 数量: 355
+🔢 输入 token 数量: 426
+🔢 输入 token 数量: 1347
+🔢 输入 token 数量: 1098
+法条:[法条]刑法第397条<eoa>
+['397']
+🔢 输入 token 数量: 1099
+🔢 输入 token 数量: 1283
+🔢 输入 token 数量: 3012
+🔢 输入 token 数量: 291
+法条:[法条]刑法第239条<eoa>
+['239']
+🔢 输入 token 数量: 292
+🔢 输入 token 数量: 417
+🔢 输入 token 数量: 1345
+🔢 输入 token 数量: 279
+法条:[法条]刑法第141条<eoa>
+['141']
+🔢 输入 token 数量: 280
+🔢 输入 token 数量: 406
+🔢 输入 token 数量: 1071
+🔢 输入 token 数量: 203
+法条:[法条]刑法第114条<eoa>
+['114']
+🔢 输入 token 数量: 204
+🔢 输入 token 数量: 504
+🔢 输入 token 数量: 2362
+🔢 输入 token 数量: 467
+法条:[法条]刑法第128条、刑法第264条<eoa>
+['128', '264']
+🔢 输入 token 数量: 468
+🔢 输入 token 数量: 755
+🔢 输入 token 数量: 1927
+🔢 输入 token 数量: 333
+法条:[法条]刑法第115条<eoa>
+['115']
+🔢 输入 token 数量: 334
+🔢 输入 token 数量: 901
+🔢 输入 token 数量: 1650
+🔢 输入 token 数量: 369
+法条:[法条]刑法第303条<eoa>
+['303']
+🔢 输入 token 数量: 370
+🔢 输入 token 数量: 465
+🔢 输入 token 数量: 1185
+🔢 输入 token 数量: 224
+法条:[法条]刑法第341条<eoa>
+['341']
+🔢 输入 token 数量: 225
+🔢 输入 token 数量: 493
+🔢 输入 token 数量: 1178
+🔢 输入 token 数量: 242
+法条:[法条]刑法第205条<eoa>
+['205']
+🔢 输入 token 数量: 243
+🔢 输入 token 数量: 607
+🔢 输入 token 数量: 1235
+Generating answers::  95%|█████████▌| 190/200 [27:49<01:34,  9.44s/it]Generating answers::  96%|█████████▌| 191/200 [27:56<01:16,  8.49s/it]Generating answers::  96%|█████████▌| 192/200 [28:03<01:05,  8.22s/it]Generating answers::  96%|█████████▋| 193/200 [28:17<01:07,  9.71s/it]Generating answers::  97%|█████████▋| 194/200 [28:24<00:53,  8.94s/it]Generating answers::  98%|█████████▊| 195/200 [28:32<00:44,  8.84s/it]Generating answers::  98%|█████████▊| 196/200 [28:41<00:35,  8.81s/it]Generating answers::  98%|█████████▊| 197/200 [28:46<00:23,  7.70s/it]Generating answers::  99%|█████████▉| 198/200 [29:40<00:43, 21.66s/it]Generating answers:: 100%|█████████▉| 199/200 [29:50<00:18, 18.20s/it]Generating answers:: 100%|██████████| 200/200 [30:04<00:00, 16.75s/it]Generating answers:: 100%|██████████| 200/200 [30:04<00:00,  9.02s/it]
+🔢 输入 token 数量: 449
+法条:[法条]刑法第271条<eoa>
+['271']
+🔢 输入 token 数量: 450
+🔢 输入 token 数量: 580
+🔢 输入 token 数量: 5148
+🔢 输入 token 数量: 315
+法条:[法条]刑法第246条<eoa>
+['246']
+🔢 输入 token 数量: 316
+🔢 输入 token 数量: 467
+🔢 输入 token 数量: 1522
+🔢 输入 token 数量: 267
+法条:[法条]刑法第293条<eoa>
+['293']
+🔢 输入 token 数量: 268
+🔢 输入 token 数量: 410
+🔢 输入 token 数量: 991
+🔢 输入 token 数量: 188
+法条:[法条]刑法第303条<eoa>
+['303']
+🔢 输入 token 数量: 189
+🔢 输入 token 数量: 284
+🔢 输入 token 数量: 2222
+🔢 输入 token 数量: 345
+法条:[法条]刑法第275条<eoa>
+['275']
+🔢 输入 token 数量: 346
+🔢 输入 token 数量: 417
+🔢 输入 token 数量: 1024
+🔢 输入 token 数量: 297
+法条:[法条]刑法第351条<eoa>
+['351']
+🔢 输入 token 数量: 298
+🔢 输入 token 数量: 444
+🔢 输入 token 数量: 1260
+🔢 输入 token 数量: 295
+法条:[法条]刑法第276条<eoa>
+['276']
+🔢 输入 token 数量: 296
+🔢 输入 token 数量: 512
+🔢 输入 token 数量: 2458
+🔢 输入 token 数量: 165
+法条:[法条]刑法第205条<eoa>
+['205']
+🔢 输入 token 数量: 166
+🔢 输入 token 数量: 530
+🔢 输入 token 数量: 1274
+🔢 输入 token 数量: 1388
+法条:[法条]刑法第385条、刑法第383条、刑法第383条、刑法第386条<eoa>
+['385', '383', '383', '386']
+🔢 输入 token 数量: 1389
+🔢 输入 token 数量: 2065
+🔢 输入 token 数量: 4990
+🔢 输入 token 数量: 264
+法条:[法条]刑法第347条、刑法第347条、刑法第357条<eoa>
+['347', '347', '357']
+🔢 输入 token 数量: 265
+🔢 输入 token 数量: 1063
+🔢 输入 token 数量: 1869
+🔢 输入 token 数量: 359
+法条:[法条]刑法第264条、刑法第196条<eoa>
+['264', '196']
+🔢 输入 token 数量: 360
+🔢 输入 token 数量: 672
+🔢 输入 token 数量: 1610

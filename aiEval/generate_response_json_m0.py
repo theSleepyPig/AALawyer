@@ -14,7 +14,7 @@ from tqdm import tqdm
 # input_json = "/home/yxma/hzx/hzx/LeLLM/aiEval/aieval_dataset_100.json" 
 # output_json = "results/generated_100.json"  # 改为 json 输出
 input_json = "/home/yxma/hzx/hzx/LeLLM/aiEval/aieval_dataset_200.json" 
-output_json = "results/generated_200_m0.json"  # 改为 json 输出
+output_json = "results/generated_200_m0_v2.json"  # 改为 json 输出
 
 results = []
 
@@ -31,7 +31,7 @@ model = AutoModelForCausalLM.from_pretrained(model_path, torch_dtype=torch.float
 tokenizer = AutoTokenizer.from_pretrained(model_path)
 
 # 法条数据库
-with open("/mnt/ssd_2/yxma/LeLLM/data/data/RAGDatabase1.json", "r", encoding="utf-8") as file:
+with open("/mnt/ssd_2/yxma/LeLLM/data/data/RAGDatabase1_v2.json", "r", encoding="utf-8") as file:
     law_data = json.load(file)
 
 # FAISS 检索系统加载
@@ -77,7 +77,8 @@ def extract_law_numbers(text):
 
 def retrieve_law_articles(law_numbers):
     """ 根据多个法条编号从 JSON 文件中检索对应的法条内容 """
-    articles = [f"刑法第{num}条: {law_data.get(num, '未找到相关法条')}" for num in law_numbers]
+    # articles = [f"刑法第{num}条: {law_data.get(num, '未找到相关法条')}" for num in law_numbers]
+    articles = [f"{law_data.get(num, '未找到相关法条')}" for num in law_numbers]
     return "\n".join(articles) if articles else "未找到相关法条"
 
 def translate(text, model, tokenizer):
@@ -197,6 +198,7 @@ for idx, item in enumerate(tqdm(data, desc="Generating answers:")):
         "response_aa": response_aa,
         "response_analysis_with_case": response_with_case,
         "law_articles": law_articles,
+        "similar_cases": similar_cases,
         "accusation": meta["accusation"],
         "articles": [f"刑法第{a}条" for a in meta["relevant_articles"]],
         "term": meta["term_of_imprisonment"]["imprisonment"],

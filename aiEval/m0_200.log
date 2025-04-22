@@ -1,7 +1,1007 @@
 nohup: ignoring input
-Loading checkpoint shards:   0%|          | 0/2 [00:00<?, ?it/s]Loading checkpoint shards:  50%|█████     | 1/2 [00:03<00:03,  3.70s/it]Loading checkpoint shards: 100%|██████████| 2/2 [00:05<00:00,  2.66s/it]Loading checkpoint shards: 100%|██████████| 2/2 [00:05<00:00,  2.81s/it]
+Loading checkpoint shards:   0%|          | 0/2 [00:00<?, ?it/s]Loading checkpoint shards:  50%|█████     | 1/2 [00:03<00:03,  3.49s/it]Loading checkpoint shards: 100%|██████████| 2/2 [00:05<00:00,  2.48s/it]Loading checkpoint shards: 100%|██████████| 2/2 [00:05<00:00,  2.63s/it]
 Generating answers::   0%|          | 0/200 [00:00<?, ?it/s]/home/yxma/anaconda3/envs/llm/lib/python3.9/site-packages/transformers/generation/configuration_utils.py:601: UserWarning: `do_sample` is set to `False`. However, `temperature` is set to `0.6` -- this flag is only used in sample-based generation modes. You should set `do_sample=True` or unset `temperature`.
   warnings.warn(
 /home/yxma/anaconda3/envs/llm/lib/python3.9/site-packages/transformers/generation/configuration_utils.py:606: UserWarning: `do_sample` is set to `False`. However, `top_p` is set to `0.95` -- this flag is only used in sample-based generation modes. You should set `do_sample=True` or unset `top_p`.
   warnings.warn(
-Generating answers::   0%|          | 1/200 [00:51<2:51:10, 51.61s/it]Generating answers::   1%|          | 2/200 [01:31<2:26:42, 44.46s/it]Generating answers::   2%|▏         | 3/200 [02:13<2:22:22, 43.36s/it]Generating answers::   2%|▏         | 4/200 [02:51<2:14:40, 41.23s/it]Generating answers::   2%|▎         | 5/200 [03:30<2:12:22, 40.73s/it]Generating answers::   3%|▎         | 6/200 [04:41<2:45:02, 51.05s/it]Generating answers::   4%|▎         | 7/200 [05:30<2:41:18, 50.15s/it]Generating answers::   4%|▍         | 8/200 [06:07<2:26:48, 45.88s/it]Generating answers::   4%|▍         | 9/200 [06:44<2:17:52, 43.31s/it]Generating answers::   5%|▌         | 10/200 [07:29<2:18:26, 43.72s/it]Generating answers::   6%|▌         | 11/200 [08:08<2:13:02, 42.24s/it]Generating answers::   6%|▌         | 12/200 [08:44<2:06:57, 40.52s/it]Generating answers::   6%|▋         | 13/200 [09:19<2:00:43, 38.73s/it]Generating answers::   7%|▋         | 14/200 [10:03<2:05:31, 40.49s/it]Generating answers::   8%|▊         | 15/200 [10:49<2:09:46, 42.09s/it]Generating answers::   8%|▊         | 16/200 [11:39<2:16:09, 44.40s/it]Generating answers::   8%|▊         | 17/200 [12:12<2:05:21, 41.10s/it]Generating answers::   9%|▉         | 18/200 [12:49<2:00:06, 39.60s/it]
+Generating answers::   0%|          | 1/200 [00:58<3:12:56, 58.17s/it]Generating answers::   1%|          | 2/200 [01:41<2:43:43, 49.61s/it]Generating answers::   2%|▏         | 3/200 [02:21<2:28:12, 45.14s/it]Generating answers::   2%|▏         | 4/200 [03:00<2:19:52, 42.82s/it]Generating answers::   2%|▎         | 5/200 [03:44<2:20:26, 43.21s/it]Generating answers::   3%|▎         | 6/200 [04:56<2:51:01, 52.89s/it]Generating answers::   4%|▎         | 7/200 [05:47<2:48:32, 52.40s/it]Generating answers::   4%|▍         | 8/200 [06:22<2:29:37, 46.76s/it]Generating answers::   4%|▍         | 9/200 [06:54<2:13:40, 41.99s/it]Generating answers::   5%|▌         | 10/200 [07:29<2:06:41, 40.01s/it]Generating answers::   6%|▌         | 11/200 [08:15<2:11:42, 41.81s/it]Generating answers::   6%|▌         | 12/200 [09:02<2:16:25, 43.54s/it]Generating answers::   6%|▋         | 13/200 [09:36<2:06:13, 40.50s/it]Generating answers::   7%|▋         | 14/200 [10:16<2:04:37, 40.20s/it]Generating answers::   8%|▊         | 15/200 [10:54<2:02:27, 39.71s/it]Generating answers::   8%|▊         | 16/200 [11:51<2:17:36, 44.87s/it]Generating answers::   8%|▊         | 17/200 [12:39<2:19:29, 45.74s/it]Generating answers::   9%|▉         | 18/200 [13:14<2:08:54, 42.50s/it]Generating answers::  10%|▉         | 19/200 [14:06<2:16:46, 45.34s/it]Generating answers::  10%|█         | 20/200 [14:49<2:14:09, 44.72s/it]Generating answers::  10%|█         | 21/200 [15:19<2:00:04, 40.25s/it]Generating answers::  11%|█         | 22/200 [15:59<1:59:18, 40.22s/it]Generating answers::  12%|█▏        | 23/200 [16:39<1:58:59, 40.33s/it]Generating answers::  12%|█▏        | 24/200 [17:17<1:56:13, 39.62s/it]Generating answers::  12%|█▎        | 25/200 [17:54<1:52:39, 38.63s/it]Generating answers::  13%|█▎        | 26/200 [18:46<2:04:14, 42.84s/it]Generating answers::  14%|█▎        | 27/200 [19:35<2:08:43, 44.65s/it]Generating answers::  14%|█▍        | 28/200 [20:13<2:02:03, 42.58s/it]Generating answers::  14%|█▍        | 29/200 [21:21<2:22:53, 50.14s/it]Generating answers::  15%|█▌        | 30/200 [22:07<2:18:35, 48.91s/it]Generating answers::  16%|█▌        | 31/200 [22:40<2:04:34, 44.23s/it]Generating answers::  16%|█▌        | 32/200 [23:39<2:15:45, 48.49s/it]Generating answers::  16%|█▋        | 33/200 [24:24<2:12:25, 47.58s/it]Generating answers::  17%|█▋        | 34/200 [24:55<1:57:38, 42.52s/it]Generating answers::  18%|█▊        | 35/200 [25:45<2:03:41, 44.98s/it]Generating answers::  18%|█▊        | 36/200 [26:18<1:53:06, 41.38s/it]Generating answers::  18%|█▊        | 37/200 [27:02<1:54:28, 42.14s/it]Generating answers::  19%|█▉        | 38/200 [27:40<1:50:25, 40.90s/it]Generating answers::  20%|█▉        | 39/200 [28:32<1:58:23, 44.12s/it]Generating answers::  20%|██        | 40/200 [29:29<2:07:39, 47.87s/it]Generating answers::  20%|██        | 41/200 [30:19<2:09:10, 48.75s/it]Generating answers::  21%|██        | 42/200 [30:57<1:59:38, 45.43s/it]Generating answers::  22%|██▏       | 43/200 [31:42<1:58:22, 45.24s/it]Generating answers::  22%|██▏       | 44/200 [32:16<1:49:15, 42.02s/it]Generating answers::  22%|██▎       | 45/200 [33:04<1:53:06, 43.78s/it]Generating answers::  23%|██▎       | 46/200 [33:46<1:51:02, 43.26s/it]Generating answers::  24%|██▎       | 47/200 [34:19<1:42:03, 40.03s/it]Generating answers::  24%|██▍       | 48/200 [35:31<2:06:04, 49.77s/it]Generating answers::  24%|██▍       | 49/200 [36:23<2:06:20, 50.20s/it]Generating answers::  25%|██▌       | 50/200 [36:54<1:51:34, 44.63s/it]Generating answers::  26%|██▌       | 51/200 [37:44<1:54:39, 46.17s/it]Generating answers::  26%|██▌       | 52/200 [38:17<1:44:22, 42.31s/it]Generating answers::  26%|██▋       | 53/200 [39:04<1:46:51, 43.62s/it]Generating answers::  27%|██▋       | 54/200 [39:35<1:36:54, 39.83s/it]Generating answers::  28%|██▊       | 55/200 [40:43<1:56:40, 48.28s/it]Generating answers::  28%|██▊       | 56/200 [41:16<1:45:05, 43.79s/it]Generating answers::  28%|██▊       | 57/200 [42:11<1:52:25, 47.17s/it]Generating answers::  29%|██▉       | 58/200 [42:48<1:43:59, 43.94s/it]Generating answers::  30%|██▉       | 59/200 [43:21<1:36:04, 40.89s/it]Generating answers::  30%|███       | 60/200 [43:52<1:28:09, 37.78s/it]Generating answers::  30%|███       | 61/200 [44:33<1:30:07, 38.90s/it]Generating answers::  31%|███       | 62/200 [45:37<1:46:12, 46.18s/it]🔢 输入 token 数量: 501
+['306']
+🔢 输入 token 数量: 502
+🔢 输入 token 数量: 627
+🔢 输入 token 数量: 1445
+🔢 输入 token 数量: 202
+['266']
+🔢 输入 token 数量: 203
+🔢 输入 token 数量: 305
+🔢 输入 token 数量: 1311
+🔢 输入 token 数量: 182
+['347']
+🔢 输入 token 数量: 183
+🔢 输入 token 数量: 538
+🔢 输入 token 数量: 1430
+🔢 输入 token 数量: 252
+['344']
+🔢 输入 token 数量: 253
+🔢 输入 token 数量: 447
+🔢 输入 token 数量: 1094
+🔢 输入 token 数量: 226
+['234']
+🔢 输入 token 数量: 227
+🔢 输入 token 数量: 461
+🔢 输入 token 数量: 2026
+🔢 输入 token 数量: 443
+['334']
+🔢 输入 token 数量: 444
+🔢 输入 token 数量: 633
+🔢 输入 token 数量: 1372
+🔢 输入 token 数量: 291
+['219', '232']
+🔢 输入 token 数量: 292
+🔢 输入 token 数量: 567
+🔢 输入 token 数量: 2089
+🔢 输入 token 数量: 359
+['304']
+🔢 输入 token 数量: 360
+🔢 输入 token 数量: 423
+🔢 输入 token 数量: 1166
+🔢 输入 token 数量: 441
+['355']
+🔢 输入 token 数量: 442
+🔢 输入 token 数量: 626
+🔢 输入 token 数量: 1371
+🔢 输入 token 数量: 352
+['241']
+🔢 输入 token 数量: 353
+🔢 输入 token 数量: 575
+🔢 输入 token 数量: 1365
+🔢 输入 token 数量: 305
+['204', '67']
+🔢 输入 token 数量: 306
+🔢 输入 token 数量: 619
+🔢 输入 token 数量: 1424
+🔢 输入 token 数量: 428
+['221', '308']
+🔢 输入 token 数量: 429
+🔢 输入 token 数量: 710
+🔢 输入 token 数量: 1768
+🔢 输入 token 数量: 311
+['344', '68']
+🔢 输入 token 数量: 312
+🔢 输入 token 数量: 567
+🔢 输入 token 数量: 1195
+🔢 输入 token 数量: 501
+['345']
+🔢 输入 token 数量: 502
+🔢 输入 token 数量: 731
+🔢 输入 token 数量: 1499
+🔢 输入 token 数量: 368
+['234', '65']
+🔢 输入 token 数量: 369
+🔢 输入 token 数量: 691
+🔢 输入 token 数量: 1465
+🔢 输入 token 数量: 234
+['341']
+🔢 输入 token 数量: 235
+🔢 输入 token 数量: 503
+🔢 输入 token 数量: 1094
+🔢 输入 token 数量: 205
+['344']
+🔢 输入 token 数量: 206
+🔢 输入 token 数量: 400
+🔢 输入 token 数量: 787
+🔢 输入 token 数量: 637
+['224']
+🔢 输入 token 数量: 638
+🔢 输入 token 数量: 962
+🔢 输入 token 数量: 1670
+🔢 输入 token 数量: 378
+['219']
+🔢 输入 token 数量: 379
+🔢 输入 token 数量: 612
+🔢 输入 token 数量: 1355
+🔢 输入 token 数量: 225
+['264', '65']
+🔢 输入 token 数量: 226
+🔢 输入 token 数量: 424
+🔢 输入 token 数量: 1383
+🔢 输入 token 数量: 202
+['307']
+🔢 输入 token 数量: 203
+🔢 输入 token 数量: 481
+🔢 输入 token 数量: 1743
+🔢 输入 token 数量: 601
+['264']
+🔢 输入 token 数量: 602
+🔢 输入 token 数量: 712
+🔢 输入 token 数量: 1307
+🔢 输入 token 数量: 261
+['307']
+🔢 输入 token 数量: 262
+🔢 输入 token 数量: 540
+🔢 输入 token 数量: 1231
+🔢 输入 token 数量: 513
+['305', '305']
+🔢 输入 token 数量: 514
+🔢 输入 token 数量: 685
+🔢 输入 token 数量: 1997
+🔢 输入 token 数量: 963
+['347']
+🔢 输入 token 数量: 964
+🔢 输入 token 数量: 1319
+🔢 输入 token 数量: 2644
+🔢 输入 token 数量: 295
+['304']
+🔢 输入 token 数量: 296
+🔢 输入 token 数量: 359
+🔢 输入 token 数量: 1108
+🔢 输入 token 数量: 219
+['274']
+🔢 输入 token 数量: 220
+🔢 输入 token 数量: 319
+🔢 输入 token 数量: 991
+🔢 输入 token 数量: 285
+['344']
+🔢 输入 token 数量: 286
+🔢 输入 token 数量: 480
+🔢 输入 token 数量: 1155
+🔢 输入 token 数量: 171
+['341', '67']
+🔢 输入 token 数量: 172
+🔢 输入 token 数量: 572
+🔢 输入 token 数量: 1247
+🔢 输入 token 数量: 712
+['344']
+🔢 输入 token 数量: 713
+🔢 输入 token 数量: 907
+🔢 输入 token 数量: 1721
+🔢 输入 token 数量: 357
+['347']
+🔢 输入 token 数量: 358
+🔢 输入 token 数量: 713
+🔢 输入 token 数量: 1338
+🔢 输入 token 数量: 571
+['382', '384']
+🔢 输入 token 数量: 572
+🔢 输入 token 数量: 829
+🔢 输入 token 数量: 9070
+🔢 输入 token 数量: 193
+['344', '345']
+🔢 输入 token 数量: 194
+🔢 输入 token 数量: 606
+🔢 输入 token 数量: 2079
+🔢 输入 token 数量: 513
+['273']
+🔢 输入 token 数量: 514
+🔢 输入 token 数量: 599
+🔢 输入 token 数量: 2472
+🔢 输入 token 数量: 287
+['347']
+🔢 输入 token 数量: 288
+🔢 输入 token 数量: 643
+🔢 输入 token 数量: 1358
+🔢 输入 token 数量: 195
+['382']
+🔢 输入 token 数量: 196
+🔢 输入 token 数量: 320
+🔢 输入 token 数量: 1520
+🔢 输入 token 数量: 273
+['264']
+🔢 输入 token 数量: 274
+🔢 输入 token 数量: 384
+🔢 输入 token 数量: 1976
+🔢 输入 token 数量: 224
+['264']
+🔢 输入 token 数量: 225
+🔢 输入 token 数量: 335
+🔢 输入 token 数量: 1254
+🔢 输入 token 数量: 278
+['264', '234']
+🔢 输入 token 数量: 279
+🔢 输入 token 数量: 612
+🔢 输入 token 数量: 1387
+🔢 输入 token 数量: 442
+['314']
+🔢 输入 token 数量: 443
+🔢 输入 token 数量: 512
+🔢 输入 token 数量: 1979
+🔢 输入 token 数量: 741
+['382']
+🔢 输入 token 数量: 742
+🔢 输入 token 数量: 866
+🔢 输入 token 数量: 1728
+🔢 输入 token 数量: 242
+['335']
+🔢 输入 token 数量: 243
+🔢 输入 token 数量: 293
+🔢 输入 token 数量: 976
+🔢 输入 token 数量: 244
+['309']
+🔢 输入 token 数量: 245
+🔢 输入 token 数量: 369
+🔢 输入 token 数量: 1691
+🔢 输入 token 数量: 308
+['341']
+🔢 输入 token 数量: 309
+🔢 输入 token 数量: 577
+🔢 输入 token 数量: 1262
+🔢 输入 token 数量: 221
+['341']
+🔢 输入 token 数量: 222
+🔢 输入 token 数量: 490
+🔢 输入 token 数量: 1186
+🔢 输入 token 数量: 342
+['219']
+🔢 输入 token 数量: 343
+🔢 输入 token 数量: 576
+🔢 输入 token 数量: 1345
+🔢 输入 token 数量: 223
+['264']
+🔢 输入 token 数量: 224
+🔢 输入 token 数量: 334
+🔢 输入 token 数量: 1398
+🔢 输入 token 数量: 227
+[]
+🔢 输入 token 数量: 228
+🔢 输入 token 数量: 245
+🔢 输入 token 数量: 1456
+🔢 输入 token 数量: 226
+['239']
+🔢 输入 token 数量: 227
+🔢 输入 token 数量: 352
+🔢 输入 token 数量: 1094
+🔢 输入 token 数量: 296
+['264']
+🔢 输入 token 数量: 297
+🔢 输入 token 数量: 407
+🔢 输入 token 数量: 1148
+🔢 输入 token 数量: 444
+['194', '344']
+🔢 输入 token 数量: 445
+🔢 输入 token 数量: 897
+🔢 输入 token 数量: 2007
+🔢 输入 token 数量: 507
+['266']
+🔢 输入 token 数量: 508
+🔢 输入 token 数量: 610
+🔢 输入 token 数量: 1339
+🔢 输入 token 数量: 252
+['234', '309']
+🔢 输入 token 数量: 253
+🔢 输入 token 数量: 600
+🔢 输入 token 数量: 1373
+🔢 输入 token 数量: 268
+['276']
+🔢 输入 token 数量: 269
+🔢 输入 token 数量: 485
+🔢 输入 token 数量: 1169
+🔢 输入 token 数量: 775
+['266']
+🔢 输入 token 数量: 776
+🔢 输入 token 数量: 878
+🔢 输入 token 数量: 4566
+🔢 输入 token 数量: 143
+['234']
+🔢 输入 token 数量: 144
+🔢 输入 token 数量: 378
+🔢 输入 token 数量: 1436
+🔢 输入 token 数量: 284
+['114', '115']
+🔢 输入 token 数量: 285
+🔢 输入 token 数量: 1141
+🔢 输入 token 数量: 2082
+🔢 输入 token 数量: 291
+['309']
+🔢 输入 token 数量: 292
+🔢 输入 token 数量: 416
+🔢 输入 token 数量: 1473
+🔢 输入 token 数量: 167
+['67']
+🔢 输入 token 数量: 168
+🔢 输入 token 数量: 311
+🔢 输入 token 数量: 3014
+🔢 输入 token 数量: 506
+['232']
+🔢 输入 token 数量: 507
+🔢 输入 token 数量: 560
+🔢 输入 token 数量: 2829
+🔢 输入 token 数量: 394
+['347']
+🔢 输入 token 数量: 395
+🔢 输入 token 数量: 750
+🔢 输入 token 数量: 1455
+🔢 输入 token 数量: 509
+['266', '266', '266', '266', '266', '266', '266']
+🔢 输入 token 数量: 510
+🔢 输入 token 数量: 1158
+🔢 输入 token 数量: 2009
+🔢 输入 token 数量: 295
+['341']
+Generating answers::  32%|███▏      | 63/200 [46:18<1:42:27, 44.87s/it]Generating answers::  32%|███▏      | 64/200 [46:56<1:36:40, 42.65s/it]Generating answers::  32%|███▎      | 65/200 [47:45<1:40:18, 44.58s/it]Generating answers::  33%|███▎      | 66/200 [48:42<1:47:49, 48.28s/it]Generating answers::  34%|███▎      | 67/200 [49:20<1:40:15, 45.23s/it]Generating answers::  34%|███▍      | 68/200 [49:54<1:32:14, 41.93s/it]Generating answers::  34%|███▍      | 69/200 [50:37<1:32:07, 42.19s/it]Generating answers::  35%|███▌      | 70/200 [51:48<1:49:46, 50.67s/it]Generating answers::  36%|███▌      | 71/200 [52:24<1:40:00, 46.51s/it]Generating answers::  36%|███▌      | 72/200 [52:55<1:29:09, 41.79s/it]Generating answers::  36%|███▋      | 73/200 [53:42<1:31:47, 43.36s/it]Generating answers::  37%|███▋      | 74/200 [54:24<1:30:22, 43.03s/it]Generating answers::  38%|███▊      | 75/200 [55:02<1:26:15, 41.41s/it]Generating answers::  38%|███▊      | 76/200 [55:37<1:21:19, 39.35s/it]Generating answers::  38%|███▊      | 77/200 [56:22<1:24:36, 41.28s/it]Generating answers::  39%|███▉      | 78/200 [56:57<1:19:51, 39.27s/it]Generating answers::  40%|███▉      | 79/200 [57:42<1:22:26, 40.88s/it]Generating answers::  40%|████      | 80/200 [58:31<1:26:49, 43.41s/it]Generating answers::  40%|████      | 81/200 [59:03<1:19:33, 40.11s/it]Generating answers::  41%|████      | 82/200 [59:30<1:11:16, 36.24s/it]Generating answers::  42%|████▏     | 83/200 [1:00:37<1:28:37, 45.45s/it]Generating answers::  42%|████▏     | 84/200 [1:01:17<1:24:22, 43.64s/it]Generating answers::  42%|████▎     | 85/200 [1:01:39<1:11:33, 37.33s/it]Generating answers::  43%|████▎     | 86/200 [1:02:14<1:09:09, 36.40s/it]Generating answers::  44%|████▎     | 87/200 [1:03:14<1:22:03, 43.57s/it]Generating answers::  44%|████▍     | 88/200 [1:03:55<1:19:42, 42.70s/it]Generating answers::  44%|████▍     | 89/200 [1:04:20<1:09:34, 37.61s/it]Generating answers::  45%|████▌     | 90/200 [1:04:59<1:09:19, 37.81s/it]Generating answers::  46%|████▌     | 91/200 [1:05:52<1:17:06, 42.45s/it]Generating answers::  46%|████▌     | 92/200 [1:06:34<1:16:26, 42.47s/it]Generating answers::  46%|████▋     | 93/200 [1:07:19<1:16:59, 43.17s/it]Generating answers::  47%|████▋     | 94/200 [1:08:06<1:18:01, 44.17s/it]Generating answers::  48%|████▊     | 95/200 [1:08:44<1:14:15, 42.43s/it]Generating answers::  48%|████▊     | 96/200 [1:09:21<1:10:35, 40.73s/it]Generating answers::  48%|████▊     | 97/200 [1:10:23<1:20:57, 47.16s/it]Generating answers::  49%|████▉     | 98/200 [1:11:10<1:20:14, 47.20s/it]Generating answers::  50%|████▉     | 99/200 [1:11:45<1:13:07, 43.44s/it]Generating answers::  50%|█████     | 100/200 [1:12:13<1:04:51, 38.91s/it]Generating answers::  50%|█████     | 101/200 [1:13:24<1:19:42, 48.31s/it]Generating answers::  51%|█████     | 102/200 [1:14:03<1:14:37, 45.69s/it]Generating answers::  52%|█████▏    | 103/200 [1:14:31<1:05:07, 40.28s/it]Generating answers::  52%|█████▏    | 104/200 [1:15:28<1:12:34, 45.36s/it]Generating answers::  52%|█████▎    | 105/200 [1:16:19<1:14:23, 46.99s/it]Generating answers::  53%|█████▎    | 106/200 [1:16:53<1:07:43, 43.23s/it]Generating answers::  54%|█████▎    | 107/200 [1:17:30<1:03:45, 41.14s/it]Generating answers::  54%|█████▍    | 108/200 [1:18:09<1:02:11, 40.56s/it]Generating answers::  55%|█████▍    | 109/200 [1:18:42<58:15, 38.41s/it]  Generating answers::  55%|█████▌    | 110/200 [1:19:18<56:20, 37.56s/it]Generating answers::  56%|█████▌    | 111/200 [1:19:57<56:31, 38.10s/it]Generating answers::  56%|█████▌    | 112/200 [1:20:41<58:36, 39.97s/it]Generating answers::  56%|█████▋    | 113/200 [1:21:20<57:19, 39.54s/it]Generating answers::  57%|█████▋    | 114/200 [1:22:48<1:17:29, 54.07s/it]Generating answers::  57%|█████▊    | 115/200 [1:23:27<1:10:15, 49.59s/it]Generating answers::  58%|█████▊    | 116/200 [1:24:00<1:02:16, 44.48s/it]Generating answers::  58%|█████▊    | 117/200 [1:24:39<59:22, 42.92s/it]  Generating answers::  59%|█████▉    | 118/200 [1:25:35<1:04:04, 46.89s/it]Generating answers::  60%|█████▉    | 119/200 [1:26:24<1:04:10, 47.54s/it]Generating answers::  60%|██████    | 120/200 [1:27:07<1:01:20, 46.01s/it]Generating answers::  60%|██████    | 121/200 [1:27:43<56:59, 43.28s/it]  Generating answers::  61%|██████    | 122/200 [1:28:26<56:00, 43.08s/it]Generating answers::  62%|██████▏   | 123/200 [1:29:02<52:37, 41.00s/it]🔢 输入 token 数量: 296
+🔢 输入 token 数量: 564
+🔢 输入 token 数量: 1429
+🔢 输入 token 数量: 289
+['264']
+🔢 输入 token 数量: 290
+🔢 输入 token 数量: 400
+🔢 输入 token 数量: 1412
+🔢 输入 token 数量: 247
+['234']
+🔢 输入 token 数量: 248
+🔢 输入 token 数量: 482
+🔢 输入 token 数量: 1246
+🔢 输入 token 数量: 575
+['264', '234']
+🔢 输入 token 数量: 576
+🔢 输入 token 数量: 909
+🔢 输入 token 数量: 2298
+🔢 输入 token 数量: 425
+['225']
+🔢 输入 token 数量: 426
+🔢 输入 token 数量: 600
+🔢 输入 token 数量: 1356
+🔢 输入 token 数量: 713
+['270']
+🔢 输入 token 数量: 714
+🔢 输入 token 数量: 827
+🔢 输入 token 数量: 2369
+🔢 输入 token 数量: 354
+['338', '23']
+🔢 输入 token 数量: 355
+🔢 输入 token 数量: 493
+🔢 输入 token 数量: 1264
+🔢 输入 token 数量: 222
+['301']
+🔢 输入 token 数量: 223
+🔢 输入 token 数量: 314
+🔢 输入 token 数量: 1061
+🔢 输入 token 数量: 319
+['264']
+🔢 输入 token 数量: 320
+🔢 输入 token 数量: 430
+🔢 输入 token 数量: 1765
+🔢 输入 token 数量: 457
+['232']
+🔢 输入 token 数量: 458
+🔢 输入 token 数量: 511
+🔢 输入 token 数量: 4046
+🔢 输入 token 数量: 214
+['340']
+🔢 输入 token 数量: 215
+🔢 输入 token 数量: 285
+🔢 输入 token 数量: 1507
+🔢 输入 token 数量: 266
+['335']
+🔢 输入 token 数量: 267
+🔢 输入 token 数量: 317
+🔢 输入 token 数量: 1021
+🔢 输入 token 数量: 263
+['233']
+🔢 输入 token 数量: 264
+🔢 输入 token 数量: 322
+🔢 输入 token 数量: 1089
+🔢 输入 token 数量: 153
+['131']
+🔢 输入 token 数量: 154
+🔢 输入 token 数量: 219
+🔢 输入 token 数量: 978
+🔢 输入 token 数量: 471
+['345']
+🔢 输入 token 数量: 472
+🔢 输入 token 数量: 701
+🔢 输入 token 数量: 1269
+🔢 输入 token 数量: 1719
+['344']
+🔢 输入 token 数量: 1720
+🔢 输入 token 数量: 1914
+🔢 输入 token 数量: 2809
+🔢 输入 token 数量: 429
+['306']
+🔢 输入 token 数量: 430
+🔢 输入 token 数量: 555
+🔢 输入 token 数量: 2169
+🔢 输入 token 数量: 387
+['347']
+🔢 输入 token 数量: 388
+🔢 输入 token 数量: 743
+🔢 输入 token 数量: 1430
+🔢 输入 token 数量: 301
+['264']
+🔢 输入 token 数量: 302
+🔢 输入 token 数量: 412
+🔢 输入 token 数量: 1872
+🔢 输入 token 数量: 649
+['266']
+🔢 输入 token 数量: 650
+🔢 输入 token 数量: 752
+🔢 输入 token 数量: 1643
+🔢 输入 token 数量: 93
+[]
+🔢 输入 token 数量: 94
+🔢 输入 token 数量: 111
+🔢 输入 token 数量: 379
+🔢 输入 token 数量: 177
+['264']
+🔢 输入 token 数量: 178
+🔢 输入 token 数量: 288
+🔢 输入 token 数量: 2305
+🔢 输入 token 数量: 349
+['264']
+🔢 输入 token 数量: 350
+🔢 输入 token 数量: 460
+🔢 输入 token 数量: 2415
+🔢 输入 token 数量: 391
+['240', '241']
+🔢 输入 token 数量: 392
+🔢 输入 token 数量: 841
+🔢 输入 token 数量: 1887
+🔢 输入 token 数量: 216
+['266']
+🔢 输入 token 数量: 217
+🔢 输入 token 数量: 319
+🔢 输入 token 数量: 991
+🔢 输入 token 数量: 297
+['306', '306']
+🔢 输入 token 数量: 298
+🔢 输入 token 数量: 537
+🔢 输入 token 数量: 1239
+🔢 输入 token 数量: 1063
+['277', '65']
+🔢 输入 token 数量: 1064
+🔢 输入 token 数量: 1306
+🔢 输入 token 数量: 4521
+🔢 输入 token 数量: 828
+['264', '266']
+🔢 输入 token 数量: 829
+🔢 输入 token 数量: 1030
+🔢 输入 token 数量: 1722
+🔢 输入 token 数量: 219
+['217']
+🔢 输入 token 数量: 220
+🔢 输入 token 数量: 377
+🔢 输入 token 数量: 930
+🔢 输入 token 数量: 353
+['345']
+🔢 输入 token 数量: 354
+🔢 输入 token 数量: 583
+🔢 输入 token 数量: 1636
+🔢 输入 token 数量: 376
+['345']
+🔢 输入 token 数量: 377
+🔢 输入 token 数量: 606
+🔢 输入 token 数量: 2265
+🔢 输入 token 数量: 508
+['341']
+🔢 输入 token 数量: 509
+🔢 输入 token 数量: 777
+🔢 输入 token 数量: 2190
+🔢 输入 token 数量: 239
+['225']
+🔢 输入 token 数量: 240
+🔢 输入 token 数量: 414
+🔢 输入 token 数量: 2056
+🔢 输入 token 数量: 374
+['264']
+🔢 输入 token 数量: 375
+🔢 输入 token 数量: 485
+🔢 输入 token 数量: 1226
+🔢 输入 token 数量: 675
+['234', '276']
+🔢 输入 token 数量: 676
+🔢 输入 token 数量: 1115
+🔢 输入 token 数量: 2230
+🔢 输入 token 数量: 288
+['308']
+🔢 输入 token 数量: 289
+🔢 输入 token 数量: 508
+🔢 输入 token 数量: 1451
+🔢 输入 token 数量: 455
+['234', '67']
+🔢 输入 token 数量: 456
+🔢 输入 token 数量: 822
+🔢 输入 token 数量: 1479
+🔢 输入 token 数量: 164
+['266']
+🔢 输入 token 数量: 165
+🔢 输入 token 数量: 267
+🔢 输入 token 数量: 909
+🔢 输入 token 数量: 177
+[]
+🔢 输入 token 数量: 178
+🔢 输入 token 数量: 195
+🔢 输入 token 数量: 1436
+🔢 输入 token 数量: 1152
+['241']
+🔢 输入 token 数量: 1153
+🔢 输入 token 数量: 1375
+🔢 输入 token 数量: 2649
+🔢 输入 token 数量: 305
+['131']
+🔢 输入 token 数量: 306
+🔢 输入 token 数量: 371
+🔢 输入 token 数量: 980
+🔢 输入 token 数量: 428
+['306']
+🔢 输入 token 数量: 429
+🔢 输入 token 数量: 554
+🔢 输入 token 数量: 1503
+🔢 输入 token 数量: 214
+['115']
+🔢 输入 token 数量: 215
+🔢 输入 token 数量: 782
+🔢 输入 token 数量: 1836
+🔢 输入 token 数量: 226
+['347']
+🔢 输入 token 数量: 227
+🔢 输入 token 数量: 582
+🔢 输入 token 数量: 1437
+🔢 输入 token 数量: 161
+['270', '301']
+🔢 输入 token 数量: 162
+🔢 输入 token 数量: 355
+🔢 输入 token 数量: 2152
+🔢 输入 token 数量: 184
+['239']
+🔢 输入 token 数量: 185
+🔢 输入 token 数量: 310
+🔢 输入 token 数量: 1470
+🔢 输入 token 数量: 166
+['344']
+🔢 输入 token 数量: 167
+🔢 输入 token 数量: 361
+🔢 输入 token 数量: 989
+🔢 输入 token 数量: 296
+['338']
+🔢 输入 token 数量: 297
+🔢 输入 token 数量: 384
+🔢 输入 token 数量: 1125
+🔢 输入 token 数量: 400
+['234', '239']
+🔢 输入 token 数量: 401
+🔢 输入 token 数量: 749
+🔢 输入 token 数量: 2237
+🔢 输入 token 数量: 205
+['266']
+🔢 输入 token 数量: 206
+🔢 输入 token 数量: 308
+🔢 输入 token 数量: 773
+🔢 输入 token 数量: 180
+['266']
+🔢 输入 token 数量: 181
+🔢 输入 token 数量: 283
+🔢 输入 token 数量: 923
+🔢 输入 token 数量: 492
+['266', '266', '266', '271', '266', '266', '266', '266', '266', '266', '266', '266', '266', '266', '266', '266', '266', '266', '266', '266', '266', '266', '266', '266', '266', '266', '266', '266', '266', '266', '266', '266', '266', '266', '266', '266', '266', '266']
+🔢 输入 token 数量: 493
+🔢 输入 token 数量: 3990
+🔢 输入 token 数量: 5237
+🔢 输入 token 数量: 251
+['344']
+🔢 输入 token 数量: 252
+🔢 输入 token 数量: 446
+🔢 输入 token 数量: 1287
+🔢 输入 token 数量: 201
+['264']
+🔢 输入 token 数量: 202
+🔢 输入 token 数量: 312
+🔢 输入 token 数量: 1568
+🔢 输入 token 数量: 434
+['302', '303']
+🔢 输入 token 数量: 435
+🔢 输入 token 数量: 583
+🔢 输入 token 数量: 1122
+🔢 输入 token 数量: 276
+['341']
+🔢 输入 token 数量: 277
+🔢 输入 token 数量: 545
+🔢 输入 token 数量: 1017
+🔢 输入 token 数量: 676
+['304']
+🔢 输入 token 数量: 677
+🔢 输入 token 数量: 740
+🔢 输入 token 数量: 3828
+🔢 输入 token 数量: 344
+['380', '380']
+🔢 输入 token 数量: 345
+🔢 输入 token 数量: 494
+🔢 输入 token 数量: 3211
+🔢 输入 token 数量: 277
+['234']
+🔢 输入 token 数量: 278
+🔢 输入 token 数量: 512
+🔢 输入 token 数量: 1085
+🔢 输入 token 数量: 223
+['299']
+🔢 输入 token 数量: 224
+🔢 输入 token 数量: 341
+🔢 输入 token 数量: 988
+🔢 输入 token 数量: 166
+['234']
+🔢 输入 token 数量: 167
+🔢 输入 token 数量: 401
+🔢 输入 token 数量: 2007
+🔢 输入 token 数量: 321
+Generating answers::  62%|██████▏   | 124/200 [1:29:38<49:48, 39.32s/it]Generating answers::  62%|██████▎   | 125/200 [1:30:29<53:36, 42.89s/it]Generating answers::  63%|██████▎   | 126/200 [1:31:09<51:45, 41.97s/it]Generating answers::  64%|██████▎   | 127/200 [1:32:25<1:03:40, 52.34s/it]Generating answers::  64%|██████▍   | 128/200 [1:33:08<59:11, 49.33s/it]  Generating answers::  64%|██████▍   | 129/200 [1:33:40<52:31, 44.39s/it]Generating answers::  65%|██████▌   | 130/200 [1:34:25<51:51, 44.46s/it]Generating answers::  66%|██████▌   | 131/200 [1:35:23<55:50, 48.55s/it]Generating answers::  66%|██████▌   | 132/200 [1:36:12<55:18, 48.80s/it]Generating answers::  66%|██████▋   | 133/200 [1:36:54<52:02, 46.60s/it]Generating answers::  67%|██████▋   | 134/200 [1:37:39<50:50, 46.22s/it]Generating answers::  68%|██████▊   | 135/200 [1:38:31<51:44, 47.76s/it]Generating answers::  68%|██████▊   | 136/200 [1:39:07<47:26, 44.48s/it]Generating answers::  68%|██████▊   | 137/200 [1:40:13<53:16, 50.74s/it]Generating answers::  69%|██████▉   | 138/200 [1:40:49<48:03, 46.51s/it]Generating answers::  70%|██████▉   | 139/200 [1:41:26<44:06, 43.38s/it]Generating answers::  70%|███████   | 140/200 [1:42:03<41:31, 41.53s/it]Generating answers::  70%|███████   | 141/200 [1:43:01<45:43, 46.50s/it]Generating answers::  71%|███████   | 142/200 [1:43:40<42:56, 44.43s/it]Generating answers::  72%|███████▏  | 143/200 [1:44:16<39:45, 41.85s/it]Generating answers::  72%|███████▏  | 144/200 [1:45:05<40:55, 43.86s/it]Generating answers::  72%|███████▎  | 145/200 [1:45:58<42:38, 46.53s/it]Generating answers::  73%|███████▎  | 146/200 [1:46:25<36:47, 40.89s/it]Generating answers::  74%|███████▎  | 147/200 [1:47:14<38:08, 43.18s/it]Generating answers::  74%|███████▍  | 148/200 [1:47:45<34:14, 39.51s/it]Generating answers::  74%|███████▍  | 149/200 [1:48:34<36:05, 42.47s/it]Generating answers::  75%|███████▌  | 150/200 [1:49:06<32:50, 39.42s/it]Generating answers::  76%|███████▌  | 151/200 [1:49:46<32:10, 39.39s/it]Generating answers::  76%|███████▌  | 152/200 [1:50:36<34:00, 42.50s/it]Generating answers::  76%|███████▋  | 153/200 [1:51:09<31:10, 39.80s/it]Generating answers::  77%|███████▋  | 154/200 [1:51:51<30:58, 40.39s/it]Generating answers::  78%|███████▊  | 155/200 [1:52:35<31:12, 41.62s/it]Generating answers::  78%|███████▊  | 156/200 [1:53:10<28:59, 39.53s/it]Generating answers::  78%|███████▊  | 157/200 [1:53:52<28:46, 40.16s/it]Generating answers::  79%|███████▉  | 158/200 [1:54:34<28:33, 40.79s/it]Generating answers::  80%|███████▉  | 159/200 [1:55:24<29:44, 43.53s/it]Generating answers::  80%|████████  | 160/200 [1:55:59<27:22, 41.06s/it]Generating answers::  80%|████████  | 161/200 [1:56:42<27:06, 41.69s/it]Generating answers::  81%|████████  | 162/200 [1:57:22<26:05, 41.19s/it]Generating answers::  82%|████████▏ | 163/200 [1:58:06<25:50, 41.89s/it]Generating answers::  82%|████████▏ | 164/200 [1:58:38<23:27, 39.11s/it]Generating answers::  82%|████████▎ | 165/200 [1:59:15<22:19, 38.26s/it]Generating answers::  83%|████████▎ | 166/200 [2:00:06<23:52, 42.14s/it]Generating answers::  84%|████████▎ | 167/200 [2:00:44<22:29, 40.89s/it]Generating answers::  84%|████████▍ | 168/200 [2:01:25<21:50, 40.95s/it]Generating answers::  84%|████████▍ | 169/200 [2:02:07<21:23, 41.41s/it]Generating answers::  85%|████████▌ | 170/200 [2:02:49<20:46, 41.55s/it]Generating answers::  86%|████████▌ | 171/200 [2:03:38<21:09, 43.78s/it]Generating answers::  86%|████████▌ | 172/200 [2:04:04<17:52, 38.31s/it]Generating answers::  86%|████████▋ | 173/200 [2:04:31<15:45, 35.03s/it]Generating answers::  87%|████████▋ | 174/200 [2:05:08<15:25, 35.61s/it]Generating answers::  88%|████████▊ | 175/200 [2:06:02<17:05, 41.02s/it]Generating answers::  88%|████████▊ | 176/200 [2:06:44<16:36, 41.50s/it]Generating answers::  88%|████████▊ | 177/200 [2:07:23<15:32, 40.55s/it]Generating answers::  89%|████████▉ | 178/200 [2:08:19<16:33, 45.14s/it]Generating answers::  90%|████████▉ | 179/200 [2:09:06<16:03, 45.86s/it]Generating answers::  90%|█████████ | 180/200 [2:09:41<14:11, 42.60s/it]Generating answers::  90%|█████████ | 181/200 [2:10:38<14:50, 46.87s/it]Generating answers::  91%|█████████ | 182/200 [2:11:13<13:01, 43.40s/it]Generating answers::  92%|█████████▏| 183/200 [2:12:03<12:51, 45.37s/it]Generating answers::  92%|█████████▏| 184/200 [2:12:46<11:52, 44.51s/it]Generating answers::  92%|█████████▎| 185/200 [2:13:21<10:28, 41.88s/it]['142']
+🔢 输入 token 数量: 322
+🔢 输入 token 数量: 433
+🔢 输入 token 数量: 2822
+🔢 输入 token 数量: 326
+['234']
+🔢 输入 token 数量: 327
+🔢 输入 token 数量: 561
+🔢 输入 token 数量: 1857
+🔢 输入 token 数量: 230
+['264']
+🔢 输入 token 数量: 231
+🔢 输入 token 数量: 341
+🔢 输入 token 数量: 3050
+🔢 输入 token 数量: 338
+['264', '301']
+🔢 输入 token 数量: 339
+🔢 输入 token 数量: 529
+🔢 输入 token 数量: 1270
+🔢 输入 token 数量: 251
+['134']
+🔢 输入 token 数量: 252
+🔢 输入 token 数量: 372
+🔢 输入 token 数量: 1261
+🔢 输入 token 数量: 249
+['204']
+🔢 输入 token 数量: 250
+🔢 输入 token 数量: 431
+🔢 输入 token 数量: 1175
+🔢 输入 token 数量: 340
+['266']
+🔢 输入 token 数量: 341
+🔢 输入 token 数量: 443
+🔢 输入 token 数量: 4345
+🔢 输入 token 数量: 318
+['339']
+🔢 输入 token 数量: 319
+🔢 输入 token 数量: 533
+🔢 输入 token 数量: 1320
+🔢 输入 token 数量: 365
+['347']
+🔢 输入 token 数量: 366
+🔢 输入 token 数量: 721
+🔢 输入 token 数量: 1482
+🔢 输入 token 数量: 335
+['341']
+🔢 输入 token 数量: 336
+🔢 输入 token 数量: 604
+🔢 输入 token 数量: 2389
+🔢 输入 token 数量: 286
+['264', '276', '201']
+🔢 输入 token 数量: 287
+🔢 输入 token 数量: 785
+🔢 输入 token 数量: 1781
+🔢 输入 token 数量: 368
+['264', '265']
+🔢 输入 token 数量: 369
+🔢 输入 token 数量: 535
+🔢 输入 token 数量: 1630
+🔢 输入 token 数量: 571
+['344']
+🔢 输入 token 数量: 572
+🔢 输入 token 数量: 766
+🔢 输入 token 数量: 1434
+🔢 输入 token 数量: 507
+['306', '307']
+🔢 输入 token 数量: 508
+🔢 输入 token 数量: 900
+🔢 输入 token 数量: 5206
+🔢 输入 token 数量: 404
+['345']
+🔢 输入 token 数量: 405
+🔢 输入 token 数量: 634
+🔢 输入 token 数量: 1486
+🔢 输入 token 数量: 448
+['232', '234']
+🔢 输入 token 数量: 449
+🔢 输入 token 数量: 725
+🔢 输入 token 数量: 1538
+🔢 输入 token 数量: 218
+['385']
+🔢 输入 token 数量: 219
+🔢 输入 token 数量: 301
+🔢 输入 token 数量: 1320
+🔢 输入 token 数量: 448
+['264', '234']
+🔢 输入 token 数量: 449
+🔢 输入 token 数量: 782
+🔢 输入 token 数量: 2073
+🔢 输入 token 数量: 332
+['341']
+🔢 输入 token 数量: 333
+🔢 输入 token 数量: 601
+🔢 输入 token 数量: 1356
+🔢 输入 token 数量: 192
+['234']
+🔢 输入 token 数量: 193
+🔢 输入 token 数量: 427
+🔢 输入 token 数量: 1550
+🔢 输入 token 数量: 292
+['345', '307']
+🔢 输入 token 数量: 293
+🔢 输入 token 数量: 789
+🔢 输入 token 数量: 2122
+🔢 输入 token 数量: 248
+['347', '347']
+🔢 输入 token 数量: 249
+🔢 输入 token 数量: 948
+🔢 输入 token 数量: 1581
+🔢 输入 token 数量: 238
+['234']
+🔢 输入 token 数量: 239
+🔢 输入 token 数量: 473
+🔢 输入 token 数量: 1162
+🔢 输入 token 数量: 298
+['307']
+🔢 输入 token 数量: 299
+🔢 输入 token 数量: 577
+🔢 输入 token 数量: 1281
+🔢 输入 token 数量: 211
+['234']
+🔢 输入 token 数量: 212
+🔢 输入 token 数量: 446
+🔢 输入 token 数量: 1146
+🔢 输入 token 数量: 344
+['225']
+🔢 输入 token 数量: 345
+🔢 输入 token 数量: 519
+🔢 输入 token 数量: 1369
+🔢 输入 token 数量: 234
+['344']
+🔢 输入 token 数量: 235
+🔢 输入 token 数量: 429
+🔢 输入 token 数量: 1713
+🔢 输入 token 数量: 2667
+['341']
+🔢 输入 token 数量: 2668
+🔢 输入 token 数量: 2936
+🔢 输入 token 数量: 5913
+🔢 输入 token 数量: 269
+['204']
+🔢 输入 token 数量: 270
+🔢 输入 token 数量: 451
+🔢 输入 token 数量: 1079
+🔢 输入 token 数量: 473
+['234']
+🔢 输入 token 数量: 474
+🔢 输入 token 数量: 708
+🔢 输入 token 数量: 1344
+🔢 输入 token 数量: 155
+['341']
+🔢 输入 token 数量: 156
+🔢 输入 token 数量: 424
+🔢 输入 token 数量: 1341
+🔢 输入 token 数量: 189
+['131', '131']
+🔢 输入 token 数量: 190
+🔢 输入 token 数量: 309
+🔢 输入 token 数量: 901
+🔢 输入 token 数量: 252
+['234']
+🔢 输入 token 数量: 253
+🔢 输入 token 数量: 487
+🔢 输入 token 数量: 1134
+🔢 输入 token 数量: 446
+['307']
+🔢 输入 token 数量: 447
+🔢 输入 token 数量: 725
+🔢 输入 token 数量: 1513
+🔢 输入 token 数量: 281
+['134']
+🔢 输入 token 数量: 282
+🔢 输入 token 数量: 402
+🔢 输入 token 数量: 1214
+🔢 输入 token 数量: 251
+['364']
+🔢 输入 token 数量: 252
+🔢 输入 token 数量: 411
+🔢 输入 token 数量: 1174
+🔢 输入 token 数量: 430
+['305']
+🔢 输入 token 数量: 431
+🔢 输入 token 数量: 522
+🔢 输入 token 数量: 1333
+🔢 输入 token 数量: 1113
+['306', '312']
+🔢 输入 token 数量: 1114
+🔢 输入 token 数量: 1347
+🔢 输入 token 数量: 2403
+🔢 输入 token 数量: 349
+['234', '234']
+🔢 输入 token 数量: 350
+🔢 输入 token 数量: 807
+🔢 输入 token 数量: 1452
+🔢 输入 token 数量: 283
+['264']
+🔢 输入 token 数量: 284
+🔢 输入 token 数量: 394
+🔢 输入 token 数量: 974
+🔢 输入 token 数量: 340
+['364']
+🔢 输入 token 数量: 341
+🔢 输入 token 数量: 500
+🔢 输入 token 数量: 1236
+🔢 输入 token 数量: 314
+['270']
+🔢 输入 token 数量: 315
+🔢 输入 token 数量: 428
+🔢 输入 token 数量: 1164
+🔢 输入 token 数量: 412
+['264', '270']
+🔢 输入 token 数量: 413
+🔢 输入 token 数量: 625
+🔢 输入 token 数量: 1742
+🔢 输入 token 数量: 382
+['347']
+🔢 输入 token 数量: 383
+🔢 输入 token 数量: 738
+🔢 输入 token 数量: 1418
+🔢 输入 token 数量: 773
+['349']
+🔢 输入 token 数量: 774
+🔢 输入 token 数量: 1007
+🔢 输入 token 数量: 2126
+🔢 输入 token 数量: 293
+['234']
+🔢 输入 token 数量: 294
+🔢 输入 token 数量: 528
+🔢 输入 token 数量: 2389
+🔢 输入 token 数量: 239
+['264']
+🔢 输入 token 数量: 240
+🔢 输入 token 数量: 350
+🔢 输入 token 数量: 1230
+🔢 输入 token 数量: 396
+['341', '341']
+🔢 输入 token 数量: 397
+🔢 输入 token 数量: 922
+🔢 输入 token 数量: 3397
+🔢 输入 token 数量: 326
+['133', '67']
+🔢 输入 token 数量: 327
+🔢 输入 token 数量: 691
+🔢 输入 token 数量: 1494
+🔢 输入 token 数量: 821
+['341']
+🔢 输入 token 数量: 822
+🔢 输入 token 数量: 1090
+🔢 输入 token 数量: 2058
+🔢 输入 token 数量: 436
+['344']
+🔢 输入 token 数量: 437
+🔢 输入 token 数量: 631
+🔢 输入 token 数量: 1740
+🔢 输入 token 数量: 397
+['287']
+🔢 输入 token 数量: 398
+🔢 输入 token 数量: 746
+🔢 输入 token 数量: 1490
+🔢 输入 token 数量: 127
+['347']
+🔢 输入 token 数量: 128
+🔢 输入 token 数量: 483
+🔢 输入 token 数量: 1204
+🔢 输入 token 数量: 302
+['341']
+🔢 输入 token 数量: 303
+🔢 输入 token 数量: 571
+🔢 输入 token 数量: 1745
+🔢 输入 token 数量: 274
+['341', '342']
+🔢 输入 token 数量: 275
+🔢 输入 token 数量: 610
+🔢 输入 token 数量: 1253
+🔢 输入 token 数量: 745
+['341']
+🔢 输入 token 数量: 746
+🔢 输入 token 数量: 1014
+🔢 输入 token 数量: 1894
+🔢 输入 token 数量: 354
+['264']
+🔢 输入 token 数量: 355
+🔢 输入 token 数量: 465
+🔢 输入 token 数量: 1386
+🔢 输入 token 数量: 1098
+['219', '382']
+🔢 输入 token 数量: 1099
+🔢 输入 token 数量: 1445
+🔢 输入 token 数量: 3174
+🔢 输入 token 数量: 291
+['239']
+🔢 输入 token 数量: 292
+🔢 输入 token 数量: 417
+🔢 输入 token 数量: 1345
+🔢 输入 token 数量: 279
+['334']
+🔢 输入 token 数量: 280
+🔢 输入 token 数量: 469
+🔢 输入 token 数量: 1134
+🔢 输入 token 数量: 203
+['114', '115']
+🔢 输入 token 数量: 204
+🔢 输入 token 数量: 1060
+🔢 输入 token 数量: 2918
+🔢 输入 token 数量: 467
+['264', '114']
+🔢 输入 token 数量: 468
+🔢 输入 token 数量: 867
+🔢 输入 token 数量: 2039
+🔢 输入 token 数量: 333
+['115']
+🔢 输入 token 数量: 334
+Generating answers::  93%|█████████▎| 186/200 [2:13:59<09:29, 40.68s/it]Generating answers::  94%|█████████▎| 187/200 [2:14:41<08:53, 41.05s/it]Generating answers::  94%|█████████▍| 188/200 [2:15:33<08:51, 44.33s/it]Generating answers::  94%|█████████▍| 189/200 [2:16:20<08:15, 45.08s/it]Generating answers::  95%|█████████▌| 190/200 [2:17:04<07:28, 44.85s/it]Generating answers::  96%|█████████▌| 191/200 [2:17:34<06:03, 40.35s/it]Generating answers::  96%|█████████▌| 192/200 [2:18:28<05:54, 44.29s/it]Generating answers::  96%|█████████▋| 193/200 [2:19:14<05:13, 44.75s/it]Generating answers::  97%|█████████▋| 194/200 [2:19:52<04:16, 42.76s/it]Generating answers::  98%|█████████▊| 195/200 [2:20:34<03:33, 42.74s/it]Generating answers::  98%|█████████▊| 196/200 [2:21:17<02:50, 42.58s/it]Generating answers::  98%|█████████▊| 197/200 [2:21:50<01:59, 39.70s/it]Generating answers::  99%|█████████▉| 198/200 [2:22:36<01:23, 41.73s/it]Generating answers:: 100%|█████████▉| 199/200 [2:23:22<00:43, 43.14s/it]Generating answers:: 100%|██████████| 200/200 [2:23:57<00:00, 40.60s/it]Generating answers:: 100%|██████████| 200/200 [2:23:57<00:00, 43.19s/it]
+🔢 输入 token 数量: 901
+🔢 输入 token 数量: 1650
+🔢 输入 token 数量: 369
+['303']
+🔢 输入 token 数量: 370
+🔢 输入 token 数量: 465
+🔢 输入 token 数量: 1185
+🔢 输入 token 数量: 224
+['341']
+🔢 输入 token 数量: 225
+🔢 输入 token 数量: 493
+🔢 输入 token 数量: 1178
+🔢 输入 token 数量: 242
+['204']
+🔢 输入 token 数量: 243
+🔢 输入 token 数量: 424
+🔢 输入 token 数量: 1052
+🔢 输入 token 数量: 449
+['272']
+🔢 输入 token 数量: 450
+🔢 输入 token 数量: 614
+🔢 输入 token 数量: 5182
+🔢 输入 token 数量: 315
+['275']
+🔢 输入 token 数量: 316
+🔢 输入 token 数量: 387
+🔢 输入 token 数量: 1442
+🔢 输入 token 数量: 267
+['234', '266']
+🔢 输入 token 数量: 268
+🔢 输入 token 数量: 593
+🔢 输入 token 数量: 1174
+🔢 输入 token 数量: 188
+['224']
+🔢 输入 token 数量: 189
+🔢 输入 token 数量: 513
+🔢 输入 token 数量: 2451
+🔢 输入 token 数量: 345
+['264']
+🔢 输入 token 数量: 346
+🔢 输入 token 数量: 456
+🔢 输入 token 数量: 1063
+🔢 输入 token 数量: 297
+['376', '376']
+🔢 输入 token 数量: 298
+🔢 输入 token 数量: 479
+🔢 输入 token 数量: 1295
+🔢 输入 token 数量: 295
+['276']
+🔢 输入 token 数量: 296
+🔢 输入 token 数量: 512
+🔢 输入 token 数量: 2458
+🔢 输入 token 数量: 165
+['277', '67']
+🔢 输入 token 数量: 166
+🔢 输入 token 数量: 452
+🔢 输入 token 数量: 1196
+🔢 输入 token 数量: 1388
+['284', '306']
+🔢 输入 token 数量: 1389
+🔢 输入 token 数量: 1561
+🔢 输入 token 数量: 4486
+🔢 输入 token 数量: 264
+['344']
+🔢 输入 token 数量: 265
+🔢 输入 token 数量: 459
+🔢 输入 token 数量: 1265
+🔢 输入 token 数量: 359
+['264']
+🔢 输入 token 数量: 360
+🔢 输入 token 数量: 470
+🔢 输入 token 数量: 1408
