@@ -46,7 +46,7 @@ def initialize():
     )
     tokenizer = AutoTokenizer.from_pretrained(args.model_path)
     
-    print("✅ 模型结构如下：")
+    print("模型结构如下：")
     print(model)
     
 
@@ -129,7 +129,7 @@ def generate_response(prompt):
     text = tokenizer.apply_chat_template(messages, tokenize=False, add_generation_prompt=True)
     model_inputs = tokenizer([text], return_tensors="pt").to(device)
     
-    print(f"🔢 输入 token 数量: {model_inputs['input_ids'].shape[1]}")
+    print(f"输入 token 数量: {model_inputs['input_ids'].shape[1]}")
     print(f"✅ 模型最大输入 token 长度: {tokenizer.model_max_length}")
     print(tokenizer.truncation_side) 
 
@@ -203,7 +203,7 @@ def index():
         response_analysis_no_rag = generate_response(prompt_analysis_no_rag)
 
         # 控制台打印对比
-        print("📢 ✅ 无RAG（无法条、无案例）分析版本输出：")
+        print("✅ 无RAG分析版本输出：")
         print(response_analysis_no_rag)
         print(smart_translate(response_analysis_no_rag))
 
