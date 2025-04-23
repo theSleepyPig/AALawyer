@@ -17,28 +17,28 @@ def main():
     model_path = "/mnt/ssd_2/yxma/LeLLM/bge-large-zh"
     batch_size = 64
 
-    print("🚀 加载模型中...")
+    print("加载模型中...")
     model = FlagModel(model_path, 
                   query_instruction_for_retrieval="为这个句子生成表示：", 
                   use_fp16=True,
                   device="cuda:0",
-                  use_multi_process=False)  # 👈 禁用并行
+                  use_multi_process=False)  # 禁用并行
 
-    print(f"📂 加载数据文件：{json_path}")
+    print(f"加载数据文件：{json_path}")
     with open(json_path, "r", encoding="utf-8") as f:
         records = json.load(f)
 
     texts = [r["text"].strip() for r in records]
     ids = [str(i) for i in range(len(texts))]
 
-    print(f"📊 共 {len(texts):,} 条文本数据，开始向量化...")
+    print(f"共 {len(texts):,} 条文本数据，开始向量化...")
     start_time = time.time()
 
     all_embeddings = []
     all_ids = []
     failed_ids = []
 
-    for i in tqdm(range(0, len(texts), batch_size), desc="🧠 向量化中", ncols=100):
+    for i in tqdm(range(0, len(texts), batch_size), desc="向量化中", ncols=100):
         batch_texts = texts[i:i+batch_size]
         batch_ids = ids[i:i+batch_size]
         try:
@@ -74,10 +74,10 @@ def main():
         json.dump(failed_ids, f, ensure_ascii=False, indent=2)
 
     print(f"\n✅ FAISS 向量库构建完成！")
-    print(f"🗃️  索引路径: {save_index_path}")
-    print(f"🧾  成功ID路径: {save_id_path}")
-    print(f"🛑  失败ID路径: {save_failed_path}")
-    print(f"⏱️  总耗时：{time.time() - start_time:.2f} 秒")
+    print(f"索引路径: {save_index_path}")
+    print(f"成功ID路径: {save_id_path}")
+    print(f"失败ID路径: {save_failed_path}")
+    print(f"总耗时：{time.time() - start_time:.2f} 秒")
 
 if __name__ == "__main__":
     main()

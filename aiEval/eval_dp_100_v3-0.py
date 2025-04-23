@@ -6,13 +6,13 @@ import time
 import csv
 from tqdm import tqdm
 
-# ✅ 配置 DeepSeek API
+
 client = OpenAI(
-    api_key="sk-0d3e0ebfafd347a2ac4dd2c12d913bce",  # ⚠️ 替换为你的 API Key
+    api_key="sk-0d3e0ebfafd347a2ac4dd2c12d913bce",
     base_url="https://api.deepseek.com"
 )
 
-# ✅ Prompt 构造（删除可解释性）
+
 def format_prompt(case_text, answer_text, law_numbers=None, include_law=True):
     law_part = ""
     if include_law and law_numbers:
@@ -38,7 +38,7 @@ def format_prompt(case_text, answer_text, law_numbers=None, include_law=True):
 丰富度：x分
 """
 
-# ✅ 调用 DeepSeek 模型评分
+
 def get_score(prompt):
     try:
         response = client.chat.completions.create(
@@ -51,10 +51,10 @@ def get_score(prompt):
         )
         return response.choices[0].message.content
     except Exception as e:
-        print("❗API Error:", e)
+        print("API Error:", e)
         return None
 
-# ✅ 提取三维评分
+
 def extract_scores(text):
     try:
         score_zhuanye = float(re.search(r"专业性[:：]\s*(\d+(?:\.\d+)?)", text).group(1))
@@ -68,10 +68,10 @@ def extract_scores(text):
             "总分": score_total
         }
     except Exception as e:
-        print("❗解析评分失败:", e)
+        print("解析评分失败:", e)
         return None
 
-# ✅ 主函数：三模式 + 平均分统计
+
 def evaluate_to_csv(input_json_path, output_csv_path):
     with open(input_json_path, "r", encoding="utf-8") as f:
         data = json.load(f)
@@ -132,7 +132,7 @@ def evaluate_to_csv(input_json_path, output_csv_path):
             else:
                 writer.writerow([mode, "-", "-", "-", "-"])
 
-    print(f"✅ 评估完成，结果保存至：{output_csv_path}")
+    print(f"评估完成，结果保存至：{output_csv_path}")
 
-# ✅ 示例调用
+
 evaluate_to_csv("results/generated_10.json", "results/eval_scores_10_no_explain.csv")

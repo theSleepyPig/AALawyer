@@ -18,4 +18,4 @@ with open(output_path, "w", encoding="utf-8") as f_out:
     for item in sampled_data:
         f_out.write(json.dumps(item, ensure_ascii=False) + "\n")
 
-print(f"✅ 已保存 {sample_size} 条样本至：{output_path}")
+print(f"已保存 {sample_size} 条样本至：{output_path}")

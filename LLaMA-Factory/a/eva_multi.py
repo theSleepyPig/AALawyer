@@ -112,7 +112,7 @@ def run_all_tests(test_nums):
         json_file_path = f"/home/yxma/hzx/hzx/LeLLM/LawBench/data/zero_shot/{test_num}.json"
         
         if not os.path.exists(json_file_path):
-            print(f"⚠️ 文件 {json_file_path} 不存在，跳过...")
+            print(f"文件 {json_file_path} 不存在，跳过...")
             continue
         
         process_test_file(json_file_path, test_num)

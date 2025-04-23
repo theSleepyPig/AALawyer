@@ -5,13 +5,13 @@ import time
 import csv
 from tqdm import tqdm
 
-# ✅ 配置 API（使用新版 OpenAI SDK 接入 DeepSeek）
+
 client = OpenAI(
-    api_key="sk-0d3e0ebfafd347a2ac4dd2c12d913bce",  #⚠️
+    api_key="sk-0d3e0ebfafd347a2ac4dd2c12d913bce",  
     base_url="https://api.deepseek.com/v1"
 )
 
-# ✅ Prompt 构造
+
 def format_prompt(case_text, answer_text, law_numbers=None, include_law=True):
     law_part = ""
     if include_law and law_numbers:
@@ -37,7 +37,7 @@ def format_prompt(case_text, answer_text, law_numbers=None, include_law=True):
 丰富度：x分
 """
 
-# ✅ 调用 DeepSeek 进行评分
+
 def get_score(prompt):
     try:
         response = client.chat.completions.create(
@@ -50,10 +50,10 @@ def get_score(prompt):
         )
         return response.choices[0].message.content
     except Exception as e:
-        print("❗API Error:", e)
+        print("API Error:", e)
         return None
 
-# ✅ 提取评分数字
+# 取评分数字
 def extract_scores(text):
     try:
         score_zhuanye = float(re.search(r"专业性[:：]\s*(\d+(?:\.\d+)?)", text).group(1))
@@ -68,10 +68,10 @@ def extract_scores(text):
             "总分": score_total
         }
     except Exception as e:
-        print("❗解析评分失败:", e)
+        print("解析评分失败:", e)
         return None
 
-# ✅ 主函数：读取 JSON 并保存 CSV
+# 读取 JSON 并保存 CSV
 def evaluate_to_csv(input_json_path, output_csv_path, analysis_key="response_analysis_with_case"):
     with open(input_json_path, "r", encoding="utf-8") as f:
         data = json.load(f)
@@ -102,7 +102,7 @@ def evaluate_to_csv(input_json_path, output_csv_path, analysis_key="response_ana
 
             time.sleep(1.5)
 
-    print(f"✅ 评估完成，已保存到：{output_csv_path}")
+    print(f"评估完成，已保存到：{output_csv_path}")
 
 # main
 

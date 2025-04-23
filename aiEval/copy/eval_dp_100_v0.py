@@ -40,7 +40,7 @@ def format_prompt(case_text, answer_text, law_numbers=None, include_law=True):
 总分：x分
 """
 
-# 调用 DeepSeek API
+
 def get_score(prompt):
     headers = {
         "Authorization": f"Bearer {DEEPSEEK_API_KEY}",
@@ -64,7 +64,7 @@ def get_score(prompt):
         print("API Error:", e)
         return None
 
-# 提取评分结果
+
 def extract_scores(text):
     try:
         return {
@@ -77,7 +77,7 @@ def extract_scores(text):
         print("❗解析评分失败:", e)
         return None
 
-# 主函数：读取 JSON，评估并保存 CSV
+
 def evaluate_to_csv(input_json_path, output_csv_path, analysis_key="response_analysis_with_case"):
     with open(input_json_path, "r", encoding="utf-8") as f:
         data = json.load(f)
@@ -106,7 +106,7 @@ def evaluate_to_csv(input_json_path, output_csv_path, analysis_key="response_ana
 
             time.sleep(1.5)
 
-    print(f"✅ 评估完成，结果已保存至：{output_csv_path}")
+    print(f"评估完成，结果已保存至：{output_csv_path}")
 
 # main
 evaluate_to_csv("results/generated_10.json", "results/eval_scores_10.csv")

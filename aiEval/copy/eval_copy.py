@@ -2,10 +2,10 @@ import openai
 import json
 import time
 
-# 设置你的 OpenAI API 密钥
-openai.api_key = "your-api-key"
 
-# Prompt 模板
+openai.api_key = ""
+
+
 def format_prompt(case_text, answer_text):
     return f"""你是一个资深刑法专家，擅长评估法律文书质量。
 请根据提供的【案例背景】和【分析内容】，从以下三个维度为分析打分（0-5分）：
@@ -28,7 +28,7 @@ def format_prompt(case_text, answer_text):
 总分：x分
 """
 
-# 调用 GPT 进行打分
+
 def get_score(prompt, model="gpt-4"):
     try:
         response = openai.ChatCompletion.create(
@@ -41,7 +41,7 @@ def get_score(prompt, model="gpt-4"):
         print("API Error:", e)
         return None
 
-# 提取数字分数
+
 import re
 def extract_scores(text):
     try:
@@ -54,7 +54,7 @@ def extract_scores(text):
     except:
         return None
 
-# 主评估流程
+
 def evaluate_all(input_file, output_file):
     with open(input_file, 'r', encoding='utf-8') as f:
         data = json.load(f)

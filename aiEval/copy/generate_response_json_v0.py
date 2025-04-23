@@ -94,7 +94,7 @@ def generate_response(prompt):
     text = tokenizer.apply_chat_template(messages, tokenize=False, add_generation_prompt=True)
     model_inputs = tokenizer([text], return_tensors="pt").to(device)
     
-    print(f"🔢 输入 token 数量: {model_inputs['input_ids'].shape[1]}")
+    print(f"输入 token 数量: {model_inputs['input_ids'].shape[1]}")
     # print(f"✅ 模型最大输入 token 长度: {tokenizer.model_max_length}")
     # print(tokenizer.truncation_side) 
 
