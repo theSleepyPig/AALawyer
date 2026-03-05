@@ -19,6 +19,7 @@ Please ensure you have the following dependencies installed:
 
 ```bash
 conda env create -f env.yml
+conda activate llm
 ```
 
 ## 2️⃣ Main Training
