@@ -15,6 +15,6 @@ from huggingface_hub import snapshot_download
 # )
 
 snapshot_download(
-    repo_id="CSHaitao/SAILER_zh", 
-    local_dir="/mnt/ssd_2/yxma/LeLLM/SAILER_zh"
+    repo_id="Helsinki-NLP/opus-mt-zh-en", 
+    local_dir="/mnt/ssd_2/yxma/LeLLM/opus-mt-zh-en"
 )

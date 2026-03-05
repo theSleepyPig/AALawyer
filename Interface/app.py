@@ -31,7 +31,7 @@ device = torch.device(args.device if torch.cuda.is_available() else "cpu")
 
 def initialize():
     global model, tokenizer
-    global zh_to_en_model, zh_to_en_tokenizer
+    # global zh_to_en_model, zh_to_en_tokenizer
     global law_data
     global bge_model, faiss_index, index_ids, index_texts
 
@@ -50,9 +50,9 @@ def initialize():
     print(model)
     
 
-    print("Loading translation models...")
-    zh_to_en_model = MarianMTModel.from_pretrained("/mnt/ssd_2/yxma/LeLLM/opus-mt-zh-en").to(device)
-    zh_to_en_tokenizer = MarianTokenizer.from_pretrained("/mnt/ssd_2/yxma/LeLLM/opus-mt-zh-en")
+    # print("Loading translation models...")
+    # zh_to_en_model = MarianMTModel.from_pretrained("/mnt/ssd_2/yxma/LeLLM/opus-mt-zh-en").to(device)
+    # zh_to_en_tokenizer = MarianTokenizer.from_pretrained("/mnt/ssd_2/yxma/LeLLM/opus-mt-zh-en")
 
     law_file = "/mnt/ssd_2/yxma/LeLLM/data/data/RAGDatabase1.json"
     with open(law_file, "r", encoding="utf-8") as file:
