@@ -14,7 +14,7 @@ import os
 import multiprocessing as mp
 mp.set_start_method("spawn", force=True)
 
-# python app.py --model_path /mnt/ssd_2/yxma/LeLLM/train_mergem20
+# python /home/yxma/hzx/LeLLM/Interface/app_v2_translateotherrmodel.py --model_path /mnt/ssd_2/yxma/LeLLM/train_mergem20
 
 # 解析参数
 parser = argparse.ArgumentParser(description="Interactive Chat with LLM")
@@ -26,7 +26,7 @@ args = parser.parse_args()
 # os.environ["TOKENIZERS_PARALLELISM"] = "false"
 
 # 选择设备
-os.environ["CUDA_VISIBLE_DEVICES"] = "0"
+os.environ["CUDA_VISIBLE_DEVICES"] = "1"
 device = torch.device(args.device if torch.cuda.is_available() else "cpu")
 
 def initialize():
@@ -51,8 +51,10 @@ def initialize():
     
 
     print("Loading translation models...")
-    zh_to_en_model = MarianMTModel.from_pretrained("/mnt/ssd_2/yxma/LeLLM/opus-mt-zh-en").to(device)
-    zh_to_en_tokenizer = MarianTokenizer.from_pretrained("/mnt/ssd_2/yxma/LeLLM/opus-mt-zh-en")
+    # zh_to_en_model = MarianMTModel.from_pretrained("/mnt/ssd_2/yxma/LeLLM/opus-mt-zh-en").to(device)
+    # zh_to_en_tokenizer = MarianTokenizer.from_pretrained("/mnt/ssd_2/yxma/LeLLM/opus-mt-zh-en")
+    zh_to_en_model = MarianMTModel.from_pretrained("Helsinki-NLP/opus-mt-zh-en").to(device)
+    zh_to_en_tokenizer = MarianTokenizer.from_pretrained("Helsinki-NLP/opus-mt-zh-en")
 
     law_file = "/mnt/ssd_2/yxma/LeLLM/data/data/RAGDatabase1.json"
     with open(law_file, "r", encoding="utf-8") as file:

@@ -1,0 +1,6 @@
+task,model_name,score,abstention_rate
+4-1,output_results_qwen_hall,0.5942275132275133,0.0
+hall0,output_results_qwen_hall,0.43609263853840824,0.0
+auth0,output_results_qwen_hall,0.9439964298888697,0.0
+hall1,output_results_qwen_hall,0.580241647828085,0.0
+auth1,output_results_qwen_hall,0.7020916233812096,0.0

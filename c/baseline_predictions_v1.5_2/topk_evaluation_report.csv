@@ -1,0 +1,3 @@
+Top-K,F1,Precision,Recall,File
+1,24.260000000000012,26.6,18.194254445964432,predictions_bge_topk1.json
+2,23.79142857142862,19.1,26.12859097127223,predictions_bge_topk2.json

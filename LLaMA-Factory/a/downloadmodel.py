@@ -9,7 +9,12 @@ from huggingface_hub import snapshot_download
 # 下载 Fuzi-Mingcha 6B 模型
 # snapshot_download(repo_id="SDUIRLab/fuzi-mingcha-v1_0", local_dir="/mnt/ssd_2/yxma/LeLLM/Fuzi-Mingcha-6B")
 
+# snapshot_download(
+#     repo_id="ShengbinYue/LawLLM-7B", 
+#     local_dir="/mnt/ssd_2/yxma/LeLLM/LawLLM-7B"
+# )
+
 snapshot_download(
-    repo_id="Helsinki-NLP/opus-mt-zh-en", 
-    local_dir="/mnt/ssd_2/yxma/LeLLM/opus-mt-zh-en"
+    repo_id="CSHaitao/SAILER_zh", 
+    local_dir="/mnt/ssd_2/yxma/LeLLM/SAILER_zh"
 )

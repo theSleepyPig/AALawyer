@@ -26,7 +26,7 @@ args = parser.parse_args()
 # os.environ["TOKENIZERS_PARALLELISM"] = "false"
 
 # 选择设备
-os.environ["CUDA_VISIBLE_DEVICES"] = "0"
+os.environ["CUDA_VISIBLE_DEVICES"] = "1"
 device = torch.device(args.device if torch.cuda.is_available() else "cpu")
 
 def initialize():

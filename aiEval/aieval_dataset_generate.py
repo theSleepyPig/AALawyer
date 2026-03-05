@@ -2,8 +2,8 @@ import json
 import random
 
 input_path = "/mnt/ssd_2/yxma/LeLLM/data/data/data_valid.json"  
-output_path = "aieval_dataset_200.json"  
-num_samples = 200
+output_path = "aieval_dataset_1000_t1.json"  
+num_samples = 1000
 
 
 with open(input_path, "r", encoding="utf-8") as f:

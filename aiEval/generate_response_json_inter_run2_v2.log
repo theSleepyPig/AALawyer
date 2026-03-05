@@ -1,0 +1,43 @@
+nohup: ignoring input
+results/generated_200_inter_v2023_run1.json
+/mnt/ssd_2/yxma/LeLLM/internlm3-8b-instruct/
+正在加载模型和分词器 (InternLM3)...
+Loading checkpoint shards:   0%|          | 0/2 [00:00<?, ?it/s]Loading checkpoint shards:  50%|█████     | 1/2 [00:05<00:05,  5.30s/it]Loading checkpoint shards: 100%|██████████| 2/2 [00:09<00:00,  4.43s/it]Loading checkpoint shards: 100%|██████████| 2/2 [00:09<00:00,  4.56s/it]
+模型已移动到 device: cuda:0
+模型加载完成。
+正在检查并修正模型内部张量设备...
+模型设备检查修正完成。
+v3v3v3
+Generating answers::   0%|          | 0/200 [00:00<?, ?it/s]Generating answers::   0%|          | 1/200 [02:58<9:51:30, 178.34s/it]Generating answers::   1%|          | 2/200 [06:43<11:19:54, 206.03s/it]Generating answers::   1%|          | 2/200 [17:47<29:21:20, 533.74s/it]
+Traceback (most recent call last):
+  File "/home/yxma/hzx/LeLLM/aiEval/generate_response_json_inter_v1.py", line 279, in <module>
+    response_only_ccs = generate_response(prompt_ccs)
+  File "/home/yxma/hzx/LeLLM/aiEval/generate_response_json_inter_v1.py", line 188, in generate_response
+    generated_ids = model.generate(
+  File "/home/yxma/anaconda3/envs/llmnewer/lib/python3.9/site-packages/torch/utils/_contextlib.py", line 120, in decorate_context
+    return func(*args, **kwargs)
+  File "/home/yxma/anaconda3/envs/llmnewer/lib/python3.9/site-packages/transformers/generation/utils.py", line 2625, in generate
+    result = self._sample(
+  File "/home/yxma/anaconda3/envs/llmnewer/lib/python3.9/site-packages/transformers/generation/utils.py", line 3606, in _sample
+    outputs = self(**model_inputs, return_dict=True)
+  File "/home/yxma/anaconda3/envs/llmnewer/lib/python3.9/site-packages/torch/nn/modules/module.py", line 1773, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/home/yxma/anaconda3/envs/llmnewer/lib/python3.9/site-packages/torch/nn/modules/module.py", line 1784, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/home/yxma/.cache/huggingface/modules/transformers_modules/modeling_internlm3.py", line 1159, in forward
+    outputs = self.model(
+  File "/home/yxma/anaconda3/envs/llmnewer/lib/python3.9/site-packages/torch/nn/modules/module.py", line 1773, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/home/yxma/anaconda3/envs/llmnewer/lib/python3.9/site-packages/torch/nn/modules/module.py", line 1784, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/home/yxma/.cache/huggingface/modules/transformers_modules/modeling_internlm3.py", line 884, in forward
+    position_embeddings = self.rotary_emb(hidden_states, position_ids)
+  File "/home/yxma/anaconda3/envs/llmnewer/lib/python3.9/site-packages/torch/nn/modules/module.py", line 1773, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/home/yxma/anaconda3/envs/llmnewer/lib/python3.9/site-packages/torch/nn/modules/module.py", line 1784, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/home/yxma/anaconda3/envs/llmnewer/lib/python3.9/site-packages/torch/utils/_contextlib.py", line 120, in decorate_context
+    return func(*args, **kwargs)
+  File "/home/yxma/.cache/huggingface/modules/transformers_modules/modeling_internlm3.py", line 154, in forward
+    freqs = (inv_freq_expanded.float() @ position_ids_expanded.float()).transpose(1, 2)
+RuntimeError: Expected all tensors to be on the same device, but got mat2 is on cuda:0, different from other tensors on cpu (when checking argument in method wrapper_CUDA_bmm)

@@ -1,0 +1,4 @@
+model_name,f1_score,precision,recall,abstention_rate
+output_results_qwen3-no,0.73,0.68,0.75,0.00
+output_results_inter,0.83,0.44,0.78,0.00
+output_results_m20,0.89,0.90,0.84,0.00

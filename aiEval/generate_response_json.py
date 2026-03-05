@@ -163,7 +163,7 @@ for idx, item in enumerate(tqdm(data, desc="Generating answers:")):
             # "根据下列案件内容和相关法条分析案件，说明谁犯罪了，为什么认为他犯罪，涉及到哪条法律，犯了什么罪。分析在100字左右。分析时不需要提及法条内容，只提及相应编号。\n"
             
             f"案件内容: {user_input}\n"
-            f"涉及法条内容:\n{law_articles}\n"
+            f"涉及法条内容:\n{law_articles}\n（涉及法条内容不一定都用上了，可能是这一条的某一部分）"
             "根据以上案件内容和相关法条分析案件，说明谁犯罪了，为什么认为他犯罪，涉及到哪条法律，犯了什么罪。结合案件内容和法条内容详细对比分析，把法条内容相和案件相关的整合进分析中。分析在100字左右。\n"
             
         )
@@ -175,7 +175,7 @@ for idx, item in enumerate(tqdm(data, desc="Generating answers:")):
     similar_cases = retrieve_similar_cases(user_input, top_k=1)
     prompt_rag = (
             f"案件内容: {user_input}\n"
-            f"涉及法条内容:\n{law_articles}\n"
+            f"涉及法条内容:\n{law_articles}\n（涉及法条内容不一定都用上了，可能是这一条的某一部分）"
             "请根据案件内容、涉及的法条，以及如下提供的相似案例，综合分析案件。说明谁犯罪了，为什么认为他犯罪，涉及哪条法律，犯了什么罪。长度和格式参考相似案例。\n"
             # f"相似判决案例参考:\n{similar_cases}\n"
             f"【相似案例】:\n" + "\n\n".join(similar_cases) + "\n\n"

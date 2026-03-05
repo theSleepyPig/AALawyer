@@ -1,0 +1,5 @@
+task,model_name,score,abstention_rate
+4-2,output_results_m20,0.907608695652174,0.0
+4-1,output_results_m20,0.8666666666666667,0.0
+4-2,output_results_m0,0.5692307692307692,0.0
+4-1,output_results_m0,0.3855555555555555,0.03333333333333333
