@@ -262,8 +262,8 @@ python app.py --model_path [model_path(e.g.train_mergem20)]
 
 Our fine-tuned models and newly collected datasets are available on Hugging Face 🤗:
 
-- **Model Weights (AA-LeLLM):** [https://huggingface.co/xuanzhu07/LeLLM_m20]
-- **APR Criminal Case Database (176k cases):** <font color="red">TODO</font>[TODO: Add Hugging Face Link]
+- [**🤗Model Weights (AA-LeLLM):**](https://huggingface.co/xuanzhu07/LeLLM_m20)
+- [**🤗APR Criminal Case Database (176k cases):**](https://huggingface.co/datasets/xuanzhu07/APR_Criminal_Case_Database)]
 
 
 ## 6️⃣ Citation
