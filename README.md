@@ -1,4 +1,7 @@
-# Mitigating Legal Hallucinations via Symbolic Constraints and Analogical Precedents
+# (ACL 2026) Mitigating Legal Hallucinations via Symbolic Constraints and Analogical Precedents
+
+> [!WARNING!]
+> **Code Releasing in Progress:** The complete codebase is currently being cleaned and organized for the final release. The full implementation of the AALawyer framework will be updated soon!
 
 A complementary dual-retriever framework (AALawyer) designed to mitigate legal hallucinations using Symbolic Constrained Retrieval (SCR) and Analogical Precedent Retrieval (APR).
 
