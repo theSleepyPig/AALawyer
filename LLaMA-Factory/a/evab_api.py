@@ -24,7 +24,7 @@ from openai import OpenAI
 
 # 设置 DeepSeek 的 API base 和 key（你需替换为你自己的）
 client = OpenAI(
-    api_key="sk-0d3e0ebfafd347a2ac4dd2c12d913bce",  # 替换为你的 API Key
+    api_key="",  # 替换为你的 API Key
     base_url="https://api.deepseek.com"
 )
 
