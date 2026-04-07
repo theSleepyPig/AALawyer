@@ -5,7 +5,7 @@
 
 A complementary dual-retriever framework (AALawyer) designed to mitigate legal hallucinations using Symbolic Constrained Retrieval (SCR) and Analogical Precedent Retrieval (APR).
 
-⭐ Our paper is available at <font color="red">TODO</font>[TODO: Link to be added].
+⭐ Our paper is available at (<font color="red">Coming soon</font>[TODO: Link to be added]).
 
 ## 1️⃣ Environment
 
@@ -241,8 +241,15 @@ Before running the evaluation, you may need to adjust the following files to mat
 * [`analyze_final_results2.py`](./c/analyze_final_results2.py): A post-processing script that evaluates above results, calculates metrics, and identifies the optimal threshold ($\tau$).
 ### Evaluate on HR-Benchmark (Hallu, Prof, Info, Expa)
 ```bash
+cd aiEval
+python aieval_dataset_generate.py #(Optional)
+
+python generate_response_json_qwen3.py
+
+……(Coming Soon)
 
 ```
+Default Setting: The benchmark includes 200 test samples by default, which is the scale used for the experiments in our paper. Running aieval_dataset_generate.py is optional. Users can use this script to dynamically increase the number of test samples beyond the default 200, allowing for more extensive evaluation based on available computational resources and API quotas.
 
 ## 4️⃣ Running AALawyer (Interactive Web UI)
 
@@ -263,7 +270,7 @@ python app.py --model_path [model_path(e.g.train_mergem20)]
 Our fine-tuned models and newly collected datasets are available on Hugging Face 🤗:
 
 - [**🤗Model Weights (AA-LeLLM):**](https://huggingface.co/xuanzhu07/LeLLM_m20)
-- [**🤗APR Criminal Case Database (176k cases):**](https://huggingface.co/datasets/xuanzhu07/APR_Criminal_Case_Database)]
+- [**🤗APR Criminal Case Database (176k cases):**](https://huggingface.co/datasets/xuanzhu07/APR_Criminal_Case_Database)
 
 
 ## 6️⃣ Citation

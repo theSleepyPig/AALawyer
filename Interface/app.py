@@ -14,7 +14,7 @@ import os
 import multiprocessing as mp
 mp.set_start_method("spawn", force=True)
 
-# python app.py --model_path /mnt/ssd_2/yxma/LeLLM/train_mergem20
+# python app.py --model_path /mnt/ssd_2/yxma/hzx/train_mergem20
 
 # 解析参数
 parser = argparse.ArgumentParser(description="Interactive Chat with LLM")
@@ -26,7 +26,7 @@ args = parser.parse_args()
 # os.environ["TOKENIZERS_PARALLELISM"] = "false"
 
 # 选择设备
-os.environ["CUDA_VISIBLE_DEVICES"] = "1"
+os.environ["CUDA_VISIBLE_DEVICES"] = "0"
 device = torch.device(args.device if torch.cuda.is_available() else "cpu")
 
 def initialize():
@@ -54,16 +54,16 @@ def initialize():
     # zh_to_en_model = MarianMTModel.from_pretrained("/mnt/ssd_2/yxma/LeLLM/opus-mt-zh-en").to(device)
     # zh_to_en_tokenizer = MarianTokenizer.from_pretrained("/mnt/ssd_2/yxma/LeLLM/opus-mt-zh-en")
 
-    law_file = "/mnt/ssd_2/yxma/LeLLM/data/data/RAGDatabase1.json"
+    law_file = "/mnt/ssd_2/yxma/hzx/data/data/RAGDatabase1_v2.json"
     with open(law_file, "r", encoding="utf-8") as file:
         law_data = json.load(file)
     print("Law articles loaded successfully!")
 
     print("Loading FAISS index and bge model...")
-    bge_model_path = "/mnt/ssd_2/yxma/LeLLM/bge-large-zh"
-    index_path = "/mnt/ssd_2/yxma/LeLLM/data/RAG2/legalCase_faiss.index"
-    id_path = "/mnt/ssd_2/yxma/LeLLM/data/RAG2/legalCase_ids.json"
-    text_path = "/mnt/ssd_2/yxma/LeLLM/data/data/merge.json"
+    bge_model_path = "/mnt/ssd_2/yxma/hzx/bge-large-zh"
+    index_path = "/mnt/ssd_2/yxma/hzx/data/RAG2/legalCase_faiss.index"
+    id_path = "/mnt/ssd_2/yxma/hzx/data/RAG2/legalCase_ids.json"
+    text_path = "/mnt/ssd_2/yxma/hzx/data/data/merge.json"
 
     bge_model = FlagModel(
         bge_model_path,
