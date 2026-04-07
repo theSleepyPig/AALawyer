@@ -223,7 +223,10 @@ We evaluate our model on LawBench and our proposed Hallucination Risk-Benchmark 
 
 ### Evaluate on LawBench (FAP, CP, DFI, etc.)
 ```bash
+python ../AALawyer/LLaMA-Factory/a/evab.py --experiment_id m20 --device 1 --mode zero_shot --max_new_tokens 2048
 
+cd Lawbench/evaluation
+python main.py -i ../predictions/zero_shot -o ../predictions/zero_shot/results.csv
 ```
 
 ### Evaluate on RAG (F1 Score of FAP)
