@@ -225,9 +225,14 @@ We evaluate our model on LawBench and our proposed Hallucination Risk-Benchmark 
 
 ### Evaluate on RAG (F1 Score of FAP)
 ```bash
-
+cd c
+bash run_all_thresholds.sh
+python analyze_final_results2.py
 ```
-
+Before running the evaluation, you may need to adjust the following files to match your file and model paths:
+* [`test_baselines_v15.py`](./c/test_baselines_v15.py): The core retrieval script that performs legal article searches by top-$k$ and threshold. This is also the primary location for switching or extending retrieval models (e.g., by adding a new Retriever class).
+* [`run_all_thresholds.sh`](./c/run_all_thresholds.sh): A shell script that automates the execution of the retrieval script across a range of thresholds for ablation studies.
+* [`analyze_final_results2.py`](./c/analyze_final_results2.py): A post-processing script that evaluates above results, calculates metrics, and identifies the optimal threshold ($\tau$).
 ### Evaluate on HR-Benchmark (Hallu, Prof, Info, Expa)
 ```bash
 

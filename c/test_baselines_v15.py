@@ -66,7 +66,7 @@ class BM25Retriever:
 # --- BGE 检索器 ---
 class BGERetriever:
     # def __init__(self, corpus, model_name='/mnt/ssd_2/yxma/LeLLM/bge-m3'):
-    def __init__(self, corpus, model_name="/mnt/ssd_2/yxma/LeLLM/bge-large-zh"):
+    def __init__(self, corpus, model_name="/mnt/ssd_2/yxma/hzx/bge-large-zh"):
         print(f"Initializing BGE Retriever with model: {model_name}")
         self.device = 'cuda' if torch.cuda.is_available() else 'cpu'
         print(f"Using device: {self.device}")
@@ -112,8 +112,8 @@ def main():
     args = parser.parse_args()
 
     # --- 加载数据 ---
-    test_file = "/home/yxma/hzx/LeLLM/LawBench/data/zero_shot/3-1.json" 
-    corpus_file = "/mnt/ssd_2/yxma/LeLLM/data/data/RAGDatabase1_v2.json"
+    test_file = "/home/yxma/hzx/AALawyer/LawBench/data/zero_shot/3-1.json" 
+    corpus_file = "/mnt/ssd_2/yxma/hzx/data/data/RAGDatabase1_v2.json"
 
     with open(test_file, 'r', encoding='utf-8') as f:
         test_data = json.load(f)
