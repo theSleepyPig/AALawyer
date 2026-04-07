@@ -7,7 +7,7 @@ from tqdm import tqdm
 
 
 client = OpenAI(
-    api_key="sk-0d3e0ebfafd347a2ac4dd2c12d913bce",  
+    api_key="",  
     base_url="https://api.deepseek.com"
 )
 
