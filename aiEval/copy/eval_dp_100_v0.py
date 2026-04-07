@@ -10,7 +10,7 @@ os.environ["REQUESTS_CA_BUNDLE"] = certifi.where()
 
 
 # 设置 DeepSeek API
-DEEPSEEK_API_KEY = "sk-0d3e0ebfafd347a2ac4dd2c12d913bce"  #⚠️
+DEEPSEEK_API_KEY = ""  #⚠️
 DEEPSEEK_URL = "https://api.deepseek.com/v1/chat/completions"
 MODEL_NAME = "deepseek-chat"  # "deepseek-coder","deepseek-chat",deepseek-reasoner
 
