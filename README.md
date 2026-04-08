@@ -262,15 +262,15 @@ cd Interface
 python app.py --model_path [model_path(e.g.train_mergem20)]
 ```
 
-## 5️⃣ Ablations
+<!-- ## 5️⃣ Ablations -->
 
 
 ## 5️⃣ ⭐ Pretrained Models & Datasets
 
 Our fine-tuned models and newly collected datasets are available on Hugging Face 🤗:
 
-- [**🤗Model Weights (AA-LeLLM):**](https://huggingface.co/xuanzhu07/LeLLM_m20)
-- [**🤗APR Criminal Case Database (176k cases):**](https://huggingface.co/datasets/xuanzhu07/APR_Criminal_Case_Database)
+- [**🤗Model Weights (AA-LeLLM)**](https://huggingface.co/xuanzhu07/LeLLM_m20)
+- [**🤗APR Criminal Case Database (176k cases)**](https://huggingface.co/datasets/xuanzhu07/APR_Criminal_Case_Database)
 
 
 ## 6️⃣ Citation
