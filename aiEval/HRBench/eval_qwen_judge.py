@@ -35,7 +35,7 @@ import csv
 from tqdm import tqdm
 import argparse
 
-DASHSCOPE_API_KEY = "sk-a8d24875aad7411fb43e2cce0ba71596" 
+DASHSCOPE_API_KEY = "sk-XXXXXXXXXXXXXXXX" 
 
 client = OpenAI(
     api_key=DASHSCOPE_API_KEY, 

@@ -7,7 +7,7 @@ from tqdm import tqdm
 
 # ✅ 配置 API（使用新版 OpenAI SDK 接入 DeepSeek）
 client = OpenAI(
-    api_key="sk-0d3e0ebfafd347a2ac4dd2c12d913bce",  #⚠️
+    api_key="sk-XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",  #⚠️
     base_url="https://api.deepseek.com/v1"
 )
 

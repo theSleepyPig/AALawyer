@@ -37,7 +37,7 @@ import argparse
 
 # ✅ 配置 DeepSeek API
 client = OpenAI(
-    api_key="sk-0d3e0ebfafd347a2ac4dd2c12d913bce",  # 替换为你的 API Key
+    api_key="sk-XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",  # 替换为你的 API Key
     base_url="https://api.deepseek.com"
 )
 
