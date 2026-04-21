@@ -192,7 +192,13 @@ def evaluate_to_csv(input_json_path, output_csv_path):
     print(f"✅ 评估完成，结果保存至：{output_csv_path}")
 
 # ✅ 示例调用
+# evaluate_to_csv("input_file", "result_path")
 evaluate_to_csv("results\m0\generated_200_m0_v2023_run3.json", "results\m0\eval_scores_m0_run3_v2023.csv")
+
+
+
+
+
 # results\generated_200_m20_v2_run2.json
 # if __name__ == "__main__":
 

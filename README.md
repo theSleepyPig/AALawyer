@@ -29,7 +29,7 @@ conda activate llm
 
 ## 2️⃣ Incremental Pretraining and Supervised Fine-Tuning
 
-The training process of our AA-LeLLM backbone consists of Incremental Pretraining (IPT) and Supervised Fine-Tuning (SFT). 
+The training process of our AA-LeLLM backbone consists of Incremental Pretraining (IPT) and Supervised Fine-Tuning (SFT). Note that we provide the fully trained checkpoints in [Part 5️⃣](#part5), which can be directly used without further training (skipping this part).
 
 ### Merging LoRA Weights
 Since we use LoRA, the trained adapters must be merged back into the base model before proceeding to the next stage. **You must perform this merge operation after each of the 3 IPT steps and before the SFT stage.**
@@ -244,9 +244,11 @@ Before running the evaluation, you may need to adjust the following files to mat
 cd aiEval
 python aieval_dataset_generate.py #(Optional)
 
-python generate_response_json_qwen3.py
+python generate_response_json_qwen3.py # get output_xxx.json
+cd HRBench
+python eval_dp_100_v3.py
 
-……(Coming Soon)
+
 
 ```
 Default Setting: The benchmark includes 200 test samples by default, which is the scale used for the experiments in our paper. Running aieval_dataset_generate.py is optional. Users can use this script to dynamically increase the number of test samples beyond the default 200, allowing for more extensive evaluation based on available computational resources and API quotas.
@@ -265,7 +267,7 @@ python app.py --model_path [model_path(e.g.train_mergem20)]
 <!-- ## 5️⃣ Ablations -->
 
 
-## 5️⃣ ⭐ Pretrained Models & Datasets
+## <a id="part5"></a>5️⃣ ⭐ Pretrained Models & Datasets
 
 Our fine-tuned models and newly collected datasets are available on Hugging Face 🤗:
 

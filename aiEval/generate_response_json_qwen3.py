@@ -17,7 +17,7 @@ from tqdm import tqdm
 # input_json = "/home/yxma/hzx/hzx/LeLLM/aiEval/aieval_dataset_10.json" 
 # output_json = "results/generated_10_v3_1.json"  # 改为 json 输出
 input_json = "/home/yxma/hzx/LeLLM/aiEval/aieval_dataset_200.json" 
-output_json = "results/generated_200_qwen3_v2023_v3.json"  # 改为 json 输出
+output_json = "results/generated_200_qwen3_v2023_v3.json"  # 改为 output_xxx.json 输出
 
 results = []
 
