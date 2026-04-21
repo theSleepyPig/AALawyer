@@ -1,30 +1,5 @@
 # -*- coding: utf-8 -*-
 
-# def format_prompt(case_text, answer_text, law_numbers=None, include_law=True):
-#     law_part = ""
-#     if include_law and law_numbers:
-#         law_part = f"【参考法条编号】：{'、'.join(law_numbers)}\n"
-#
-#     return f"""你是一位严谨的刑法专家，请从以下三个维度对下文的分析内容进行评分（0~5分），每项评分标准如下：
-#
-# 1. 专业性：分析内容是否符合规范的法律术语和刑法分析逻辑，能为法律从业者提供正确参考。
-# 2. 准确性：法条引用的准确性 = 法条编号匹配的准确度 × 对应法条内容描述的真实性。该指标只与两个因素有关，一是是否和参考法条编号一致，二是法条内容是否完整、真实、可靠。与分析内容质量无关。（因为数据标注原因，参考法条以外的法条也可能是正确法条，可自行判断一下，但必须包含参考法条）
-# 3. 丰富度：分析是否结构清晰、内容完整，是否结合了案例具体事实与法条条文进行深入解释，是否包含补充信息或合理推理。是否能为法律从业者提供丰富的参考。
-#
-# 请你仅依据“案例背景”与“分析内容”进行评分，不生成无关内容。
-#
-# {law_part}案例背景：
-# {case_text}
-#
-# 分析内容：
-# {answer_text}
-#
-# 请按如下格式输出（只输出分数）：
-# 专业性：x分
-# 准确性：x分
-# 丰富度：x分
-# """
-
 # # 四度，更改准确性描述
 
 from openai import OpenAI
@@ -41,7 +16,7 @@ client = OpenAI(
     base_url="https://api.deepseek.com"
 )
 
-# ✅ Prompt 构造（新增可解释性维度）
+# Prompt 构造
 def format_prompt(case_text, answer_text, law_numbers=None, include_law=True):
     law_part = ""
     if include_law and law_numbers:
@@ -80,7 +55,7 @@ def format_prompt(case_text, answer_text, law_numbers=None, include_law=True):
 可解释性：x分
 """
 
-# ✅ 调用 DeepSeek 模型评分
+# 调用 DeepSeek 模型评分
 def get_score(prompt):
     try:
         response = client.chat.completions.create(
@@ -96,7 +71,7 @@ def get_score(prompt):
         print("❗API Error:", e)
         return None
 
-# ✅ 提取四维评分
+# 提取四维评分
 def extract_scores(text):
     try:
         score_zhuanye = float(re.search(r"专业性[:：]\s*(\d+(?:\.\d+)?)", text).group(1))
@@ -122,7 +97,7 @@ def extract_scores(text):
         print("❗解析评分失败:", e)
         return None
 
-# ✅ 三种模式 + 平均分统计
+# 4种模式 + 平均分统计
 def evaluate_to_csv(input_json_path, output_csv_path):
     with open(input_json_path, "r", encoding="utf-8") as f:
         data = json.load(f)
@@ -197,15 +172,6 @@ def evaluate_to_csv(input_json_path, output_csv_path):
 
 
 # ✅ 优化代码
-# if __name__ == "__main__":
-
-#     parser = argparse.ArgumentParser(description="使用 DeepSeek API 评估法律分析内容，并生成评分 CSV 文件。")
-#     parser.add_argument("input_path", help="包含待评估内容的输入 JSON 文件路径。")
-#     parser.add_argument("output_path", help="用于保存评分结果的输出 CSV 文件路径。")
-#     args = parser.parse_args()
-
-#     evaluate_to_csv(args.input_json_path, args.output_csv_path)
-
 if __name__ == "__main__":
     parser = argparse.ArgumentParser(description="使用DeepSeekAPI评估法律分析内容，并生成评分CSV文件。")
     
