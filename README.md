@@ -247,9 +247,6 @@ python aieval_dataset_generate.py #(Optional)
 python generate_response_json_qwen3.py # get output_xxx.json
 cd HRBench
 python eval_dp_100_v3.py
-
-
-
 ```
 Default Setting: The benchmark includes 200 test samples by default, which is the scale used for the experiments in our paper. Running aieval_dataset_generate.py is optional. Users can use this script to dynamically increase the number of test samples beyond the default 200, allowing for more extensive evaluation based on available computational resources and API quotas.
 
