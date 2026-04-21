@@ -1,1 +1,4 @@
 wandb/
+aiEval/HRBench/results/
+aiEval/HRBench/rebuttal/
+aiEval/HRBench/data/data_train.json

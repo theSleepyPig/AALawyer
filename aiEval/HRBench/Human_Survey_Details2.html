@@ -1,0 +1,1241 @@
+
+    <!DOCTYPE html>
+    <html lang="zh-CN">
+    <head>
+        <meta charset="UTF-8">
+        <title>HR-Benchmark: 第二批评测 (Run 2)</title>
+        <style>
+            body { font-family: 'Arial', sans-serif; margin: 40px auto; max-width: 1000px; line-height: 1.6; background-color: #f4f7f6;}
+            h1 { text-align: center; font-size: 26px; color: #333; }
+            .case-container { background: white; border: 1px solid #ddd; padding: 25px; margin-bottom: 25px; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.05);}
+            .case-header { font-weight: bold; font-size: 18px; margin-bottom: 15px; border-bottom: 2px solid #eee; padding-bottom: 10px; color: #d35400;} 
+            .fact-text { font-size: 15px; margin-bottom: 20px; color: #444; text-align: justify; line-height: 1.8;}
+            details { background: #f8f9fa; border: 1px solid #e9ecef; border-radius: 6px; padding: 10px 15px; margin-bottom: 20px; transition: all 0.3s ease;}
+            details[open] { background: #fff; border-color: #b8daff; box-shadow: 0 2px 4px rgba(0,0,0,0.05); }
+            summary { font-weight: bold; font-size: 16px; cursor: pointer; outline: none; color: #0056b3; margin: -10px -15px; padding: 10px 15px;}
+            summary:hover { background: #e2e6ea; border-radius: 6px;}
+            .ans-section { margin-top: 15px; padding: 12px; background: #fdfdfe; border-left: 4px solid #007bff; border-radius: 4px; border-bottom: 1px solid #eee; border-right: 1px solid #eee;}
+            .ans-title { font-weight: bold; color: #0056b3; margin-bottom: 8px; font-size: 14px;}
+            .ans-content { font-size: 14px; color: #333; white-space: pre-wrap; font-family: monospace;}
+            .scoring-area { background: #fffdfa; padding: 15px; border-radius: 5px; border: 1px dashed #ffc107;}
+            .dim-row { margin-bottom: 12px; font-size: 16px; font-weight: bold; color: #333;}
+            .radio-group { display: inline-block; margin-left: 20px; font-weight: normal;}
+            label { margin-right: 15px; cursor: pointer; padding: 4px 8px; border-radius: 4px;}
+            label:hover { background: #f0f0f0;}
+            input[type="radio"] { transform: scale(1.2); margin-right: 5px; cursor: pointer;}
+            .submit-btn { display: block; width: 100%; padding: 15px; font-size: 20px; font-weight: bold; color: white; background-color: #28a745; border: none; border-radius: 8px; cursor: pointer; margin-top: 30px; margin-bottom: 50px; transition: 0.2s;}
+            .submit-btn:hover { background-color: #218838; }
+        </style>
+    </head>
+    <body>
+        <h1>HR-Benchmark: 专家人工评测问卷 (第二批)</h1>
+        <p style="text-align: center; color: #666;">这是新增的 20 题（已自动排除第一批的题目）。请完成后下载 csv，与第一批的数据一起使用。</p>
+        <hr>
+        <div id="survey-form">
+    
+        <div class="case-container" data-idx="182">
+            <div class="case-header">题目 #182 (第二批第 1 题)</div>
+            <div class="fact-text"><b>【案情事实】</b><br>上海市宝山区人民检察院指控，被告人XX于2015年2月10日14时许，至本市宝山区真华路XXX号东闻网吧内要求退还所输钱款，未果。其遂持菜刀挟持在场的董某作为人质继续索要钱款，并向处警的民警扬言杀死人质，后被民警合力制服。公诉机关以被告人的供述、被害人的陈述、证人证言、辨认笔录、《现场勘验检查工作记录》、《扣押决定书》、《扣押笔录》、《扣押清单》、《发还清单》、现场监控录像、《验伤通知书》、《工作情况》、《精神疾病司法鉴定意见书》等为证据，指控被告人XX的行为已构成××罪，有坦白情节，提请本院根据《中华人民共和国刑法》××××、××××之规定，追究其刑事责任。</div>
+            
+            <details>
+                <summary>📑 点击展开/收起：模型作答与参考答案</summary>
+                
+                <div class="ans-section">
+                    <div class="ans-title">1. Ground Truth (真实法条编号) [articles]</div>
+                    <div class="ans-content">[
+  "刑法第239条"
+]</div>
+                </div>
+                
+                <div class="ans-section" style="border-left-color: #6f42c1;">
+                    <div class="ans-title">2. 法条具体内容 [law_articles]</div>
+                    <div class="ans-content">《中华人民共和国刑法》第二百三十九条　【绑架罪】以勒索财物为目的绑架他人的，或者绑架他人作为人质的，处十年以上有期徒刑或者无期徒刑，并处罚金或者没收财产；情节较轻的，处五年以上十年以下有期徒刑，并处罚金。
+
+　　犯前款罪，杀害被绑架人的，或者故意伤害被绑架人，致人重伤、死亡的，处无期徒刑或者死刑，并处没收财产。
+
+　　以勒索财物为目的偷盗婴幼儿的，依照前两款的规定处罚。</div>
+                </div>
+                
+                <div class="ans-section">
+                    <div class="ans-title">3. 预测法条编号 [law_numbers]</div>
+                    <div class="ans-content">[
+  "刑法第239条"
+]</div>
+                </div>
+                
+                <div class="ans-section" style="border-left-color: #28a745;">
+                    <div class="ans-title">4. RAG 模式作答 [response_aa]</div>
+                    <div class="ans-content">被告人XX犯有绑架罪。根据《中华人民共和国刑法》第二百三十九条，以勒索财物为目的绑架他人的，或者绑架他人作为人质的，构成绑架罪。在本案中，被告人XX在真华路XXX号东闻网吧内要求退还所输钱款，未果后，使用菜刀挟持在场的董某作为人质，并向处警的民警扬言杀死人质，后被民警合力制服。因此，被告人XX的行为符合绑架罪的构成要件。</div>
+                </div>
+                
+                <div class="ans-section" style="border-left-color: #dc3545;">
+                    <div class="ans-title">5. 无 RAG 模式作答 [response_analysis_no_rag]</div>
+                    <div class="ans-content">被告人XX犯有绑架罪。根据《刑法》第二百三十九条，以勒索财物为目的绑架他人的，或者绑架他人作为人质的，处十年以上有期徒刑或者无期徒刑，并处罚金或者没收财产。被告人XX在真华路XXX号东闻网吧内要求退还所输钱款，未果后，使用菜刀挟持在场的董某作为人质继续索要钱款，并扬言杀死人质，符合绑架罪的构成要件。</div>
+                </div>
+                
+                <div class="ans-section" style="border-left-color: #ffc107;">
+                    <div class="ans-title">6. 检索到的相似案例 [similar_cases]</div>
+                    <div class="ans-content">[
+  "（2022）沪0115刑初620号\n公诉机关上海市浦东新区人民检察院。\n被告人赵某，男，1978年3月10日出生于河南省驻马店市遂平县，XX，初中文化，闲散工，户籍地河南省驻马店市遂平县，暂住地上海市浦东新区。因本案于2021年12月18日被刑事拘留，同年12月31日被逮捕。现羁押于上海市浦东新区看守所。\n辩护人韩进华，北京市浩天信和（上海）律师事务所律师。\n上海市浦东新区人民检察院以沪浦检刑诉〔2022〕442号起诉书指控被告人赵某犯寻衅滋事罪，于2022年3月14日向本院提起公诉。本院依法适用简易程序，实行独任审判，公开开庭审理了本案。上海市浦东新区人民检察院指派检察官李衡出庭支持公诉，被告人赵某及上海市浦东新区XX中心指派的韩进华律师到庭参加诉讼。本院审理期间，因疫情原因于2022年3月14日中止审理，同年7月15日恢复审理。现已审理终结。\n上海市浦东新区人民检察院指控，2021年12月17日14时许，被告人赵某拨打110报警电话称因怀疑前妻与他人有染，扬言杀死对方。其后不顾110接警员劝阻，购买菜刀，又罔顾民警电话联系、劝阻，持刀至本区XX路XX弄仁怡苑小区门口，与相约而来的被害人曾某发生口角，使用刀具对曾某进行恐吓，刀具被围观人员夺走后又对曾某拳打脚踢。经鉴定，被害人曾某左侧顶枕部头皮下血肿，损伤程度评定为轻微伤。\n2021年12月17日，被告人赵某被公安人员抓获，到案后如实供述了犯罪事实。\n本院审理期间，被告人赵某赔偿了被害人曾某人民币3,000元，曾某对赵某的行为表示谅解。\n以上事实，被告人赵某在开庭审理过程中无异议，并有经庭审质证属实的被害人曾某的陈述，证人王某、候某、陈某、祝某、代某、袁某、彭某、张某的证言及辨认笔录，扣押决定书、扣押清单、扣押笔录及相关照片，证人姜某、谈某的证言，110事件单登记表，调取证据通知书、调取证据清单，验伤通知书及上海林几司法鉴定所司法鉴定意见书，案发经过，收条及谅解书,被告人赵某到案后的供述及户籍资料等证据证实，足以认定。\n本院认为，被告人赵某持凶器恐吓他人，情节恶劣，破坏社会秩序，其行为已构成寻衅滋事罪。公诉机关指控罪名成立，本院予以支持。赵某自愿认罪认罚，可以依法从宽处理；赵某系坦白，可以从轻处罚；赵某又随意殴打他人，致一人轻微伤，量刑时酌情从重处罚;赵某赔偿了被害人损失,取得了被害人谅解,量刑时酌情从轻处罚。辩护人相关从轻处罚的辩护意见，本院予以采纳。依照《中华人民共和国刑法》第二百九十三条第一款第（二）项、第六十七条第三款、第六十四条之规定，判决如下：\n一、被告人赵某民犯寻衅滋事罪，判处有期徒刑九个月。\n（刑期从判决执行之日起计算；判决执行以前先行羁押的，羁押一日折抵刑期一日，即自2021年12月17日起至2022年9月16日止。）\n二、扣押在案的作案工具菜刀一把，予以没收。如不服本判决，可在接到判决书的第二日起十日内，通过本院或者直接向上海市第一中级人民法院提出上诉。书面上诉的，应当提交上诉状正本一份，副本二份。\n\n审判员倪建军\n书记员张颖\n二〇二二年七月二十日"
+]</div>
+                </div>
+            </details>
+            
+            <div class="scoring-area">
+        <div class="dim-row">专业性: <span class="radio-group"><label><input type="radio" name="专业性_182" value="0"> 0</label><label><input type="radio" name="专业性_182" value="1"> 1</label><label><input type="radio" name="专业性_182" value="2"> 2</label><label><input type="radio" name="专业性_182" value="3"> 3</label><label><input type="radio" name="专业性_182" value="4"> 4</label><label><input type="radio" name="专业性_182" value="5"> 5</label></span></div><div class="dim-row">准确性: <span class="radio-group"><label><input type="radio" name="准确性_182" value="0"> 0</label><label><input type="radio" name="准确性_182" value="1"> 1</label><label><input type="radio" name="准确性_182" value="2"> 2</label><label><input type="radio" name="准确性_182" value="3"> 3</label><label><input type="radio" name="准确性_182" value="4"> 4</label><label><input type="radio" name="准确性_182" value="5"> 5</label></span></div><div class="dim-row">丰富度: <span class="radio-group"><label><input type="radio" name="丰富度_182" value="0"> 0</label><label><input type="radio" name="丰富度_182" value="1"> 1</label><label><input type="radio" name="丰富度_182" value="2"> 2</label><label><input type="radio" name="丰富度_182" value="3"> 3</label><label><input type="radio" name="丰富度_182" value="4"> 4</label><label><input type="radio" name="丰富度_182" value="5"> 5</label></span></div><div class="dim-row">可解释性: <span class="radio-group"><label><input type="radio" name="可解释性_182" value="0"> 0</label><label><input type="radio" name="可解释性_182" value="1"> 1</label><label><input type="radio" name="可解释性_182" value="2"> 2</label><label><input type="radio" name="可解释性_182" value="3"> 3</label><label><input type="radio" name="可解释性_182" value="4"> 4</label><label><input type="radio" name="可解释性_182" value="5"> 5</label></span></div>
+            </div>
+        </div>
+        
+        <div class="case-container" data-idx="37">
+            <div class="case-header">题目 #37 (第二批第 2 题)</div>
+            <div class="fact-text"><b>【案情事实】</b><br>河北省内邱县人民检察院指控，2011年8月10日中午，被告人刘某伙同郝某某（已判）共同驾驶骑一辆红色五羊牌125型摩托车，沿107国道尾随刘某至内邱县官庄镇下屯村刘某娘家门口，刘某将刘某脖子上的黄金项链抢走后逃离现场，于2015年6月14日到内邱县公安局投案。经内邱县涉案物品价格鉴定中心鉴定，被抢金项链一条价格为4000元。被告人刘某的行为已触犯了《中华人民共和国刑法》××的规定，应当以××罪追究其刑事责任。公诉机关提供的证据主要有：报案记录、证人证言、指认现场照片和文字说明，作案工具的照片，价格鉴定结论书、法医鉴定书和刑事判决书，户籍证明信等。</div>
+            
+            <details>
+                <summary>📑 点击展开/收起：模型作答与参考答案</summary>
+                
+                <div class="ans-section">
+                    <div class="ans-title">1. Ground Truth (真实法条编号) [articles]</div>
+                    <div class="ans-content">[
+  "刑法第267条"
+]</div>
+                </div>
+                
+                <div class="ans-section" style="border-left-color: #6f42c1;">
+                    <div class="ans-title">2. 法条具体内容 [law_articles]</div>
+                    <div class="ans-content">《中华人民共和国刑法》第二百六十七条　【抢夺罪】抢夺公私财物，数额较大的，或者多次抢夺的，处三年以下有期徒刑、拘役或者管制，并处或者单处罚金；数额巨大或者有其他严重情节的，处三年以上十年以下有期徒刑，并处罚金；数额特别巨大或者有其他特别严重情节的，处十年以上有期徒刑或者无期徒刑，并处罚金或者没收财产。
+
+　　【抢劫罪】携带凶器抢夺的，依照本法第二百六十三条的规定定罪处罚。</div>
+                </div>
+                
+                <div class="ans-section">
+                    <div class="ans-title">3. 预测法条编号 [law_numbers]</div>
+                    <div class="ans-content">[
+  "刑法第267条"
+]</div>
+                </div>
+                
+                <div class="ans-section" style="border-left-color: #28a745;">
+                    <div class="ans-title">4. RAG 模式作答 [response_aa]</div>
+                    <div class="ans-content">被告人刘某犯有抢夺罪。刘某伙同他人抢夺了刘某脖子上的黄金项链，属于抢夺公私财物，数额较大，符合《中华人民共和国刑法》第二百六十七条的规定。</div>
+                </div>
+                
+                <div class="ans-section" style="border-left-color: #dc3545;">
+                    <div class="ans-title">5. 无 RAG 模式作答 [response_analysis_no_rag]</div>
+                    <div class="ans-content">被告人刘某犯有抢夺罪。刘某伙同他人尾随刘某，将刘某脖子上的黄金项链抢走后逃离现场，构成抢夺罪。</div>
+                </div>
+                
+                <div class="ans-section" style="border-left-color: #ffc107;">
+                    <div class="ans-title">6. 检索到的相似案例 [similar_cases]</div>
+                    <div class="ans-content">[
+  "（2015）深刑初字第00015号\n公诉机关河北省深泽县人民检察院。\n被告人孙某，农民。2014年9月18日因涉嫌犯抢夺罪被深泽县公安局刑事拘留，同年10月21日被逮捕。现羁押于深泽县看守所。\n辩护人王艳龙，河北海洲律师事务所律师。\n被告人朱某，农民。2014年9月18日因涉嫌犯抢夺罪被深泽县公安局刑事拘留，同年10月21日被逮捕。现羁押于深泽县看守所。\n河北省深泽县人民检察院以冀深检公刑诉（2015）4号起诉书指控被告人孙某、朱某犯抢夺罪，于2015年1月7日向本院提起公诉。本院依法组成合议庭，于2015年1月23日公开开庭审理了本案。深泽县人民检察院指派检察员张永计、代检察员张勇战出庭支持公诉，被告人孙某及辩护人王艳龙、被告人朱某到庭参加了诉讼。现已审理终结。\n深泽县人民检察院指控：\n1、2014年7月15日，被告人孙某、朱某驾驶一辆红色125型摩托车到深泽县赵八乡佳乐惠超市附近，抢夺汪某黄金项链一条，经深泽县价格认证中心鉴定：该项链价值4931.06元。\n2、2014年7月28日，被告人孙某、朱某驾驶一辆黑色125型摩托车到深泽县定深路与北环交叉口附近，抢夺李某乙黄金项链一条，经深泽县价格认证中心鉴定：该项链价值3326.67元。\n3、2014年8月3日，被告人孙某、朱某驾驶一辆黑色125型摩托车到藁城市南董镇北高庄村村北的公路上，抢夺宋某金项链一条，经深泽县价格认证中心鉴定：该项链价值5662元。\n4、2014年8月9日，被告人孙某、朱某驾驶一辆黑色125型摩托车到深泽县赵八派出所附近，抢夺曹某金项链一条，经深泽县价格认证中心鉴定：该项链价值3200.77元。\n认定上述事实的证据如下：\n书证；证人张某、王某、李某甲的证言；被害人曹某、汪某、李某乙、宋某的陈述；被告人孙某、朱某的供述与辩解；价格鉴定意见；辨认笔录；户籍证明信及其他证据材料。公诉机关认为，被告人孙某、朱某以非法占有为目的，多次、公然抢夺他人财物，数额较大，其行为触犯了《中华人民共和国刑法》第二百六十七条第一款之规定，犯罪事实清楚，证据确实、充分，应当以抢夺罪追究二被告人的刑事责任。\n被告人孙某、朱某辩称起诉书指控的第一起抢夺没有参与，其余三起对犯罪事实及罪名均无异议，自愿认罪。\n被告人孙某辩护人的辩护意见：应认定被告人孙某参与三次抢夺，指控第一起应核实，不应放纵真正的罪犯。被告人孙某自愿认罪，对其应从轻处罚。\n经审理查明：\n1、2014年7月28日，被告人孙某、朱某驾驶一辆黑色125型摩托车到深泽县定深路与北环交叉口附近，抢夺李某乙黄金项链一条，经深泽县价格认证中心鉴定：该项链价值3326.67元。\n2、2014年8月3日，被告人孙某、朱某驾驶一辆黑色125型摩托车到藁城市南董镇北高庄村村北的公路上，抢夺宋某金项链一条，经深泽县价格认证中心鉴定：该项链价值5662元。\n3、2014年8月9日，被告人孙某、朱某驾驶一辆黑色125型摩托车到深泽县赵八派出所附近，抢夺曹某金项链一条，经深泽县价格认证中心鉴定：该项链价值3200.77元。\n二被告人抢夺三次财物价值共12189.44元。\n二被告人于2014年8月6日购买HJ125－2０骊爽橙摩托车一辆。\n上述事实，被告人孙某、朱某在开庭审理时亦无异议，且有被害人曹某、李某乙、宋某陈述；证人张某、李某甲证言；价格鉴定意见书；辨认笔录及照片；现场辨认笔录及照片；视频资料；到案经过；购买摩托车单据；户籍证明信等证据证实，足以认定。\n本院认为，被告人孙某、朱某以非法占有为目的，多次、公然抢夺他人财物，数额较大，犯罪事实清楚，证据确实、充分，其行为已构成抢夺罪。故公诉机关指控的第二、三、四起的事实和罪名成立，对指控的二被告人第一起抢夺，因二被告人的供述及辩解来到深泽县的时间、抢夺时骑的摩托车颜色及抢夺项链人与被害人汪某的陈述、证人王某的证言不一致，证据之间的细节不能相互印证，本院不予认定。二被告人当庭自愿认罪，可酌情从轻处罚。被告人孙某辩护人辩护认定其参与的三次抢夺、孙某自愿认罪，对其应酌情从轻处罚的意见予以采纳。为了打击刑事犯罪，保护公民的人身、财产权利不受侵犯，依照《中华人民共和国刑法》第二百六十七条第一款、第六十四条、第五十二条、第五十三条之规定，判决如下：\n一、被告人孙某犯抢夺罪，判处有期徒刑一年六个月，并处罚金人民币一万元。\n（刑期从判决执行之日起计算，判决执行以前先行羁押的，羁押一日折抵刑期一日，即自2014年9月18日起至2016年3月17日止。）\n（罚金从判决发生法律效力第二天起三个月内缴纳。）\n二、被告人朱某犯抢夺罪，判处有期徒刑一年六个月，并处罚金人民币一万元。\n（刑期从判决执行之日起计算，判决执行以前先行羁押的，羁押一日折抵刑期一日，即自2014年9月18日起至2016年3月17日止。）\n（罚金从判决发生法律效力第二天起三个月内缴纳。）\n三、责令被告人孙某、朱某退赔被害人李凡人民币三千三百二十六元六角七分、退赔被害人宋娟人民币五千六百六十二元、退赔被害人曹丽娇人民币三千二百元七角七分。\n如不服本判决，可在接到判决书的第二日起十日内，通过本院或者直接向河北省石家庄市中级人民法院提出上诉。书面上诉的，应当提交上诉状正本一份，副本三份。\n审判长陈丽\n审判员张建英\n陪审员杜景\n二〇一五年二月六日\n书记员张丛"
+]</div>
+                </div>
+            </details>
+            
+            <div class="scoring-area">
+        <div class="dim-row">专业性: <span class="radio-group"><label><input type="radio" name="专业性_37" value="0"> 0</label><label><input type="radio" name="专业性_37" value="1"> 1</label><label><input type="radio" name="专业性_37" value="2"> 2</label><label><input type="radio" name="专业性_37" value="3"> 3</label><label><input type="radio" name="专业性_37" value="4"> 4</label><label><input type="radio" name="专业性_37" value="5"> 5</label></span></div><div class="dim-row">准确性: <span class="radio-group"><label><input type="radio" name="准确性_37" value="0"> 0</label><label><input type="radio" name="准确性_37" value="1"> 1</label><label><input type="radio" name="准确性_37" value="2"> 2</label><label><input type="radio" name="准确性_37" value="3"> 3</label><label><input type="radio" name="准确性_37" value="4"> 4</label><label><input type="radio" name="准确性_37" value="5"> 5</label></span></div><div class="dim-row">丰富度: <span class="radio-group"><label><input type="radio" name="丰富度_37" value="0"> 0</label><label><input type="radio" name="丰富度_37" value="1"> 1</label><label><input type="radio" name="丰富度_37" value="2"> 2</label><label><input type="radio" name="丰富度_37" value="3"> 3</label><label><input type="radio" name="丰富度_37" value="4"> 4</label><label><input type="radio" name="丰富度_37" value="5"> 5</label></span></div><div class="dim-row">可解释性: <span class="radio-group"><label><input type="radio" name="可解释性_37" value="0"> 0</label><label><input type="radio" name="可解释性_37" value="1"> 1</label><label><input type="radio" name="可解释性_37" value="2"> 2</label><label><input type="radio" name="可解释性_37" value="3"> 3</label><label><input type="radio" name="可解释性_37" value="4"> 4</label><label><input type="radio" name="可解释性_37" value="5"> 5</label></span></div>
+            </div>
+        </div>
+        
+        <div class="case-container" data-idx="10">
+            <div class="case-header">题目 #10 (第二批第 3 题)</div>
+            <div class="fact-text"><b>【案情事实】</b><br>经审理查明：2010年11月，被告人杨某某以倒卖越南妇女牟利为目的，在云南省蒙自市市郊从自称是云南省红河州的一名男子（无法查清真实姓名）手中以5000元的价格购买越南籍妇女CuSau（音译名古收，中国户籍假名王某某），通过云南省文山市薄竹镇周某某（已判决）认识了已嫁到吉林省蛟河市的云南省文山市妇女侯某某（已判决），在其家以66000元的价格将王某某卖给侯某某领到云南省的吉林省蛟河市乌林朝鲜族乡村民管某某为妻，后管某某将王某某领到蛟河市乌林朝鲜族乡共同生活。赃款被杨某某、侯某某挥霍。案发后，被告人杨某某被抓获归案。上述事实，被告人杨某某在开庭审理过程中亦无异议，并有被害人王某某的陈述，证人管某某、侯某某、周某某证言，无前科劣迹证明，情况说明，吉林省吉林市中级人民法院刑事裁定书，蛟河市人民医院检验报告书，暂不适合收押情况说明书，案件提起及破获经过材料等证据证实，足以认定。</div>
+            
+            <details>
+                <summary>📑 点击展开/收起：模型作答与参考答案</summary>
+                
+                <div class="ans-section">
+                    <div class="ans-title">1. Ground Truth (真实法条编号) [articles]</div>
+                    <div class="ans-content">[
+  "刑法第240条"
+]</div>
+                </div>
+                
+                <div class="ans-section" style="border-left-color: #6f42c1;">
+                    <div class="ans-title">2. 法条具体内容 [law_articles]</div>
+                    <div class="ans-content">《中华人民共和国刑法》第二百四十条　【拐卖妇女、儿童罪】拐卖妇女、儿童的，处五年以上十年以下有期徒刑，并处罚金；有下列情形之一的，处十年以上有期徒刑或者无期徒刑，并处罚金或者没收财产；情节特别严重的，处死刑，并处没收财产：
+
+　　（一）拐卖妇女、儿童集团的首要分子；
+
+　　（二）拐卖妇女、儿童三人以上的；
+
+　　（三）奸淫被拐卖的妇女的；
+
+　　（四）诱骗、强迫被拐卖的妇女卖淫或者将被拐卖的妇女卖给他人迫使其卖淫的；
+
+　　（五）以出卖为目的，使用暴力、胁迫或者麻醉方法绑架妇女、儿童的；
+
+　　（六）以出卖为目的，偷盗婴幼儿的；
+
+　　（七）造成被拐卖的妇女、儿童或者其亲属重伤、死亡或者其他严重后果的；
+
+　　（八）将妇女、儿童卖往境外的。
+
+　　拐卖妇女、儿童是指以出卖为目的，有拐骗、绑架、收买、贩卖、接送、中转妇女、儿童的行为之一的。</div>
+                </div>
+                
+                <div class="ans-section">
+                    <div class="ans-title">3. 预测法条编号 [law_numbers]</div>
+                    <div class="ans-content">[
+  "刑法第240条"
+]</div>
+                </div>
+                
+                <div class="ans-section" style="border-left-color: #28a745;">
+                    <div class="ans-title">4. RAG 模式作答 [response_aa]</div>
+                    <div class="ans-content">被告人杨某某犯有拐卖妇女罪。根据《中华人民共和国刑法》第二百四十条的规定，拐卖妇女、儿童的行为构成犯罪。根据案件事实，被告人杨某某以倒卖越南妇女牟利为目的，通过购买并出售越南籍妇女，将该妇女卖给他人，属于拐卖妇女的行为。因此，被告人杨某某犯有拐卖妇女罪。</div>
+                </div>
+                
+                <div class="ans-section" style="border-left-color: #dc3545;">
+                    <div class="ans-title">5. 无 RAG 模式作答 [response_analysis_no_rag]</div>
+                    <div class="ans-content">被告人杨某某犯有拐卖妇女罪。根据《刑法》第二百四十条，以倒卖妇女牟利的行为构成拐卖妇女、儿童罪。</div>
+                </div>
+                
+                <div class="ans-section" style="border-left-color: #ffc107;">
+                    <div class="ans-title">6. 检索到的相似案例 [similar_cases]</div>
+                    <div class="ans-content">[
+  "（2016）吉0281刑初161号\n公诉机关吉林省蛟河市人民检察院。\n被告人杨某某，出生于云南省文山县，住云南省个旧市。因涉嫌犯拐卖妇女罪，于2015年8月5日被济南铁路公安处莒南车站公安派出所民警在莒南站广场抓获，于2015年8月10日被取保候审，后外逃，于2016年5月11日被云南省文山市公安局东风派出所民警在文山市抓获，同日被刑事拘留，羁押于文山市看守所，同年5月21日被蛟河市公安局解回，同日被指定居所监视居住。\n蛟河市人民检察院以蛟检刑检刑诉（2016）180号起诉书指控被告人杨某某犯拐卖妇女罪，于2016年6月3日向本院提起公诉。本院受理后，于同日立案，依法组成合议庭，适用简易程序，于2016年6月7日公开开庭进行了审理，蛟河市人民检察院指派检察员杨成有出庭支持公诉，被告人杨某某到庭参加诉讼，现已审理终结。\n经审理查明：2010年11月，被告人杨某某以倒卖越南妇女牟利为目的，在云南省蒙自市市郊从自称是云南省红河州的\n一名男子（无法查清真实姓名）手中以5000元的价格购买越南籍妇女CuSau（音译名古收，中国户籍假名王某某），通过云南省文山市薄竹镇周某某（已判决）认识了已嫁到吉林省蛟河市的云南省文山市妇女侯某某（已判决），在其家以66000元的价格将王某某卖给侯某某领到云南省的吉林省蛟河市乌林朝鲜族乡村民管某某为妻，后管某某将王某某领到蛟河市乌林朝鲜族乡共同生活。赃款被杨某某、侯某某挥霍。案发后，被告人杨某某被抓获归案。\n上述事实，被告人杨某某在开庭审理过程中亦无异议，并有被害人王某某的陈述，证人管某某、侯某某、周某某证言，无前科劣迹证明，情况说明，吉林省吉林市中级人民法院刑事裁定书，蛟河市人民医院检验报告书，暂不适合收押情况说明书，案件提起及破获经过材料等证据证实，足以认定。\n本院认为，被告人杨某某拐卖越南妇女，其行为已构成拐卖妇女罪，应予惩处。公诉机关指控被告人杨某某犯拐卖妇女罪的事实清楚，证据确实、充分，适用法律正确，指控罪名成立，应予支持。被告人杨某某认罪态度好，可酌情对其从轻处罚。依照《中华人民共和国刑法》第二百四十条第一款、第二十五条第一款、第五十二条、第五十三条、第六十四条之规定，判决如下：\n一、被告人杨某某犯拐卖妇女罪，判处有期徒刑五年，并处罚金人民币二万元。\n（刑期从判决执行之日起计算。）\n二、追缴被告人杨某某违法所得人民币五万八千元（已判决追缴侯某某八千元），依法没收，上缴国库。\n如不服本判决，可在接到判决书的第二日起十日内，通过本院或者直接向吉林省吉林市中级人民法院提出上诉，书面上诉的，应提交上诉状正本一份，副本四份。\n审判长沈红梅\n审判员张根生\n人民陪审员尹相玉\n\n\n二〇一六年六月七日\n书记员马艺鸣"
+]</div>
+                </div>
+            </details>
+            
+            <div class="scoring-area">
+        <div class="dim-row">专业性: <span class="radio-group"><label><input type="radio" name="专业性_10" value="0"> 0</label><label><input type="radio" name="专业性_10" value="1"> 1</label><label><input type="radio" name="专业性_10" value="2"> 2</label><label><input type="radio" name="专业性_10" value="3"> 3</label><label><input type="radio" name="专业性_10" value="4"> 4</label><label><input type="radio" name="专业性_10" value="5"> 5</label></span></div><div class="dim-row">准确性: <span class="radio-group"><label><input type="radio" name="准确性_10" value="0"> 0</label><label><input type="radio" name="准确性_10" value="1"> 1</label><label><input type="radio" name="准确性_10" value="2"> 2</label><label><input type="radio" name="准确性_10" value="3"> 3</label><label><input type="radio" name="准确性_10" value="4"> 4</label><label><input type="radio" name="准确性_10" value="5"> 5</label></span></div><div class="dim-row">丰富度: <span class="radio-group"><label><input type="radio" name="丰富度_10" value="0"> 0</label><label><input type="radio" name="丰富度_10" value="1"> 1</label><label><input type="radio" name="丰富度_10" value="2"> 2</label><label><input type="radio" name="丰富度_10" value="3"> 3</label><label><input type="radio" name="丰富度_10" value="4"> 4</label><label><input type="radio" name="丰富度_10" value="5"> 5</label></span></div><div class="dim-row">可解释性: <span class="radio-group"><label><input type="radio" name="可解释性_10" value="0"> 0</label><label><input type="radio" name="可解释性_10" value="1"> 1</label><label><input type="radio" name="可解释性_10" value="2"> 2</label><label><input type="radio" name="可解释性_10" value="3"> 3</label><label><input type="radio" name="可解释性_10" value="4"> 4</label><label><input type="radio" name="可解释性_10" value="5"> 5</label></span></div>
+            </div>
+        </div>
+        
+        <div class="case-container" data-idx="84">
+            <div class="case-header">题目 #84 (第二批第 4 题)</div>
+            <div class="fact-text"><b>【案情事实】</b><br>吉林省九台市人民检察院指控，被告人陈某于2014年01月27日14时许，在九台市一中对面的翻转串吧烧烤店内，在与被害人马某某吃饭期间，以借电话给别人打电话为由，将马某某的三星S4手机骗走，到长春市火车站附近将手机卖掉，获利2200元，经鉴定，该手机价值人民币3766元。</div>
+            
+            <details>
+                <summary>📑 点击展开/收起：模型作答与参考答案</summary>
+                
+                <div class="ans-section">
+                    <div class="ans-title">1. Ground Truth (真实法条编号) [articles]</div>
+                    <div class="ans-content">[
+  "刑法第266条"
+]</div>
+                </div>
+                
+                <div class="ans-section" style="border-left-color: #6f42c1;">
+                    <div class="ans-title">2. 法条具体内容 [law_articles]</div>
+                    <div class="ans-content">《中华人民共和国刑法》第二百六十四条　【盗窃罪】盗窃公私财物，数额较大的，或者多次盗窃、入户盗窃、携带凶器盗窃、扒窃的，处三年以下有期徒刑、拘役或者管制，并处或者单处罚金；数额巨大或者有其他严重情节的，处三年以上十年以下有期徒刑，并处罚金；数额特别巨大或者有其他特别严重情节的，处十年以上有期徒刑或者无期徒刑，并处罚金或者没收财产。</div>
+                </div>
+                
+                <div class="ans-section">
+                    <div class="ans-title">3. 预测法条编号 [law_numbers]</div>
+                    <div class="ans-content">[
+  "刑法第264条"
+]</div>
+                </div>
+                
+                <div class="ans-section" style="border-left-color: #28a745;">
+                    <div class="ans-title">4. RAG 模式作答 [response_aa]</div>
+                    <div class="ans-content">被告人陈某犯有盗窃罪。根据《中华人民共和国刑法》第二百六十四条，盗窃公私财物，数额较大的，或者多次盗窃、入户盗窃、携带凶器盗窃、扒窃的，处三年以下有期徒刑、拘役或者管制，并处或者单处罚金。根据案件事实，陈某以借电话给他人打电话为由，将被害人马某某的手机骗走，并在长春市火车站附近将其卖掉，获利2200元。因此，陈某的行为符合盗窃罪的构成要件，应当被定罪处罚。</div>
+                </div>
+                
+                <div class="ans-section" style="border-left-color: #dc3545;">
+                    <div class="ans-title">5. 无 RAG 模式作答 [response_analysis_no_rag]</div>
+                    <div class="ans-content">被告人陈某以借电话给他人打电话为由，骗取被害人马某某的手机，构成诈骗罪。根据《刑法》第二百六十六条，以非法占有为目的，在共同生活期间，骗取他人财物，数额较大的，处三年以下有期徒刑或者拘役，并处或者单处罚金。</div>
+                </div>
+                
+                <div class="ans-section" style="border-left-color: #ffc107;">
+                    <div class="ans-title">6. 检索到的相似案例 [similar_cases]</div>
+                    <div class="ans-content">[
+  "（2015）公刑初字第443号\n公诉机关吉林省公主岭市人民检察院。\n被告人闫某，男，现住吉林省公主岭市。因涉嫌诈骗，于2015年1月6日被公主岭市公安局行政拘留，1月20日被刑事拘留，1月29日被逮捕。现羁押于公主岭市看守所。\n被告人董某甲，男，现住吉林省公主岭市。因涉嫌诈骗，于2014年5月23日被公主岭市公安局刑事拘留，6月2日被逮捕。现羁押于公主岭市看守所。\n吉林省公主岭市人民检察院以公检公诉（2015）317号起诉书，指控被告人闫某、董某甲犯诈骗罪，于2015年6月29日向本院提起公诉。本院依法组成合议庭，于2015年7月17日公开开庭审理了本案，吉林省公主岭市人民检察院指派代理检察员桑桐出庭支持公诉。被告人闫某、董某甲到庭参加诉讼，现已审理终结。\n吉林省公主岭市人民检察院指控：1、2015年1月4日18时许，被告人董某甲伙同闫某、李某（在逃）在公主岭市河北街道讯腾网吧门口以借手机打电话为由，将被害人王某某的白色5S苹果手机骗走，之后到手机商店将手机卖掉，赃款被三人挥霍。经鉴定：被骗手机价值人民币2500元。\n2、2014年11月29日中午，被告人董某甲伙同闫某在公主岭市华夏网吧内以借手机打电话为由，将被害人崔某某的金色苹果5S手机骗走，之后到手机商店将该手机卖掉，赃款被二人挥霍。经鉴定：被骗手机价值人民币2500元。案发后，二被告人均被抓获归案。\n吉林省公主岭市人民检察院指控上述犯罪事实所列举的证据有：\n（一）被告人闫某、董某甲的供述。\n（二）被害人王某某、崔某某的陈述。\n（三）证人齐文波等人的证言。\n（四）现场勘验笔录及照片，辨认笔录及照片。\n（五）鉴定意见，扣押物品清单，发还清单，常住人口查询，抓获经过，违法犯罪记录查询，协议书等。\n吉林省公主岭市人民检察院认为，被告人闫某、董某甲以非法占有为目的，虚构事实骗取他人财物，数额较大，其行为已触犯《中华人民共和国刑法》二百六十六条之规定，犯罪事实清楚，证据确实充分，应当以诈骗罪追究被告人闫某、董某甲的刑事责任。\n被告人闫某、董某甲在开庭审理过程中，对公安机关指控其诈骗的犯罪事实均予以全部供认。\n本院经审理查明：1、2015年1月4日18时许，被告人董某甲伙同闫某、李某（在逃）在公主岭市河北街道讯腾网吧门口以借手机打电话为由，将被害人王某某的白色5S苹果手机骗走，之后到手机商店将手机卖掉，赃款被三人挥霍。经鉴定：被骗手机价值人民币2500元。\n2、2014年11月29日中午，被告人董某甲伙同闫某在公主岭市华夏网吧内以借手机打电话为由，将被害人崔某某的金色苹果5S手机骗走，之后到手机商店将该手机卖掉，赃款被二人挥霍。经鉴定：被骗手机价值人民币2500元。案发后，二被告人均被抓获归案。\n上述事实，有在开庭审理中举证、质证的下列证据予以证明：\n1、被告人闫某供述。证明其与董某甲一起于2014年12月份的一天在公主岭市华夏网吧内，以借手机打电话为由，骗取一名男子一部金色苹果5S手机，后被二人卖掉；2015年1月4日与董某甲、李某一起在公主岭市讯腾网吧门口以借手机打电话为由，骗取一名男子白色苹果5S手机，后被卖掉的事实。\n2、被告人董某甲供述。证明其与闫某于2014年12月份在华夏网吧内骗取一陌生男子金色苹果5S手机一部；2015年1月4日其与闫某、李某一起在讯腾网吧骗取一名男子白色苹果5S手机，后被卖掉的事实。\n3、证人李某证言。证明2015年1月4日18时许，在公主岭市讯腾网吧门口，其与闫某、董某甲一起骗了一名男子一部白色苹果5S手机，后将手机卖给手机店的事实。\n4、被害人王某某证言。证明2015年1月4日18时左右，在公主岭市河北街讯腾网吧门口被一名叫李某的男子以及另外两名男子诈骗了一部白色苹果手机的事实。\n5、证人董某乙证言。证明2015年1月4日18时许，在公主岭市河北街讯腾网络门外，其男朋友王某某的白色苹果5S手机被三个男的骗走了，其中一个叫李某的事实。\n6、证人崔某某证言。证明2014年11月29日中午12点左右，在公主岭市五道街华夏网吧内，其金色苹果5S手机被一名男子以借手机打电话为名骗走的事实。\n7、证人石某某证言。证明其儿子崔某某有一部金色苹果5S手机，且其手机被人骗走了的事实。\n8、证人陶某某证言。证明2015年1月4日20时左右，有两个男孩过来卖一部苹果5S手机，其中一个男孩叫闫某，最后其以600元的价格收购的。\n9、证据保全清单及发还清单。证明公安机关将涉案的银白色苹果5S手机予以扣押，另证明公安机关将被诈骗手机发还给被害人王某某。\n10、价格鉴定结论书。证明涉案的银色苹果iphone手机价值人民币2500元，另证明涉案的金色苹果iphone手机价值人民币2500元。\n11、常住人口查询。证明被告人闫某于1995年6月1日出生，被告人董某甲于1996年10月8日出生。\n12、到案经过。证明2015年1月5日被告人闫某被公安机关抓获归案；2015年5月23日被告人董某甲被公安机关抓获归案。\n13、违法犯罪记录查询。证明被告人闫某、董某甲均无前科劣迹。\n14、照片。证明王某某被诈骗手机的具体情况。\n15、收条。证明崔某某及其母亲收到闫某母亲给付的手机赔偿款1200元，崔某某及其母亲收到董某甲给付的手机赔偿款2000元.\n16、光盘一张。证明华夏网吧诈骗案的具体情况。\n17、辨认笔录。证明在公安机关的主持下，被害人崔某某辨认出诈骗其手机的正是被告人闫某、董某甲；被告人闫某辨认出与其一起诈骗手机的正是被告人董某甲；被害人王某某辨认出诈骗其手机的正是被告人董某甲。\n综上，根据上述证据足以认定被告人闫某、董某甲诈骗的犯罪事实。\n本院认为，被告人闫某、董某甲以非法占有为目的，虚构事实骗取他人财物，数额较大，其行为均已构成诈骗罪。公诉机关指控被告人闫某、董某甲犯诈骗罪罪名成立，本院予以采纳。鉴于被告人闫某、董某甲当庭自愿认罪，系初犯，全部返赃，取得失主谅解等情节，可酌情从轻处罚。依据《中华人民共和国刑法》第二百六十六条（诈骗罪）、第二十五条（共同犯罪）、第五十二条及第五十三条（罚金）、第七十二条及第七十三条（缓刑）的规定，经本院第二十一次审判委员会讨论决定，判决如下：\n一、被告人闫某犯诈骗罪，判处有期徒刑七个月，并处罚金人民币10000元（此款于本判决生效后三日内缴纳）。\n（刑期从判决执行之日起计算，判决执行以前先行羁押的，羁押一日折抵刑期一日，即自2015年1月6日起至2015年8月5日止）\n二、被告人董某甲犯诈骗罪，判处有期徒刑七个月，缓刑一年，并处罚金人民币10000元（此款已缴纳）。\n（缓刑考验期限，从判决确定之日起计算）\n如不服本判决，可在接到判决书的第二日起十日内，通过本院或者直接向吉林省四平市中级人民法院提出上诉。书面上诉的，应当提交上诉状正本一份，副本八份。\n审判长张晓春\n人民陪审员陈秀影\n人民陪审员张井岚\n二〇一五年七月二十三日\n书记员黄珊珊"
+]</div>
+                </div>
+            </details>
+            
+            <div class="scoring-area">
+        <div class="dim-row">专业性: <span class="radio-group"><label><input type="radio" name="专业性_84" value="0"> 0</label><label><input type="radio" name="专业性_84" value="1"> 1</label><label><input type="radio" name="专业性_84" value="2"> 2</label><label><input type="radio" name="专业性_84" value="3"> 3</label><label><input type="radio" name="专业性_84" value="4"> 4</label><label><input type="radio" name="专业性_84" value="5"> 5</label></span></div><div class="dim-row">准确性: <span class="radio-group"><label><input type="radio" name="准确性_84" value="0"> 0</label><label><input type="radio" name="准确性_84" value="1"> 1</label><label><input type="radio" name="准确性_84" value="2"> 2</label><label><input type="radio" name="准确性_84" value="3"> 3</label><label><input type="radio" name="准确性_84" value="4"> 4</label><label><input type="radio" name="准确性_84" value="5"> 5</label></span></div><div class="dim-row">丰富度: <span class="radio-group"><label><input type="radio" name="丰富度_84" value="0"> 0</label><label><input type="radio" name="丰富度_84" value="1"> 1</label><label><input type="radio" name="丰富度_84" value="2"> 2</label><label><input type="radio" name="丰富度_84" value="3"> 3</label><label><input type="radio" name="丰富度_84" value="4"> 4</label><label><input type="radio" name="丰富度_84" value="5"> 5</label></span></div><div class="dim-row">可解释性: <span class="radio-group"><label><input type="radio" name="可解释性_84" value="0"> 0</label><label><input type="radio" name="可解释性_84" value="1"> 1</label><label><input type="radio" name="可解释性_84" value="2"> 2</label><label><input type="radio" name="可解释性_84" value="3"> 3</label><label><input type="radio" name="可解释性_84" value="4"> 4</label><label><input type="radio" name="可解释性_84" value="5"> 5</label></span></div>
+            </div>
+        </div>
+        
+        <div class="case-container" data-idx="76">
+            <div class="case-header">题目 #76 (第二批第 5 题)</div>
+            <div class="fact-text"><b>【案情事实】</b><br>黑龙江省巴彦县人民检察院指控，2014年9月29日21时许，被告人朱某某醉酒后驾驶机动车辆，构成××罪，触犯了《中华人民共和国刑法》××××的规定，应按××罪追究其刑事责任。针对上述指控，公诉机关提供了相应的证据。</div>
+            
+            <details>
+                <summary>📑 点击展开/收起：模型作答与参考答案</summary>
+                
+                <div class="ans-section">
+                    <div class="ans-title">1. Ground Truth (真实法条编号) [articles]</div>
+                    <div class="ans-content">[
+  "刑法第133条"
+]</div>
+                </div>
+                
+                <div class="ans-section" style="border-left-color: #6f42c1;">
+                    <div class="ans-title">2. 法条具体内容 [law_articles]</div>
+                    <div class="ans-content">《中华人民共和国刑法》第一百三十三条　【交通肇事罪】违反交通运输管理法规，因而发生重大事故，致人重伤、死亡或者使公私财产遭受重大损失的，处三年以下有期徒刑或者拘役；交通运输肇事后逃逸或者有其他特别恶劣情节的，处三年以上七年以下有期徒刑；因逃逸致人死亡的，处七年以上有期徒刑。
+
+《中华人民共和国刑法》第一百三十三条之一　【危险驾驶罪】在道路上驾驶机动车，有下列情形之一的，处拘役，并处罚金：
+
+　　（一）追逐竞驶，情节恶劣的；
+
+　　（二）醉酒驾驶机动车的；
+
+　　（三）从事校车业务或者旅客运输，严重超过额定乘员载客，或者严重超过规定时速行驶的；
+
+　　（四）违反危险化学品安全管理规定运输危险化学品，危及公共安全的。
+
+　　机动车所有人、管理人对前款第三项、第四项行为负有直接责任的，依照前款的规定处罚。
+
+　　有前两款行为，同时构成其他犯罪的，依照处罚较重的规定定罪处罚。
+
+《中华人民共和国刑法》第一百三十三条之二　【妨害安全驾驶罪】对行驶中的公共交通工具的驾驶人员使用暴力或者抢控驾驶操纵装置，干扰公共交通工具正常行驶，危及公共安全的，处一年以下有期徒刑、拘役或者管制，并处或者单处罚金。
+
+　　前款规定的驾驶人员在行驶的公共交通工具上擅离职守，与他人互殴或者殴打他人，危及公共安全的，依照前款的规定处罚。
+
+　　有前两款行为，同时构成其他犯罪的，依照处罚较重的规定定罪处罚。</div>
+                </div>
+                
+                <div class="ans-section">
+                    <div class="ans-title">3. 预测法条编号 [law_numbers]</div>
+                    <div class="ans-content">[
+  "刑法第133条"
+]</div>
+                </div>
+                
+                <div class="ans-section" style="border-left-color: #28a745;">
+                    <div class="ans-title">4. RAG 模式作答 [response_aa]</div>
+                    <div class="ans-content">被告人朱某某醉酒后驾驶机动车辆，构成危险驾驶罪。根据《中华人民共和国刑法》第一百三十三条之一的规定，醉酒驾驶机动车的行为属于危险驾驶罪的构成要件之一。</div>
+                </div>
+                
+                <div class="ans-section" style="border-left-color: #dc3545;">
+                    <div class="ans-title">5. 无 RAG 模式作答 [response_analysis_no_rag]</div>
+                    <div class="ans-content">被告人朱某某醉酒后驾驶机动车辆，构成危险驾驶罪，触犯了《中华人民共和国刑法》第一百三十三条的规定，应按危险驾驶罪追究其刑事责任。</div>
+                </div>
+                
+                <div class="ans-section" style="border-left-color: #ffc107;">
+                    <div class="ans-title">6. 检索到的相似案例 [similar_cases]</div>
+                    <div class="ans-content">[
+  "（2014）富裕刑初字第311号\n公诉机关黑龙江省富裕县人民检察院。\n被告人李xx，男，汉族，初中文化，农民。\n黑龙江省富裕县人民检察院以富检刑诉（2014）292号起诉书，指控被告人李xx犯危险驾驶罪，于2014年11月19日向本院提起公诉。本院于2014年11月19日立案受理，并依法适用简易程序，实行独任审判。于2014年11月24日公开开庭审理了本案。富裕县人民检察院指派代理检察员白杨出庭支持公诉，被告人李xx到庭参加诉讼。本案经本院审判委员会讨论，现已审理终结。\n黑龙江省富裕县人民检察院指控：2014年9月29日21时许，被告人李xx酒后驾驶黑BFP375号小型轿车行驶至富裕县中心大街三百岗地时，被富裕县公安局巡特警大队查获。经鉴定，李xx血液中检出乙醇。含量为106.1mg／100ml，属醉酒后驾驶机动车。\n经侦查，被告人李xx于2014年9月29日被公安机关在富裕县抓获。\n公诉机关以相应证据证实上述指控事实，认为被告人李xx醉酒后驾驶机动车上路行驶，其行为触犯了《中华人民共和国刑法》第一百三十三条之一的规定，犯罪事实清楚，证据确实、充分，应当以危险驾驶罪追究其刑事责任。并向本院提出判处李xx拘役一个月至二个月并处罚金的量刑建议。\n上述事实，被告人李xx在开庭审理过程中亦无异议，有齐齐哈尔市公安刑事技术支队（齐）公（刑技）鉴（化）字（2014）3708号毒物检验鉴定报告，证实了李xx静脉血中检出乙醇，含量为106.1mg／100ml。有到案经过、户籍证明、及被告人李xx的供述和辩解，足以认定。\n本院认为：被告人李xx醉酒后驾驶机动车上路驶，其行为已构成危险驾驶罪。公诉机关的指控事实清楚，证据确实、充分，罪名成立。李xx犯危险驾驶罪其静脉血中乙醇含量为106.1mg／100ml。依法应处拘役，并处罚金。案发后，被告人李xx自愿认罪，认罪态度较好。可对其从轻处罚。公诉机关量刑建议适当，予以采纳。依照《中华人民共和国刑法》第一百三十三条之一、第四十二条、第五十二条、第五十三条和第六十七条第三款之规定，判决如下：\n被告人李xx犯危险驾驶罪，判处拘役一个月，并处罚金人民币二千元。\n（刑期从判决执行之日起计算，判决执行以前先行羁押的羁押一日折抵刑期一日，即自2014年10月28日起至2014年12月17日止，从2014年11月27日向后顺延20天，罚金已缴纳，上缴国库。）\n如不服本判决，可在接到判决书的第二日起十日内，通过本院或者直接向齐齐哈尔市中级人民法院提出上诉。书面上诉的，\n应当提交上诉状正本一份，副本二份。\n审判员杨恩广\n二〇一四年十一月二十七日\n书记员董桂华"
+]</div>
+                </div>
+            </details>
+            
+            <div class="scoring-area">
+        <div class="dim-row">专业性: <span class="radio-group"><label><input type="radio" name="专业性_76" value="0"> 0</label><label><input type="radio" name="专业性_76" value="1"> 1</label><label><input type="radio" name="专业性_76" value="2"> 2</label><label><input type="radio" name="专业性_76" value="3"> 3</label><label><input type="radio" name="专业性_76" value="4"> 4</label><label><input type="radio" name="专业性_76" value="5"> 5</label></span></div><div class="dim-row">准确性: <span class="radio-group"><label><input type="radio" name="准确性_76" value="0"> 0</label><label><input type="radio" name="准确性_76" value="1"> 1</label><label><input type="radio" name="准确性_76" value="2"> 2</label><label><input type="radio" name="准确性_76" value="3"> 3</label><label><input type="radio" name="准确性_76" value="4"> 4</label><label><input type="radio" name="准确性_76" value="5"> 5</label></span></div><div class="dim-row">丰富度: <span class="radio-group"><label><input type="radio" name="丰富度_76" value="0"> 0</label><label><input type="radio" name="丰富度_76" value="1"> 1</label><label><input type="radio" name="丰富度_76" value="2"> 2</label><label><input type="radio" name="丰富度_76" value="3"> 3</label><label><input type="radio" name="丰富度_76" value="4"> 4</label><label><input type="radio" name="丰富度_76" value="5"> 5</label></span></div><div class="dim-row">可解释性: <span class="radio-group"><label><input type="radio" name="可解释性_76" value="0"> 0</label><label><input type="radio" name="可解释性_76" value="1"> 1</label><label><input type="radio" name="可解释性_76" value="2"> 2</label><label><input type="radio" name="可解释性_76" value="3"> 3</label><label><input type="radio" name="可解释性_76" value="4"> 4</label><label><input type="radio" name="可解释性_76" value="5"> 5</label></span></div>
+            </div>
+        </div>
+        
+        <div class="case-container" data-idx="70">
+            <div class="case-header">题目 #70 (第二批第 6 题)</div>
+            <div class="fact-text"><b>【案情事实】</b><br>公诉机关指控，2012年9月至2014年12月25日，被告人王某某陆续经营管理位于本区南桥镇肖塘社区北虹路XXX号动漫台球城，内设××机供他人参赌，被告人王某某从非法营利中获取分成。2014年12月25日22时许，公安人员至上述地点当场查获“单挑2代”八联××机、“3D鳄鱼大亨”八联××机、“疯狂大白鲨”××机各1台、参赌人员2名及赌资人民币4600元。</div>
+            
+            <details>
+                <summary>📑 点击展开/收起：模型作答与参考答案</summary>
+                
+                <div class="ans-section">
+                    <div class="ans-title">1. Ground Truth (真实法条编号) [articles]</div>
+                    <div class="ans-content">[
+  "刑法第303条"
+]</div>
+                </div>
+                
+                <div class="ans-section" style="border-left-color: #6f42c1;">
+                    <div class="ans-title">2. 法条具体内容 [law_articles]</div>
+                    <div class="ans-content">《中华人民共和国刑法》第三百零三条　【赌博罪】以营利为目的，聚众赌博或者以赌博为业的，处三年以下有期徒刑、拘役或者管制，并处罚金。
+
+　　【开设赌场罪】开设赌场的，处五年以下有期徒刑、拘役或者管制，并处罚金；情节严重的，处五年以上十年以下有期徒刑，并处罚金。
+
+　　【组织参与国（境）外赌博罪】组织中华人民共和国公民参与国（境）外赌博，数额巨大或者有其他严重情节的，依照前款的规定处罚。</div>
+                </div>
+                
+                <div class="ans-section">
+                    <div class="ans-title">3. 预测法条编号 [law_numbers]</div>
+                    <div class="ans-content">[
+  "刑法第303条"
+]</div>
+                </div>
+                
+                <div class="ans-section" style="border-left-color: #28a745;">
+                    <div class="ans-title">4. RAG 模式作答 [response_aa]</div>
+                    <div class="ans-content">被告人王某某犯有开设赌场罪。根据《中华人民共和国刑法》第三百零三条的规定，以营利为目的，聚众赌博或者以赌博为业的行为构成开设赌场罪。在本案中，被告人王某某经营的动漫台球城内设有赌博机，供他人参赌，并从中获取非法利益，符合开设赌场罪的构成要件。</div>
+                </div>
+                
+                <div class="ans-section" style="border-left-color: #dc3545;">
+                    <div class="ans-title">5. 无 RAG 模式作答 [response_analysis_no_rag]</div>
+                    <div class="ans-content">被告人王某某犯有赌博罪。根据《刑法》第三百零三条，以营利为目的，聚众赌博或者以赌博为业的，处三年以下有期徒刑、拘役或者管制，并处罚金。被告人王某某经营位于南桥镇的动漫台球城，内设赌博机供他人参赌，从非法营利中获取分成，属于以营利为目的的赌博行为，因此构成赌博罪。</div>
+                </div>
+                
+                <div class="ans-section" style="border-left-color: #ffc107;">
+                    <div class="ans-title">6. 检索到的相似案例 [similar_cases]</div>
+                    <div class="ans-content">[
+  "（2015）甬慈刑初字第2086号\n公诉机关浙江省慈溪市人民检察院。\n被告人张某甲，农民。2006年10月因故意伤害被慈溪市公安局行政拘留三日。现因本案于2014年9月25日被抓获，同月26日被慈溪市公安局刑事拘留，同年10月15日被变更为取保候审，2015年10月14日被变更为监视居住。\n浙江省慈溪市人民检察院以慈检公诉刑诉（2015）1900号起诉书指控被告人张某甲犯开设赌场罪，于2015年11月27日向本院提起公诉。本院于同日立案，并依法适用简易程序，实行独任审判，公开开庭审理了本案。浙江省慈溪市人民检察院检察员郑军强、被告人张某甲到庭参加诉讼。现已审理终结。\n浙江省慈溪市人民检察院指控：\n2014年9月初至同月25日期间，被告人张某甲在慈溪市浒山街道上叶家路北21号的租房内，摆放“金鲨银鲨”电子游戏机1台（八人位）、“渔乐传奇”电子游戏机1台（八人位）供他人赌博。期间，共计非法获利人民币15000元。经鉴定，上述2台游戏机均具有赌博功能。\n被告人张某甲到案后，如实供述了上述犯罪事实。\n上述事实，被告人张某甲在开庭审理过程中亦无异议，并有证人朱某、叶某甲、刘某、张某乙、叶某乙、叶某丙、辛某、巨某、王某、胡某、徐某的证言、同案人张某丙的证言、检查笔录及照片、辨认笔录及照片、证据保全清单、宁波市暂扣物品专用票据、电子游戏设施设备认定意见书、行政处罚决定书、抓获经过及被告人张某甲的身份证明等证据证实，足以认定。\n本院认为，被告人张某甲以营利为目的，利用赌博游戏机开设赌场，其行为已构成开设赌场罪。公诉机关指控的罪名成立。被告人张某甲到案后能如实供述自己的罪行，依法予以从轻处罚。根据被告人张某甲的犯罪情节和悔罪表现，依法可以适用缓刑。被告人张某甲的违法所得，依法予以追缴。供犯罪用赌博游戏机2台，依法均予以没收。据此，依照《中华人民共和国刑法》第三百零三条第二款、第六十七条第三款、第七十二条第一款、第三款、第七十三条第二款、第三款、第六十四条之规定，判决如下：\n一、被告人张某甲犯开设赌场罪，判处有期徒刑六个月，缓刑一年，并处罚金人民币一万五千元。\n（缓刑考验期限，从判决确定之日起计算。并处的罚金限本判决生效后一个月内缴纳本院。）\n二、被告人张某甲违法所得人民币一万五千元，继续予以追缴，上缴国库；供犯罪用赌博游戏机二台（均扣押于慈溪市公安局），予以没收。\n如不服本判决，可在接到判决书的第二日起十日内，通过本院或者直接向浙江省宁波市中级人民法院提出上诉。书面上诉的，应交上诉状正本一份，副本二份。\n代理审判员沈玮\n\n\n二〇一五年十二月十五日\n书记员胡嘉婷（代）"
+]</div>
+                </div>
+            </details>
+            
+            <div class="scoring-area">
+        <div class="dim-row">专业性: <span class="radio-group"><label><input type="radio" name="专业性_70" value="0"> 0</label><label><input type="radio" name="专业性_70" value="1"> 1</label><label><input type="radio" name="专业性_70" value="2"> 2</label><label><input type="radio" name="专业性_70" value="3"> 3</label><label><input type="radio" name="专业性_70" value="4"> 4</label><label><input type="radio" name="专业性_70" value="5"> 5</label></span></div><div class="dim-row">准确性: <span class="radio-group"><label><input type="radio" name="准确性_70" value="0"> 0</label><label><input type="radio" name="准确性_70" value="1"> 1</label><label><input type="radio" name="准确性_70" value="2"> 2</label><label><input type="radio" name="准确性_70" value="3"> 3</label><label><input type="radio" name="准确性_70" value="4"> 4</label><label><input type="radio" name="准确性_70" value="5"> 5</label></span></div><div class="dim-row">丰富度: <span class="radio-group"><label><input type="radio" name="丰富度_70" value="0"> 0</label><label><input type="radio" name="丰富度_70" value="1"> 1</label><label><input type="radio" name="丰富度_70" value="2"> 2</label><label><input type="radio" name="丰富度_70" value="3"> 3</label><label><input type="radio" name="丰富度_70" value="4"> 4</label><label><input type="radio" name="丰富度_70" value="5"> 5</label></span></div><div class="dim-row">可解释性: <span class="radio-group"><label><input type="radio" name="可解释性_70" value="0"> 0</label><label><input type="radio" name="可解释性_70" value="1"> 1</label><label><input type="radio" name="可解释性_70" value="2"> 2</label><label><input type="radio" name="可解释性_70" value="3"> 3</label><label><input type="radio" name="可解释性_70" value="4"> 4</label><label><input type="radio" name="可解释性_70" value="5"> 5</label></span></div>
+            </div>
+        </div>
+        
+        <div class="case-container" data-idx="44">
+            <div class="case-header">题目 #44 (第二批第 7 题)</div>
+            <div class="fact-text"><b>【案情事实】</b><br>经审理查明，2013年12月31日湖北省林业厅发布野生鸟类禁猎期的通告（鄂林规[2013]285号），决定对湖北省境内对所有野生鸟类进行禁猎，禁猎期为2014年1月1日至2018年12月31日。2014年9月期间，陈2某在自己棉花地及胡政村陈二房垸利用张网的方式捕鸟。同月26日，陈2某在陈二房垸将张网捕捉的鸟类取下后返回时被公安民警抓获，现场查获鸟类19只。上述事实，被告人陈2某在开庭审理过程中亦无异议，且有证人证言；武穴市野生动植物保护站野生动物物种辨认证明；检查笔录、现场照片；接受证据清单；湖北省林业厅通告；武穴市森林公安局梅川派出所归案情况说明；陈2某户籍资料；被告人供述等证据证实，足以认定。</div>
+            
+            <details>
+                <summary>📑 点击展开/收起：模型作答与参考答案</summary>
+                
+                <div class="ans-section">
+                    <div class="ans-title">1. Ground Truth (真实法条编号) [articles]</div>
+                    <div class="ans-content">[
+  "刑法第341条"
+]</div>
+                </div>
+                
+                <div class="ans-section" style="border-left-color: #6f42c1;">
+                    <div class="ans-title">2. 法条具体内容 [law_articles]</div>
+                    <div class="ans-content">《中华人民共和国刑法》第三百四十一条　【危害珍贵、濒危野生动物罪】非法猎捕、杀害国家重点保护的珍贵、濒危野生动物的，或者非法收购、运输、出售国家重点保护的珍贵、濒危野生动物及其制品的，处五年以下有期徒刑或者拘役，并处罚金；情节严重的，处五年以上十年以下有期徒刑，并处罚金；情节特别严重的，处十年以上有期徒刑，并处罚金或者没收财产。
+
+　　【非法狩猎罪】违反狩猎法规，在禁猎区、禁猎期或者使用禁用的工具、方法进行狩猎，破坏野生动物资源，情节严重的，处三年以下有期徒刑、拘役、管制或者罚金。
+
+　　【非法猎捕、收购、运输、出售陆生野生动物罪】违反野生动物保护管理法规，以食用为目的非法猎捕、收购、运输、出售第一款规定以外的在野外环境自然生长繁殖的陆生野生动物，情节严重的，依照前款的规定处罚。</div>
+                </div>
+                
+                <div class="ans-section">
+                    <div class="ans-title">3. 预测法条编号 [law_numbers]</div>
+                    <div class="ans-content">[
+  "刑法第341条"
+]</div>
+                </div>
+                
+                <div class="ans-section" style="border-left-color: #28a745;">
+                    <div class="ans-title">4. RAG 模式作答 [response_aa]</div>
+                    <div class="ans-content">被告人陈2某犯有非法狩猎罪。根据《中华人民共和国刑法》第三百四十一条，非法狩猎罪是指违反狩猎法规，在禁猎区、禁猎期或者使用禁用的工具、方法进行狩猎，破坏野生动物资源，情节严重的，处三年以下有期徒刑、拘役、管制或者罚金。根据案件事实，被告人陈2某在禁猎期内利用张网的方式捕鸟，属于非法狩猎行为，因此被认定犯有非法狩猎罪。</div>
+                </div>
+                
+                <div class="ans-section" style="border-left-color: #dc3545;">
+                    <div class="ans-title">5. 无 RAG 模式作答 [response_analysis_no_rag]</div>
+                    <div class="ans-content">被告人陈2某犯有非法狩猎罪。根据《刑法》第三百四十一条，非法狩猎罪是指违反狩猎法规，在禁猎区、禁猎期或者使用禁用的工具、方法进行狩猎，破坏野生动物资源，情节严重的，处三年以下有期徒刑、拘役、管制或者罚金。根据案件事实，被告人陈2某在禁猎期内非法捕鸟，且被公安民警抓获，现场查获鸟类19只，符合非法狩猎罪的构成要件。</div>
+                </div>
+                
+                <div class="ans-section" style="border-left-color: #ffc107;">
+                    <div class="ans-title">6. 检索到的相似案例 [similar_cases]</div>
+                    <div class="ans-content">[
+  "（2015）甬镇刑初字第344号\n公诉机关浙江省宁波市镇海区人民检察院。\n被告人石某甲，农民。因涉嫌犯非法狩猎罪于2015年4月5日被宁波市公安局镇海分局刑事拘留，同月8日被取保候审。\n浙江省宁波市镇海区人民检察院以甬镇检刑诉（2015）329号起诉书指控被告人石某甲犯非法狩猎罪，于2015年7月23日向本院提起公诉。本院于同日立案，并依法适用简易程序，实行独任审判，公开开庭审理了本案。浙江省宁波市镇海区人民检察院指派代理检察员谢璐出庭支持公诉，被告人石某甲到庭参加诉讼。现已审理终结。\n浙江省宁波市镇海区人民检察院指控：\n2015年3月下旬至同年4月3日，被告人石某甲在镇海区澥浦化工区泥螺山上（禁猎区域），采用张网捕鸟的手段，捕得野生鸟类23只，后在出售时被查获。经鉴定，其中乌鸫4只、灰背鸫4只、白眉地鸫1只、珠颈斑鸠14只，均为浙江省一般保护陆生野生动物。\n上述事实，被告人石某甲在开庭审理过程中亦无异议，并有书证被告人石某甲的身份证明、到案经过、扣押决定书、扣押清单、处理记录、浙江省林业厅关于严禁猎捕经营野生鸟类的通告（浙林护（2006）14号）、浙江省人民政府关于重新划定猎区乡镇的通知（浙政发（2010）67号）、照片，证人石某乙的证言，物证鉴定意见，辨认笔录及照片等证据证实，足以认定。\n本院认为，被告人石某甲违反狩猎法规，在禁猎区使用禁用的工具、方法进行狩猎，破坏野生动物资源，情节严重，其行为已构成非法狩猎罪。公诉机关指控成立。被告人石某甲归案后能如实供述自己的犯罪事实，并自愿认罪，依法予以从轻处罚。根据被告人石某甲的犯罪情节和悔罪表现，适用缓刑确实不致再危害社会，可以宣告缓刑。被告人石某甲犯罪使用的竹竿四根、丝网二张，均予以没收。据此，根据被告人石某甲的犯罪事实和具体情节，依照《中华人民共和国刑法》第三百四十一条第二款、第六十七条第三款、第七十二条第一款、第七十三条第一款、第三款、第六十四条的规定，判决如下：\n一、被告人石某甲犯非法狩猎罪，判处拘役四个月，缓刑六个月；\n（缓刑考验期限，从判决确定之日起计算。）\n二、作案工具竹竿四根、丝网二张，均予以没收。\n如不服本判决，可在接到判决书的第二日起十日内，通过本院或者直接向浙江省宁波市中级人民法院提出上诉。书面上诉的，应当提交上诉状正本一份，副本二份。\n审判员胡乾锋\n二〇一五年八月三日\n代书记员沈国芳"
+]</div>
+                </div>
+            </details>
+            
+            <div class="scoring-area">
+        <div class="dim-row">专业性: <span class="radio-group"><label><input type="radio" name="专业性_44" value="0"> 0</label><label><input type="radio" name="专业性_44" value="1"> 1</label><label><input type="radio" name="专业性_44" value="2"> 2</label><label><input type="radio" name="专业性_44" value="3"> 3</label><label><input type="radio" name="专业性_44" value="4"> 4</label><label><input type="radio" name="专业性_44" value="5"> 5</label></span></div><div class="dim-row">准确性: <span class="radio-group"><label><input type="radio" name="准确性_44" value="0"> 0</label><label><input type="radio" name="准确性_44" value="1"> 1</label><label><input type="radio" name="准确性_44" value="2"> 2</label><label><input type="radio" name="准确性_44" value="3"> 3</label><label><input type="radio" name="准确性_44" value="4"> 4</label><label><input type="radio" name="准确性_44" value="5"> 5</label></span></div><div class="dim-row">丰富度: <span class="radio-group"><label><input type="radio" name="丰富度_44" value="0"> 0</label><label><input type="radio" name="丰富度_44" value="1"> 1</label><label><input type="radio" name="丰富度_44" value="2"> 2</label><label><input type="radio" name="丰富度_44" value="3"> 3</label><label><input type="radio" name="丰富度_44" value="4"> 4</label><label><input type="radio" name="丰富度_44" value="5"> 5</label></span></div><div class="dim-row">可解释性: <span class="radio-group"><label><input type="radio" name="可解释性_44" value="0"> 0</label><label><input type="radio" name="可解释性_44" value="1"> 1</label><label><input type="radio" name="可解释性_44" value="2"> 2</label><label><input type="radio" name="可解释性_44" value="3"> 3</label><label><input type="radio" name="可解释性_44" value="4"> 4</label><label><input type="radio" name="可解释性_44" value="5"> 5</label></span></div>
+            </div>
+        </div>
+        
+        <div class="case-container" data-idx="34">
+            <div class="case-header">题目 #34 (第二批第 8 题)</div>
+            <div class="fact-text"><b>【案情事实】</b><br>经审理查明：2012年6月至2013年4月期间，被告人王某甲在未取得“明泉”注册商标持有人安徽省和县兴达麻油厂许可的情况下，先后在丹阳市吕城镇上阳塘村、常州市新北区罗溪镇西村，采用在大豆油中掺加芝麻油香精、辣椒油树脂等添加剂的方式，进行勾兑生产“明泉”牌老作坊一滴香调和芝麻油、“明泉”牌滴滴香麻油、“明泉”牌川香辣椒油、“明泉”牌川味红油、“明泉”牌调和芝麻油等产品，并销往丹阳市陵口镇、常州市凌家塘农贸批发市场等地，非法经营数额共计人民币164401元。其中，镇江市丹阳工商行政管理局查获“明泉”牌川香辣椒油102箱、“明泉”牌川味红油21箱、“明泉”牌老作坊一滴香调和芝麻油48箱，丹阳市公安局查获“明泉”牌川香辣椒油19箱、“明泉”牌川味红油6箱、“明泉”牌调和芝麻油10箱。上述事实，由被告人王某甲的供述，案件侦破经过，“明泉”注册商标持有人和县某麻油厂投资人石某的陈述，证人郭某甲、郭某乙、孙某、潘某甲、黄某、陈某甲、倪某、卢某、田某甲、刘某、陈某乙、田某乙、潘某乙、王某乙、殷某、李某、於某等人的证言，账本复印件，商标注册证、商标核准续展注册证明、商标详细信息，生产许可证，营业执照，证明，检验报告，生产许可证、扣押物品清单、照片、情况说明，辨认笔录、谅解书等证据所证实，上述证据均经庭审质证，证据合法有效，本院予以确认。</div>
+            
+            <details>
+                <summary>📑 点击展开/收起：模型作答与参考答案</summary>
+                
+                <div class="ans-section">
+                    <div class="ans-title">1. Ground Truth (真实法条编号) [articles]</div>
+                    <div class="ans-content">[
+  "刑法第213条"
+]</div>
+                </div>
+                
+                <div class="ans-section" style="border-left-color: #6f42c1;">
+                    <div class="ans-title">2. 法条具体内容 [law_articles]</div>
+                    <div class="ans-content">《中华人民共和国刑法》第二百一十三条　【假冒注册商标罪】未经注册商标所有人许可，在同一种商品、服务上使用与其注册商标相同的商标，情节严重的，处三年以下有期徒刑，并处或者单处罚金；情节特别严重的，处三年以上十年以下有期徒刑，并处罚金。</div>
+                </div>
+                
+                <div class="ans-section">
+                    <div class="ans-title">3. 预测法条编号 [law_numbers]</div>
+                    <div class="ans-content">[
+  "刑法第213条"
+]</div>
+                </div>
+                
+                <div class="ans-section" style="border-left-color: #28a745;">
+                    <div class="ans-title">4. RAG 模式作答 [response_aa]</div>
+                    <div class="ans-content">被告人王某甲犯有假冒注册商标罪。根据《中华人民共和国刑法》第二百一十三条，未经注册商标所有人许可，在同一种商品、服务上使用与其注册商标相同的商标，情节严重的，处三年以下有期徒刑，并处或者单处罚金。根据案件事实，被告人王某甲在未取得“明泉”注册商标持有人许可的情况下，采用在大豆油中掺加添加剂的方式，进行勾兑生产并销售假冒的“明泉”牌产品，情节严重。因此，被告人王某甲应被判处三年以下有期徒刑，并处罚金。</div>
+                </div>
+                
+                <div class="ans-section" style="border-left-color: #dc3545;">
+                    <div class="ans-title">5. 无 RAG 模式作答 [response_analysis_no_rag]</div>
+                    <div class="ans-content">被告人王某甲在未取得“明泉”注册商标持有人许可的情况下，采用在大豆油中掺加添加剂的方式，进行勾兑生产假冒“明泉”牌产品，非法经营数额共计人民币164401元。根据《刑法》第二百一十三条，王某甲的行为构成假冒注册商标罪。</div>
+                </div>
+                
+                <div class="ans-section" style="border-left-color: #ffc107;">
+                    <div class="ans-title">6. 检索到的相似案例 [similar_cases]</div>
+                    <div class="ans-content">[
+  "（2020）沪0110刑初1214号\n公诉机关上海市杨浦区人民检察院。\n被告人林某某，女，1973年1月9日出生，汉族，户籍在福建省。\n辩护人于彩霞，上海浦望律师事务所律师。\n上海市杨浦区人民检察院以沪杨检刑诉〔2020〕382号起诉书指控被告人林某某犯销售假冒注册商标的商品罪于2020年10月22日提起公诉。本院受理后，经审查发现，本案被告人的犯罪地及户籍地均不在本市杨浦区，本院遂请示上级法院，经指定，本案由本院审判。本院依法组成合议庭，公开开庭审理了本案。上海市杨浦区人民检察院指派检察员朱某某出庭支持公诉，被告人林某某及其辩护人于彩霞到庭参加诉讼。现已审理终结。\n上海市杨浦区人民检察院指控，2017年6月至2020年6月间，被告人林某某从同案关系人胡显仓、王银枝(均另处)处购买假冒“三添”“五福”“皖江”等品牌麻油以及假冒“川湘”品牌辣油等物对外销售。经审计，被告人林某某销售金额共计10余万元。\n2020年6月18日，被告人林某某被民警抓获，并在到案后如实供述自己的罪行。\n公诉机关认为，被告人林某某销售明知是假冒注册商标的商品，销售金额数额较大，其行为应当以销售假冒注册商标的商品罪追究其刑事责任。被告人林某某在缓刑考验期限内犯新罪且违反前判禁止令，应当撤销缓刑、数罪并罚。被告人林某某到案后如实供述自己的罪行，可以从轻处罚。被告人林某某认罪认罚，可以从宽处理。被告人林某某犯销售假冒注册商标的商品罪，建议判处被告人林某某有期徒刑一年二个月，并处罚金，并撤销缓刑，数罪并罚。\n被告人林某某对起诉书指控的犯罪事实、罪名及认罪认罚具结书上的量刑建议均无异议，且在律师在场的情况下签字具结，在开庭审理过程中亦无异议。\n被告人林某某的辩护人对起诉书指控的犯罪事实、罪名及认罪认罚具结书上的量刑建议均无异议，同时辩护人提出：被告人林某某到案后如实供述犯罪事实其并自愿认罪认罚，且预交了罚金，儿媳待产，综上，希望法庭对被告人林某某从轻处罚。\n经审理查明，2017年6月至2020年6月间，被告人林某某从同案关系人胡显仓、王银枝(均另处)处购买涉案“三添”“五福”“皖江”等品牌麻油以及“川湘”品牌辣油等物后加价对外销售。经审计，被告人林某某销售上述品牌麻油、辣油的销售金额共计10余万元。\n2020年6月18日，被告人林某某被民警抓获，并在到案后如实供述自己的罪行。同日，公安民警于被告人林某某处查获“川湘”品牌辣油若干。经相关权利人确认，上述被查获的辣油均系假冒注册商标的商品。经审计，上述被查获的“川湘”品牌辣油的货值金额为84元。\n审理中，在家属的帮助下，被告人林某某向本院交纳3万元。\n以上事实，有以下证据予以证实：\n1.公安机关出具的《搜查证》《搜查笔录》《扣押决定书》《扣押清单》及照片等，证实2020年6月18日，公安民警从被告人林某某处查获“川湘”品牌辣油若干，以及上述辣油的数量及外观特征等情况。\n2.《商标注册证》《商标续展注册证明》等，证实上述被查获的涉案“川湘”品牌辣油上所用商标均系他人合法注册且在有效期内的注册商标。\n3.相关权利人出具的《委托书》《营业执照》《鉴定说明》等，证实上述被查获的涉案“川湘”品牌辣油系假冒注册商标的商品。\n4.同案关系人胡显仓、王银枝(均另处)的供述、证人胡立弟等的证言、相关辨认笔录，证实被告人林某某从同案关系人胡显仓、王银枝(均另处)处购买涉案“三添”“五福”“皖江”等品牌麻油以及“川湘”品牌辣油等物后加价对外销售的情况。\n5.公安机关出具的《提取笔录》、相应转账记录、微信聊天记录截屏、复兴明方会计师事务所出具的《审计报告》，证实被告人林某某对外销售涉案“三添”“五福”“皖江”等品牌麻油以及“川湘”品牌辣油的销售金额及被查获的“川湘”品牌辣油的货值金额。\n6.公安机关出具的《办案说明》，证实被告人林某某的到案情况。\n7.公安机关调取的《案发经过》《取保候审决定书》《上海市公安局浦东分局起诉意见书》《罚没款处理情况表》、(2017)沪0115刑初2638号刑事判决书，证实2017年8月，被告人林某某因犯销售有毒、有害食品罪被判处有期徒刑六个月，缓刑一年，罚金三千元；禁止被告人林某某在缓刑考验期间内从事食品生产、销售及相关活动，以及其在该案判决前的羁押情况及罚金缴纳情况。\n8.被告人林某某的历次供述，其对上述犯罪事实供认不讳。\n上述证据均经庭审质证属实，足以认定。\n本院认为，被告人林某某明知是假冒注册商标的商品，仍予以销售，销售金额数额较大，其行为已构成销售假冒注册商标的商品罪，依法应予惩处。公诉机关指控的罪名成立。被告人林某某到案后如实供述自己的罪行且自愿认罪认罚，依法可以从轻、从宽处罚。被告人林某某退出了违法所得并认缴了部分罚金，又可以酌情从轻处罚。被告人林某某在缓刑考验期限内违反前判禁止令，依法应当撤销缓刑，执行原判刑罚；被告人林某某在缓刑考验期限内犯新罪，依法亦应当撤销缓刑，数罪并罚。公诉机关的量刑建议适当，应予采纳。为严肃国法，维护市场经济秩序，保护知识产权不受侵犯，根据被告人林某某的犯罪情节、社会危害性、认罪悔罪态度等，依照《中华人民共和国刑法》第二百一十四条、第六十七条第三款、第七十七条、第六十九条第一款、第三款、第五十二条、第五十三条、第六十四条，《最高人民法院、最高人民检察院关于办理侵犯知识产权刑事案件具体应用法律若干问题的解释》第二条第一款，《最高人民法院、最高人民检察院关于办理侵犯知识产权刑事案件具体应用法律若干问题的解释(二)》第四条及《中华人民共和国刑事诉讼法》第十五条、第二百零一条之规定，判决如下：\n一、被告人林某某犯销售假冒注册商标的商品罪，判处有期徒刑一年二个月，并处罚金人民币十万元；撤销上海市浦东新区人民法院(2017)沪0115刑初2638号刑事判决第一项中被告人林某某犯销售有毒、有害食品罪，判处有期徒刑六个月，缓刑一年，罚金人民币三千元的缓刑部分，决定执行有期徒刑一年六个月，并处罚金人民币十万三千元(已预缴人民币一万三千元)；\n(刑期从判决执行之日起计算。判决执行以前先行羁押的，羁押一日折抵刑期一日，即刑期自2020年6月18日起至2021年12月17日止。剩余罚金自本判决发生法律效力之日起十日内向本院缴纳。)\n二、扣押在案的违法所得，查获的假冒注册商标的商品及犯罪工具手机等均予以没收。\n如不服本判决，可在接到判决书的第二日起十日内，通过本院或者直接向上海市第三中级人民法院提出上诉。书面上诉的，应当提交上诉状正本一份，副本一份。\n\n\n\n\n\n\n审判长刘燕萍\n审判员黄莺\n人民陪审员吴奎丽\n书记员倪贤锋\n二〇二一年一月六日"
+]</div>
+                </div>
+            </details>
+            
+            <div class="scoring-area">
+        <div class="dim-row">专业性: <span class="radio-group"><label><input type="radio" name="专业性_34" value="0"> 0</label><label><input type="radio" name="专业性_34" value="1"> 1</label><label><input type="radio" name="专业性_34" value="2"> 2</label><label><input type="radio" name="专业性_34" value="3"> 3</label><label><input type="radio" name="专业性_34" value="4"> 4</label><label><input type="radio" name="专业性_34" value="5"> 5</label></span></div><div class="dim-row">准确性: <span class="radio-group"><label><input type="radio" name="准确性_34" value="0"> 0</label><label><input type="radio" name="准确性_34" value="1"> 1</label><label><input type="radio" name="准确性_34" value="2"> 2</label><label><input type="radio" name="准确性_34" value="3"> 3</label><label><input type="radio" name="准确性_34" value="4"> 4</label><label><input type="radio" name="准确性_34" value="5"> 5</label></span></div><div class="dim-row">丰富度: <span class="radio-group"><label><input type="radio" name="丰富度_34" value="0"> 0</label><label><input type="radio" name="丰富度_34" value="1"> 1</label><label><input type="radio" name="丰富度_34" value="2"> 2</label><label><input type="radio" name="丰富度_34" value="3"> 3</label><label><input type="radio" name="丰富度_34" value="4"> 4</label><label><input type="radio" name="丰富度_34" value="5"> 5</label></span></div><div class="dim-row">可解释性: <span class="radio-group"><label><input type="radio" name="可解释性_34" value="0"> 0</label><label><input type="radio" name="可解释性_34" value="1"> 1</label><label><input type="radio" name="可解释性_34" value="2"> 2</label><label><input type="radio" name="可解释性_34" value="3"> 3</label><label><input type="radio" name="可解释性_34" value="4"> 4</label><label><input type="radio" name="可解释性_34" value="5"> 5</label></span></div>
+            </div>
+        </div>
+        
+        <div class="case-container" data-idx="194">
+            <div class="case-header">题目 #194 (第二批第 9 题)</div>
+            <div class="fact-text"><b>【案情事实】</b><br>经审理查明：2008年8月19日18时许，被告人谭某伙同谭某某、杨某某（均另案处理）窜至“光头摩托车维修部”，以被害人曾某某未及时给谭某某更换摩托车撑脚为由，将该店内的电视机、大理石桌子、电话机、货架、摩托车发动机、摩托车油箱等财物砸毁。经鉴定，涉案物品价值人民币14398元（以下币种均为人民币）。2015年5月11日，被告人谭某赔偿了被害人曾某某人民币16000元，并取得其谅解；同日，被告人谭某主动向公安机关投案，如实供述其犯罪事实。上述事实，被告人谭某在开庭审理过程中亦无异议，且有：1、被告人的到案经过、户籍证明，被害人的谅解书、收条，同案人的判决书等书证；2、公安机关对现场的勘验、检查笔录；3、证人李某某、陈某某、邓某某的证言；4、被害人曾某某的陈述；5、被告人谭某与同案人谭某某、杨某某的供述与辩解等证据予以证实，足以认定。</div>
+            
+            <details>
+                <summary>📑 点击展开/收起：模型作答与参考答案</summary>
+                
+                <div class="ans-section">
+                    <div class="ans-title">1. Ground Truth (真实法条编号) [articles]</div>
+                    <div class="ans-content">[
+  "刑法第275条"
+]</div>
+                </div>
+                
+                <div class="ans-section" style="border-left-color: #6f42c1;">
+                    <div class="ans-title">2. 法条具体内容 [law_articles]</div>
+                    <div class="ans-content">《中华人民共和国刑法》第二百七十五条　【故意毁坏财物罪】故意毁坏公私财物，数额较大或者有其他严重情节的，处三年以下有期徒刑、拘役或者罚金；数额巨大或者有其他特别严重情节的，处三年以上七年以下有期徒刑。</div>
+                </div>
+                
+                <div class="ans-section">
+                    <div class="ans-title">3. 预测法条编号 [law_numbers]</div>
+                    <div class="ans-content">[
+  "刑法第275条"
+]</div>
+                </div>
+                
+                <div class="ans-section" style="border-left-color: #28a745;">
+                    <div class="ans-title">4. RAG 模式作答 [response_aa]</div>
+                    <div class="ans-content">被告人谭某犯有故意毁坏财物罪。根据《中华人民共和国刑法》第二百七十五条，故意毁坏公私财物，数额较大或者有其他严重情节的，处三年以下有期徒刑、拘役或者罚金；数额巨大或者有其他特别严重情节的，处三年以上七年以下有期徒刑。根据案件事实，被告人谭某伙同他人将被害人所在店铺内的财物砸毁，涉案物品价值人民币14398元，属于数额较大。因此，被告人谭某犯有故意毁坏财物罪。</div>
+                </div>
+                
+                <div class="ans-section" style="border-left-color: #dc3545;">
+                    <div class="ans-title">5. 无 RAG 模式作答 [response_analysis_no_rag]</div>
+                    <div class="ans-content">被告人谭某犯有故意毁坏财物罪。根据《刑法》第二百七十五条，故意毁坏公私财物，数额较大或者有其他严重情节的，处三年以下有期徒刑、拘役或者罚金；数额巨大或者有其他特别严重情节的，处三年以上七年以下有期徒刑。</div>
+                </div>
+                
+                <div class="ans-section" style="border-left-color: #ffc107;">
+                    <div class="ans-title">6. 检索到的相似案例 [similar_cases]</div>
+                    <div class="ans-content">[
+  "（2015）湖浔刑初字第292号\n公诉机关湖州市南浔区人民检察院。\n被告人刘某，农民。因本案于2015年2月20日被刑事拘留，同年3月20日被逮捕。现羁押于湖州市看守所。\n湖州市南浔区人民检察院以浔检刑诉（2015）240号起诉书指控被告人刘某犯故意毁坏财物罪于2015年6月1日向本院提起公诉。本院立案受理后，实行独任审判，公开开庭审理了本案，湖州市南浔区人民检察院指派代理检察员赵坤尧出庭支持公诉，被告人刘某到庭参加了诉讼。现已审理终结。\n经审理查明：\n2014年1月14日下午16时许，被告人刘某因向被害人杨某要债未着，遂持钢管在本市南浔区双林镇虹凤浴室门口附近将被害人杨某的浙E×××××轿车砸坏，财物损失计人民币22149元。\n案发后，被告人刘某家属已赔偿被害人杨某损失人民币2万元，被害人杨某表示对被告人刘某予以谅解。\n上述事实，被告人刘某在庭审中表示没有异议，且有户籍证明、谅解书、情况说明，证人李某、陆某的证言，抓获经过，被害人杨某的陈述，被告人刘某在侦查阶段的供述和辩解，价格鉴定结论书，现场勘查记录、辨认笔录等证据予以证实，足以认定。\n本院认为，被告人刘某故意毁坏他人财物，数额较大，其行为已构成故意毁坏财物罪，公诉机关指控的罪名成立，依法予以惩处。公诉机关关于被告人刘某具有坦白情节的意见，与本案查明的事实及相关法律规定相符，本院予以支持，据此依法对被告人刘某从轻处罚。被告人刘某家属已赔偿被害人损失人民币2万元，被害人表示对被告人刘某予以谅解，据此对被告人刘某酌情从轻处罚。综上，根据被告人刘某犯罪的事实，犯罪的性质、情节以及对社会的危害程度，依照《中华人民共和国刑法》第二百七十五条、第六十七条第三款条之规定，判决如下：\n被告人刘某犯故意毁坏财物罪，判处拘役五个月（刑期自判决执行之日开始计算，判决执行前先行羁押的，羁押一日折抵刑期一日，即自2015年2月20日起至2015年7月19日止）。\n如不服本判决，可在接到判决书的第二日起十日内，通过本院或直接向浙江省湖州市中级人民法院提起上诉。书面上诉的，应提交上诉状正本一份、副本二份。\n审判员沈琴法\n二〇一五年六月十一日\n书记员陆方方"
+]</div>
+                </div>
+            </details>
+            
+            <div class="scoring-area">
+        <div class="dim-row">专业性: <span class="radio-group"><label><input type="radio" name="专业性_194" value="0"> 0</label><label><input type="radio" name="专业性_194" value="1"> 1</label><label><input type="radio" name="专业性_194" value="2"> 2</label><label><input type="radio" name="专业性_194" value="3"> 3</label><label><input type="radio" name="专业性_194" value="4"> 4</label><label><input type="radio" name="专业性_194" value="5"> 5</label></span></div><div class="dim-row">准确性: <span class="radio-group"><label><input type="radio" name="准确性_194" value="0"> 0</label><label><input type="radio" name="准确性_194" value="1"> 1</label><label><input type="radio" name="准确性_194" value="2"> 2</label><label><input type="radio" name="准确性_194" value="3"> 3</label><label><input type="radio" name="准确性_194" value="4"> 4</label><label><input type="radio" name="准确性_194" value="5"> 5</label></span></div><div class="dim-row">丰富度: <span class="radio-group"><label><input type="radio" name="丰富度_194" value="0"> 0</label><label><input type="radio" name="丰富度_194" value="1"> 1</label><label><input type="radio" name="丰富度_194" value="2"> 2</label><label><input type="radio" name="丰富度_194" value="3"> 3</label><label><input type="radio" name="丰富度_194" value="4"> 4</label><label><input type="radio" name="丰富度_194" value="5"> 5</label></span></div><div class="dim-row">可解释性: <span class="radio-group"><label><input type="radio" name="可解释性_194" value="0"> 0</label><label><input type="radio" name="可解释性_194" value="1"> 1</label><label><input type="radio" name="可解释性_194" value="2"> 2</label><label><input type="radio" name="可解释性_194" value="3"> 3</label><label><input type="radio" name="可解释性_194" value="4"> 4</label><label><input type="radio" name="可解释性_194" value="5"> 5</label></span></div>
+            </div>
+        </div>
+        
+        <div class="case-container" data-idx="156">
+            <div class="case-header">题目 #156 (第二批第 10 题)</div>
+            <div class="fact-text"><b>【案情事实】</b><br>经审理查明：2013年10月14日凌某2时许，被告人方某在本市海陵区某酒吧门口，见其友在吵架即上前劝阻，该酒吧员工凌某见状亦上前去劝，被告人方某即拿出随身携带的匕首捅向凌某，致凌某腹部受伤。案发后，被告人方某的家人代其赔偿凌某人民币1000元。上述事实，被告人方某在开庭审理过程中无异议，并有被害人凌某的陈述，证人李某、仲某、肖某、张某等人的证言，辨认笔录，提取笔录，谅解书，行政处罚决定书，病历，诊断证明，认定书，情况说明，抓获经过以及照片等证据，足以认定。</div>
+            
+            <details>
+                <summary>📑 点击展开/收起：模型作答与参考答案</summary>
+                
+                <div class="ans-section">
+                    <div class="ans-title">1. Ground Truth (真实法条编号) [articles]</div>
+                    <div class="ans-content">[
+  "刑法第293条"
+]</div>
+                </div>
+                
+                <div class="ans-section" style="border-left-color: #6f42c1;">
+                    <div class="ans-title">2. 法条具体内容 [law_articles]</div>
+                    <div class="ans-content">《中华人民共和国刑法》第二百三十四条　【故意伤害罪】故意伤害他人身体的，处三年以下有期徒刑、拘役或者管制。
+
+　　犯前款罪，致人重伤的，处三年以上十年以下有期徒刑；致人死亡或者以特别残忍手段致人重伤造成严重残疾的，处十年以上有期徒刑、无期徒刑或者死刑。本法另有规定的，依照规定。
+
+《中华人民共和国刑法》第二百三十四条之一　【组织出卖人体器官罪】组织他人出卖人体器官的，处五年以下有期徒刑，并处罚金；情节严重的，处五年以上有期徒刑，并处罚金或者没收财产。
+
+　　【故意伤害罪】【故意杀人罪】未经本人同意摘取其器官，或者摘取不满十八周岁的人的器官，或者强迫、欺骗他人捐献器官的，依照本法第二百三十四条、第二百三十二条的规定定罪处罚。
+
+　　【盗窃、侮辱、故意毁坏尸体、尸骨、骨灰罪】违背本人生前意愿摘取其尸体器官，或者本人生前未表示同意，违反国家规定，违背其近亲属意愿摘取其尸体器官的，依照本法第三百零二条的规定定罪处罚。</div>
+                </div>
+                
+                <div class="ans-section">
+                    <div class="ans-title">3. 预测法条编号 [law_numbers]</div>
+                    <div class="ans-content">[
+  "刑法第234条"
+]</div>
+                </div>
+                
+                <div class="ans-section" style="border-left-color: #28a745;">
+                    <div class="ans-title">4. RAG 模式作答 [response_aa]</div>
+                    <div class="ans-content">被告人方某犯有故意伤害罪。根据《中华人民共和国刑法》第二百三十四条，故意伤害他人身体的，处三年以下有期徒刑、拘役或者管制。</div>
+                </div>
+                
+                <div class="ans-section" style="border-left-color: #dc3545;">
+                    <div class="ans-title">5. 无 RAG 模式作答 [response_analysis_no_rag]</div>
+                    <div class="ans-content">被告人方某犯有故意伤害罪。根据案件事实，被告人方某在酒吧门口持刀捅向凌某，致凌某受伤。根据《刑法》第二百三十四条，故意伤害他人身体的，处三年以下有期徒刑、拘役或者管制。因此，被告人方某犯有故意伤害罪。</div>
+                </div>
+                
+                <div class="ans-section" style="border-left-color: #ffc107;">
+                    <div class="ans-title">6. 检索到的相似案例 [similar_cases]</div>
+                    <div class="ans-content">[
+  "（2015）高刑初字第85号\n公诉机关高青县人民检察院。\n被告人王某某，男，1970年1月20日出生于山东省高青县，汉族，高中文化，个体。因涉嫌犯故意伤害罪于2014年8月9日被刑事拘留，分别于2014年8月22日、2015年6月23日被取保候审。\n高青县人民检察院以高检公刑诉（2015）54号起诉书指控被告人王某某犯故意伤害罪，于2015年6月30日向本院提起公诉。本院于同日立案，并依法组成合议庭，适用简易程序，公开开庭审理了本案。高青县人民检察院指派检察员曹兆坤出庭支持公诉，被告人王某某到庭参加了诉讼。现已审理终结。\n公诉机关指控，2014年8月8日14时许，在高青县城中心路被告人王某某经营的某酒超市内，被害人刘某酒后与被告人王某某发生口角争执，后在某酒超市门口处，王某某持匕首将刘某捅伤。经依法鉴定，被害人刘某的损伤程度系重伤（二级）。\n另查明，被告人王某某案发后主动报警，到案后如实供述犯罪事实，并积极赔偿被害人经济损失，已取得被害人谅解。\n上述事实，被告人王某某在开庭审理过程中亦无异议，且有物证匕首一把、短袖衬衣一件、被害人刘某陈述、证人尹某某、赵某某、王某某、张某某证言、鉴定意见法医学人体损伤程度鉴定书、DNA鉴定报告、现场勘验、检查笔录、书证匕首照片、伤情照片、赔偿协议书、谅解书、户籍证明等证据予以证实，足以认定。\n本院认为，被告人王某某故意伤害他人身体，致一人重伤（二级），其行为已构成故意伤害罪，应予刑罚。公诉机关指控被告人王某某犯故意伤害罪罪名成立。被告人王某某案发后主动报警，到案后如实供述犯罪事实，系自首，积极赔偿被害人经济损失，已取得被害人谅解，对其可从轻处罚。依照《中华人民共和国刑法》第二百三十四条第二款、第六十四条、第六十七条第一款、第七十二条第一款、第七十三条第二、三款、第六十一条之规定，判决如下：\n一、被告人王某某犯故意伤害罪，判处有期徒刑三年，缓刑三年。\n（缓刑考验期限，从判决万确定之日起计算）。\n二、作案工具刀子一把予以没收。\n如不服本判决，可在接到判决书的第二日起十日内，通过本院或直接向山东省淄博市中级人民法院提出上诉。书面上诉的，应当提交上诉状正本一份，副本两份。\n审判长赵盼吨\n审判员卞丙文\n人民陪审员郑成庆\n二〇一五年七月二十日\n代理书记员刘翠萍"
+]</div>
+                </div>
+            </details>
+            
+            <div class="scoring-area">
+        <div class="dim-row">专业性: <span class="radio-group"><label><input type="radio" name="专业性_156" value="0"> 0</label><label><input type="radio" name="专业性_156" value="1"> 1</label><label><input type="radio" name="专业性_156" value="2"> 2</label><label><input type="radio" name="专业性_156" value="3"> 3</label><label><input type="radio" name="专业性_156" value="4"> 4</label><label><input type="radio" name="专业性_156" value="5"> 5</label></span></div><div class="dim-row">准确性: <span class="radio-group"><label><input type="radio" name="准确性_156" value="0"> 0</label><label><input type="radio" name="准确性_156" value="1"> 1</label><label><input type="radio" name="准确性_156" value="2"> 2</label><label><input type="radio" name="准确性_156" value="3"> 3</label><label><input type="radio" name="准确性_156" value="4"> 4</label><label><input type="radio" name="准确性_156" value="5"> 5</label></span></div><div class="dim-row">丰富度: <span class="radio-group"><label><input type="radio" name="丰富度_156" value="0"> 0</label><label><input type="radio" name="丰富度_156" value="1"> 1</label><label><input type="radio" name="丰富度_156" value="2"> 2</label><label><input type="radio" name="丰富度_156" value="3"> 3</label><label><input type="radio" name="丰富度_156" value="4"> 4</label><label><input type="radio" name="丰富度_156" value="5"> 5</label></span></div><div class="dim-row">可解释性: <span class="radio-group"><label><input type="radio" name="可解释性_156" value="0"> 0</label><label><input type="radio" name="可解释性_156" value="1"> 1</label><label><input type="radio" name="可解释性_156" value="2"> 2</label><label><input type="radio" name="可解释性_156" value="3"> 3</label><label><input type="radio" name="可解释性_156" value="4"> 4</label><label><input type="radio" name="可解释性_156" value="5"> 5</label></span></div>
+            </div>
+        </div>
+        
+        <div class="case-container" data-idx="30">
+            <div class="case-header">题目 #30 (第二批第 11 题)</div>
+            <div class="fact-text"><b>【案情事实】</b><br>经审理查明，原审被告人舒某系博庶彩公司法定代表人朱某甲的女婿，其妻子是朱某乙。自2007年到博庶彩公司工作，此后负责该公司原材料采购等工作，并自筹资金在福州开办一间加工厂，在当地采购原材料生产半成品，为博庶彩公司供货，同时也为博庶彩公司采购原材料。博庶彩公司支付货款的方式是，由个人账户（主要是朱某甲及妻子李3某账户）向舒某个人银行账户转账的方法支付货款。2010年10月舒某的妻子朱某乙发现舒某有婚外情，便到福州监管舒某的资金，舒某于2010年11月底至2011年1月初，采取借用他人银行账户转账的方法，收取从朱某甲及妻子李3某账户转款至朱某乙账户后再汇款至舒某所借用他人银行账户共计资金494800元。以上事实和证据同一审一致，且证据经一审当庭宣读、出示、质证，证据来源合法，内容客观真实，能够相互印证，对一审认定的事实和证据本院予以确认。关于上诉人舒某上诉诉称及其辩护人提出原判认定舒某系博庶彩公司业务员无事实依据。经查，被告人舒某系博庶彩公司员工，有相关证人证言、工资表、武穴市医疗保险管理局证明及舒某为博庶彩公司采购原材料的入库通知单为证，足以证明舒某案发时系博庶彩公司员工，此上诉理由及辩护人的辩护意见，不予采纳。关于上诉人舒某上诉诉称及其辩护人辩称原判认定被告人舒某侵占博庶彩公司资金494800元证据不足，其从朱某乙处所收汇款是朱某乙为自己家庭工厂融资的，是其和朱某乙的家庭共有财产；舒某与博庶彩公司购销往来尚未结算的上诉理由，经查，舒某从朱某乙处所收汇款是其采取借用他人银行账户转账的方法，由朱某甲、李3某账户汇款至朱某乙处，再由朱某乙汇至其借用的他人银行账户，此后又将以上款项转移，因此，其具有侵占此款的故意和行为，其上诉理由不能成立。因此款来源于由朱某甲、李3某账户，其中，朱某甲是博庶彩公司控股及投资人，其资金可视为博庶彩公司资金。但李3某账户资金是否属于博庶彩公司资金证据不足。因此，应当认定原审被告人舒某侵占博庶彩公司资金为一审判决认定的第1、3、4起共计386800（180000＋100000＋106800）元。</div>
+            
+            <details>
+                <summary>📑 点击展开/收起：模型作答与参考答案</summary>
+                
+                <div class="ans-section">
+                    <div class="ans-title">1. Ground Truth (真实法条编号) [articles]</div>
+                    <div class="ans-content">[
+  "刑法第271条"
+]</div>
+                </div>
+                
+                <div class="ans-section" style="border-left-color: #6f42c1;">
+                    <div class="ans-title">2. 法条具体内容 [law_articles]</div>
+                    <div class="ans-content">《中华人民共和国刑法》第二百七十一条　【职务侵占罪】公司、企业或者其他单位的工作人员，利用职务上的便利，将本单位财物非法占为己有，数额较大的，处三年以下有期徒刑或者拘役，并处罚金；数额巨大的，处三年以上十年以下有期徒刑，并处罚金；数额特别巨大的，处十年以上有期徒刑或者无期徒刑，并处罚金。
+
+　　【贪污罪】国有公司、企业或者其他国有单位中从事公务的人员和国有公司、企业或者其他国有单位委派到非国有公司、企业以及其他单位从事公务的人员有前款行为的，依照本法第三百八十二条、第三百八十三条的规定定罪处罚。</div>
+                </div>
+                
+                <div class="ans-section">
+                    <div class="ans-title">3. 预测法条编号 [law_numbers]</div>
+                    <div class="ans-content">[
+  "刑法第271条"
+]</div>
+                </div>
+                
+                <div class="ans-section" style="border-left-color: #28a745;">
+                    <div class="ans-title">4. RAG 模式作答 [response_aa]</div>
+                    <div class="ans-content">原审被告人舒某犯有职务侵占罪。舒某作为博庶彩公司员工，利用职务便利，将公司财物非法占为己有，数额较大，构成职务侵占罪。</div>
+                </div>
+                
+                <div class="ans-section" style="border-left-color: #dc3545;">
+                    <div class="ans-title">5. 无 RAG 模式作答 [response_analysis_no_rag]</div>
+                    <div class="ans-content">原审被告舒某侵占博庶彩公司资金，构成职务侵占罪。</div>
+                </div>
+                
+                <div class="ans-section" style="border-left-color: #ffc107;">
+                    <div class="ans-title">6. 检索到的相似案例 [similar_cases]</div>
+                    <div class="ans-content">[
+  "（2020）沪0110刑初454号\n\n公诉机关上海市杨浦区人民检察院。\n被告人舒某某，女，1983年10月29日出生，汉族，户籍在江西省。\n上海市杨浦区人民检察院以沪杨检一部刑诉〔2020〕1038号起诉书指控被告人舒某某犯开设赌场罪，于2020年5月8日向本院提起公诉。本院依法适用简易程序，实行独任审判，公开开庭审理了本案。上海市杨浦区人民检察院指派检察员王轶出庭支持公诉，被告人舒某某到庭参加诉讼。现已审理终结。\n经审理查明：2020年1月8日，被告人舒某某受他人雇佣在本市杨浦区XXX路XXX号地下室大厅内“网络百家乐”赌场为参赌人员进行网络投注和结算赌资。同年1月10日0时许，上海市公安局杨浦分局民警对上址进行检查，抓获被告人舒某某及参赌人员赵某某等人，查获配钞人民币11,480元和一台涉赌电脑主机等。\n经查，2020年1月8日至10日，上述“网络百家乐”赌博账号赌资数额约为人民币100万元。\n上述事实，被告人舒某某在开庭审理过程中亦无异议，且有证人赵某某、朱某某、刘某、姜某某、黄某、宛某某、吴某某的证言及辨认笔录，证人杨某某的证言，上海市公安局杨浦分局检查笔录、搜查笔录、扣押清单、证据保全清单、收缴物品清单，案发现场和电脑截屏的照片，公安机关行政处罚决定书，公安机关出具的工作情况记录，被告人舒某某的供述等证据证实，足以确认。\n公诉机关根据上述证据指控被告人舒某某的行为已构成开设赌场罪。被告人舒某某在共同犯罪中起次要作用，是从犯，应当减轻处罚。被告人舒某某到案后如实供述自己的罪行且自愿认罪认罚，依法可以从轻处罚。建议判处被告人舒某某有期徒刑一年六个月，并处罚金。\n被告人舒某某对指控事实、罪名及量刑建议没有异议，且在律师陈健见证下签字具结，在开庭审理过程中亦无异议。\n本院认为，被告人舒某某以营利为目的，伙同他人开设赌场，情节严重，其行为已构成开设赌场罪。公诉机关指控的罪名成立，对被告人舒某某依法应予惩处。被告人舒某某在共同犯罪中起次要作用，是从犯，并在到案后如实供述自己的罪行且自愿认罪认罚，依法应当减轻处罚。公诉机关量刑建议适当，予以采纳。为严肃国法，维护社会管理秩序，依照《中华人民共和国刑法》第三百零三条第二款、第二十五条第一款、第二十七条、第六十七条第三款、第五十二条、第五十三条、第六十四条之规定，判决如下：\n一、被告人舒某某犯开设赌场罪，判处有期徒刑一年六个月，罚金人民币二万元；\n(刑期从判决执行之日起计算。判决执行以前先行羁押的，羁押一日折抵刑期一日，即自2020年1月10日起至2021年7月9日止。罚金自本判决发生法律效力之日起十日内缴纳。)\n二、查获的人民币11,480元和一台涉赌电脑主机应予没收。\n如不服本判决，可在接到判决书的第二日起十日内，通过本院或者直接向上海市第二中级人民法院提出上诉。书面上诉的，应当提交上诉状正本一份，副本一份。\n\n\n审判员孙斯汀\n书记员姜立军\n二〇二〇年五月二十二日"
+]</div>
+                </div>
+            </details>
+            
+            <div class="scoring-area">
+        <div class="dim-row">专业性: <span class="radio-group"><label><input type="radio" name="专业性_30" value="0"> 0</label><label><input type="radio" name="专业性_30" value="1"> 1</label><label><input type="radio" name="专业性_30" value="2"> 2</label><label><input type="radio" name="专业性_30" value="3"> 3</label><label><input type="radio" name="专业性_30" value="4"> 4</label><label><input type="radio" name="专业性_30" value="5"> 5</label></span></div><div class="dim-row">准确性: <span class="radio-group"><label><input type="radio" name="准确性_30" value="0"> 0</label><label><input type="radio" name="准确性_30" value="1"> 1</label><label><input type="radio" name="准确性_30" value="2"> 2</label><label><input type="radio" name="准确性_30" value="3"> 3</label><label><input type="radio" name="准确性_30" value="4"> 4</label><label><input type="radio" name="准确性_30" value="5"> 5</label></span></div><div class="dim-row">丰富度: <span class="radio-group"><label><input type="radio" name="丰富度_30" value="0"> 0</label><label><input type="radio" name="丰富度_30" value="1"> 1</label><label><input type="radio" name="丰富度_30" value="2"> 2</label><label><input type="radio" name="丰富度_30" value="3"> 3</label><label><input type="radio" name="丰富度_30" value="4"> 4</label><label><input type="radio" name="丰富度_30" value="5"> 5</label></span></div><div class="dim-row">可解释性: <span class="radio-group"><label><input type="radio" name="可解释性_30" value="0"> 0</label><label><input type="radio" name="可解释性_30" value="1"> 1</label><label><input type="radio" name="可解释性_30" value="2"> 2</label><label><input type="radio" name="可解释性_30" value="3"> 3</label><label><input type="radio" name="可解释性_30" value="4"> 4</label><label><input type="radio" name="可解释性_30" value="5"> 5</label></span></div>
+            </div>
+        </div>
+        
+        <div class="case-container" data-idx="169">
+            <div class="case-header">题目 #169 (第二批第 12 题)</div>
+            <div class="fact-text"><b>【案情事实】</b><br>经审理查明，2011年11月10日19时许，被告人郑某酒后来到西安市长里村好再来面馆，因点餐一事与该店老板张某发生口角，后被告人郑某持铁棍捅伤张某胸部、腿部后离开。之后与董某、惠某1来到该村飘香面馆吃饭喝酒，酒后持板凳砸伤被害人惠某1。经法医鉴定，被害人惠某1损伤程度属轻伤。上述事实，被告人郑某在开庭审理过程中亦无异议，并有椅子、铁棍等物证；报案材料、抓获经过、户籍证明、情况说明等书证；被害人惠某1、张某的陈述；被告人郑某的供述；证人李某、周某、董某、许某的证言；医学鉴定结论；辨认、指认笔录及照片等证据证实，足以认定。公诉机关建议对被告人郑某在一至二年内判处刑罚。</div>
+            
+            <details>
+                <summary>📑 点击展开/收起：模型作答与参考答案</summary>
+                
+                <div class="ans-section">
+                    <div class="ans-title">1. Ground Truth (真实法条编号) [articles]</div>
+                    <div class="ans-content">[
+  "刑法第293条"
+]</div>
+                </div>
+                
+                <div class="ans-section" style="border-left-color: #6f42c1;">
+                    <div class="ans-title">2. 法条具体内容 [law_articles]</div>
+                    <div class="ans-content">《中华人民共和国刑法》第二百三十四条　【故意伤害罪】故意伤害他人身体的，处三年以下有期徒刑、拘役或者管制。
+
+　　犯前款罪，致人重伤的，处三年以上十年以下有期徒刑；致人死亡或者以特别残忍手段致人重伤造成严重残疾的，处十年以上有期徒刑、无期徒刑或者死刑。本法另有规定的，依照规定。
+
+《中华人民共和国刑法》第二百三十四条之一　【组织出卖人体器官罪】组织他人出卖人体器官的，处五年以下有期徒刑，并处罚金；情节严重的，处五年以上有期徒刑，并处罚金或者没收财产。
+
+　　【故意伤害罪】【故意杀人罪】未经本人同意摘取其器官，或者摘取不满十八周岁的人的器官，或者强迫、欺骗他人捐献器官的，依照本法第二百三十四条、第二百三十二条的规定定罪处罚。
+
+　　【盗窃、侮辱、故意毁坏尸体、尸骨、骨灰罪】违背本人生前意愿摘取其尸体器官，或者本人生前未表示同意，违反国家规定，违背其近亲属意愿摘取其尸体器官的，依照本法第三百零二条的规定定罪处罚。</div>
+                </div>
+                
+                <div class="ans-section">
+                    <div class="ans-title">3. 预测法条编号 [law_numbers]</div>
+                    <div class="ans-content">[
+  "刑法第234条"
+]</div>
+                </div>
+                
+                <div class="ans-section" style="border-left-color: #28a745;">
+                    <div class="ans-title">4. RAG 模式作答 [response_aa]</div>
+                    <div class="ans-content">被告人郑某犯有故意伤害罪。根据《中华人民共和国刑法》第二百三十四条，故意伤害他人身体的，处三年以下有期徒刑、拘役或者管制。根据案件事实，被告人郑某持铁棍捅伤张某胸部、腿部后离开，之后与他人在飘香面馆砸伤被害人惠某1。经法医鉴定，被害人惠某1损伤程度属轻伤。因此，被告人郑某的行为符合故意伤害罪的构成要件，应当受到相应的刑罚。</div>
+                </div>
+                
+                <div class="ans-section" style="border-left-color: #dc3545;">
+                    <div class="ans-title">5. 无 RAG 模式作答 [response_analysis_no_rag]</div>
+                    <div class="ans-content">被告人郑某犯有故意伤害罪。根据《刑法》第二百三十四条，故意伤害他人身体的，处三年以下有期徒刑、拘役或者管制。被告人郑某持铁棍捅伤张某胸部、腿部，造成张某轻伤，符合故意伤害罪的构成要件。</div>
+                </div>
+                
+                <div class="ans-section" style="border-left-color: #ffc107;">
+                    <div class="ans-title">6. 检索到的相似案例 [similar_cases]</div>
+                    <div class="ans-content">[
+  "西安市灞桥区人民法院\n刑事判决书\n\n（2013）灞刑初字第00386号\n\n\n公诉机关西安市灞桥区人民检察院。\n被告人员某甲，又名贠某某，男。因涉嫌犯故意伤害罪于2013年8月23日被抓获，同年9月3日被刑事拘留，同月17日被逮捕。现羁押于西安市灞桥区看守所。\n西安市灞桥区人民检察院以西灞检刑诉（2013）335号起诉书指控被告人员某甲犯故意伤害罪，于2013年12月5日向本院提起公诉。本院受理后，依法组成合议庭，适用普通程序公开开庭审理了本案。西安市灞桥区人民检察院指派代理检察员张永奇出庭支持公诉。被告人员某甲到庭参加诉讼。现已审理终结。\n西安市灞桥区人民检察院指控，2013年2月16日19时许，被告人员某甲为寻找其妻子，来到位于西安市灞桥区其岳母秦某某家，因言语不和，被告人员某甲与秦某某在院内发生争吵，被告人员某甲用小方凳砸伤秦某某面部。后经西安交通大学法医学司法鉴定中心鉴定，秦某某之损伤属轻伤。为证明指控事实，公诉人当庭出示了被害人秦某某的陈述，证人窦某某、李某某、梅某某等人的证言，西安交大法医学鉴定意见，以及被告人员某甲的供述等相关证据，据此认为被告人员某甲的行为已触犯《中华人民共和国刑法》第二百三十四条第一款之规定，构成故意伤害罪，建议对被告人员某甲判处一年又六个月以下有期徒刑。\n被告人员某甲对起诉书指控的犯罪事实供认属实，对公诉机关的量刑建议无异议，当庭表示认罪。\n经审理查明，2013年2月16日19时许，被告人员某甲为寻找其妻子，来到位于西安市灞桥区其岳母秦某某家，因言语不和，员某甲与秦某某在院内发生争吵，员某甲用小木凳砸伤秦某某面部。后经法医学鉴定，秦某某右颧部皮肤裂伤形成长3.1cm的愈合瘢痕构成轻伤。\n案件审理过程中，被告人家属与被害人秦某某就民事赔偿达成调解协议，被害人秦某某对被告人员某甲的行为表示谅解。\n认定案件事实的证据如下：\n被害人秦某某陈述称，2013年2月16日19时许，她女儿窦某的丈夫员某甲和母亲以及司机三人来到她家，因言语不和她让员某甲滚出去，员某甲拿起一个小木板凳在她脸上砸了一下，当时脸上流血，她丈夫随即报警。\n证人窦某某证言证明，2013年2月16日19时许，其女儿窦某的丈夫员某甲和母亲及司机三人拿着礼品到他家里，员某甲称窦某大年初二离家未归，让他和妻子秦某某去亲戚家找窦某，秦某某未同意，让员某甲出去，员某甲从地上拿起一个小木凳砸伤秦某某右面部，他就报了警。\n证人李某某证言证明，2013年2月16日19时许，她和儿子员某甲及司机来到位于西安市灞桥区亲家秦某某家，员某甲给岳父、岳母拜年，并问妻子窦某的下落。员某甲和岳父、岳母发生争吵，秦某某拿了一个小木凳在员某甲肩膀上打了一下，员某甲把凳子拿过来向秦某某脸上扔过去，砸到秦某某右边脸上，秦某某脸上当时就受伤流血了，她和在场的人把他们拉开。\n证人梅某某证言证明，2013年2月16日下午，邻村的强强（员某甲）找到他，租他的车去西安市灞桥区丈人家拜年，顺便将强强媳妇接回来。强强到丈人家后，与其岳母言语不和，强强情绪有些激动就把自己的手机摔到地上，强强岳母就顺手拿起坐着的木凳子在强强肩上砸了一下，强强夺过凳子在其岳母脸上砸了一下，其岳母脸上当时就流血了。他就和强强丈人将人拉开。\n抓获经过证明，2013年8月23日，深圳铁路民警在东莞市石龙火车站将上网通缉人员员某甲抓获。\n指认现场笔录证明，被告人员某甲指出西安市灞桥区某村是其打伤秦某某的地方。（指认现场照片能与此相互印证。）\n8、户籍证明证明被告人员某甲已达到法定刑事责任年龄。\n9、西安交大法医学司法鉴定中心（2013）临鉴字第1041号司法鉴定意见书证明，秦某某外伤致右颧部形成一横形长3.1cm的创口愈合瘢痕，构成轻伤。\n10、被告人员某甲供述称，2013年2月16日约19时许，他和母亲李某某、司机梅某某到岳父家，想让因琐事与他打架的媳妇窦某回家。大约晚上8时许在其岳父家的客厅里，他与岳母秦某某因言语不和，他将自己的手机摔到地上，其岳母就用啥东西在他后脑部打了一下，他顺手拿起小木凳向岳母秦某某砸去，岳母的右脸部位当时就流血了，后他岳父和梅某某把他拉开。过了一会派出所民警就来了。\n上述证据均经庭审质证，各证据能够相互印证，本院予以认定。\n本院认为，被告人员某甲因琐事故意伤害他人，致一人轻伤，侵犯了他人身体健康权，其行为已构成《中华人民共和国刑法》第二百三十四条第一款规定的故意伤害罪。西安市灞桥区人民检察院指控被告人员某甲所犯罪名成立，依法应予惩处。鉴于本案因民间矛盾纠纷引发，被告人员某甲在亲属协助下与被害人达成了赔偿协议，取得了被害人谅解；被告人员某甲又能当庭表示认罪，有悔罪表现，并经户籍所在地社区评估，对其适用非监禁刑没有重大不良影响，可对其酌情从轻处罚并依法适用缓刑。依照《中华人民共和国刑法》第二百三十四条第一款、第七十二条第一款、第七十三条第二款、第三款及第七十六条之规定，判决如下：\n被告人员某甲犯故意伤害罪，判处有期徒刑十个月，缓刑一年。实行社区矫正。（缓刑考验期自判决确定之日起计算。）\n如不服本判决，可在接到判决书的第二日起十日内，通过本院或者直接向陕西省西安市中级人民法院提出上诉。书面上诉的，应当提交上诉状正本一份，副本三份。\n审判长成晓红\n人民陪审员翟跟彦\n人民陪审员彭海英\n二〇一四年一月十三日\n书记员倪薇\n附：本案涉及下列法律条文\n《中华人民共和国刑法》\n第二百三十四条故意伤害他人身体的，处三年以下有期徒刑、拘役或者管制。\n第七十二条对于被判处拘役、三年以下有期徒刑的犯罪分子，同时符合下列条件的，可以宣告缓刑，对其中不满十八周岁的人、怀孕的妇女和已满七十五周岁的人，应当宣告缓刑：\n（一）犯罪情节较轻；\n（二）有悔罪表现；\n（三）没有再犯罪的危险；\n（四）宣告缓刑对所居住社区没有重大不良影响。\n宣告缓刑，可以根据犯罪情况，同时禁止犯罪分子在缓刑考验期限内从事特定活动，进入特定区域、场所，接触特定的人。\n被宣告缓刑的犯罪分子，如果被判处附加刑，附加刑仍须执行。\n第七十三条拘役的缓刑考验期限为原判刑期以上一年以下，但是不能少于二个月。\n有期徒刑的缓刑考验期限为原判刑期以上五年以下，但是不能少于一年。\n缓刑考验期限，从判决确定之日起计算。\n第七十六条对宣告缓刑的犯罪分子，在缓刑考验期限内，依法实行社区矫正，如果没有本法第七十七条规定的情形，缓刑考验期满，原判的刑罚就不再执行，并公开予以宣告。"
+]</div>
+                </div>
+            </details>
+            
+            <div class="scoring-area">
+        <div class="dim-row">专业性: <span class="radio-group"><label><input type="radio" name="专业性_169" value="0"> 0</label><label><input type="radio" name="专业性_169" value="1"> 1</label><label><input type="radio" name="专业性_169" value="2"> 2</label><label><input type="radio" name="专业性_169" value="3"> 3</label><label><input type="radio" name="专业性_169" value="4"> 4</label><label><input type="radio" name="专业性_169" value="5"> 5</label></span></div><div class="dim-row">准确性: <span class="radio-group"><label><input type="radio" name="准确性_169" value="0"> 0</label><label><input type="radio" name="准确性_169" value="1"> 1</label><label><input type="radio" name="准确性_169" value="2"> 2</label><label><input type="radio" name="准确性_169" value="3"> 3</label><label><input type="radio" name="准确性_169" value="4"> 4</label><label><input type="radio" name="准确性_169" value="5"> 5</label></span></div><div class="dim-row">丰富度: <span class="radio-group"><label><input type="radio" name="丰富度_169" value="0"> 0</label><label><input type="radio" name="丰富度_169" value="1"> 1</label><label><input type="radio" name="丰富度_169" value="2"> 2</label><label><input type="radio" name="丰富度_169" value="3"> 3</label><label><input type="radio" name="丰富度_169" value="4"> 4</label><label><input type="radio" name="丰富度_169" value="5"> 5</label></span></div><div class="dim-row">可解释性: <span class="radio-group"><label><input type="radio" name="可解释性_169" value="0"> 0</label><label><input type="radio" name="可解释性_169" value="1"> 1</label><label><input type="radio" name="可解释性_169" value="2"> 2</label><label><input type="radio" name="可解释性_169" value="3"> 3</label><label><input type="radio" name="可解释性_169" value="4"> 4</label><label><input type="radio" name="可解释性_169" value="5"> 5</label></span></div>
+            </div>
+        </div>
+        
+        <div class="case-container" data-idx="123">
+            <div class="case-header">题目 #123 (第二批第 13 题)</div>
+            <div class="fact-text"><b>【案情事实】</b><br>公诉机关指控：2015年7月4日12时许，被告人刘某在天津站前广场B出口附近，因琐事与王××发生口角，刘某持刀将王××左颈部划伤。案发后，刘某被巡逻民警当场抓获。经天津市法医学鉴定中心司法鉴定：王××颈部外伤，损伤程度为轻伤二级。</div>
+            
+            <details>
+                <summary>📑 点击展开/收起：模型作答与参考答案</summary>
+                
+                <div class="ans-section">
+                    <div class="ans-title">1. Ground Truth (真实法条编号) [articles]</div>
+                    <div class="ans-content">[
+  "刑法第234条"
+]</div>
+                </div>
+                
+                <div class="ans-section" style="border-left-color: #6f42c1;">
+                    <div class="ans-title">2. 法条具体内容 [law_articles]</div>
+                    <div class="ans-content">《中华人民共和国刑法》第二百三十四条　【故意伤害罪】故意伤害他人身体的，处三年以下有期徒刑、拘役或者管制。
+
+　　犯前款罪，致人重伤的，处三年以上十年以下有期徒刑；致人死亡或者以特别残忍手段致人重伤造成严重残疾的，处十年以上有期徒刑、无期徒刑或者死刑。本法另有规定的，依照规定。
+
+《中华人民共和国刑法》第二百三十四条之一　【组织出卖人体器官罪】组织他人出卖人体器官的，处五年以下有期徒刑，并处罚金；情节严重的，处五年以上有期徒刑，并处罚金或者没收财产。
+
+　　【故意伤害罪】【故意杀人罪】未经本人同意摘取其器官，或者摘取不满十八周岁的人的器官，或者强迫、欺骗他人捐献器官的，依照本法第二百三十四条、第二百三十二条的规定定罪处罚。
+
+　　【盗窃、侮辱、故意毁坏尸体、尸骨、骨灰罪】违背本人生前意愿摘取其尸体器官，或者本人生前未表示同意，违反国家规定，违背其近亲属意愿摘取其尸体器官的，依照本法第三百零二条的规定定罪处罚。</div>
+                </div>
+                
+                <div class="ans-section">
+                    <div class="ans-title">3. 预测法条编号 [law_numbers]</div>
+                    <div class="ans-content">[
+  "刑法第234条"
+]</div>
+                </div>
+                
+                <div class="ans-section" style="border-left-color: #28a745;">
+                    <div class="ans-title">4. RAG 模式作答 [response_aa]</div>
+                    <div class="ans-content">被告人刘某犯有故意伤害罪。刘某在天津站前广场B出口附近，因琐事与王××发生口角，刘某持刀将王××左颈部划伤。经天津市法医学鉴定中心司法鉴定：王××颈部外伤，损伤程度为轻伤二级。</div>
+                </div>
+                
+                <div class="ans-section" style="border-left-color: #dc3545;">
+                    <div class="ans-title">5. 无 RAG 模式作答 [response_analysis_no_rag]</div>
+                    <div class="ans-content">被告人刘某犯有故意伤害罪。刘某在天津站前广场B出口附近，因琐事与王××发生口角，刘某持刀将王××左颈部划伤，构成故意伤害罪。</div>
+                </div>
+                
+                <div class="ans-section" style="border-left-color: #ffc107;">
+                    <div class="ans-title">6. 检索到的相似案例 [similar_cases]</div>
+                    <div class="ans-content">[
+  "（2015）红刑初字第0066号\n公诉机关天津市红桥区人民检察院。\n被告人李××，无职业。2014年8月18日因涉嫌犯故意伤害罪被刑事拘留，同年8月29日被取保候审，同年12月31日被天津市红桥区人民检察院取保候审。\n天津市红桥区人民检察院以津红检诉刑诉（2015）32号起诉书指控被告人李××犯故意伤害罪，于2015年1月22日向本院提起公诉。本院依法适用简易程序，实行独任审判，于2015年2月5日公开开庭审理了本案。天津市红桥区人民检察院指派代理检察员蔡文彬出庭支持公诉，被告人李××到庭参加诉讼。现已审理终结。\n公诉机关指控：2014年8月17日11时许，被告人李××在本市红桥区西青道金丰公寓2号楼4门501号中，因故与被害人齐××发生口角。后被告人李××用随身携带的折叠刀将被害人颈部划伤。后公安民警在案发地点附近，将被告人李××抓获归案。\n案发后，被告人李××已经赔偿被害人齐××经济损失共计人民币14000元。\n经天津市公安局红桥分局物证鉴定所鉴定：被害人齐××颈前部伤口的损伤程度为轻伤二级。\n公诉机关提交了有关案件来源、被害人陈述、证人证言、书证、物证照片、鉴定意见等证据材料，认为被告人李××之行为构成故意伤害罪，应依据《中华人民共和国刑法》第二百三十四条第一款之规定予以惩处。\n被告人李××对起诉书指控的事实及罪名予以供认，请求法庭从轻处罚。\n经审理查明，2014年8月17日11时许，在天津市红桥区西青道金丰公寓2号楼4门501号，被告人李××与被害人齐××因工作问题产生争执，期间被告人李××用随身携带的折叠刀将被害人颈部划伤，伤口约15cm，至皮下组织少部分颈阔肌。后周围群众报警，民警在案发地附近将被告人李××抓获归案。\n经天津市公安局红桥分局物证鉴定所鉴定：被害人齐××颈前部伤口的损伤程度为轻伤二级。\n另查明，在公安机关侦查阶段，被告人李××已与被害人齐××就民事赔偿达成和解协议，一次性赔偿被害人齐××全部经济损失共计人民币14000元，被害人齐××表示不再追究其法律责任。\n上述事实，经当庭举证、质证，有相关案件来源及抓获经过、被害人陈述及辨认笔录、证人证言及辨认笔录、书证、物证照片、法医学人体损伤程度鉴定意见书、和解协议、被告人供述等证据材料予以证实，事实清楚，证据充分，足以认定。\n本院认为，被告人李××遇事不能冷静处理，在与人争执过程中故意伤害他人身体，并致人轻伤后果，其行为已构成故意伤害罪，检察机关指控的事实及罪名成立，本院予以确认。被告人李××归案后能如实供述犯罪事实，认罪、悔罪态度较好，依法可从轻处罚。被告人李××在与人争执过程中持刀将被害人颈部划伤，其作案情节及手段较为恶劣，应酌情从重处罚。本案系因民间纠纷引发，社会危害性相对较小，且被告人李××此次犯罪系初犯，能积极赔偿被害人经济损失，具有悔罪表现，已得到被害人谅解，可依法从轻处罚。综上，依照《中华人民共和国刑法》第二百三十四条第一款，第六十七条第三款，第七十二条第一款及《中华人民共和国刑事诉讼法》第二百七十七条第一款第（一）项，第二百七十九条之规定，判决如下：\n一、被告人李××犯故意伤害罪，判处有期徒刑一年，缓刑一年。\n（缓刑考验期限，从判决确定之日起计算。）\n二、作案工具折叠刀一把，由公安机关依法予以没收。\n如不服本判决，可在接到判决书的第二日起十日内通过本院或者直接向天津市第一中级人民法院提出上诉。书面上诉的，应当提交上诉状正本一份、副本二份。\n代理审判员王正刚\n二〇一五年二月五日\n书记员孙颙琰\n速录员王佳兰\n附本裁判文书所依据法律规定的具体条文：\n1、《中华人民共和国刑法》第二百三十四条：\n故意伤害他人身体的，处三年以下有期徒刑、拘役或者管制。\n犯前款罪，致人重伤的，处三年以上十年以下有期徒刑；致人死亡或者以特别残忍手段致人重伤造成严重残疾的，处十年以上有期徒刑、无期徒刑或者死刑。本法另有规定的，依照规定。\n2、《中华人民共和国刑法》第六十七条：\n犯罪以后自动投案，如实供述自己的罪行的，是自首。对于自首的犯罪分子，可以从轻或者减轻处罚。其中，犯罪较轻的，可以免除处罚。\n被采取强制措施的犯罪嫌疑人、被告人和正在服刑的罪犯，如实供述司法机关还未掌握的本人其他罪行的，以自首论。\n犯罪嫌疑人虽不具有前两款规定的自首情节，但是如实供述自己罪行的，可以从轻处罚；因其如实供述自己罪行，避免特别严重后果发生的，可以减轻处罚。\n3、《中华人民共和国刑法》第七十二条：\n对于被判处拘役、三年以下有期徒刑的犯罪分子，同时符合下列条件的，可以宣告缓刑，对其中不满十八周岁的人、怀孕的妇女和已满七十五周岁的人，应当宣告缓刑：\n犯罪情节较轻；\n有悔罪表现；\n没有再犯罪的危险；\n宣告缓刑对所居住社区没有重大不良影响。\n宣告缓刑，可以根据犯罪情况，同时禁止犯罪分子在缓刑考验期限内从事特定活动，进入特定区域、场所、接触特定的人。\n被宣告缓刑的犯罪分子、如果被判处附加刑，附加刑仍须执行。\n4、《中华人民共和国刑事诉讼法》第二百七十七条：\n下列公诉案件，犯罪嫌疑人、被告人真诚悔罪，通过向被害人赔偿损失、赔礼道歉等方式获得被害人谅解，被害人自愿和解的，双方当事人可以和解：\n（一）因民间纠纷引起，涉嫌刑法分则第四章、第五章规定的犯罪案件，可能判处三年有期徒刑以下刑罚的；\n（二）除渎职犯罪以外的可能判处七年有期徒刑以下刑罚的过失犯罪案件。\n犯罪嫌疑人、被告人在五年以内曾经故意犯罪的，不适用本章规定的程序。\n5、《中华人民共和国刑事诉讼法》第二百七十九条：\n对于达成和解协议的案件，公安机关可以向人民检察院提出从宽处理的建议。人民检察院可以向人民法院提出从宽处罚的建议；对于犯罪情节轻微，不需要判处刑罚的，可以作出不起诉的决定。人民法院可以依法对被告人从宽处罚。\n犯罪嫌疑人虽不具有前两款规定的自首情节，但是如实供述自己罪行的，可以从轻处罚；因其如实供述自己罪行，避免特别严重后果发生的，可以减轻处罚。"
+]</div>
+                </div>
+            </details>
+            
+            <div class="scoring-area">
+        <div class="dim-row">专业性: <span class="radio-group"><label><input type="radio" name="专业性_123" value="0"> 0</label><label><input type="radio" name="专业性_123" value="1"> 1</label><label><input type="radio" name="专业性_123" value="2"> 2</label><label><input type="radio" name="专业性_123" value="3"> 3</label><label><input type="radio" name="专业性_123" value="4"> 4</label><label><input type="radio" name="专业性_123" value="5"> 5</label></span></div><div class="dim-row">准确性: <span class="radio-group"><label><input type="radio" name="准确性_123" value="0"> 0</label><label><input type="radio" name="准确性_123" value="1"> 1</label><label><input type="radio" name="准确性_123" value="2"> 2</label><label><input type="radio" name="准确性_123" value="3"> 3</label><label><input type="radio" name="准确性_123" value="4"> 4</label><label><input type="radio" name="准确性_123" value="5"> 5</label></span></div><div class="dim-row">丰富度: <span class="radio-group"><label><input type="radio" name="丰富度_123" value="0"> 0</label><label><input type="radio" name="丰富度_123" value="1"> 1</label><label><input type="radio" name="丰富度_123" value="2"> 2</label><label><input type="radio" name="丰富度_123" value="3"> 3</label><label><input type="radio" name="丰富度_123" value="4"> 4</label><label><input type="radio" name="丰富度_123" value="5"> 5</label></span></div><div class="dim-row">可解释性: <span class="radio-group"><label><input type="radio" name="可解释性_123" value="0"> 0</label><label><input type="radio" name="可解释性_123" value="1"> 1</label><label><input type="radio" name="可解释性_123" value="2"> 2</label><label><input type="radio" name="可解释性_123" value="3"> 3</label><label><input type="radio" name="可解释性_123" value="4"> 4</label><label><input type="radio" name="可解释性_123" value="5"> 5</label></span></div>
+            </div>
+        </div>
+        
+        <div class="case-container" data-idx="12">
+            <div class="case-header">题目 #12 (第二批第 14 题)</div>
+            <div class="fact-text"><b>【案情事实】</b><br>西平县人民检察院指控：（一）销售假冒注册商标的商品罪2012年6月份以来，被告人康某某明知从陌生的烟贩手中购买是假烟的情况下，又将假烟销售给二郎乡邮局南鑫鑫超市、盆尧乡罗阁村委新生活超市、谭店乡关桥街先锋超市、谭店桂河村富良超市、谭店乡祁庄当街的群立超市、谭店乡大武庄腾飞超市。经评估，被告人康某某销售假烟价值115750元。2014年1月份，西平县烟草局稽查大队工作人员在康某某家当场查获黄山、红旗渠、帝豪等假烟。经评估，涉案各种品牌假烟共计价值达2430元。（二）××罪2014年7月份至8月份期间，康某某伙同康某（另案处理）多次在康某家中组织人员推饼赌博，康某某为使自己在赌博中盈利，积极为赌场提供赌博工具，联系参赌人员，累计达20人次以上。就上述指控事实，公诉机关向本院提供了被告人康某某的供述与辩解、证人杨某某、闫某某、祁某某、李某某、武某某等人的证言，扣押物品清单、价格鉴定评估意见、辨认笔录、抓获经过等证据。公诉机关认为，被告人康某某的行为已触犯《中华人民共和国刑法》××、××××之规定，应当以销售假冒注册商标的商品罪、××罪追究其刑事责任。</div>
+            
+            <details>
+                <summary>📑 点击展开/收起：模型作答与参考答案</summary>
+                
+                <div class="ans-section">
+                    <div class="ans-title">1. Ground Truth (真实法条编号) [articles]</div>
+                    <div class="ans-content">[
+  "刑法第225条",
+  "刑法第303条"
+]</div>
+                </div>
+                
+                <div class="ans-section" style="border-left-color: #6f42c1;">
+                    <div class="ans-title">2. 法条具体内容 [law_articles]</div>
+                    <div class="ans-content">《中华人民共和国刑法》第三百零三条　【赌博罪】以营利为目的，聚众赌博或者以赌博为业的，处三年以下有期徒刑、拘役或者管制，并处罚金。
+
+　　【开设赌场罪】开设赌场的，处五年以下有期徒刑、拘役或者管制，并处罚金；情节严重的，处五年以上十年以下有期徒刑，并处罚金。
+
+　　【组织参与国（境）外赌博罪】组织中华人民共和国公民参与国（境）外赌博，数额巨大或者有其他严重情节的，依照前款的规定处罚。
+《中华人民共和国刑法》第二百一十四条　【销售假冒注册商标的商品罪】销售明知是假冒注册商标的商品，违法所得数额较大或者有其他严重情节的，处三年以下有期徒刑，并处或者单处罚金；违法所得数额巨大或者有其他特别严重情节的，处三年以上十年以下有期徒刑，并处罚金。</div>
+                </div>
+                
+                <div class="ans-section">
+                    <div class="ans-title">3. 预测法条编号 [law_numbers]</div>
+                    <div class="ans-content">[
+  "刑法第303条",
+  "刑法第214条"
+]</div>
+                </div>
+                
+                <div class="ans-section" style="border-left-color: #28a745;">
+                    <div class="ans-title">4. RAG 模式作答 [response_aa]</div>
+                    <div class="ans-content">康某某犯有销售假冒注册商标的商品罪、开设赌场罪。康某某明知购买的烟是假烟，却将其销售给他人，违法所得数额较大，构成销售假冒注册商标的商品罪。康某某与康某在康某家中组织人员推饼赌博，为赌场提供赌博工具，累计达20人次以上，构成开设赌场罪。</div>
+                </div>
+                
+                <div class="ans-section" style="border-left-color: #dc3545;">
+                    <div class="ans-title">5. 无 RAG 模式作答 [response_analysis_no_rag]</div>
+                    <div class="ans-content">康某某犯有销售假冒注册商标的商品罪和赌博罪。康某某明知购买的烟是假烟，又将其销售给他人，构成销售假冒注册商标的商品罪。康某某伙同他人在家中组织赌博，为赌场提供赌博工具，联系参赌人员，构成赌博罪。</div>
+                </div>
+                
+                <div class="ans-section" style="border-left-color: #ffc107;">
+                    <div class="ans-title">6. 检索到的相似案例 [similar_cases]</div>
+                    <div class="ans-content">[
+  "（2015）宣刑初字第00048号\n公诉机关安徽省宣城市宣州区人民检察院。\n被告人张某甲，男，住福建省云霄县。因涉嫌犯销售伪劣产品罪，于2014年6月17日被抓获，2014年6月18日被宣城市公安局直属分局刑事拘留，同年7月15日经宣城市宣州区人民检察院批准逮捕，次日由宣城市公安局直属分局执行逮捕。现羁押于宣城市看守所。\n宣城市宣州区人民检察院以宣州检刑诉（2015）15号起诉书指控被告人张某甲犯非法经营罪，于2015年1月23日向本院提起公诉。本院受理后，依法组成合议庭，适用简易程序，于2015年2月9日、3月4日公开开庭审理了本案。宣城市宣州区人民检察院指派检察员徐珺出庭支持公诉，被告人张某甲到庭参加诉讼。本案现已审理终结。\n宣城市宣州区人民检察院指控：被告人张某甲非法经营，情节特别严重，其行为已触犯刑律，构成非法经营罪。为证明指控的事实，检察机关提交了相应的证据，提请本院依照《中华人民共和国刑法》第二百二十五条之规定，予以惩处。\n被告人张某甲当庭对起诉书指控的犯罪事实和罪名不持异议，表示自愿认罪。\n经审理查明：2012年初，被告人张某甲通过他人与家住宣城市区的熊某（另案处理）认识，后被告人张某甲来到宣城与熊某见面商定假烟买卖事宜。2012年3月份开始，被告人张某甲多次将硬盒中华（每条120元）、芙蓉王（每条80元）、新版利群（每条50元）三种品牌假冒卷烟通过“圆通快递”运输至宣城销售给熊某，熊某将购买假烟的烟款通过中国农业银行ATM机打款至张某甲提供的用其姐姐张某乙身份证办理的两个银行账户，共打款423416元。\n自2014年3月起，被告人张某甲将假冒的磨砂黄果树牌卷烟销售给家住贵州省金沙县某某镇的张某丙，张某丙将7000元烟款汇至张某甲以其姐姐张某乙名义办理的农行卡上。\n2014年6月17日，被告人张某甲被公安机关抓获，在接受公安人员讯问时，均如实供述了犯罪事实。\n上述事实，被告人张某甲在开庭审理过程中均无异议，且自愿认罪，并有经庭审举证、质证，查证属实的书证立案决定书、户籍证明、村委会证明、抓获经过、协助查询财产通知书、农行借记卡明细表、辨认笔录及照片、检验报告、宣城市烟草局现行登记保存通知书、接受证据清单，证人熊某、张某丙的证言，被告人张某甲的供述和辩解等证据予以证据，足以认定。\n本院认为：被告人张某甲违反国家烟草专卖管理法规，未经烟草专卖行政主管部门许可，无烟草专卖批发、零售许可证，非法经营烟草专卖，扰乱市场秩序，情节特别严重，其行为已触犯刑律，构成非法经营罪。公诉机关指控的事实和罪名成立，本院予以支持。被告人张某甲到案后在接受公安人员讯问时如实供述犯罪事实，庭审中亦能如实供述，系坦白，依法可以从轻处罚。被告人张某甲当庭自愿认罪，可酌情从轻处罚。综合被告人张某甲的犯罪事实、性质及社会危害性，决定对其从轻处罚。依照《中华人民共和国刑法》第二百二十五条第（一）项、第六十四条、第六十七条第三款及最高人民法院、最高人民检察院《关于办理非法生产、销售烟草专卖品等刑事案件具体应用法律若干问题的解释》第三条第二款（一）项之规定，判决如下：\n一、被告人张某甲犯非法经营罪，判处有期徒刑五年六个月，并处罚金八万元。\n（刑期从判决生效之日起计算。判决执行以前先行羁押的，羁押一日折抵刑期一日，即自2014年6月18日起至2019年12月16日止；罚金于本判决生效后十日内缴纳。）\n二、被告人张某甲德违法所得，予以追缴。\n如不服本判决，可在接到判决书的第二日起十日内，通过本院或者直接向安徽省宣城市中级人民法院提出上诉。书面上诉的，应当提交上诉状正本一份，副本二份。\n审判长许恒华\n人民陪审员罗宣林\n人民陪审员周江生\n二〇一五年三月四日\n书记员胡建强"
+]</div>
+                </div>
+            </details>
+            
+            <div class="scoring-area">
+        <div class="dim-row">专业性: <span class="radio-group"><label><input type="radio" name="专业性_12" value="0"> 0</label><label><input type="radio" name="专业性_12" value="1"> 1</label><label><input type="radio" name="专业性_12" value="2"> 2</label><label><input type="radio" name="专业性_12" value="3"> 3</label><label><input type="radio" name="专业性_12" value="4"> 4</label><label><input type="radio" name="专业性_12" value="5"> 5</label></span></div><div class="dim-row">准确性: <span class="radio-group"><label><input type="radio" name="准确性_12" value="0"> 0</label><label><input type="radio" name="准确性_12" value="1"> 1</label><label><input type="radio" name="准确性_12" value="2"> 2</label><label><input type="radio" name="准确性_12" value="3"> 3</label><label><input type="radio" name="准确性_12" value="4"> 4</label><label><input type="radio" name="准确性_12" value="5"> 5</label></span></div><div class="dim-row">丰富度: <span class="radio-group"><label><input type="radio" name="丰富度_12" value="0"> 0</label><label><input type="radio" name="丰富度_12" value="1"> 1</label><label><input type="radio" name="丰富度_12" value="2"> 2</label><label><input type="radio" name="丰富度_12" value="3"> 3</label><label><input type="radio" name="丰富度_12" value="4"> 4</label><label><input type="radio" name="丰富度_12" value="5"> 5</label></span></div><div class="dim-row">可解释性: <span class="radio-group"><label><input type="radio" name="可解释性_12" value="0"> 0</label><label><input type="radio" name="可解释性_12" value="1"> 1</label><label><input type="radio" name="可解释性_12" value="2"> 2</label><label><input type="radio" name="可解释性_12" value="3"> 3</label><label><input type="radio" name="可解释性_12" value="4"> 4</label><label><input type="radio" name="可解释性_12" value="5"> 5</label></span></div>
+            </div>
+        </div>
+        
+        <div class="case-container" data-idx="11">
+            <div class="case-header">题目 #11 (第二批第 15 题)</div>
+            <div class="fact-text"><b>【案情事实】</b><br>哈尔滨市香坊区人民检察院指控,被告人梁某某在挂靠XX公司期间，由于其承揽XX安装工程需要其提供发票结算人工费用，梁某某在明知出票单位XX公司与受票单位XX公司没有真实业务往来的情况下，于2016年4月28日，通过支付15000元的费用，从哈尔滨市先锋路钢材市场一男子手中购买了伪造的票号为00456006的黑龙江增值税普通发票1张，票面金额共计500000元，现该发票已被XX公司入账。经鉴定：此项业务造成应申报而未申报税费23810.66元。2016年7月7日，梁某某经公安机关电话传唤到案，并如实供述犯罪事实。公诉机关认为，梁某某的行为已构成××罪，系自首，提请本院适用《中华人民共和国刑法》××××××、××××的规定予以处罚。</div>
+            
+            <details>
+                <summary>📑 点击展开/收起：模型作答与参考答案</summary>
+                
+                <div class="ans-section">
+                    <div class="ans-title">1. Ground Truth (真实法条编号) [articles]</div>
+                    <div class="ans-content">[
+  "刑法第205条"
+]</div>
+                </div>
+                
+                <div class="ans-section" style="border-left-color: #6f42c1;">
+                    <div class="ans-title">2. 法条具体内容 [law_articles]</div>
+                    <div class="ans-content">《中华人民共和国刑法》第二百一十条　【盗窃罪】盗窃增值税专用发票或者可以用于骗取出口退税、抵扣税款的其他发票的，依照本法第二百六十四条的规定定罪处罚。
+
+　　【诈骗罪】使用欺骗手段骗取增值税专用发票或者可以用于骗取出口退税、抵扣税款的其他发票的，依照本法第二百六十六条的规定定罪处罚。
+
+《中华人民共和国刑法》第二百一十条之一　【持有伪造的发票罪】明知是伪造的发票而持有，数量较大的，处二年以下有期徒刑、拘役或者管制，并处罚金；数量巨大的，处二年以上七年以下有期徒刑，并处罚金。
+
+　　单位犯前款罪的，对单位判处罚金，并对其直接负责的主管人员和其他直接责任人员，依照前款的规定处罚。</div>
+                </div>
+                
+                <div class="ans-section">
+                    <div class="ans-title">3. 预测法条编号 [law_numbers]</div>
+                    <div class="ans-content">[
+  "刑法第210条"
+]</div>
+                </div>
+                
+                <div class="ans-section" style="border-left-color: #28a745;">
+                    <div class="ans-title">4. RAG 模式作答 [response_aa]</div>
+                    <div class="ans-content">梁某某犯有持有伪造的发票罪。梁某某明知出票单位与受票单位没有真实业务往来的情况下，购买了伪造的发票，属于持有伪造的发票罪。</div>
+                </div>
+                
+                <div class="ans-section" style="border-left-color: #dc3545;">
+                    <div class="ans-title">5. 无 RAG 模式作答 [response_analysis_no_rag]</div>
+                    <div class="ans-content">梁某某犯有虚开发票罪。梁某某明知出票单位与受票单位没有真实业务往来的情况下，购买了伪造的增值税普通发票，造成应申报而未申报税费，构成虚开发票罪。</div>
+                </div>
+                
+                <div class="ans-section" style="border-left-color: #ffc107;">
+                    <div class="ans-title">6. 检索到的相似案例 [similar_cases]</div>
+                    <div class="ans-content">[
+  "（2016）黑0203刑初114号\n公诉机关黑龙江省齐齐哈尔市建华区人民检察院。\n被告人邵xx，男，出生于黑龙江省齐齐哈尔市，汉族，大专文化。2014年11月28日因涉嫌犯持有伪造的发票罪被刑事拘留，同年12月4日被取保候审，2015年12月3日被监视居住。\n黑龙江省齐齐哈尔市建华区人民检察院以齐建检公诉刑诉〔2016〕68号起诉书指控被告人邵xx犯持有伪造的发票罪，于2016年3月11向本院提起公诉。本院依法组成合议庭，公开开庭审理了本案。齐齐哈尔市建华区人民检察院指派检察员郑凤春出庭支持公诉，被告人邵xx到庭参加诉讼。本案经本院审判委员会讨论，现已审理终结。\n经审理查明：2014年11月份，被告人邵xx从他人处，以3000元的价格购买辽宁增值税专用发票2份、湖北增值税专用发票1份、黑龙江增值税专用发票1份（票面累计金额1570000元）；购买建筑业统一发票1张（票面金额3408000元）。经鉴定，以上发票均系伪造。案发后，发票被依法扣押。\n公诉机关建议判处邵xx二年以下有期徒刑，并处罚金，邵xx对公诉机关的指控及量刑建议无异议。\n上述事实，有公诉机关提交，并经法庭质证、认证的下列证据予以证实：\n（一）书证\n1.扣押清单、快递单，证实公安机关将假发票查获并扣押。\n2.营业执照，证实黑龙江华安民爆器材有限责任公司具有法人资格。\n3.武汉市东湖新技术开发区国家税务局政府信息公开告知书，证实湖北增值税专用发票1份系伪造。\n4.发票鉴定书，证实建筑业统一发票1张系伪造。\n（二）证人证言\n证人于xx、李x的证言，证实没有让邵xx购买过假发票。\n（三）被告人的供述\n邵xx的供述，证实其对公诉机关指控其持有假发票的事实供认不讳。\n（四）抓获及破案经过\n抓获及破案经过，证实案件的侦破过程。\n上列证据来源合法，且客观真实、关联一致，本院均予确认。\n本院认为：被告人邵xx明知是伪造的发票而持有，数量较大，其行为构成持有伪造的发票罪。公诉机关的指控事实清楚，证据确实、充分，罪名成立。邵xx持有伪造的发票票面金额为4978000元，数额巨大，依法应处二年以上七年以下有期徒刑，并处罚金。邵xx案发后如实供述自己的犯罪事实，积极交纳罚金，可对其从轻处罚。公诉机关的量刑建议适当，予以采纳。依照《中华人民共和国刑法》第二百一十条之一第一款、第六十七条第三款、第七十二条第一款、第五十二条、第五十三条、第六十四条的规定，判决如下：\n被告人邵xx犯持有伪造的发票罪，判处有期徒刑二年，缓刑二年，并处罚金人民币二万元（已交纳），上缴国库。\n（缓刑考验期限，从判决确定之日起计算。）\n如不服本判决，可在接到判决书的第二日起十日内，通过本院或者直接向齐齐哈尔市中级人民法院提出上诉。书面上诉的，应当提交上诉状正本一份，副本五份。\n审判长王萍\n人民陪审员崔阳\n人民陪审员张文静\n\n\n二〇一六年四月十四日\n书记员闻家宝"
+]</div>
+                </div>
+            </details>
+            
+            <div class="scoring-area">
+        <div class="dim-row">专业性: <span class="radio-group"><label><input type="radio" name="专业性_11" value="0"> 0</label><label><input type="radio" name="专业性_11" value="1"> 1</label><label><input type="radio" name="专业性_11" value="2"> 2</label><label><input type="radio" name="专业性_11" value="3"> 3</label><label><input type="radio" name="专业性_11" value="4"> 4</label><label><input type="radio" name="专业性_11" value="5"> 5</label></span></div><div class="dim-row">准确性: <span class="radio-group"><label><input type="radio" name="准确性_11" value="0"> 0</label><label><input type="radio" name="准确性_11" value="1"> 1</label><label><input type="radio" name="准确性_11" value="2"> 2</label><label><input type="radio" name="准确性_11" value="3"> 3</label><label><input type="radio" name="准确性_11" value="4"> 4</label><label><input type="radio" name="准确性_11" value="5"> 5</label></span></div><div class="dim-row">丰富度: <span class="radio-group"><label><input type="radio" name="丰富度_11" value="0"> 0</label><label><input type="radio" name="丰富度_11" value="1"> 1</label><label><input type="radio" name="丰富度_11" value="2"> 2</label><label><input type="radio" name="丰富度_11" value="3"> 3</label><label><input type="radio" name="丰富度_11" value="4"> 4</label><label><input type="radio" name="丰富度_11" value="5"> 5</label></span></div><div class="dim-row">可解释性: <span class="radio-group"><label><input type="radio" name="可解释性_11" value="0"> 0</label><label><input type="radio" name="可解释性_11" value="1"> 1</label><label><input type="radio" name="可解释性_11" value="2"> 2</label><label><input type="radio" name="可解释性_11" value="3"> 3</label><label><input type="radio" name="可解释性_11" value="4"> 4</label><label><input type="radio" name="可解释性_11" value="5"> 5</label></span></div>
+            </div>
+        </div>
+        
+        <div class="case-container" data-idx="31">
+            <div class="case-header">题目 #31 (第二批第 16 题)</div>
+            <div class="fact-text"><b>【案情事实】</b><br>泸水县人民检察院指控，2013年7月4日22时，泸水县森林公安局民警巡逻时，在泸水县古登乡隔界河对被告人花某某驾驶的蓝色解放小卡车（车牌号：云Q30XXX）进行检查，当场从车上查获疑似红豆杉木材40件（规格为：长100cm、宽48cm、高10cm）。经泸水县林业局鉴定，40件木材为红豆杉，已列入国家一级重点保护植物，木材材积为1.92立方米。针对指控的上述事实，公诉机关当庭举示的证据材料有：受案登记表、户口证明、查获经过、被告人的供述与辩解、证人证言、现场勘验检查笔录、刑事技术照片、现场指认笔录等。据此，公诉机关认为，被告人花某某明知是红豆杉木材而非法运输的行为已触犯了《中华人民共和国刑法》××之规定，涉嫌构成非法运输国家重点保护植物罪，犯罪事实清楚、证据确实充分，应以非法运输国家重点保护植物罪追究其刑事责任。同时提出对被告人花某某在一年至二年××内幅度判处刑罚，并处罚金，可以适用××的量刑建议。</div>
+            
+            <details>
+                <summary>📑 点击展开/收起：模型作答与参考答案</summary>
+                
+                <div class="ans-section">
+                    <div class="ans-title">1. Ground Truth (真实法条编号) [articles]</div>
+                    <div class="ans-content">[
+  "刑法第344条"
+]</div>
+                </div>
+                
+                <div class="ans-section" style="border-left-color: #6f42c1;">
+                    <div class="ans-title">2. 法条具体内容 [law_articles]</div>
+                    <div class="ans-content">《中华人民共和国刑法》第三百四十四条　【危害国家重点保护植物罪】违反国家规定，非法采伐、毁坏珍贵树木或者国家重点保护的其他植物的，或者非法收购、运输、加工、出售珍贵树木或者国家重点保护的其他植物及其制品的，处三年以下有期徒刑、拘役或者管制，并处罚金；情节严重的，处三年以上七年以下有期徒刑，并处罚金。
+
+《中华人民共和国刑法》第三百四十四条之一　【非法引进、释放、丢弃外来入侵物种罪】违反国家规定，非法引进、释放或者丢弃外来入侵物种，情节严重的，处三年以下有期徒刑或者拘役，并处或者单处罚金。</div>
+                </div>
+                
+                <div class="ans-section">
+                    <div class="ans-title">3. 预测法条编号 [law_numbers]</div>
+                    <div class="ans-content">[
+  "刑法第344条"
+]</div>
+                </div>
+                
+                <div class="ans-section" style="border-left-color: #28a745;">
+                    <div class="ans-title">4. RAG 模式作答 [response_aa]</div>
+                    <div class="ans-content">被告人花某某犯有非法运输国家重点保护植物罪。根据《中华人民共和国刑法》第三百四十四条，非法运输国家重点保护植物的行为构成犯罪。</div>
+                </div>
+                
+                <div class="ans-section" style="border-left-color: #dc3545;">
+                    <div class="ans-title">5. 无 RAG 模式作答 [response_analysis_no_rag]</div>
+                    <div class="ans-content">被告人花某某明知是红豆杉木材而非法运输的行为已触犯了《中华人民共和国刑法》第三百四十四条之规定，涉嫌构成非法运输国家重点保护植物罪。</div>
+                </div>
+                
+                <div class="ans-section" style="border-left-color: #ffc107;">
+                    <div class="ans-title">6. 检索到的相似案例 [similar_cases]</div>
+                    <div class="ans-content">[
+  "（2016）吉7603刑初37号\n\n公诉机关吉林省红石林区人民检察院。\n\n被告人王某某，男，汉族，吉林省桦甸市人，小学文化，农民职业，住吉林省桦甸市。因涉嫌非法毁坏国家重点保护植物，于2016年1月20日被吉林省森林公安局红石森林公安分局取保候审。本院于2016年6月13日重新对其取保候审。\n\n红石林区人民检察院以红林检刑诉（2016）38号起诉书指控被告人王某某犯非法毁坏国家重点保护植物罪，于2016年6月13日向本院提起公诉。本院依法适用简易程序，实行独任审判，公开开庭审理了本案。红石林区人民检察院检察员王兰香出庭支持公诉，被告人王某某到庭参加了诉讼。现已审理终结。\n\n公诉机关指控：2016年1月18日，被告人王某某在红石林业局二道沟林场第16林班内运输木材的过程中，为方便车辆运行，非法毁坏国家重点保护植物黄檗1株，核立木材积0.0204立方米，并致其死亡。\n\n上述事实，被告人在开庭审理过程中亦无异议，并有被告人王某某的供述，证人陈某某、王某甲、任某某的证言，红石森林公安分局现场勘查笔录及照片，鉴定意见，书证等证据予以证实，足以认定。\n\n本院认为：被告人王某某违反国家规定，非法毁坏国家重点保护植物黄檗1株，其行为已构成非法毁坏国家重点保护植物罪。公诉机关指控其犯非法毁坏国家重点保护植物罪的事实清楚，证据确实、充分，罪名成立，本院予以支持。被告人王某某当庭自愿认罪，且经本院主持调解，与受损单位吉林省红石林业局自愿达成复绿补种协议，可酌情从轻处罚。经委托司法行政机关评估，对其适用非监禁刑对其所居住的社区无重大不良影响，符合社区矫正条件。根据本案的具体情节及社会危害程度，依照《中华人民共和国刑法》第三百四十四条，第五十二条，第五十三条第一款，七十二条第一款、第三款，第七十三条第一款、第三款之规定，判决如下：\n\n被告人王某某犯非法毁坏国家重点保护植物罪，判处拘役三个月，缓刑六个月，并处罚金人民币1000元（缓刑考验期限，从判决确定之日起计算；罚金自判决生效后三日内一次性缴纳）。\n\n如不服本判决，可在接到判决书之次日起十日内，通过本院或者直接向吉林省长春林区中级法院提出上诉。书面上诉的，应当提交上诉状正本一份，副本两份。\n\n审判员徐雪峰\n\n\n二〇一六年六月二十四日\n\n书记员于晶"
+]</div>
+                </div>
+            </details>
+            
+            <div class="scoring-area">
+        <div class="dim-row">专业性: <span class="radio-group"><label><input type="radio" name="专业性_31" value="0"> 0</label><label><input type="radio" name="专业性_31" value="1"> 1</label><label><input type="radio" name="专业性_31" value="2"> 2</label><label><input type="radio" name="专业性_31" value="3"> 3</label><label><input type="radio" name="专业性_31" value="4"> 4</label><label><input type="radio" name="专业性_31" value="5"> 5</label></span></div><div class="dim-row">准确性: <span class="radio-group"><label><input type="radio" name="准确性_31" value="0"> 0</label><label><input type="radio" name="准确性_31" value="1"> 1</label><label><input type="radio" name="准确性_31" value="2"> 2</label><label><input type="radio" name="准确性_31" value="3"> 3</label><label><input type="radio" name="准确性_31" value="4"> 4</label><label><input type="radio" name="准确性_31" value="5"> 5</label></span></div><div class="dim-row">丰富度: <span class="radio-group"><label><input type="radio" name="丰富度_31" value="0"> 0</label><label><input type="radio" name="丰富度_31" value="1"> 1</label><label><input type="radio" name="丰富度_31" value="2"> 2</label><label><input type="radio" name="丰富度_31" value="3"> 3</label><label><input type="radio" name="丰富度_31" value="4"> 4</label><label><input type="radio" name="丰富度_31" value="5"> 5</label></span></div><div class="dim-row">可解释性: <span class="radio-group"><label><input type="radio" name="可解释性_31" value="0"> 0</label><label><input type="radio" name="可解释性_31" value="1"> 1</label><label><input type="radio" name="可解释性_31" value="2"> 2</label><label><input type="radio" name="可解释性_31" value="3"> 3</label><label><input type="radio" name="可解释性_31" value="4"> 4</label><label><input type="radio" name="可解释性_31" value="5"> 5</label></span></div>
+            </div>
+        </div>
+        
+        <div class="case-container" data-idx="68">
+            <div class="case-header">题目 #68 (第二批第 17 题)</div>
+            <div class="fact-text"><b>【案情事实】</b><br>公诉机关指控，2011年3月，被告人谭1某经他人介绍认识朱某某等人，商议共同投资注册成立上海希鸣物流管理有限公司（以下简称希鸣管理公司）。同年3月至10月，朱某某等人将1000余万某投资款陆续注入谭1某开办的上海希鸣物流有限公司（以下简称希鸣公司）账户内作为成立希鸣管理公司的投资款。期间，谭1某利用其担任希鸣管理公司、希鸣公司经营负责人的职务便利，未经投资人同意擅自将上述投资款中的110余万某陆续转入其个人银行卡上，归个人使用，至2012年10月案发一直未归还。2013年3月26日，被告人谭1某在北京市被民警抓获，其到案后未如实供述上述犯罪事实。公诉机关指控的证据有：证人朱某某、王某某、廖某某、顾某某、刘2某、高某、刘1某、程某某、陈某的证言，《股东投资协议》、《承诺书》、上海希鸣物流管理有限公司《股东会会议纪要》，希鸣公司银行账户明细、收报清单、收条、收据、银行贷记回单、借条，机动车销售发票、签购单，谭1某个人银行卡开户信息、交易明细，希鸣公司、希鸣管理公司的工商登记信息，刑事案件登记表、案发经过，公安机关出具的《情况说明》，常住人口基本信息、刑事判决书及谭1某的供述等。公诉人认为，被告人谭1某利用职务上的便利，挪用公司资金归个人使用，数额巨大，超过三个月未归还，其行为已构成××罪。关于谭1某认为挪用的资金中存在属于其个人的钱款，公诉人当庭认为，廖某某已经明确否认其与谭1某之间存在增资、减资的协议，谭1某亦无法提供其他证据证实其辩解。公诉人在计算谭1某××的金额时已经扣除了同时期希鸣公司银行账户内除投资人投资款之外的其他进项金额，故谭1某关于转账的金额中存在其个人资金的辩解无法成立。综上，建议对谭1某判处四年以上五年以下××。被告人谭1某对公诉机关指控的事实和罪名不予认可，认为股东投资的目的并非为了成立希鸣管理公司。从希鸣公司账户转入其个人银行账户的手续由财务人员操作，且转入的资金中包括属于其个人的钱款，即因廖某某增资、其减资而发生的廖某某向某支付的钱款，具体金额应参见公司账本，对于公司账本其无法提供，亦不清楚去处。辩护人对公诉机关指控的事实和罪名不予认可，认为涉案资金并非用于投资希鸣管理公司，且认定谭1某××罪的证据不足。</div>
+            
+            <details>
+                <summary>📑 点击展开/收起：模型作答与参考答案</summary>
+                
+                <div class="ans-section">
+                    <div class="ans-title">1. Ground Truth (真实法条编号) [articles]</div>
+                    <div class="ans-content">[
+  "刑法第272条"
+]</div>
+                </div>
+                
+                <div class="ans-section" style="border-left-color: #6f42c1;">
+                    <div class="ans-title">2. 法条具体内容 [law_articles]</div>
+                    <div class="ans-content">《中华人民共和国刑法》第二百七十二条　【挪用资金罪】公司、企业或者其他单位的工作人员，利用职务上的便利，挪用本单位资金归个人使用或者借贷给他人，数额较大、超过三个月未还的，或者虽未超过三个月，但数额较大、进行营利活动的，或者进行非法活动的，处三年以下有期徒刑或者拘役；挪用本单位资金数额巨大的，处三年以上七年以下有期徒刑；数额特别巨大的，处七年以上有期徒刑。
+
+　　【挪用公款罪】国有公司、企业或者其他国有单位中从事公务的人员和国有公司、企业或者其他国有单位委派到非国有公司、企业以及其他单位从事公务的人员有前款行为的，依照本法第三百八十四条的规定定罪处罚。
+
+　　有第一款行为，在提起公诉前将挪用的资金退还的，可以从轻或者减轻处罚。其中，犯罪较轻的，可以减轻或者免除处罚。</div>
+                </div>
+                
+                <div class="ans-section">
+                    <div class="ans-title">3. 预测法条编号 [law_numbers]</div>
+                    <div class="ans-content">[
+  "刑法第272条"
+]</div>
+                </div>
+                
+                <div class="ans-section" style="border-left-color: #28a745;">
+                    <div class="ans-title">4. RAG 模式作答 [response_aa]</div>
+                    <div class="ans-content">被告人谭1某犯有挪用资金罪。根据《中华人民共和国刑法》第二百七十二条，公司、企业或其他单位的工作人员，利用职务上的便利，挪用本单位资金归个人使用或借贷给他人，数额较大、超过三个月未还的，构成挪用资金罪。根据案件事实，谭1某利用其担任希鸣管理公司、希鸣公司经营负责人的职务便利，未经投资人同意擅自将投资款转入其个人银行卡上，归个人使用，至案发一直未归还。因此，谭1某犯有挪用资金罪。</div>
+                </div>
+                
+                <div class="ans-section" style="border-left-color: #dc3545;">
+                    <div class="ans-title">5. 无 RAG 模式作答 [response_analysis_no_rag]</div>
+                    <div class="ans-content">被告人谭1某犯有挪用资金罪。根据《刑法》第二百七十二条，公司、企业或其他单位的工作人员，利用职务上的便利，挪用本单位资金归个人使用，数额较大、超过三个月未还的，处三年以下有期徒刑或者拘役。</div>
+                </div>
+                
+                <div class="ans-section" style="border-left-color: #ffc107;">
+                    <div class="ans-title">6. 检索到的相似案例 [similar_cases]</div>
+                    <div class="ans-content">[
+  "（2020）沪0114刑初1417号\n公诉机关上海市嘉定区人民检察院。\n被告人段某(自报)，女，1999年3月27日出生，汉族，户籍所在地湖南省冷水江市。\n辩护人谭俞，湖南红日律师事务所律师。\n上海市嘉定区人民检察院以沪嘉检三部刑诉[2020]1069号起诉书指控被告人段某犯挪用资金罪，于2020年8月25向本院提起公诉。本院受理后，依法组成合议庭，公开开庭审理了本案。上海市嘉定区人民检察院指派检察员诸某某出庭支持公诉。被告人段某、辩护人谭俞、被害单位诉讼代理人周海波到庭参加诉讼。其间，上海市嘉定区人民检察院建议延期审理。现已审理终结。\n公诉机关指控，2019年1月至12月，被告人段某在担任鑫笙经营部与天厚公司财务期间，利用其经手天厚公司货款的职务便利，通过截留货款、让他人制作虚假余额调节表等方法，多次挪用天厚公司货款共计人民币104万余元(以下币种相同)归个人使用，至今未予归还。\n2020年5月3日，被告人段某明知被害单位报警仍予以等候，到案后如实供述了主要犯罪事实。\n为支持上述指控的事实，公诉机关出示了证人张某某的证言及报案材料，证人林1、林某2、林某3、李某、刘某等人的证言，公安机关出具的受案登记表、案发经过，有关的记账本、财务、银行存款凭证、银行交易明细、调节表、会计鉴定意见书、营业执照、劳动合同及被告人段某的户籍信息、供述等。据此，公诉机关认为：被告人段某利用自己的职务便利，挪用本单位资金归个人使用，数额较大、超过三个月未还，其行为已触犯《中华人民共和国刑法》第二百七十二条第一款之规定，应当以挪用资金罪追究其刑事责任；被告人段某认罪认罚，可以从宽处理；具有自首情节，可以从轻处罚；建议对其判处有期徒刑一年四个月。\n被害单位诉讼代理人对指控的基本事实不表异议，但认为被告人段某的行为应认定为职务侵占罪，理由为：段某对涉案资金缺乏归还能力，其在占有涉案资金时，通过修改对账调节表的方式已将账目做平，使公司长期处于未知状态，且对于涉案资金的去向供述矛盾，故其对涉案资金具有非法占有的目的。同时，诉讼代理人还认为，被告人段某对于资金去向等方面的供述存在矛盾，故没有如实供述，不应认定为自首。\n被告人段某对指控的事实及罪名无异议，自愿认罪认罚，希望法庭对其从轻处罚，其供认挪用的资金是一开始用于消费，后投入网络平台理财，但平台关闭钱款难以收回，其最初想通过工资归还，后又联系家属为其归还，目前家中没有能力为其退款。\n其辩护人对公诉机关指控的事实、罪名、量刑建议无异议，认为段某的主观故意是为了取得被害单位的资金使用权，没有非法占有的主观故意；鉴定意见书证实其在2019年3月、10月给被害单位账户多存入了两笔钱款，有归还的行为；虚假的财务表的目的是为了掩盖资金的挪用行为，其是利用了自己的职务和财务监管的漏洞，故其行为定性是挪用资金；被害单位已经告知其相关后果，其仍然等候在现场没有逃避，到案后供述总体稳定，应认定为具有自首情节。\n经审理查明，鑫笙经营部与被害单位天厚公司间存在部分员工共用、资金调配使用的情形，实际经营地在上海市嘉定区张掖路XXX号。2019年间，被告人段某利用其担任鑫笙经营部、天厚公司出纳，收取、上缴天厚公司货款、营业款等现金款项的职务便利，多次截留被害单位天厚公司资金累积计104万余元，该款被其个人使用，至今未予归还。其间，段某又以款项缴纳至错误银行账户、其需要时间联系银行处理等为由，让同事为其出具含有虚假内容的鑫笙经营部、天厚公司对账调节表，以拖延、搪塞被害单位天厚公司的核查。\n2020年5月3日，段某明知单位报警，仍等候公安人员，并在到案后供述了上述基本犯罪事实。\n上述事实经质证、确认的证人张某某的证言及报案材料，证人林1、林某2、林某3、李某、刘某等人的证言，公安机关出具的受案登记表、案发经过，有关的记账本、财务、银行存款凭证、银行交易明细、调节表、会计鉴定意见书、营业执照、劳动合同及被告人段某的户籍信息、供述等证据证实，足以认定。\n本院认为，被告人段某作为单位工作人员，利用职务上的便利，挪用本单位资金归个人使用，数额较大、超过三个月未还，其行为已构成挪用资金罪。根据现有证据，尚不能证实被告人段某在本案中具有将涉案资金侵吞、非法占有的主观故意，故对被害单位诉讼代理人关于本案应定性为职务侵占的意见，本院不予支持。被告人段某明知单位报警，仍等候处理，到案后尚能供认主要犯罪事实，故控、辩双方认为，段某具有自首情节，可以从轻处罚的意见，合法有据，本院予以采纳。结合段某作案的次数、手段，能自愿认罪认罚等，本院在量刑时一并予以考虑，并采纳控、辩双方的量刑建议。现为严肃国法，保障公司、企业或者其他单位资金的使用收益权不受侵犯，依照《中华人民共和国刑法》第六十七条第一款、第六十四条、1997年修订的《中华人民共和国刑法》第二百七十二条第一款、《中华人民共和国刑事诉讼法》第十五条及《最高人民法院关于处理自首和立功具体应用法律若干问题的解释》第一条之规定，判决如下：\n一、被告人段某犯挪用资金罪，判处有期徒刑一年四个月。\n(刑期从判决执行之日起计算。判决执行以前先行羁押的，羁押一日折抵刑期一日，即自2020年5月3日起至2021年9月2日止。)\n二、责令被告人段某退赔挪用的资金，发还被害单位。\n如不服本判决，可在接到判决书的第二日起十日内，通过本院或者直接向上海市第二中级人民法院提出上诉。书面上诉的，应当提交上诉状正本一份，副本两份。\n\n\n审判长吴颂华\n人民陪审员徐祖荣\n书记员吴丹凌\n二〇二一年四月七日"
+]</div>
+                </div>
+            </details>
+            
+            <div class="scoring-area">
+        <div class="dim-row">专业性: <span class="radio-group"><label><input type="radio" name="专业性_68" value="0"> 0</label><label><input type="radio" name="专业性_68" value="1"> 1</label><label><input type="radio" name="专业性_68" value="2"> 2</label><label><input type="radio" name="专业性_68" value="3"> 3</label><label><input type="radio" name="专业性_68" value="4"> 4</label><label><input type="radio" name="专业性_68" value="5"> 5</label></span></div><div class="dim-row">准确性: <span class="radio-group"><label><input type="radio" name="准确性_68" value="0"> 0</label><label><input type="radio" name="准确性_68" value="1"> 1</label><label><input type="radio" name="准确性_68" value="2"> 2</label><label><input type="radio" name="准确性_68" value="3"> 3</label><label><input type="radio" name="准确性_68" value="4"> 4</label><label><input type="radio" name="准确性_68" value="5"> 5</label></span></div><div class="dim-row">丰富度: <span class="radio-group"><label><input type="radio" name="丰富度_68" value="0"> 0</label><label><input type="radio" name="丰富度_68" value="1"> 1</label><label><input type="radio" name="丰富度_68" value="2"> 2</label><label><input type="radio" name="丰富度_68" value="3"> 3</label><label><input type="radio" name="丰富度_68" value="4"> 4</label><label><input type="radio" name="丰富度_68" value="5"> 5</label></span></div><div class="dim-row">可解释性: <span class="radio-group"><label><input type="radio" name="可解释性_68" value="0"> 0</label><label><input type="radio" name="可解释性_68" value="1"> 1</label><label><input type="radio" name="可解释性_68" value="2"> 2</label><label><input type="radio" name="可解释性_68" value="3"> 3</label><label><input type="radio" name="可解释性_68" value="4"> 4</label><label><input type="radio" name="可解释性_68" value="5"> 5</label></span></div>
+            </div>
+        </div>
+        
+        <div class="case-container" data-idx="73">
+            <div class="case-header">题目 #73 (第二批第 18 题)</div>
+            <div class="fact-text"><b>【案情事实】</b><br>公诉机关指控，被告人杨某从2013年5月起在深圳市龙岗区同乐社区无证开设地下五金加工电镀厂，私自设置电镀项目，进行镀铬作业，且未设置废水污染处理设施，将废水经渗井外排。2013年12月4日，对该厂进行采样检测，经采样检测显示，水样中化学需氧量超标10.1倍，总铜超标19.3倍，总锌超标33倍，六价铬超标1779倍，氨氮超标2.1倍。</div>
+            
+            <details>
+                <summary>📑 点击展开/收起：模型作答与参考答案</summary>
+                
+                <div class="ans-section">
+                    <div class="ans-title">1. Ground Truth (真实法条编号) [articles]</div>
+                    <div class="ans-content">[
+  "刑法第338条"
+]</div>
+                </div>
+                
+                <div class="ans-section" style="border-left-color: #6f42c1;">
+                    <div class="ans-title">2. 法条具体内容 [law_articles]</div>
+                    <div class="ans-content">《中华人民共和国刑法》第三百三十八条　【污染环境罪】违反国家规定，排放、倾倒或者处置有放射性的废物、含传染病病原体的废物、有毒物质或者其他有害物质，严重污染环境的，处三年以下有期徒刑或者拘役，并处或者单处罚金；情节严重的，处三年以上七年以下有期徒刑，并处罚金；有下列情形之一的，处七年以上有期徒刑，并处罚金：
+
+　　（一）在饮用水水源保护区、自然保护地核心保护区等依法确定的重点保护区域排放、倾倒、处置有放射性的废物、含传染病病原体的废物、有毒物质，情节特别严重的；
+
+　　（二）向国家确定的重要江河、湖泊水域排放、倾倒、处置有放射性的废物、含传染病病原体的废物、有毒物质，情节特别严重的；
+
+　　（三）致使大量永久基本农田基本功能丧失或者遭受永久性破坏的；
+
+　　（四）致使多人重伤、严重疾病，或者致人严重残疾、死亡的。
+
+　　有前款行为，同时构成其他犯罪的，依照处罚较重的规定定罪处罚。</div>
+                </div>
+                
+                <div class="ans-section">
+                    <div class="ans-title">3. 预测法条编号 [law_numbers]</div>
+                    <div class="ans-content">[
+  "刑法第338条"
+]</div>
+                </div>
+                
+                <div class="ans-section" style="border-left-color: #28a745;">
+                    <div class="ans-title">4. RAG 模式作答 [response_aa]</div>
+                    <div class="ans-content">被告人杨某犯有污染环境罪。根据《中华人民共和国刑法》第三百三十八条，违反国家规定，排放、倾倒或者处置有放射性的废物、含传染病病原体的废物、有毒物质或者其他有害物质，严重污染环境的，构成污染环境罪。根据案件事实，被告人杨某在无证开设地下五金加工电镀厂，私自设置电镀项目，进行镀铬作业，且未设置废水污染处理设施，将废水经渗井外排，导致水样中化学需氧量、总铜、总锌、六价铬、氨氮均超标。因此，被告人杨某的行为符合《中华人民共和国刑法》第三百三十八条的规定，应当被定罪处罚。</div>
+                </div>
+                
+                <div class="ans-section" style="border-left-color: #dc3545;">
+                    <div class="ans-title">5. 无 RAG 模式作答 [response_analysis_no_rag]</div>
+                    <div class="ans-content">被告人杨某犯有污染环境罪。根据《刑法》第三百三十八条，杨某在无证开设地下五金加工电镀厂，私自设置电镀项目，进行镀铬作业，且未设置废水污染处理设施，将废水经渗井外排，导致水样中化学需氧量、总铜、总锌、六价铬、氨氮均超标，构成污染环境罪。</div>
+                </div>
+                
+                <div class="ans-section" style="border-left-color: #ffc107;">
+                    <div class="ans-title">6. 检索到的相似案例 [similar_cases]</div>
+                    <div class="ans-content">[
+  "（2015）枞刑初字第00055号\n公诉机关安徽省枞阳县人民检察院。\n被告人许某某，男，汉族，1977年3月19日出生于安徽省枞阳县，小学文化，农民，住安徽省枞阳县。因涉嫌犯污染环境罪，于2014年11月18日被枞阳县公安局取保候审，2015年1月15日被枞阳县人民检察院取保候审，同年1月23日被本院取保候审。\n枞阳县人民检察院以枞检公诉刑诉（2015）9号起诉书指控被告人许某某犯污染环境罪，于2015年1月22日向本院提起公诉。本院依法组成合议庭，于2015年2月10日公开开庭审理了本案。枞阳县人民检察院指派代理检察员刘凯、罗芳出庭支持公诉，被告人许某某到庭参加诉讼。本案现已审理终结。\n枞阳县人民检察院指控：2013年5月和7月，被告人许某某在未办理相关手续的情况下私自搭建工棚先后从事电泳、电镀作业生产。生产期间，许某某未在作业区内安装任何废水处理设施，以致含有总铬、六价铬等有毒重金属的废水全部排放至外环境渗漏至地下。2014年9月12日，安庆市环保局依法对许某某的电泳电镀作坊进行查处。经环保部门监测，许某某电镀作坊内排放的废水中总铬含量为12.7mg／L，六价铬含量为9.21mg／L，超过了国家规定的排放标准三倍以上。案发后，许某某于2014年11月18日主动到公安机关投案。公诉机关就指控的事实向法庭宣读和出示了证人证言、被告人供述及相关书证等证据。公诉机关认为：被告人许某某违反国家规定，排放有毒物质，严重污染环境，其行为已触犯刑律，应当以污染环境罪追究其刑事责任。被告人许某某在案发后主动投案并如实供述犯罪事实，属自首。提请本院依法判处。\n被告人许某某对起诉指控的事实以及罪名均无异议，并表示自愿认罪，请求对其从轻处罚。\n经审理查明：2013年5月份，被告人许某某从他人处购买设备，在未办理相关手续的情况下私自在枞阳县汤沟镇先进村新华组其自住宅前搭建工棚从事电泳生产，同年7月又开始从事电镀作业生产。生产期间，许某某未在作业区内安装任何废水处理设施，对含有总铬、六价铬等有毒重金属的废水未作处理，以致电镀作坊内排放的废水全部通过排污口排放至外环境渗漏至地下。2014年9月12日，安庆市环保局依法对许某某的电泳电镀作坊进行查处。后经环保部门监测，许某某电镀作坊内排放的废水中总铬含量为12.7mg／L、六价铬含量为9.21mg／L，超过国家规定的排放标准三倍以上。\n另查明：案发后，被告人许某某于2014年11月18日主动到公安机关投案，并如实供述自己的罪行。\n上述事实，有经庭审举证、质证并经本院确认的下列证据证实：被告人许某某的供述，证人刘某甲、钱某、刘某乙的证言，现场勘验检查工作记录、现场方位示意图、现场照片，枞阳县环保局案件移送书、调查询问笔录、现场检查笔录、现场视听资料等执法活动相关材料，安庆市环境监测中心站安环监监督字20140909号监测报告、安徽省环境监测中心站关于安庆市环境监测中心站安环监监督字20140909号监测报告技术审核意见、安徽省环保厅关于安庆市环境监测中心站安环监监督字20140909号监测报告的确认函及鉴定意见通知书，《中华人民共和国电镀污染物排放标准》，归案经过，户籍证明以及受案登记表、立案决定书、取保候审决定书等证明公安机关办案程序合法的文件。\n本院认为：被告人许某某违反国家规定，排放有毒物质，严重污染环境，其行为构成污染环境罪，应依法惩处。公诉机关指控被告人犯罪的事实清楚，证据确实、充分，应予支持。被告人许某某犯罪以后自动投案，如实供述自己的罪行，属自首，且庭审中自愿认罪，依法可以从轻处罚，并可以适用缓刑。案经本院审判委员会讨论决定，依照《中华人民共和国刑法》第三百八十三条、第六十七条第一款、第七十二条第一款、第三款、第七十三条第二款、第三款和《最高人民法院、最高人民检察院关于办理环境污染刑事案件适用法律若干问题的解释》第一条第（三）项之规定，判决如下：\n被告人许某某犯污染环境罪，判处有期徒刑一年，缓刑二年，并处罚金人民币二万元（已缴纳）。\n（缓刑考验期限，从判决确定之日起计算。）\n如不服本判决，可在接到判决书的第二日起十日内，通过本院或者直接向安徽省安庆市中级人民法院提出上诉。书面上诉的，应当提交上诉状正本一份，副本二份。\n审判长张勇\n代理审判员李晔\n人民陪审员疏波\n二〇一五年三月十八日\n书记员李金娟"
+]</div>
+                </div>
+            </details>
+            
+            <div class="scoring-area">
+        <div class="dim-row">专业性: <span class="radio-group"><label><input type="radio" name="专业性_73" value="0"> 0</label><label><input type="radio" name="专业性_73" value="1"> 1</label><label><input type="radio" name="专业性_73" value="2"> 2</label><label><input type="radio" name="专业性_73" value="3"> 3</label><label><input type="radio" name="专业性_73" value="4"> 4</label><label><input type="radio" name="专业性_73" value="5"> 5</label></span></div><div class="dim-row">准确性: <span class="radio-group"><label><input type="radio" name="准确性_73" value="0"> 0</label><label><input type="radio" name="准确性_73" value="1"> 1</label><label><input type="radio" name="准确性_73" value="2"> 2</label><label><input type="radio" name="准确性_73" value="3"> 3</label><label><input type="radio" name="准确性_73" value="4"> 4</label><label><input type="radio" name="准确性_73" value="5"> 5</label></span></div><div class="dim-row">丰富度: <span class="radio-group"><label><input type="radio" name="丰富度_73" value="0"> 0</label><label><input type="radio" name="丰富度_73" value="1"> 1</label><label><input type="radio" name="丰富度_73" value="2"> 2</label><label><input type="radio" name="丰富度_73" value="3"> 3</label><label><input type="radio" name="丰富度_73" value="4"> 4</label><label><input type="radio" name="丰富度_73" value="5"> 5</label></span></div><div class="dim-row">可解释性: <span class="radio-group"><label><input type="radio" name="可解释性_73" value="0"> 0</label><label><input type="radio" name="可解释性_73" value="1"> 1</label><label><input type="radio" name="可解释性_73" value="2"> 2</label><label><input type="radio" name="可解释性_73" value="3"> 3</label><label><input type="radio" name="可解释性_73" value="4"> 4</label><label><input type="radio" name="可解释性_73" value="5"> 5</label></span></div>
+            </div>
+        </div>
+        
+        <div class="case-container" data-idx="145">
+            <div class="case-header">题目 #145 (第二批第 19 题)</div>
+            <div class="fact-text"><b>【案情事实】</b><br>公诉机关指控：2015年底至2016年5月9日，被告人刘某先后三次计2.5克甲基苯丙胺（俗称“冰毒”）贩卖给黄某甲、周某甲，计收取毒资900元2016年5月12日，被告人刘某准备将甲基苯丙胺贩卖给黄某甲时被抓获，并从其身上扣押到甲基苯丙胺0.7720克、电子称一台。针对上述指控的事实，公诉机关向法庭出示相关证据予以证实。公诉机关据此认为被告人刘某的行为已触犯《中华人民共和国刑法》××××、××的规定，应以贩卖毒品罪追究其刑事责任。提请本院依法惩处。</div>
+            
+            <details>
+                <summary>📑 点击展开/收起：模型作答与参考答案</summary>
+                
+                <div class="ans-section">
+                    <div class="ans-title">1. Ground Truth (真实法条编号) [articles]</div>
+                    <div class="ans-content">[
+  "刑法第347条",
+  "刑法第347条",
+  "刑法第357条",
+  "刑法第347条"
+]</div>
+                </div>
+                
+                <div class="ans-section" style="border-left-color: #6f42c1;">
+                    <div class="ans-title">2. 法条具体内容 [law_articles]</div>
+                    <div class="ans-content">《中华人民共和国刑法》第三百四十七条　【走私、贩卖、运输、制造毒品罪】走私、贩卖、运输、制造毒品，无论数量多少，都应当追究刑事责任，予以刑事处罚。
+
+　　走私、贩卖、运输、制造毒品，有下列情形之一的，处十五年有期徒刑、无期徒刑或者死刑，并处没收财产：
+
+　　（一）走私、贩卖、运输、制造鸦片一千克以上、海洛因或者甲基苯丙胺五十克以上或者其他毒品数量大的；
+
+　　（二）走私、贩卖、运输、制造毒品集团的首要分子；
+
+　　（三）武装掩护走私、贩卖、运输、制造毒品的；
+
+　　（四）以暴力抗拒检查、拘留、逮捕，情节严重的；
+
+　　（五）参与有组织的国际贩毒活动的。
+
+　　走私、贩卖、运输、制造鸦片二百克以上不满一千克、海洛因或者甲基苯丙胺十克以上不满五十克或者其他毒品数量较大的，处七年以上有期徒刑，并处罚金。
+
+　　走私、贩卖、运输、制造鸦片不满二百克、海洛因或者甲基苯丙胺不满十克或者其他少量毒品的，处三年以下有期徒刑、拘役或者管制，并处罚金；情节严重的，处三年以上七年以下有期徒刑，并处罚金。
+
+　　单位犯第二款、第三款、第四款罪的，对单位判处罚金，并对其直接负责的主管人员和其他直接责任人员，依照各该款的规定处罚。
+
+　　利用、教唆未成年人走私、贩卖、运输、制造毒品，或者向未成年人出售毒品的，从重处罚。
+
+　　对多次走私、贩卖、运输、制造毒品，未经处理的，毒品数量累计计算。
+《中华人民共和国刑法》第三百四十七条　【走私、贩卖、运输、制造毒品罪】走私、贩卖、运输、制造毒品，无论数量多少，都应当追究刑事责任，予以刑事处罚。
+
+　　走私、贩卖、运输、制造毒品，有下列情形之一的，处十五年有期徒刑、无期徒刑或者死刑，并处没收财产：
+
+　　（一）走私、贩卖、运输、制造鸦片一千克以上、海洛因或者甲基苯丙胺五十克以上或者其他毒品数量大的；
+
+　　（二）走私、贩卖、运输、制造毒品集团的首要分子；
+
+　　（三）武装掩护走私、贩卖、运输、制造毒品的；
+
+　　（四）以暴力抗拒检查、拘留、逮捕，情节严重的；
+
+　　（五）参与有组织的国际贩毒活动的。
+
+　　走私、贩卖、运输、制造鸦片二百克以上不满一千克、海洛因或者甲基苯丙胺十克以上不满五十克或者其他毒品数量较大的，处七年以上有期徒刑，并处罚金。
+
+　　走私、贩卖、运输、制造鸦片不满二百克、海洛因或者甲基苯丙胺不满十克或者其他少量毒品的，处三年以下有期徒刑、拘役或者管制，并处罚金；情节严重的，处三年以上七年以下有期徒刑，并处罚金。
+
+　　单位犯第二款、第三款、第四款罪的，对单位判处罚金，并对其直接负责的主管人员和其他直接责任人员，依照各该款的规定处罚。
+
+　　利用、教唆未成年人走私、贩卖、运输、制造毒品，或者向未成年人出售毒品的，从重处罚。
+
+　　对多次走私、贩卖、运输、制造毒品，未经处理的，毒品数量累计计算。
+《中华人民共和国刑法》第三百五十七条　【毒品的范围及数量的计算原则】本法所称的毒品，是指鸦片、海洛因、甲基苯丙胺（冰毒）、吗啡、大麻、可卡因以及国家规定管制的其他能够使人形成瘾癖的麻醉药品和精神药品。
+
+　　毒品的数量以查证属实的走私、贩卖、运输、制造、非法持有毒品的数量计算，不以纯度折算。</div>
+                </div>
+                
+                <div class="ans-section">
+                    <div class="ans-title">3. 预测法条编号 [law_numbers]</div>
+                    <div class="ans-content">[
+  "刑法第347条",
+  "刑法第347条",
+  "刑法第357条"
+]</div>
+                </div>
+                
+                <div class="ans-section" style="border-left-color: #28a745;">
+                    <div class="ans-title">4. RAG 模式作答 [response_aa]</div>
+                    <div class="ans-content">被告人刘某犯有贩卖毒品罪。刘某先后三次贩卖甲基苯丙胺给黄某甲、周某甲，收取毒资900元。根据《中华人民共和国刑法》第三百四十七条，走私、贩卖、运输、制造毒品，无论数量多少，都应当追究刑事责任，予以刑事处罚。因此，刘某应被追究刑事责任。</div>
+                </div>
+                
+                <div class="ans-section" style="border-left-color: #dc3545;">
+                    <div class="ans-title">5. 无 RAG 模式作答 [response_analysis_no_rag]</div>
+                    <div class="ans-content">被告人刘某犯有贩卖毒品罪。根据《刑法》第三百四十七条，走私、贩卖、运输、制造毒品，无论数量多少，都应当追究刑事责任，予以刑事处罚。根据《刑法》第三百四十八条，走私、贩卖、运输、制造鸦片二百克以上不满一千克、海洛因或者甲基苯丙胺十克以上不满五十克或者其他毒品数量大的，处七年以上有期徒刑或者无期徒刑，并处罚金；情节严重的，处七年以上有期徒刑，并处罚金。根据《刑法》第三百四十七条，走私、贩卖、运输、制造毒品，无论数量多少，都应当追究刑事责任，予以刑事处罚。根据《刑法》第三百四十八条，走私、贩卖、运输、制造鸦片二百克以上不满一千克、海洛因或者甲基苯丙胺十克以上不满五十克或者其他毒品数量大的，处七年以上有期徒刑或者无期徒刑，并处罚金；情节严重的，处七年以上有期徒刑，并处罚金。</div>
+                </div>
+                
+                <div class="ans-section" style="border-left-color: #ffc107;">
+                    <div class="ans-title">6. 检索到的相似案例 [similar_cases]</div>
+                    <div class="ans-content">[
+  "（2015）朝刑初字第1595号\n公诉机关北京市朝阳区人民检察院。\n被告人李×，女，1978年10月14日出生。因涉嫌犯贩卖毒品罪于2015年3月24日被羁押，次日被刑事拘留，同年4月29日被逮捕。现羁押在北京市朝阳区看守所。\n北京市朝阳区人民检察院以京朝检公诉刑诉（2015）1210号起诉书指控被告人李×犯贩卖毒品罪，于2015年6月15日向本院提起公诉。本院依法适用简易程序，实行独任审判，公开开庭审理了本案。北京市朝阳区人民检察院指派代理检察员汪婷婷出庭支持公诉，被告人李×到庭参加了诉讼。现已审理终结。\n北京市朝阳区人民检察院指控，被告人李×于2015年3月24日19时许，在位于北京市朝阳区×乡×村的\"×客栈\"门前，与黄×（男，40岁）约定出售冰毒时被当场抓获。公安人员从李×身上起获冰毒5包（共计2.88克），从其居住地起获冰毒2包（共计0.29克）。经北京市公安司法鉴定中心出具的《毒品检验报告》，上述毒品均检出甲基苯丙胺。毒品已被收缴。\n上述事实，被告人李×在开庭审理过程中亦无异议，并有物证及物证照片，公安机关出具的证明材料，扣押清单，毒检送检流程表，证人黄×、孙×、张×的证言，毒品检验报告及收缴毒品清单等证据证实，足以认定。\n本院认为，被告人李×明知是毒品而贩卖，其行为已构成贩卖毒品罪，应予惩处。鉴于被告人李×能够如实供述罪行，故依法予以从轻处罚。在案的物品一并处理。本院依照《中华人民共和国刑法》第三百四十七条第一、四款、第六十一条、第六十七条第三款、第四十五条、第四十七条、第五十二条、第五十三条、第六十四条的规定，判决如下：\n一、被告人李×犯贩卖毒品罪，判处有期徒刑一年，罚金人民币二千元（刑期从判决执行之日起计算。判决执行以前先行羁押的，羁押一日折抵刑期一日。即自2015年3月24日起至2016年3月23日止。罚金于本判决生效后七日以内缴纳）。\n二、在案的华为牌移动电话机一部，予以没收。\n如不服本判决，可在接到判决书的第二日起十日内，通过本院或者直接向北京市第三中级人民法院提出上诉。书面上诉的，应当提交上诉状正本一份，副本一份。\n审判员李加\n二〇一五年六月三十日\n书记员杨妮"
+]</div>
+                </div>
+            </details>
+            
+            <div class="scoring-area">
+        <div class="dim-row">专业性: <span class="radio-group"><label><input type="radio" name="专业性_145" value="0"> 0</label><label><input type="radio" name="专业性_145" value="1"> 1</label><label><input type="radio" name="专业性_145" value="2"> 2</label><label><input type="radio" name="专业性_145" value="3"> 3</label><label><input type="radio" name="专业性_145" value="4"> 4</label><label><input type="radio" name="专业性_145" value="5"> 5</label></span></div><div class="dim-row">准确性: <span class="radio-group"><label><input type="radio" name="准确性_145" value="0"> 0</label><label><input type="radio" name="准确性_145" value="1"> 1</label><label><input type="radio" name="准确性_145" value="2"> 2</label><label><input type="radio" name="准确性_145" value="3"> 3</label><label><input type="radio" name="准确性_145" value="4"> 4</label><label><input type="radio" name="准确性_145" value="5"> 5</label></span></div><div class="dim-row">丰富度: <span class="radio-group"><label><input type="radio" name="丰富度_145" value="0"> 0</label><label><input type="radio" name="丰富度_145" value="1"> 1</label><label><input type="radio" name="丰富度_145" value="2"> 2</label><label><input type="radio" name="丰富度_145" value="3"> 3</label><label><input type="radio" name="丰富度_145" value="4"> 4</label><label><input type="radio" name="丰富度_145" value="5"> 5</label></span></div><div class="dim-row">可解释性: <span class="radio-group"><label><input type="radio" name="可解释性_145" value="0"> 0</label><label><input type="radio" name="可解释性_145" value="1"> 1</label><label><input type="radio" name="可解释性_145" value="2"> 2</label><label><input type="radio" name="可解释性_145" value="3"> 3</label><label><input type="radio" name="可解释性_145" value="4"> 4</label><label><input type="radio" name="可解释性_145" value="5"> 5</label></span></div>
+            </div>
+        </div>
+        
+        <div class="case-container" data-idx="172">
+            <div class="case-header">题目 #172 (第二批第 20 题)</div>
+            <div class="fact-text"><b>【案情事实】</b><br>公诉机关指控：2016年1月20日8时许,被告人卢某驾驶浙A×××××号重型自卸货车(核载16100千克,实载43030千克)沿305省道由本市李家镇驶往浙江省兰溪市。8时18分许,其驾车途经305省道富衢线144KM+840M(本市大同镇寻芳村)路段时，因超速行驶和遇行人横过道路时未避让，致使车辆与其行驶方向从左向右横过道路的邵某（女，1993年1月2日出生）相撞并碾压，造成邵某当场死亡的道路交通事故。经建德市公安局交通警察大队认定，被告人卢某负事故的主要责任。被告人卢某在事故发生后主动投案并如实供述自己的犯罪事实。浙A×××××号重型自卸货车车主黄某、被告人卢某与被害人近亲属达成调解协议，被告人卢某支付补偿款人民币5000元，并取得谅解。</div>
+            
+            <details>
+                <summary>📑 点击展开/收起：模型作答与参考答案</summary>
+                
+                <div class="ans-section">
+                    <div class="ans-title">1. Ground Truth (真实法条编号) [articles]</div>
+                    <div class="ans-content">[
+  "刑法第133条"
+]</div>
+                </div>
+                
+                <div class="ans-section" style="border-left-color: #6f42c1;">
+                    <div class="ans-title">2. 法条具体内容 [law_articles]</div>
+                    <div class="ans-content">《中华人民共和国刑法》第一百三十三条　【交通肇事罪】违反交通运输管理法规，因而发生重大事故，致人重伤、死亡或者使公私财产遭受重大损失的，处三年以下有期徒刑或者拘役；交通运输肇事后逃逸或者有其他特别恶劣情节的，处三年以上七年以下有期徒刑；因逃逸致人死亡的，处七年以上有期徒刑。
+
+《中华人民共和国刑法》第一百三十三条之一　【危险驾驶罪】在道路上驾驶机动车，有下列情形之一的，处拘役，并处罚金：
+
+　　（一）追逐竞驶，情节恶劣的；
+
+　　（二）醉酒驾驶机动车的；
+
+　　（三）从事校车业务或者旅客运输，严重超过额定乘员载客，或者严重超过规定时速行驶的；
+
+　　（四）违反危险化学品安全管理规定运输危险化学品，危及公共安全的。
+
+　　机动车所有人、管理人对前款第三项、第四项行为负有直接责任的，依照前款的规定处罚。
+
+　　有前两款行为，同时构成其他犯罪的，依照处罚较重的规定定罪处罚。
+
+《中华人民共和国刑法》第一百三十三条之二　【妨害安全驾驶罪】对行驶中的公共交通工具的驾驶人员使用暴力或者抢控驾驶操纵装置，干扰公共交通工具正常行驶，危及公共安全的，处一年以下有期徒刑、拘役或者管制，并处或者单处罚金。
+
+　　前款规定的驾驶人员在行驶的公共交通工具上擅离职守，与他人互殴或者殴打他人，危及公共安全的，依照前款的规定处罚。
+
+　　有前两款行为，同时构成其他犯罪的，依照处罚较重的规定定罪处罚。</div>
+                </div>
+                
+                <div class="ans-section">
+                    <div class="ans-title">3. 预测法条编号 [law_numbers]</div>
+                    <div class="ans-content">[
+  "刑法第133条"
+]</div>
+                </div>
+                
+                <div class="ans-section" style="border-left-color: #28a745;">
+                    <div class="ans-title">4. RAG 模式作答 [response_aa]</div>
+                    <div class="ans-content">被告人卢某犯有交通肇事罪。卢某驾驶重型自卸货车超速行驶，遇行人横过道路时未避让，致使车辆与行人相撞并碾压，造成行人当场死亡。根据《中华人民共和国刑法》第一百三十三条，违反交通运输管理法规，因而发生重大事故，致人死亡的，处三年以上七年以下有期徒刑。</div>
+                </div>
+                
+                <div class="ans-section" style="border-left-color: #dc3545;">
+                    <div class="ans-title">5. 无 RAG 模式作答 [response_analysis_no_rag]</div>
+                    <div class="ans-content">被告人卢某犯有交通肇事罪。卢某驾驶车辆超速行驶，遇行人横过道路时未避让，致使车辆与行人相撞并碾压，造成被害人当场死亡。根据《刑法》第一百三十三条，交通肇事罪的刑罚为三年以下有期徒刑或者拘役。</div>
+                </div>
+                
+                <div class="ans-section" style="border-left-color: #ffc107;">
+                    <div class="ans-title">6. 检索到的相似案例 [similar_cases]</div>
+                    <div class="ans-content">[
+  "（2015）金兰刑初字第308号\n公诉机关浙江省兰溪市人民检察院。\n被告人卢某，农民。因本案于2015年3月2日被兰溪市公安局刑事拘留，同年3月9日被依法取保候审。现在家候审。\n浙江省兰溪市人民检察院以兰检公诉刑诉（2015）286号起诉书指控被告人卢某犯交通肇事罪，于2015年6月3日向本院提起公诉。本院依法适用简易程序，实行独任审判，公开开庭进行了审理。兰溪市人民检察院指派代理检察员毛凌飞出庭支持公诉，被告人卢某到庭参加诉讼。现已审理终结。\n公诉机关指控，2014年3月2日晚，被告人卢某驾驶浙G×××××号小型轿车从兰溪市区驶往金华市婺城区罗埠镇。19时许，行驶至兰贺线1km＋280m兰溪市上华街道马鞍徐村路段时，与该路段自南向北横过道路的被害人徐某乙发生碰撞，造成车损、徐某乙受伤后经医院抢救无效于当日死亡的道路交通事故。被告人卢某负该事故的主要责任。\n案发后，被告人卢某打电话报警并积极抢救伤者，在现场等待并向处警民警如实供述自己的犯罪事实。\n2015年3月6日，被告人卢某在家属的帮助下与被害人徐某乙的近亲属达成协议，按协议支付全部补偿款，并取得被害人近亲属的谅解。\n上述事实，被告人卢某在开庭审理过程中亦无异议，且有证人徐某甲的证言，户籍查询记录、身份证复印件、驾驶证和行驶证复印件、机动车交通事故责任强制保险单（正本）复印件、驾驶人和机动车信息查询结果单、行政强制措施凭证、血样提取登记表、鉴定委托书、通知家属记录、道路交通事故调查报告书、道路交通事故公开认定会议记录、交通事故死者家庭情况登记表、交通事故处理工作记录、兰溪市公安局返还物品凭证、兰溪市人民医院门诊病历复印件、超声检查报告单、居民死亡医学证明书、协议书、收条、谅解书、道路交通事故认定书、到案经过、兰溪市公安局自首证明文书，兰溪市公安司法鉴定中心法医学尸体检验报告、道路交通事故车辆技术检验报告、金华市公安司法鉴定中心物证检验报告、事故现场勘查笔录、现场示意图、现场照片、说明，及被告人的身份信息资料等证据证实，足以认定。\n本院认为，被告人卢某驾驶机动车在道路上行驶时，违反道路交通管理法规，发生致一人死亡的重大交通事故，且负事故的主要责任，其行为已构成交通肇事罪。公诉机关的指控成立，本院予以支持。被告人卢某在事故发生后积极抢救伤者，后又自动投案并如实供述自己的犯罪事实，系自首，依法可以从轻处罚；被告人卢某已经支付全部补偿款并取得被害人家属的谅解，酌情可以从轻处罚。为严肃国法，维护道路交通管理秩序，依照《中华人民共和国刑法》第一百三十三条、第六十七条第一款、第七十二条第一款、第七十三条第二、三款之规定，判决如下：\n被告人卢某犯交通肇事罪，判处有期徒刑十个月，缓刑一年（缓刑考验期限，从判决确定之日起计算）。\n如不服本判决，可于接到判决书的第二日起十日内，通过本院或者直接向浙江省金华市中级人民法院提出上诉。书面上诉的，应提交上诉状正本一份，副本二份。\n审判员严宏庭\n二〇一五年六月八日\n代书记员应晓妍"
+]</div>
+                </div>
+            </details>
+            
+            <div class="scoring-area">
+        <div class="dim-row">专业性: <span class="radio-group"><label><input type="radio" name="专业性_172" value="0"> 0</label><label><input type="radio" name="专业性_172" value="1"> 1</label><label><input type="radio" name="专业性_172" value="2"> 2</label><label><input type="radio" name="专业性_172" value="3"> 3</label><label><input type="radio" name="专业性_172" value="4"> 4</label><label><input type="radio" name="专业性_172" value="5"> 5</label></span></div><div class="dim-row">准确性: <span class="radio-group"><label><input type="radio" name="准确性_172" value="0"> 0</label><label><input type="radio" name="准确性_172" value="1"> 1</label><label><input type="radio" name="准确性_172" value="2"> 2</label><label><input type="radio" name="准确性_172" value="3"> 3</label><label><input type="radio" name="准确性_172" value="4"> 4</label><label><input type="radio" name="准确性_172" value="5"> 5</label></span></div><div class="dim-row">丰富度: <span class="radio-group"><label><input type="radio" name="丰富度_172" value="0"> 0</label><label><input type="radio" name="丰富度_172" value="1"> 1</label><label><input type="radio" name="丰富度_172" value="2"> 2</label><label><input type="radio" name="丰富度_172" value="3"> 3</label><label><input type="radio" name="丰富度_172" value="4"> 4</label><label><input type="radio" name="丰富度_172" value="5"> 5</label></span></div><div class="dim-row">可解释性: <span class="radio-group"><label><input type="radio" name="可解释性_172" value="0"> 0</label><label><input type="radio" name="可解释性_172" value="1"> 1</label><label><input type="radio" name="可解释性_172" value="2"> 2</label><label><input type="radio" name="可解释性_172" value="3"> 3</label><label><input type="radio" name="可解释性_172" value="4"> 4</label><label><input type="radio" name="可解释性_172" value="5"> 5</label></span></div>
+            </div>
+        </div>
+        
+        </div>
+        <button class="submit-btn" onclick="downloadCSV()">✅ 全部打完，点击下载第二批结果</button>
+
+        <script>
+        function downloadCSV() {
+            let cases = document.querySelectorAll('.case-container');
+            let dims = ['专业性', '准确性', '丰富度', '可解释性'];
+            let csvContent = "\uFEFFCase_Index,Human_专业性,Human_准确性,Human_丰富度,Human_可解释性\n";
+            let allFilled = true;
+            
+            cases.forEach(function(caseDiv) {
+                let idx = caseDiv.getAttribute('data-idx');
+                let row = [idx];
+                
+                dims.forEach(function(dim) {
+                    let checked = caseDiv.querySelector('input[name="' + dim + '_' + idx + '"]:checked');
+                    if (checked) {
+                        row.push(checked.value);
+                    } else {
+                        allFilled = false;
+                    }
+                });
+                csvContent += row.join(",") + "\n";
+            });
+            
+            if (!allFilled) {
+                alert("⚠️ 提示：您还有题目没有打完分，请检查是否有遗漏！");
+                return;
+            }
+            
+            let blob = new Blob([csvContent], { type: 'text/csv;charset=utf-8;' });
+            let link = document.createElement("a");
+            let url = URL.createObjectURL(blob);
+            link.setAttribute("href", url);
+            link.setAttribute("download", "my_human_scores2.csv"); // 文件名变成 2
+            link.style.visibility = 'hidden';
+            document.body.appendChild(link);
+            link.click();
+            document.body.removeChild(link);
+            
+            alert("🎉 下载成功！请将 'my_human_scores2.csv' 保存好，用于最终合并计算。");
+        }
+        </script>
+    </body>
+    </html>
+    
