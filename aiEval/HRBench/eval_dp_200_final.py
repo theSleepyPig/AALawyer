@@ -10,13 +10,11 @@ import csv
 from tqdm import tqdm
 import argparse
 
-# ✅ 配置 DeepSeek API
 client = OpenAI(
     api_key="sk-XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",  # 替换为你的 API Key
     base_url="https://api.deepseek.com"
 )
 
-# Prompt 构造
 def format_prompt(case_text, answer_text, law_numbers=None, include_law=True):
     law_part = ""
     if include_law and law_numbers:
@@ -55,7 +53,6 @@ def format_prompt(case_text, answer_text, law_numbers=None, include_law=True):
 可解释性：x分
 """
 
-# 调用 DeepSeek 模型评分
 def get_score(prompt):
     try:
         response = client.chat.completions.create(
@@ -71,7 +68,6 @@ def get_score(prompt):
         print("❗API Error:", e)
         return None
 
-# 提取四维评分
 def extract_scores(text):
     try:
         score_zhuanye = float(re.search(r"专业性[:：]\s*(\d+(?:\.\d+)?)", text).group(1))
@@ -112,7 +108,7 @@ def evaluate_to_csv(input_json_path, output_csv_path):
         writer = csv.writer(csvfile)
         writer.writerow(["index", "模式", "专业性", "准确性", "丰富度", "可解释性", "总分"])
 
-        for idx, item in enumerate(tqdm(data, desc="Evaluating 3 modes with DeepSeek SDK")):
+        for idx, item in enumerate(tqdm(data, desc="Evaluating 4 modes with DeepSeek SDK")):
             case_text = item["input"]
             law_numbers = sorted(set(item.get("articles", [])))
 
@@ -150,7 +146,6 @@ def evaluate_to_csv(input_json_path, output_csv_path):
 
                 time.sleep(1.5)
 
-        # 输出平均分
         writer.writerow([])
         writer.writerow(["模式", "平均专业性", "平均准确性", "平均丰富度", "平均可解释性", "平均总分"])
         for mode in modes:

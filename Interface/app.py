@@ -16,7 +16,6 @@ mp.set_start_method("spawn", force=True)
 
 # python app.py --model_path /mnt/ssd_2/yxma/hzx/train_mergem20
 
-# 解析参数
 parser = argparse.ArgumentParser(description="Interactive Chat with LLM")
 parser.add_argument("--model_path", type=str, required=True, help="Path to the local model")
 parser.add_argument("--device", type=str, default="cuda:0", help="CUDA devices to use (comma-separated)")
@@ -25,7 +24,6 @@ args = parser.parse_args()
 
 # os.environ["TOKENIZERS_PARALLELISM"] = "false"
 
-# 选择设备
 os.environ["CUDA_VISIBLE_DEVICES"] = "0"
 device = torch.device(args.device if torch.cuda.is_available() else "cpu")
 
@@ -81,7 +79,6 @@ def initialize():
 
     print("RAG-2 loaded successfully!")
 
-# 创建 Flask 应用
 app = Flask(__name__)
 
 def smart_translate(text):
@@ -113,7 +110,6 @@ def retrieve_law_articles(law_numbers):
     return "\n".join(articles) if articles else "未找到相关法条"
 
 def translate(text, model, tokenizer):
-    """ 翻译文本 """
     translated = tokenizer(text, return_tensors="pt", padding=True, truncation=True).to(device)
     translated_tokens = model.generate(**translated, max_length=512)
     # return tokenizer.decode(translated_tokens[0], skip_special_tokens=True)
@@ -121,7 +117,6 @@ def translate(text, model, tokenizer):
     return " ".join(translated_texts)
 
 def generate_response(prompt):
-    """ 使用 LLM 生成回复 """
     messages = [
         {"role": "system", "content": "You are Qwen, created by Alibaba Cloud. You are a helpful assistant."},
         {"role": "user", "content": prompt}

@@ -25,7 +25,8 @@ conda env create -f env.yml
 conda activate llm
 ```
 
-> **Note on `transformers` version:**> The `transformers` library frequently updates its underlying architectures. We used `4.45.2` for our specific models (DeepSeek-7B). If you plan to experiment with different versions or families of base models, you may need to manually adjust (upgrade or downgrade) the `transformers` version to match their specific architectural requirements to avoid compatibility errors.
+> **Note on `transformers` version:**
+> The `transformers` library frequently updates its underlying architectures. We used `4.45.2` for our specific models (DeepSeek-7B). If you plan to experiment with different versions or families of base models, you may need to manually adjust (upgrade or downgrade) the `transformers` version to match their specific architectural requirements to avoid compatibility errors.
 
 ## 2️⃣ Incremental Pretraining and Supervised Fine-Tuning
 
@@ -225,7 +226,7 @@ We evaluate our model on LawBench and our proposed Hallucination Risk-Benchmark 
 ```bash
 python ../AALawyer/LLaMA-Factory/a/evab.py --experiment_id m20 --device 1 --mode zero_shot --max_new_tokens 2048
 
-cd Lawbench/evaluation
+cd LawBench/evaluation
 python main.py -i ../predictions/zero_shot -o ../predictions/zero_shot/results.csv
 ```
 

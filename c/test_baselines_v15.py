@@ -1,4 +1,3 @@
-# test_baselines.py (最终版)
 import json
 import argparse
 import re
@@ -26,12 +25,6 @@ def extract_law_ids_from_answer(answer_text):
     ids = []
     
     # 策略：先提取 "第" 和 "条" 之间的内容（包含数字、顿号、逗号、空格）
-    # 这里的正则解释：
-    #  第        : 匹配字面量 "第"
-    #  (         : 开始捕获组
-    #    [\d\s、,，]+ : 匹配一个或多个：数字、空白、顿号、英文逗号、中文逗号
-    #  )         : 结束捕获组
-    #  条        : 匹配字面量 "条"
     matches = re.findall(r'第([\d\s、,，]+)条', answer_text)
     
     for match in matches:
@@ -51,14 +44,12 @@ def extract_law_ids_from_answer(answer_text):
 class BM25Retriever:
     def __init__(self, corpus):
         print("Initializing BM25 Retriever...")
-        # ✅ 2. 使用 jieba.cut 进行中文分词
         tokenized_corpus = [list(jieba.cut(doc['content'])) for doc in corpus]
         self.corpus = corpus
         self.bm25 = BM25Okapi(tokenized_corpus)
         print("BM25 Index built.")
 
     def retrieve(self, query, k=5):
-        # ✅ 3. 对查询也使用 jieba.cut 进行分词
         tokenized_query = list(jieba.cut(query))
         top_docs = self.bm25.get_top_n(tokenized_query, self.corpus, n=k)
         return [doc['id'] for doc in top_docs]
@@ -106,7 +97,6 @@ class BGERetriever:
 def main():
     parser = argparse.ArgumentParser(description="Test Retrieval Baselines for FAP task")
     parser.add_argument("--method", type=str, required=True, choices=["bm25", "bge"], help="Retrieval method to use")
-    # ✅ 新增参数
     parser.add_argument("--top_k", type=int, default=5, help="Number of top results to retrieve for Top-K mode")
     parser.add_argument("--threshold", type=float, default=None, help="Score threshold for Threshold mode (only for BGE)")
     args = parser.parse_args()
@@ -136,7 +126,6 @@ def main():
         query = item["question"]
         ground_truth_ids = extract_law_ids_from_answer(item.get("answer", ""))
         
-        # ✅ 根据模式调用检索器
         if args.threshold is not None and args.method == 'bge':
             predicted_ids = retriever.retrieve(query, score_threshold=args.threshold, k=args.top_k)
         else:

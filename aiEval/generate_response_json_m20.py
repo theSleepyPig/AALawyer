@@ -13,7 +13,6 @@ from transformers import AutoTokenizer, AutoModel, AutoModelForCausalLM
 from FlagEmbedding import FlagModel
 from tqdm import tqdm 
 
-# 路径设置
 input_json = "/home/yxma/hzx/LeLLM/aiEval/aieval_dataset_200.json" 
 output_json = "results/generated_200_m20_xxx.json"  # 改为 output_xxx.json 输出
 
@@ -23,8 +22,6 @@ model_path = "/mnt/ssd_2/yxma/LeLLM/train_mergem20"
 # model_path = "/mnt/ssd_2/yxma/LeLLM/Qwen3-8B/"
 # model_path = "/mnt/ssd_2/yxma/LeLLM/DeepSeek-R1-Distill-Qwen-7B"
 
-
-# 模型加载
 os.environ["CUDA_VISIBLE_DEVICES"] = "0"
 device = torch.device("cuda:0" if torch.cuda.is_available() else "cpu")
 transformers.logging.set_verbosity_error()
@@ -43,7 +40,6 @@ print("模型加载完成。")
 with open("/mnt/ssd_2/yxma/LeLLM/data/data/RAGDatabase_v2023_v3.json", "r", encoding="utf-8") as file:
     law_data = json.load(file)
 
-# FAISS 检索系统加载
 bge_model = FlagModel(
     "/mnt/ssd_2/yxma/LeLLM/bge-large-zh",
     query_instruction_for_retrieval="为这个句子生成表示：",
@@ -56,7 +52,6 @@ with open("/mnt/ssd_2/yxma/LeLLM/data/RAG2/legalCase_ids.json", "r", encoding="u
 with open("/mnt/ssd_2/yxma/LeLLM/data/data/merge.json", "r", encoding="utf-8") as f:
     index_texts = [r["text"].strip() for r in json.load(f)]
 
-# 响应生成函数
 def smart_translate(text):
     prompt = (
         "请将以下中文内容翻译为专业英文，保留法律术语和句式准确性。\n\n"
@@ -87,7 +82,6 @@ def retrieve_law_articles(law_numbers):
     return "\n".join(articles) if articles else "未找到相关法条"
 
 def translate(text, model, tokenizer):
-    """ 翻译文本 """
     translated = tokenizer(text, return_tensors="pt", padding=True, truncation=True).to(device)
     translated_tokens = model.generate(**translated, max_length=512)
     # return tokenizer.decode(translated_tokens[0], skip_special_tokens=True)
@@ -96,7 +90,6 @@ def translate(text, model, tokenizer):
 
 
 def generate_response(prompt):
-    """ 使用 LLM 生成回复 """
     messages = [
         {"role": "system", "content": "You are Qwen, created by Alibaba Cloud. You are a helpful assistant."},
         {"role": "user", "content": prompt}

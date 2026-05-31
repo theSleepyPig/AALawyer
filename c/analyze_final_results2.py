@@ -6,7 +6,7 @@ import json
 from tqdm import tqdm
 
 # --- 配置 ---
-# 这里要改成 test_baselines_law.py 里保存结果的文件夹
+# 这里要改成 test_baselines_v15.py 里保存结果的文件夹
 PREDICTIONS_DIR = "baseline_predictions_v1.5_2"
 OUTPUT_CSV = 'baseline_predictions_v1.5_2/final_threshold_report.csv'
 # PREDICTIONS_DIR = 'baseline_predictions2' 
@@ -110,10 +110,6 @@ def main():
     for file_path in tqdm(files):
         filename = os.path.basename(file_path)
         
-        # ✅ 修复点：优化正则表达式
-        # \d+      : 匹配整数部分
-        # (?:\.\d+)? : 非捕获组，匹配小数部分（如果有）
-        # 这样就不会把文件名后缀的 .json 的点给吃进去了
         match = re.search(r'thresh(\d+(?:\.\d+)?)', filename)
         
         if not match:
