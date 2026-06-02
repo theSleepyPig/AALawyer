@@ -5,7 +5,14 @@
 
 A complementary dual-retriever framework (AALawyer) designed to mitigate legal hallucinations using Symbolic Constrained Retrieval (SCR) and Analogical Precedent Retrieval (APR).
 
-⭐ Our paper is available at (<font color="red">Coming soon</font>[TODO: Link to be added]).
+⭐ Our paper is available at [ACL 2026 Main](<font color="red">Coming soon</font>[TODO: Link to be added]).
+
+<p align="center">
+  <a href="LLaMA-Factory/a/acl2024-poster.pdf">
+    <img src="assets/acl2024-poster.png" alt="ACL 2024 Poster" width="90%">
+  </a>
+</p>
+<p align="center"><i>Click the poster to view/download the PDF.</i></p>
 
 ## 1️⃣ Environment
 
