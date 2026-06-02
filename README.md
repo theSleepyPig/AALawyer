@@ -8,11 +8,8 @@ A complementary dual-retriever framework (AALawyer) designed to mitigate legal h
 ⭐ Our paper is available at [ACL 2026 Main](<font color="red">Coming soon</font>[TODO: Link to be added]).
 
 <p align="center">
-  <a href="LLaMA-Factory/a/acl2024-poster.pdf">
-    <img src="assets/acl2024-poster.png" alt="ACL 2024 Poster" width="90%">
-  </a>
+  <img src="assets/acl2024-poster.png" alt="ACL 2024 Poster" width="90%">
 </p>
-<p align="center"><i>Click the poster to view/download the PDF.</i></p>
 
 ## 1️⃣ Environment
 
