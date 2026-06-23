@@ -5,7 +5,7 @@
 
 A complementary dual-retriever framework (AALawyer) designed to mitigate legal hallucinations using Symbolic Constrained Retrieval (SCR) and Analogical Precedent Retrieval (APR).
 
-⭐ Our paper is available at [ACL 2026 Main](<font color="red">Coming soon</font>[TODO: Link to be added]).
+⭐ Our paper is available at [ACL 2026 Main](https://aclanthology.org/2026.acl-long.633/) | [PDF](https://aclanthology.org/2026.acl-long.633.pdf).
 
 <p align="center">
   <img src="assets/acl2026-poster.png" alt="ACL 2026 Poster" width="90%">
@@ -279,10 +279,30 @@ Our fine-tuned models and newly collected datasets are available on Hugging Face
 
 ## 6️⃣ Citation
 
-If you find this work helpful, please consider citing us:<font color="red">TODO</font>
+If you find this work helpful, please consider citing us:
 
 ```bibtex
-coming soon
+@inproceedings{huang-etal-2026-mitigating,
+    title = "Mitigating Legal Hallucinations via Symbolic Constraints and Analogical Precedents",
+    author = "Huang, Zixuan  and
+      Ma, Yanxiang  and
+      Wang, Luhan  and
+      Wang, Yunke  and
+      Shi, Duo  and
+      Xu, Chang",
+    editor = "Liakata, Maria  and
+      Moreira, Viviane P.  and
+      Zhang, Jiajun  and
+      Jurgens, David",
+    booktitle = "Proceedings of the 64th Annual Meeting of the {A}ssociation for {C}omputational {L}inguistics (Volume 1: Long Papers)",
+    month = jul,
+    year = "2026",
+    address = "San Diego, California, United States",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/2026.acl-long.633/",
+    pages = "13894--13920",
+    ISBN = "979-8-89176-390-6"
+}
 ```
 
 ## 7️⃣ Acknowledgements
